@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 14. Gradual Evolution</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-14-gradual-evolution">
+<h1>Exercise 14. Gradual Evolution</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 14. Gradual Evolution</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Optimization procedures provided by OptiLayer enable a wide range
+of synthesis strategies for solving complicated design problems.
+Accumulating experience with the program will allow you to devise
+your own strategies. Exercises of this Section give you some basic
+ideas on how one can organize a synthesis procedure. This exercise
+also supplies some additional information on OptiLayer features.</p>
+<p>Consider the design of wideband AR coatings for the spectral
+region from 400 to 1200nm. Necessary files are located in the
+<a class="reference external" href="idh_problem_directory.html">Problem directory</a> EX14. In <a class="reference external" href="single_file_mode.html">SF
+Mode</a> you need to use Import Problem
+Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load GLASS substrate, SIO2 and TIO2 layer materials to memory.
+Browse and load Ar-vnir target from the Target database. To design
+required AR coating we will not use any starting design at all.</p>
+<p>Choose the Newton method (<a class="reference external" href="idh_synthesis_options_method.html">Analysis and Synthesis
+Options</a> dialog). Go to the
+Synthesis menu and choose the <a class="reference external" href="idh_gradual_evolution.html">Gradual
+Evolution</a> command. The Gradual
+Evolution Setup window provides a choice of several termination
+conditions for the gradual evolution design process.</p>
+<p><img alt="image1" src="../_images/ex14_gradevsetup.png" /></p>
+<p>Limit the maximum number of layers by 25 and disable other
+termination conditions as shown in the figure. Press the OK
+button. The Gradual Evolution process starts running.</p>
+<p>This process is a further development of the needle optimization
+procedure and you will be able to observe a sequence of needle
+optimization procedures at your screen. It also comprises a
+consecutive increase of the design total optical thickness which
+results in the obtaining not one but a sequence of designs with
+different combinations of major design parameters. These designs
+are accumulated in the <a class="reference external" href="idh_history.html">History</a> storage.</p>
+<p>The Gradual Evolution process terminates as soon as an active
+termination condition is reached. In our case this happens when
+the number of design layers reaches 26. Note that it is possible
+that the last needle optimization procedure has not been yet
+completed at the termination moment. This last procedure will
+automatically proceed running in a few seconds unless you answer
+No when the termination prompt arrives at the screen. In our case
+the final design after the last needle optimization procedure will
+have 28 layers:</p>
+<p><img alt="image2" src="../_images/ex14_gradev.png" /></p>
+<p>Note that this design as well as all intermediate designs stored
+in the History were obtained even without any starting design at
+all. It is important that in the course of Gradual Evolution
+intermediate designs have been stored in the
+<a class="reference external" href="idh_history.html">History</a>.</p>
+<p><img alt="image3" src="../_images/ex14_ev_hist.png" /> <img alt="image4" src="../_images/ex14_ev_hist_ch.png" /></p>
+<p>You can extract and investigate these designs using the Extract
+button in the History window. The History storage allows the
+designer to compare the quality of design performance expressed by
+the merit function value and the design complexity expressed by
+its number of layers and design total thickness and thus to choose
+the most practical design for manufacture.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

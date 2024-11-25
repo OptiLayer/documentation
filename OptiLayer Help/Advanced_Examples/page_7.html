@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p>ractive-indices-accounting-for-th
+e-substrate-back-side.-two-layer-
+ar-coatings-are-used-as-examples.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</div></blockquote>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The main purpose of this example is to demonstrate loading of
+substrate and layer material refractive indices from OptiLayer
+Catalogs and to show how the back side of the substrate is
+accounted for.  In parallel, it is shown how dispersive refractive
+indices are specified in the corresponding database.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D3. There are only two datafiles in the Design database:
+2-layer AR for 600 nm- 1 and …- 2. View these designs in the Edit
+tab.</p>
+<p> Note that there no values in the Physical th column. This is
+because there is no layer material loaded into RAM, meaning both
+designs currently only exist in formula form.</p>
+<p>In this example, we will use the substrate and layer material
+datafiles from the Catalog available in the File menu.</p>
+<p>In the Substrate section of the catalog, select B 270 glass as the
+substrate and click the Transfer tab to place it in the design
+database of the directory LEC24D3.</p>
+<p>Transfer the layer material datafiles Ta2O5 (190-800nm, RIT) and
+SiO2 (150-800nm, RIT) in the same way. Make sure these datafiles
+are included in the corresponding databases. In the Edit -&gt; Table
+tabs, the wavelength dependencies of the refractive indices and
+extinction coefficients are presented in tabular form. The entered
+wavelength dependencies can be seen in the Preview tabs.</p>
+<p>Load the substrate and layer material datafiles into RAM. In the
+Edit tab of the design database, verify that the physical
+thicknesses of the design layers are now available in the first
+column of the design spreadsheet. Load the first design into RAM
+and open the T&amp;R&amp;Phase option in the Analysis menu.</p>
+<p>By right-click in the evaluation window, select the Plot -&gt; Plots
+options and set the normal incidence reflectance to be plotted.
+Using the Axis settings, select a wavelength range of 550-650 nm
+and a y-axis scale of 0 to 1 %.</p>
+<p> Note that the design 2-layer AR for 600 nm- 1 reduces the
+reflectance from the substrate-air interface to less than 0.1% in
+the 40 nm wide spectral region around 600 nm. Such 2-layer
+antireflection designs can be used as top layers to increase the
+transmittance of narrow band pass filters in their passband
+regions.</p>
+<p>Load the second design 2-layer AR for 600 nm- 2. It also offers
+zero reflectance at 600 nm, but its “less than 0.1%” spectral rage
+is somewhat narrower than before.</p>
+<p> Note that so far we have considered the normal incidence
+reflectance from the substrate-air interface without taking into
+account the reflection from the back side of the substrate.</p>
+<p>To accomodate the back side of the substrate, mark Yes in the Back
+side line of the General Information window.</p>
+<p>To see the reflectance curve in the T&amp;R&amp;Phase window, change the
+y-axis scale to 0-10%. The reflectance is increased to more than
+4% in the considered spectral region.</p>
+<p> Note that it is possible to reduce the reflectance by applying an
+antireflection coating to the back side of the substrate.</p>
+<p>To do this, add any of the AR designs to the Back Design line of
+the General Information window.</p>
+<blockquote>
+<div><p>Additional example –
+admittance diagrams</p>
+</div></blockquote>
+<p>Check No in the Back side line of the General Information window
+and open the Admittance… option in the Analysis menu.</p>
+<p>At the wavelength of 600 nm, the admittance diagram begins at the
+refractive index of the substrate and ends at exactly 1, that is,
+at the refractive index of incident medium (Air). According to
+theory, this provides zero reflectance at this wavelength.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

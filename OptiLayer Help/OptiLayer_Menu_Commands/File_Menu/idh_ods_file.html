@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Reading and Writing ODS Files</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="reading-and-writing-ods-files">
+<h1>Reading and Writing ODS Files</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Reading and Writing ODS Files</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The OptiLayer Design Specification (ODS) file is an ASCII file
+that includes all essential information about the current design,
+such as layer thicknesses, material properties, substrate details,
+and target function. It serves as a human-readable format for
+accessing and editing design data, and can be opened and modified
+using any text editor. ODS files are also useful for sharing data
+among users.</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>To create an ODS file, initiate the “Save Project As…”
+command from the <a class="reference external" href="idh_menu_file.html">File Menu</a>.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>To load data that was previously saved in an ODS file, choose
+the “Open ODS File…” command from the <a class="reference external" href="idh_menu_file.html">File
+Menu</a>. This allows you to access and
+utilize the saved design information efficiently.</p>
+</div>
+</li>
+</ul>
+<p><img alt="image1" src="../../_images/ods_open.png" /></p>
+<p>The Open dialog offers two options to manage the import of ODS
+files. When the “Always show “Compile” dialog” option is selected,
+the dialog will be shown during the import process regardless of
+the import result. If this option is not selected, the dialog will
+only appear in the event of compilation errors.
+The second option, “Overwrite files in databases without prompt,”
+determines whether database files are overwritten without a prompt
+or if a prompt is presented before overwriting occurs. By enabling
+this option, files in the databases will be overwritten
+automatically without requesting confirmation.</p>
+<p><img alt="image2" src="../../_images/ods_compile.png" /></p>
+<p>The Compile ODS file window allows the user to view and modify the
+contents of the ODS file before proceeding. Upon clicking the OK
+button, if the “Overwrite files in databases without prompt”
+option is unchecked (as described earlier), the user will be asked
+to confirm the overwriting of any existing database files with the
+same names.
+If the user confirms the overwrite operation, the existing
+database files with matching names will be replaced. New database
+files will be added to the respective databases without any
+additional notification or prompt. This process ensures that the
+user has control over file overwrites and maintains data integrity
+during the ODS file import operation.</p>
+<p>Note:</p>
+<div class="docutils container">
+<p><img alt="image3" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Stacks are currently not supported by the ODS file format. The ODS file
+format includes essential information about the design, but does not
+support the representation of stack structures. If stacks are a critical
+component of your design, alternative methods may need to be considered
+for managing and transferring stack data.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

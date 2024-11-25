@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Quick Start</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="quick-start">
+<h1>Quick Start</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Quick Start</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<p>This section will help you get started with using OptiLayer software
+promptly.
+The online Help system provides detailed information about user
+interface features, implemented methods, and approaches to solve
+various design and analysis challenges. To access the table of
+contents, choose the Contents item from the Help menu. To find
+information on a specific topic, click on the Index or Search tab and
+enter your query.
+You can access context-sensitive help for any part of OptiLayer,
+including menu items, dialog boxes, and toolbars, by selecting the
+item and pressing the F1 key.</p>
+<p> <img alt="image1" src="../_images/ol_icon.png" /></p>
+<p>The OptiLayer installer has placed an icon on your desktop as well as
+an OptiLayer item in the Windows Start menu (OptiLayer group). You
+can use either of these objects to start OptiLayer.</p>
+<div class="docutils container">
+<p><img alt="image2" src="../_images/arrow_r.png" /></p>
+</div>
+</div>
+<p><strong>Note:</strong> You can open multiple instances of the same program. When a
+new instance is launched, all previous instances are minimized (though
+they can continue computations). The new instance will prompt you to
+open a different <a class="reference external" href="idh_problem_directory.html">Problem Directory</a> from
+the ones already opened.</p>
+<p>Upon starting OptiLayer, the <a class="reference external" href="idh_optilayer_main.html">main window</a>
+and the <a class="reference external" href="idh_general_information_window.html">General Information</a>
+window will appear. The main window includes a menu system and toolbar
+with buttons that control all operations in OptiLayer.</p>
+<div class="line-block">
+<div class="line"><img alt="image3" src="../_images/New_window_2.png" /></div>
+</div>
+<p>Certain menu items and toolbar buttons may appear grayed out (disabled)
+due to missing data or other factors. When an operation becomes
+available, the corresponding control will automatically be enabled.</p>
+<p>The <a class="reference external" href="idh_general_information_window.html">General Information</a> window
+is vital for monitoring and overseeing the current state of OptiLayer.
+It presents essential information about the OptiLayer environment in a
+hierarchical format. The <a class="reference external" href="idh_general_information_window.html">General
+Information</a> window can also
+serve as a control panel for OptiLayer. By selecting an item and using
+the right-click popup menu, you can access commonly used commands for
+that item. Additionally, many items in the General Information window
+support in-place editing, allowing for quick and convenient access to
+various options.</p>
+<p>OptiLayer utilizes decentralized data storage, meaning that data for
+each problem is stored in separate directories known as <a class="reference external" href="idh_problem_directory.html">Problem
+Directories</a>. When you initially launch
+OptiLayer, it opens the default empty <a class="reference external" href="idh_problem_directory.html">Problem
+Directory</a> named DATA. It is recommended
+to create a new <a class="reference external" href="idh_problem_directory.html">Problem Directory</a> for
+each new problem you wish to work on. <a class="reference external" href="foreword.html">Tutorial
+Exercises</a> and <a class="reference external" href="foreword2.html">Advanced Examples</a>
+leverage this decentralized data storage concept by storing data in
+distinct directories.</p>
+<p>Most commands in the <a class="reference external" href="idh_menu_analysis.html">Analysis</a> and
+<a class="reference external" href="idh_menu_synthesis.html">Synthesis</a> menus may initially be disabled.
+To enable these options, you should open the
+<a class="reference external" href="idh_edit_layer_material.html">Substrate</a> database and create a new
+substrate data file, and load it into memory. By following these steps,
+various <a class="reference external" href="idh_menu_analysis.html">Analysis</a> options will become
+available, allowing you to evaluate reflectance, transmittance, and
+other properties at the interface between the loaded substrate and the
+default Incident Medium (typically Air).</p>
+<p>It is important to recognize that data within OptiLayer databases and
+loaded data are isolated from each other. To utilize the data in
+calculations and other operations, you must <a class="reference external" href="idh_loading_data.html">load
+data</a> into memory.</p>
+<p>To evaluate the spectral characteristics of a coating, the following
+actions are necessary:</p>
+<ul>
+<li></li>
+<li><div class="p-indentlist2 docutils container">
+<p>Create and load <a class="reference external" href="idh_database.html">Layer Material</a> files
+required for the coating, with the first two materials being
+assigned the abbreviations L and H automatically based on their
+refractive index values. Utilize the <a class="reference external" href="idh_synthesis_options_material.html">Arrange
+Materials</a> command to
+organize the materials (refer to the <a class="reference external" href="idh_material_abbreviations.html">Material
+Abbreviations</a> topic for more
+information).</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>Create a design file that describes the coating in the <a class="reference external" href="idh_design.html">Design
+database</a> and load it</p>
+</div>
+</li>
+</ul>
+<p>For initiating synthesis options, it is also essential to create and
+load a target file (in the <a class="reference external" href="target_editor.html">Target database</a>) or
+a color target file (in the <a class="reference external" href="idh_edit_color_target.html">Color
+Target</a> database).</p>
+<p>For practical examples of using OptiLayer analysis and synthesis
+options, it is recommended to follow the <a class="reference external" href="foreword.html">Tutorial
+Exercises</a>. <a class="reference external" href="foreword2.html">Advanced Examples</a> are
+available for a deeper exploration of OptiLayer’s capabilities.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

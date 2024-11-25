@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>WDM Filter GD Performance</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="wdm-filter-gd-performance">
+<h1>WDM Filter GD Performance</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="WDM_Filter_GD_Perfomance/export_target_setup.html">Export Target Setup</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">WDM Filter GD Performance</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="wdm-filter-gd-performance-1">WDM Filter GD Performance</p>
+</div>
+</div>
+<p>` &lt;zeroes_and_poles_setup.html&gt;`__ ` &lt;idh_menu_analysis.html&gt;`__
+` &lt;export_target_setup.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image1" src="../../_images/wdm_gd_perf.png" /></p>
+<p>The WDM Filter GD Performance window allows estimating the
+implicit relation between the transmittance steepness of a WDM
+filter and the amplitude of ripples in the GD spectral dependence.
+This relation is a consequence of the causality principle and
+follows from the fundamental properties of amplitude transmittance
+and reflectance. In particular, this relation can be characterized
+by the positions of the poles of amplitude reflectance in the
+complex plane of wavenumbers (wavelengths). Only poles in the
+vicinity of the high transmission zone contribute significantly to
+the characteristics mentioned above.
+It is possible to experiment with the positions of poles using the
+mouse (simply drag any of the poles in the upper left window). The
+number of poles and their positions in digital form can be
+controlled in the upper right window. The scaling of the plots can
+be adjusted with the help of a four-way spinner control in the
+middle of the upper part of the window.
+The lower left part of the window displays the resulting
+transmittance shape factor, which is a product of so-called
+elementary terms. The lower right part displays the GD spectral
+dependence, which is a sum of elementary functions with weights
+equal to the inverse distance of the corresponding pole from the
+real axis.
+Use the right-click menu or the Parameters button for additional
+options. For example, it is possible to display elementary terms
+together with resulting characteristics, and to control the steps
+of spinners for digital input.
+With the help of the right-click menu, the resulting transmittance
+<a class="reference external" href="export_target_setup.html">can be exported</a> as a target
+transmittance to OptiLayer and used in the <a class="reference external" href="wdm_filter_design___material_s.html">WDM Filter
+Synthesis</a> option. This
+allows the user to design a WDM filter with the required
+transmittance and GD characteristics. Use the <a class="reference external" href="wdm_filter_design___adjust_to_.html">WDM
+Filter…</a> command with an
+active External target for this purpose.
+Additional useful information on possible applications of this
+option can be found in the paper:</p>
+<div class="line-block">
+<div class="line">A. Thelen, A. Tikhonravov, M. Trubetskov, and M. Kokarev, “Phase
+properties of WDM filters,” in Optical Interference Coatings,
+OSA Technical Digest Series (Optical Society of America, 2001),
+paper WD5.</div>
+<div class="line"><a class="reference external" href="http://www.opticsinfobase.org/abstract.cfm?URI=OIC-2001-WD5">http://www.opticsinfobase.org/abstract.cfm?URI=OIC-2001-WD5</a></div>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

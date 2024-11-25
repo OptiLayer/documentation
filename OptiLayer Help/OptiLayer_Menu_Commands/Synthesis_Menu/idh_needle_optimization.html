@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Needle optimization</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="needle-optimization">
+<h1>Needle optimization</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1"><img alt="image1" src="../../_images/need_btn.png" /> Needle Optimization</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="needle-optimization-1"><img alt="image2" src="../../_images/need_btn.png" /> Needle Optimization</p>
+</div>
+</div>
+<p>` &lt;sensitivity_directed_refinemen.html&gt;`__ ` &lt;idh_menu_synthesis.html&gt;`__
+` &lt;idh_needle_optimization_dialog.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image3" src="../../_images/need_btn.png" /> Needle optimization is a unique feature of OptiLayer
+and is especially useful for solving complicated design problems.
+Needle optimization involves inserting new layers into the
+optimized design, typically thin needle-like variations of the
+refractive index profile. During the needle optimization process,
+a plot of a special function (the P-function) is displayed on the
+screen, with the best insertion point being where the P-function
+has its largest negative value. In automatic mode, the program
+automatically identifies this point and computes an optimal
+thickness for the new layer.
+The material for a new layer inserted during the needle
+optimization process is selected based on certain rules. In a
+two-component coating, the material for the new layer differs from
+the material of the existing layer where the insertion occurs. For
+coatings with more than two materials, the optimal material is
+chosen from those designated as Active (A) or Exclusionary (E) in
+the <a class="reference external" href="idh_synthesis_options_material.html">Materials window</a>.</p>
+<p class="p-heading2 rubric" id="needle-optimization-auto"><img alt="image4" src="../../_images/need_auto_btn.png" /> Needle Optimization AUTO</p>
+<p>If you start the needle optimization process by choosing the
+Needle optimization AUTO option, an automatic procedure is
+invoked. This involves a series of alternating needle variation
+and refinement steps. The process continues until it is no longer
+possible to insert a new layer that would enhance the current
+design. This stopping criterion is based on either a negligible
+improvement in the merit function or obtaining a positive
+P-function value within all layers of the current design. This
+indicates that an optimal solution for a coating with the current
+total optical thickness has been achieved. Further enhancement of
+the merit function would require increasing the total optical
+thickness of the design (refer to <a class="reference external" href="idh_gradual_evolution.html">Gradual
+Evolution</a>).</p>
+<p>You can track the progress of the optimization procedure in the
+<a class="reference external" href="idh_needle_optimization_dialog.html">Needle Variation window</a>
+and in the <a class="reference external" href="idh_refinement_window.html">Refinement window</a> (when
+Silent mode is disabled).</p>
+<p><img alt="image5" src="../../_images/needle_deep_search_icon.png" /> Needle Optimization Deep Search</p>
+<p>The Deep Search variant of Needle Optimization should be used in
+situations where you are interested in a design with good
+performance but have a strict limitation on the number of layers.
+During each major iteration, the Deep Search version attempts all
+possible needle insertions and subsequent refinements one by one.
+The achieved reductions in the merit function are analyzed, and
+the insertion variant that provides the largest decrease in the
+merit function is selected.
+The Deep Search variant is time-consuming and is recommended only
+for specific problems. Its advantages become evident in rather
+complex problems (involving more than 50 layers, intricate targets
+with phase, GD, GDD, etc., requirements).</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

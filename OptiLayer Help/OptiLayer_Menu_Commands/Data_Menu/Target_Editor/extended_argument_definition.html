@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Extended Argument Definition</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="extended-argument-definition">
+<h1>Extended Argument Definition</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Extended Argument Definition</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt; <a class="reference external" href="target_editor.html">Target
+Editor</a> &gt;</p>
+<p class="p-heading1 rubric" id="extended-argument-definition-1">Extended Argument Definition</p>
+</div>
+</div>
+<p>` &lt;userdefinedtargeteditor.html&gt;`__ ` &lt;target_editor.html&gt;`__
+` &lt;idh_modify_angles.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>At times, it may be necessary to connect spectral characteristics
+at different wavelengths, angles of incidence, or even computed in
+different environments within the same user-defined target. This
+can be achieved using the Extended Argument Definition dialog,
+which extends the <a class="reference external" href="userdefinedtargeteditor.html">User-Defined
+Target</a> Editor. As a result, a
+wide range of non-standard multilayer synthesis problems can be
+formulated and solved with this option.</p>
+<p><img alt="image1" src="../../../_images/udt_extarg1.png" /></p>
+<p>The control buttons in the Extended Argument Definition dialog
+allow you to insert, append, and delete definitions of new
+targets.</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>The Name column lists the names of all defined <a class="reference external" href="userdefinedtargeteditor.html">UDT
+arguments</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The Env column specifies the environment at which an argument
+is defined. “Curr” indicates the current environment by
+default, but you can specify a specific environment number.
+Multiple environments should be defined using the
+<a class="reference external" href="envmanfrm.html">Environment Manager</a> in this case.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The Details(…) column provides each existing definition for
+easier management as a formula.</p>
+</div>
+</li>
+</ul>
+<p>The definition details for each selected Extended Argument can be
+edited in the “Definition of …” group of controls. You can edit
+the parameters independently for each row selected in the upper
+grid view.
+The Characteristic and Polarization entry fields configure the
+type of specific spectral characteristics.</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>The Wavelength field specifies the formula for wavelength
+conversion in the form A + B * <strong>λ</strong>.  The default values
+are <strong>A = 0</strong> and <strong>B = 1</strong>, corresponding to identity
+conversion with respect to the wavelength.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The <strong>Angle</strong> field specifies the formula for angular
+conversion in a similar form <strong>C + D *</strong> θ. The default
+values are C = 0 and D = 1, representing identity conversion
+with respect to the angle.</p>
+</div>
+</li>
+</ul>
+<p>For example, selecting the value A2 in the screenshot provided
+introduces Ra values at the same wavelength but at an angle of
+incidence 30° higher than the current target angle.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

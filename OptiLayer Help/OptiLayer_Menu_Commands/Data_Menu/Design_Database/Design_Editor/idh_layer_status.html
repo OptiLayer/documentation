@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Layer Optimization Status</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="layer-optimization-status">
+<h1>Layer Optimization Status</h1>
+<div class="docutils container" id="printheader">
+<p>Layer Optimization Status</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  OptiLayer Menu
+Commands &gt; <a class="reference external" href="idh_menu_data.htm">Data
+Menu</a> &gt;
+<a class="reference external" href="idh_design.htm">Design
+Database</a> &gt;
+<a class="reference external" href="idh_design_editor.htm">Design
+Ed
+itor</a> &gt;</p>
+<p>Layer Optimization Status</p>
+</td>
+<td><p>` &lt;idh_design_formula.htm&gt;`__
+` &lt;idh_design_editor.htm&gt;`__
+` &lt;design_inhom_inter.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>To manage how a layer is treated during the refinement or
+synthesis process, it receives an optimization status. There are
+two potential statuses a layer can be given:</p>
+<ul>
+<li><div class="p-normal docutils container">
+<p>Active (A)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Fixed (F)</p>
+</div>
+</li>
+</ul>
+<p>By default, every layer is assigned the status of Active.
+During the refinement or synthesis process:</p>
+<ul>
+<li><div class="p-normal docutils container">
+<p>The thickness of an Active layer can be altered. Moreover,
+any material that is loaded into the system and defined as
+either Active or available for substitution (referenced in
+the document as Exclusionary under <a class="reference external" href="idh_layer_material_status.htm">Layer Material
+Status</a>) can be
+incorporated into it.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The thickness of a Fixed layer cannot be modified, nor can
+any other materials be introduced or substituted into it.</p>
+</div>
+</li>
+</ul>
+<p>The optimization status of a layer within a currently loaded
+design can be altered via the <a class="reference external" href="idh_modify_design.htm">Modify
+Design</a> option found within the
+<a class="reference external" href="idh_menu_synthesis.htm">Synthesis menu</a>. To adjust the
+optimization statuses of layers within designs stored in the
+Design Database, you should access the Design Database, select the
+design of interest, and then employ the “Edit” function as you
+normally would.</p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image3" src="../../../../_images/arrow_r.png" /></p></td>
+<td><p>On rare occasions, the optimization status of a Fixed
+layer can change to Active during the synthesis or
+refinement process. This happens because OptiLayer
+merges adjacent layers of the same material into a
+single layer. If a Fixed layer is merged with an Active
+layer, the resulting layer assumes an Active status.
+This situation can occur, for example, when a thin layer
+of a different material is removed during the refinement
+process, potentially leading to unpredictable outcomes
+with respect to the original design intent. One solution
+to prevent unintended merging and status changes is to
+create an “alias material.” This involves defining a
+material with the same optical properties as the
+material of the Fixed layer, but under a different name
+and abbreviation. Since OptiLayer does not merge two
+layers with different names, this strategy effectively
+resolves the issue.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

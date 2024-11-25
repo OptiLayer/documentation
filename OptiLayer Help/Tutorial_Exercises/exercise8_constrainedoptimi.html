@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 8. Constrained optimization</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-8-constrained-optimization">
+<h1>Exercise 8. Constrained optimization</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 8. Constrained optimization</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>All layers of the short wave-pass designs in two previous examples
+have different thicknesses. Sometimes it may be desirable to
+obtain a design with quarter-wave optical thicknesses of many
+design layers.  This can be done in a rather simple way with the
+help of constrained optimization.</p>
+<p>OptiLayer provides several options for constrained optimization.
+This exercise demonstrates the most simple case when thicknesses
+of some design layers are fixed with the help of Status column in
+the <a class="reference external" href="idh_design_editor.html">Design Editor</a>.</p>
+<p>Select the <a class="reference external" href="idh_problem_directory.html">Problem directory</a> EX8.
+ In <a class="reference external" href="single_file_mode.html">SF Mode</a> you need to use Import
+Problem Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load substrate GLASS, layer materials SIO2 and TIO2, target file
+Ef-swp mod, starting design QWM 4 Active Layers. Comparing to the
+starting design of the previous exercise, QWM 4 Active Layers file
+is slightly different. Using <a class="reference external" href="idh_modify_design.html">Modify
+Design</a> option in the Synthesis menu
+check that it has character A in the Status column only for the
+first two layers and for the last two layers. This means that only
+4 layer thicknesses will be changed during Refinement, all other
+thicknesses with the Status F will remain constant.</p>
+<p>Choose the Newton method (<a class="reference external" href="idh_synthesis_options_method.html">Analysis and Synthesis
+Options</a> dialog) and start
+the <a class="reference external" href="idh_refinement.html">Refinement procedure</a>. The resulting
+design will have a merit function value of 5.278055E+000. It is
+not surprising that the result is not as good as in the previous
+exercise, because only four layers were allowed to vary in the
+course of the refinement procedure.</p>
+<p>Repeat this exercise using QWM 6 Active Layers starting design.
+Now thicknesses of six layers are allowed to vary during the
+refinement procedure. The improvement of the final design can be
+clearly seen. The merit function value is now 3.117707E+000. This
+result is saved with the file name EF20SW2.</p>
+<p><img alt="image1" src="../_images/ex8_ev.png" /></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

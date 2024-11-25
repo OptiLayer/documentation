@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 3. Two layer antireflection coating: basics of OptiLayer design description</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-3-two-layer-antireflection-coating-basics-of-optilayer-design-description">
+<h1>Exercise 3. Two layer antireflection coating: basics of OptiLayer design description</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 3. Two layer antireflection coating: basics of
+OptiLayer design description</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>All necessary files for this exercise are located in the directory
+EX3. Select this directory using the
+<a class="reference external" href="idh_problem_directory.html">Problem</a> menu command.  In <a class="reference external" href="single_file_mode.html">SF
+Mode</a> you need to use Import Problem
+Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load the Substrate GLASS file into memory. Load also SIO2 and ZRO2
+files from the <a class="reference external" href="idh_database.html">Layer Material</a> database.
+They will get abbreviations L and H correspondingly.</p>
+<p>Enter the <a class="reference external" href="idh_design.html">Design database</a> and examine the
+file with the name AR-2HL.</p>
+<p><img alt="image1" src="../_images/ex3_ar.png" /></p>
+<p>This design can be described by the formula 2H 1L &#64; 500nm. Remind
+that layers are numbered starting from the substrate. Load this
+design into memory and perform T, R evaluation. Set X-axis scale
+from 300 to 900nm, T,R-axis from 0 to 10% and select R
+(reflectance) as plotted characteristic. The Evaluation window
+will look as follows:</p>
+<p><img alt="image2" src="../_images/ex3_ar_ev.png" /></p>
+<p>In order to better understand the role of character abbreviations,
+ load the MGF2 file. It will get the abbreviation A. Check this
+with the help of the <a class="reference external" href="idh_general_information_window.html">General
+Information</a> window.</p>
+<p>Enter the <a class="reference external" href="idh_synthesis_options_material.html">Arrange
+Materials</a> item in the Data
+menu, a window will be displayed where  abbreviation assignments
+can be changed. Change the abbreviation of SIO2 to M, and the
+abbreviation of MGF2 to L. Note that the plot at the Evaluation
+window has not been changed. Create the <a class="reference external" href="idh_menu_results.html">Current Design
+Report</a> (Results menu) and check that the
+design now is represented as 2.0H 1.0M.  This means that the
+material of the second layer is the same as before, yet the
+abbreviation has been changed.</p>
+<p>It is important to understand the relationship between the design
+layer materials denoted by character abbreviations and layer
+materials loaded in memory.  The link between the loaded materials
+and the design material abbreviations occurs when the
+<a class="reference external" href="idh_loading_data.html">Load</a> command is executed. To illustrate
+this, load the AR-2HL design again and note that the reflectance
+plot has been changed. This is because the first material of the
+design in memory is still ZRO2 as before, but the second material
+has been changed to MGF2 . If you examine the Design edit Window
+you will see that the physical thickness of the second layer is
+now 90.58nm instead of 86.21nm as before.  The physical thickness
+has been changed when a new material, i.e., MGF2 has been linked
+with the second layer.</p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image5" src="../_images/arrow_r.png" /></p></td>
+<td><p>Important note: Basic design description in OptiLayer is
+its description in terms of layer optical thicknesses.
+Layer physical thicknesses are calculated in accordance
+with the layer materials linked to the design after its
+loading into memory.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

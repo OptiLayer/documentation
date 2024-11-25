@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pulse Options</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="pulse-options">
+<h1>Pulse Options</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Pulse Options</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt; <a class="reference external" href="pulse_analysis.html">Pulse
+Analysis</a> &gt;</p>
+<p class="p-heading1 rubric" id="pulse-options-1">Pulse Options</p>
+</div>
+</div>
+<p>` &lt;pulse_analysis.html&gt;`__ ` &lt;pulse_analysis.html&gt;`__
+` &lt;material_dispersion_evaluation.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image1" src="../../../_images/plsopt_1.png" /></p>
+<p>Pulse properties can be described with two files: one with
+Spectrum data and another with Phase information (it could be
+phase, GD, or GDD). In this case, the full path should be entered
+into the corresponding entry fields either directly or using
+Browse… buttons. Pulse information should be represented as a
+two-column text file, where the first column should be wavelength
+in nm and the second should be the related characteristic.
+In the case of file representation, the Central Wavelength of the
+pulse can be computed automatically based on imported data, or it
+could be specified directly.
+Another way is based on the Super-Gauss intensity shape and phase
+information retrieved from the currently loaded Target file. For
+this case, you need to activate the second Super-Gauss tab and
+select the Create Phase properties from Target data checkbox.
+Selection of this phase setting means that we assume the pulse to
+be exactly opposite to the target phase, as it is logical to
+assume that one tries to obtain full compensation of the phase
+modulation.</p>
+<p><img alt="image2" src="../../../_images/plsopt_2.png" /></p>
+<p>Half-Width and Order entry fields describe the shape of the
+Super-Gauss pulse, while Lam Min and Lam Max are responsible for
+the spectral range.</p>
+<p>The relative width of the time window is responsible for the fast
+Fourier transform settings used to compute the time-domain pulse
+representation. It is controlled as a power of 2, and the default
+recommended value is 0 (auto-computed value is used without
+further modification). If you increase this value, the size of the
+window increases, minimizing numerical artifacts, but
+computational time also increases quickly. Be careful when
+increasing this value, as it is easy to encounter long computation
+times and problems with memory size in the 32-bit version.</p>
+<p>Delay allows for additional shifting of the output pulse on the
+time axis. In some cases, it is convenient, especially if the
+obtained delay is rather significant, and it is necessary to
+compare the shapes of the pulse with the Fourier-limited version.</p>
+<p>Type selection should be configured in accordance with the data
+provided as a source of phase information.</p>
+<p>Compute describes what pulse you will see on the output. It could
+be just the input pulse with the applied phase modulation; in this
+case, you can compare it with the Fourier-limited version and
+estimate the required level of compression. Alternatively, you can
+select reflected or transmitted versions for any polarization of
+light.</p>
+<p>The incident angle is used during the computation of the output
+pulse.</p>
+<div class="docutils container">
+<p><img alt="image3" src="../../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>If Override Angle options are used in Multi-Coating Manager, this value
+is ignored, and the values configured in the <a class="reference external" href="multi_coating_manager.html">Multi-Coating
+Manager</a> are used instead.</p>
+<p>Multiplicity increases the number of reflections; it is useful for
+estimating the overall performance of dispersive mirror compressors.</p>
+<p>Adjusting the Phase according to Multiplicity should usually be
+activated if a Multiplicity higher than 1 is used, especially if pulse
+phase information was generated from the target data. The reason for
+this adjustment is that in most cases target requirements are formulated
+for one reflection (or for one effective reflection in double-angle and
+complementary mirror approaches). During this adjustment, the phase is
+simply multiplied by the Multiplicity value.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

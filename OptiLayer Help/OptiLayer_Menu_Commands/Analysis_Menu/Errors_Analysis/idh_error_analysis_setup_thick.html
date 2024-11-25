@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Thickness Error Analysis Setup</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="thickness-error-analysis-setup">
+<h1>Thickness Error Analysis Setup</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="thickness-errors-analysis-setup">Thickness Errors Analysis Setup</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>This dialog allows for setting thickness errors for each layer and
+launching the <a class="reference external" href="idh_error_analysis.html">Error Analysis.</a></p>
+<p>Thickness errors can be specified in several ways.
+First of all, thickness errors can be specified as a sum of
+absolute and relative errors, with the values being the same for
+all layers of the coating.</p>
+<p><img alt="image1" src="../../../_images/ErrorAnalysis_2.png" /></p>
+<p>This setting is available in the first “Coating” sub-tab of the
+“Thickness” tab. The resulting RMS error for the j-th layer of the
+coating is calculated with the formula:</p>
+<p>RMSjres = RMSabs + RMSrel dj ,</p>
+<p>where dj are the layer thicknesses.</p>
+<p>If a <a class="reference external" href="stack_database.html">Stack</a> with several coatings is
+loaded, this option allows setting RMS levels for every coating in
+the stack independently.
+For example, for a stack having a RAMP coating and an AR coating,
+the dialog looks like this:</p>
+<p><img alt="image2" src="../../../_images/err_th_coat_stack.png" /></p>
+<p>In more complex situations, it may be necessary to specify RMS
+levels for the layer materials in each coating independently. The
+“Materials” sub-tab is designed to support this.</p>
+<p><img alt="image3" src="../../../_images/err_th_mat_stack.png" /></p>
+<p>All coatings included in the currently loaded stack are listed on
+this tab; the list can be expanded and collapsed. Settings for
+absolute and relative RMS levels for every material in every
+coating can be specified; the resulting RMS is computed using the
+same formula as presented above for the coating case.
+In some situations, it may be required to set thickness errors for
+every layer in each coating. This can be performed using the third
+“Thicknesses” sub-tab. On this tab, thickness errors can also be
+specified as absolute root-mean-square values (RMS column) and as
+relative values, i.e., as a percentage of the corresponding layer
+thickness (Rel.RMS column). The default values are 1% relative
+errors.</p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image6" src="../../../_images/arrow_r.png" /></p></td>
+<td><p>Note: In older versions of OptiLayer, errors specified
+at the Thicknesses tab were linked to each other, i.e.,
+RMS relative errors were recalculated to absolute levels
+and vice versa depending on the column selected for
+editing. This has changed in the latest releases.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image9" src="../../../_images/arrow_r.png" /></p></td>
+<td><p>Note: In the current release, the total error of layer
+thicknesses specified at the Thicknesses tab is
+considered as the sum of RMS and Rel. RMS values. This
+provides full consistency with errors specified at the
+Coatings or Materials tab.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="image10" src="../../../_images/err_thck.png" /></p>
+<p>To adjust the error levels for the physical or optical thicknesses
+of any layer in your software application, follow these steps:</p>
+<ol class="arabic">
+<li><div class="p-normal docutils container">
+<p>Change Physical Thickness Error:</p>
+</div>
+<ul>
+<li><div class="p-normal docutils container">
+<p>Navigate to the Thicknesses tab.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Locate the column labeled “RMS” directly adjacent to the
+<strong>Phys.th.</strong> column.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Select the cell corresponding to the layer for which you
+want to modify the error and enter the new value.</p>
+</div>
+</li>
+</ul>
+</li>
+<li><div class="p-normal docutils container">
+<p>Change Optical Thickness Error:</p>
+</div>
+<ul>
+<li><div class="p-normal docutils container">
+<p>In the same Thicknesses tab, find the “RMS” column next to
+the Opt.th. column.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Choose the desired cell and input the updated RMS value
+for the optical thickness error of the selected layer.</p>
+</div>
+</li>
+</ul>
+</li>
+<li><div class="p-normal docutils container">
+<p>Modify Relative Error:</p>
+</div>
+<ul>
+<li><div class="p-normal docutils container">
+<p>Find the column labeled “Rel.RMS(%)”.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Click the cell that corresponds to the layer whose
+relative error you wish to adjust and type in the new
+percentage.</p>
+</div>
+</li>
+</ul>
+</li>
+<li><div class="p-normal docutils container">
+<p>Access Advanced Settings via Column Editor:</p>
+</div>
+<ul>
+<li><div class="p-normal docutils container">
+<p>Click the “Column…” button to open the <a class="reference external" href="idh_column_editor.html">Column
+Editor.</a> for more complex
+modifications and settings.</p>
+</div>
+</li>
+</ul>
+</li>
+<li><div class="p-normal docutils container">
+<p>Apply Changes and Start Error Analysis:</p>
+</div>
+<ul>
+<li><div class="p-normal docutils container">
+<p>Once all adjustments are made, click the “OK” button. This
+will save the changes and initiate the Error Analysis
+procedure.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The outcomes of this analysis will be shown in the
+<a class="reference external" href="idh_error_analysis_results.html">Error Analysis
+Results</a> window.</p>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<p>Note that the errors utilized for computations are pulled from the
+data specified at the last accessed tab among Coatings, Materials,
+or Thicknesses.</p>
+<p>For more detailed guidance, refer to the sections</p>
+<ul>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_error_analysis_setup_chara.html">Setting Error Analysis
+Characteristics</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_error_analysis_setup_refra.html">Refractive Index Error Analysis
+Setup</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

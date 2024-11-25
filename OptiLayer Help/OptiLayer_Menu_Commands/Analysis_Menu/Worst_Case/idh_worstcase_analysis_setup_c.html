@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Worst Case Analysis Characteristics</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="worst-case-analysis-characteristics">
+<h1>Worst Case Analysis Characteristics</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Worst Case Analysis Characteristics</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt; Worst Case &gt;</p>
+<p class="p-heading1 rubric" id="worst-case-analysis-characteristics-1">Worst Case Analysis Characteristics</p>
+</div>
+</div>
+<p>` &lt;error_yield_window.html&gt;`__ ` &lt;idh_menu_analysis.html&gt;`__
+` &lt;idh_worstcase_analysis_setup_t.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Worst-case option min principle could be analyzed by considering
+all possible thickness combinations as shown above, but
+unfortunately, this number is growing too rapidly as a 2N
+function. For 100 layers coating the number of combinations is
+2100=1267650600228229401496703205376, which is too high even for
+modern powerful computers. Therefore, we are using a different
+approach. For each wavelength and angle of incidence, we are
+searching for a combination of deviations within specified limits
+that provide the maximum deviation of the spectral characteristic
+from the target value. This search is performed with an
+optimization algorithm, but instead of minimizing a merit
+function, we are maximizing the mentioned deviation. Furthermore,
+we are maximizing the deviation in two possible directions from
+the current value of the spectral characteristic. This is how two
+surrounding curves (+Dev and -Dev) are obtained. In general, for
+different wavelengths and angles of incidence, we should obtain
+different values of deviations, which is an unphysical solution
+since the deviations cannot depend on the wavelength/AOI.
+Therefore, the obtained deviation is an upper estimation of the
+deviation, and any real deviation should be smaller than these
+values. From these considerations, it is clearer why this option
+is called Worst Case Error Evaluation.</p>
+<p>Use the Characteristic page of the Worst Case Analysis Setup
+window to set the spectral characteristic for the <a class="reference external" href="idh_worstcase_analysis.html">Worst Case
+Analysis.</a> The Worst Case Analysis
+can be performed only for one characteristic, one polarization
+state, and one angle of incidence at a time. As in the other
+OptiLayer dialogs, in the Angular mode, the choice of angle of
+incidence is replaced by the choice of wavelength.</p>
+<p><img alt="image1" src="../../../_images/wor_char.png" /></p>
+<p>See also:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_worstcase_analysis_setup_r.html">Refractive Index Error Worst Case Analysis
+Setup</a><strong>,</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_worstcase_analysis_setup_t.html">Thickness Error Worst Case Analysis
+Setup</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

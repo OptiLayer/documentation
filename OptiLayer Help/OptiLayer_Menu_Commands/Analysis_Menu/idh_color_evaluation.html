@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Color Evaluation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="color-evaluation">
+<h1>Color Evaluation</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Color_Evaluation/idh_color_evaluation_parameter.html">Color Evaluation Parameters</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Color Evaluation</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="color-evaluation-1">Color Evaluation</p>
+</div>
+</div>
+<p>` &lt;idh_digitize.html&gt;`__ ` &lt;idh_menu_analysis.html&gt;`__
+` &lt;idh_color_evaluation_parameter.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Color command in the <a class="reference external" href="idh_analysis.html">Analysis</a>
+Menuinitiates the color evaluation analysis tool. When this
+command is activated, a dialog window labeled <a class="reference external" href="idh_color_evaluation_parameter.html">Color Evaluation
+Parameters</a> appears. After
+confirming the choice of parameters, the color coordinates of the
+design can be calculated. You can view the color coordinates in
+either graphical or tabular form by selecting “Color Diagram” or
+“Spreadsheet” pages, respectively. In Spreadsheet mode, the window
+displays the results of evaluating the color coordinates for the
+current design.
+The “Additional Discrepancies” tab allows you to view the
+differences between:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Model and Measurement</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Model and Color Target</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Color Target and Measurement</p>
+</div>
+</li>
+</ul>
+<p>at the respective sub-tabs.</p>
+<p>The light source, detector, observer, integration step, reference
+white, and incident angle used for color evaluation are shown in
+the upper part of this window. The <a class="reference external" href="idh_edit_light_source.html">Light source and
+detector</a> can be changed using
+corresponding databases. Other options that affect color
+evaluation can be altered using the <a class="reference external" href="coloroptions.html">Color</a>tab in the <a class="reference external" href="idh_configuration.html">General Configuration</a>
+dialog.</p>
+<p>By selecting different tabs, it is possible to view calculated
+color characteristics related to different color spaces and other
+values.
+Available characteristics include:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>x, y, z chromaticities and luminosity</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>X, Y, Z tristimulus values</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>u, v, Y values as defined by CIE YUV (1960)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>u’, v’, Y values as defined by CIE YU’V’ (1976)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>u* v*</strong>, L* <strong>values as defined by CIE
+L</strong><em>u***v*</em> color space</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>a*, b*</strong>, L* <strong>values as defined by CIE
+L</strong><em>a***b*</em> color space</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>a, b, L values in Hunter Lab</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>C*, h*</strong>(uv), s(uv) values (CIE)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>H°(ab), L*, C*</strong>(ab) values (CIE)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Dominant, Complementary wavelengths, and Excitation purity
+(Dom/Comp tab)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Correlated Color Temperature, Color Rendering Index, and Duv
+(CRI, CCT, Duv tab).</p>
+</div>
+</li>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>The “Diff” tab is essentially designed to provide a detailed
+and comparative analysis of color discrepancies, which helps
+in fine-tuning the color parameters to match the <a class="reference external" href="idh_color_evaluation_parameter.html">Anchor
+point</a> or maintaining
+quality across batches of production. This feature is
+invaluable when precision in color reproduction is critical.</p>
+</div>
+</li>
+</ul>
+<p><img alt="image1" src="../../_images/colev_diff1.png" /></p>
+<p>Color difference formulas included in this calculation can be
+configured with the right-click menu.</p>
+<p><img alt="image2" src="../../_images/colev_diff2.png" /></p>
+<p>On the Discrepancies tab, it is also possible to select different
+color difference formulas (see
+<a class="reference external" href="https://en.wikipedia.org/wiki/Color_difference">https://en.wikipedia.org/wiki/Color_difference</a>).</p>
+<p>The Discrepancies tab with sub-tabs is shown below. In each
+sub-tab, it is possible to select what will be used as a reference
+when computing color differences.</p>
+<p><img alt="image3" src="../../_images/c_eval_discr.png" /></p>
+<p>In Color Diagram mode, the availability of different types of
+diagrams allows for a varied visual representation and analysis of
+colors based on different color spaces. Each diagram serves
+specific purposes and helps in understanding various aspects of
+color behavior and differences. Here’s a brief overview of each
+type mentioned:</p>
+<ol class="arabic">
+<li></li>
+<li><div class="p-normal docutils container">
+<p>CIE xyz (1931) Chromaticity Diagram:
+This diagram is based on the CIE 1931 XYZ color space. It is
+a fundamental color space that forms the basis of most other
+color spaces. The diagram helps in visualizing color as
+perceived by the human eye, plotting luminance (Y) and
+chromaticity coordinates (x and y).</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>CIE UCS (1976) Diagram:
+The Uniform Chromaticity Scale (UCS) diagram, created to
+improve the uniformity of the CIE 1931 xyz diagram. Colors
+in this diagram are more evenly distributed, making it
+easier to interpret differences in chromaticity.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>CIE C*hs (uv) Diagram:
+This diagram represents the cylindrical version of the
+CIELUV color space. It plots chroma (C) and hue (hs) in a
+polar coordinate system, with the (u’, v’) coordinates
+defining the colorfulness relative to the brightness of a
+similarly illuminated white.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>CIE H°LC Diagram:
+This is often used with the CIELCH color space, where colors
+are represented in terms of Hue (H°), Lightness (L), and
+Chroma (C). This diagram helps in understanding the color
+relationships and transformations in a more perceptual way,
+reflecting human color vision.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>CIE L*a*b* Diagram:
+Based on the CIELAB (see
+<a class="reference external" href="https://en.wikipedia.org/wiki/Lab_color_space">https://en.wikipedia.org/wiki/Lab_color_space</a>) color
+space, this diagram shows colors in terms of their lightness
+(L) and their position along the a (from green to red) and
+b (from blue to yellow) axes. It is very useful for
+visually representing color differences and is widely used
+in color measurement due to its perceptual uniformity. It is
+recommended to select L* close to values of Design color,
+Measurements color, or Color Target in order to have
+consistent color  representation.
+</p>
+</div>
+</li>
+</ol>
+<p>Each of these diagrams provides unique insights and tools for
+color analysis, suitable for various applications ranging from
+digital imaging and printing to textiles and coatings. Depending
+on what aspect of color you are investigating or processing, you
+may choose one diagram over another to get the most accurate or
+useful representation for your needs.</p>
+<p>The crosses indicate the values of color coordinates for the
+characteristics shown in the spreadsheet. The display of
+additional features on the diagram is controlled by the settings
+in the <a class="reference external" href="idh_color_evaluation_parameter.html">Color Evaluation
+Parameters</a> dialog. Some of
+these additional features are not applicable to CIE C*hs (uv) and
+CIE H°LC diagrams.
+If a <a class="reference external" href="color_specification.html">Color Specification</a> is loaded,
+it is additionally shown by closed curves, as illustrated in the
+figure below.</p>
+<p>If you want to re-run the Color Evaluation procedure with
+different settings, press the “Parameters…” button to set the
+<a class="reference external" href="idh_color_evaluation_parameter.html">Color Evaluation
+Parameters</a> and restart the
+color evaluation procedure.</p>
+<p>The Color Rendering Index (CRI) tab in lighting software measures
+how accurately a light source illuminates colors in comparison to
+a natural light source. The CRI is a crucial metric in various
+industries including photography, cinematography, interior design,
+and manufacturing where color fidelity is important.</p>
+<p><img alt="image4" src="../../_images/cri.png" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Color Patch tab displays colors corresponding to selected
+characteristics. If a range of incident angles is selected, the
+color patch displays the transition of colors as the angle changes
+within specified limits.</p>
+<p><img alt="image5" src="../../_images/col_patch.png" /></p>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

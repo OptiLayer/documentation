@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 11. Needle Optimization - design of AR Coating</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-11-needle-optimization-design-of-ar-coating">
+<h1>Exercise 11. Needle Optimization - design of AR Coating</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 11. Needle Optimization - design of AR Coating</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>OptiLayer exploits the needle optimization technique in its
+genuine form. This technique is based on complicated mathematical
+ideas and computational algorithms. You can refer to the book
+“Basics of Optics of Multilayer Systems” by  Sh.Furman and
+A.Tikhonravov for its foundations (See
+<a class="reference external" href="http://www.optilayer.com">www.optilayer.com</a>).</p>
+<p>From a heuristic point of view, the needle optimization is
+described as a process of  inserting thin new layers inside a
+multilayer stack.  After the insertion of each new layer, the
+number of layers in the stack is generally increased by two, i.e.,
+a single layer has been divided into two pieces separated by a
+“new” thin layer which was inserted in it.  The resulting stack is
+then refined by one of the available optimization algorithms.</p>
+<p>There are two operational modes for the <a class="reference external" href="idh_needle_optimization.html">Needle
+Optimization</a> procedure:</p>
+<p>1.<a class="reference external" href="idh_needle_optimization_dialog.html">Manual Needle
+Optimization</a> mode which
+allows the user to control all steps of the needle optimization
+procedure.</p>
+<p>2.<a class="reference external" href="idh_needle_optimization.html">Needle Optimization AUTO</a>
+mode which combines insertions of the needle layers and refinement
+cycles in an integrated process.</p>
+<p>The AUTO mode provides an access to a fully automated process
+which continues consecutive needle insertions and refinement steps
+until an optimal design is obtained, i.e., a design in which the
+insertion of new layers no longer results in a decreasing merit
+function.  It is suggested that initial use be constrained to the
+AUTO mode.  The “Needle optimization” mode will most often be used
+in situations where the user has developed specific strategies for
+complicated synthesis problems.</p>
+<p>The files required for the Exercise 11 are located in the <a class="reference external" href="idh_problem_directory.html">Problem
+directory</a> EX11. In <a class="reference external" href="single_file_mode.html">SF
+Mode</a> you need to use Import Problem
+Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load GLASS substrate, SIO2 and TIO2 layer materials, and Ar-vis
+target. Target has 20 logarithmically distributed spectral points
+in the range from 400 to 800 nm. All files are the same as in the
+<a class="reference external" href="exercise10_randomoptimizati.html">Exercise 10</a>.</p>
+<p>We shall use a file SOMETHING as a “starting design.” This file
+defines a 2-layer coating with layer physical thicknesses equal to
+200nm, H material of the first layer and L material of the second
+layer.</p>
+<p>Open the <a class="reference external" href="idh_evaluation.html">Evaluation</a> window and set the
+range of the y-axis to be from 0 to 4%. This will allow monitoring
+the changes of the reflectance curve in more detail.</p>
+<p>Choose the Newton method (<a class="reference external" href="idh_synthesis_options_method.html">Analysis and Synthesis
+Options</a> dialog) and start
+the Needle Optimization AUTO procedure
+(<a class="reference external" href="idh_menu_synthesis.html">Synthesis</a> menu). The convergence of
+the process is fast at modern computers, and very quickly you will
+obtain the following 8 layer AR coating:</p>
+<p><img alt="image1" src="../_images/ex11_ev1.png" /></p>
+<p>The choice of a starting design is not critical for the needle
+optimization procedure. This means that you will always get high
+quality results. Nevertheless with another “starting design” you
+may obtain a different solution. Load the file SOMETHING 2 from
+the Design database and repeat the Needle Optimization AUTO
+procedure. You will get a 14-layer AR coating with the merit
+function value of 0.1890181E-001.</p>
+<p>The new design has the merit function value which is nearly two
+times less than in the previous case. At the same time the new
+design is thicker and has more design layers. The ability to
+easily obtain a set of designs with different combinations of
+major design parameters is one of the most attractive features of
+the needle optimization procedure. This ability provides the
+designer with an additional flexibility in choosing most practical
+design.</p>
+<p><img alt="image2" src="../_images/ex11_ev2.png" /></p>
+<p>As a last part of the Exercise 11 note that the layer number 12 of
+the last 14-layer design is quite thin (you can examine this layer
+using the <a class="reference external" href="idh_modify_design.html">Modify Design</a> command in the
+Synthesis menu). It is often desirable to remove such layers from
+the final design. You can do this with the help of <a class="reference external" href="idh_remove_thin_layers.html">Thin Layer
+Removal</a> option. Go to this option
+in the Synthesis menu and remove the layer number 12. Confirm the
+prompt for the refinement procedure. You will get a new 12-layer
+design with the merit function value of 0.1903152 which differs
+very little from the previous value.</p>
+<p><img alt="image3" src="../_images/ex11_ev3.png" /></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

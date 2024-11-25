@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pulse Analysis</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="pulse-analysis">
+<h1>Pulse Analysis</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Pulse_Analysis/pulse_options.html">Pulse Options</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Pulse Analysis</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="pulse-analysis-1">Pulse Analysis</p>
+</div>
+</div>
+<p>` &lt;integralsinhintereval.html&gt;`__ ` &lt;idh_menu_analysis.html&gt;`__
+` &lt;pulse_options.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>In ultrafast optics, it is often important to study the temporal
+shape of a reflected pulse.
+As an example, we will first consider a one-octave dispersive
+mirror designed to compress a pulse with GDD = 40fs2 and TOD =
+10fs3 with a carrier wavelength of 790nm. For reference, the
+solution based on simple synthesis with Gradual Evolution and
+Needle Optimization methods using a conventional target is shown
+below:</p>
+<p><img alt="image1" src="../../_images/pls_1.png" /></p>
+<p class="p-heading2sub rubric" id="pulse-analysis-tabs">Pulse Analysis tabs</p>
+<p>The first tab (Input) of the Pulse Analysis dialog shows input
+pulse parameters specified in the <a class="reference external" href="pulse_options.html">Pulse
+Options</a> dialog.</p>
+<p><img alt="image2" src="../../_images/pls_2.png" /></p>
+<p>In this case we used a Super-Gaussian shape for the pulse
+intensity in the range of 550 - 1200 nm, and the phase was derived
+from the target GDD with the opposite sign. It is natural to
+assume that in the ideal case, the specified target should exactly
+match the pulse phase with the opposite sign in order to have the
+best compensation of the phase modulation (chirp). The central
+(carrier) wavelength of this pulse was 790 nm.
+The Output Intensity tab represents the intensities of
+Fourier-limited and output pulses in the time domain, making it
+very convenient to estimate the quality of compression and
+expected distortions.</p>
+<p><img alt="image3" src="../../_images/pls_3.png" /></p>
+<p>For example, in this case, the compression is not good as one can
+see satellites after the pulse. The problem appeared due to
+deviations in the average GDD level of the designed mirror from
+the target values.</p>
+<p>Our E-Field tab shows the approximate time behavior of the
+electric field in this pulse (both Fourier-limited and output
+pulses).</p>
+<p><img alt="image4" src="../../_images/pls_4.png" /></p>
+<p>Our ACF tab represents Auto-correlation functions (ACF) of the
+Fourier-limited and output pulses.</p>
+<p><img alt="image5" src="../../_images/pls_5.png" /></p>
+<p><strong>|E(z,t)|2</strong> tab shows a 2D time-coating coordinate
+distribution of the squared amplitude of the electric field.</p>
+<p><img alt="image6" src="../../_images/pls_6.png" /></p>
+<p>The Layer boundaries check box controls the additional display of
+layers on this plot. This representation may be quite helpful for
+studies of laser damage problems.
+Since all discussed plots usually include quite many data points,
+we provide an additional Copy Data button. With its help, you can
+copy data with a specified step (or span), therefore decreasing
+the total amount of data points and making it more suitable for
+further analysis.</p>
+<p class="p-heading2sub rubric" id="better-solution-obtained-with-floating-constants-approach">Better solution obtained with floating constants
+approach</p>
+<p>With the floating constant approach, it is possible to obtain
+another solution to the same problem. It has significantly higher
+oscillations of GDD.</p>
+<p><img alt="image7" src="../../_images/pls_7.png" /></p>
+<p>Nevertheless, the shape of the output compressed pulse is
+significantly better, and this is confirmed with the Pulse
+Analysis option.</p>
+<p><img alt="image8" src="../../_images/pls_8.png" /></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

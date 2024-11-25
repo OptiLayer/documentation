@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Color Range Targets</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="color-range-targets">
+<h1>Color Range Targets</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="color-range-target">Color Range Target</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt; <a class="reference external" href="idh_edit_color_target.html">Color
+Target</a> &gt;</p>
+<p class="p-heading1 rubric" id="color-range-target-1">Color Range Target</p>
+</div>
+</div>
+<p>` &lt;idh_edit_color_target.html&gt;`__ ` &lt;idh_edit_color_target.html&gt;`__
+` &lt;anchor_parameters.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Range Color Targets are specialized targets represented by a
+convex polygon. They are available for use in the Chromaticity,
+CIE YU’V’ 1976, CIE YU’V’ 1960, Hunter Lab, CIE
+L<strong>a</strong><em>b</em><strong>, and CIE L</strong><em>ru***v*</em> color spaces.
+Starting with version 11.65, polar color coordinates are also
+supported by this option.
+When a point in the selected color space falls within the polygon
+of the Color Range Target, the corresponding term in the Merit
+function is zero. If the point is located outside the polygon, the
+corresponding term in the Merit function is calculated as the
+squared distance from the point to the boundary of the convex
+polygon, as demonstrated below.</p>
+<p><img alt="image1" src="../../../_images/rangetgt2.png" /></p>
+<p>When a Range qualifier is chosen, the Type field in the <a class="reference external" href="idh_edit_color_target.html">Color
+Target editor</a> becomes gray. This
+indicates that the associated value does not have any significance
+when the Range qualifier is selected.</p>
+<p><img alt="image2" src="../../../_images/rangetgtbase.png" /></p>
+<p>Furthermore, instead of displaying the Target value, a special
+rectangle symbol will appear. Clicking on the arrow to the right
+will bring up a popup editor for further customization:</p>
+<p><img alt="image3" src="../../../_images/rangeed.png" /></p>
+<p>On the left side of the dialog, you can specify the number of
+vertices in the polygon (minimum of 3) and a set of x, y vertex
+coordinates. The polygon is continuously checked for convexity
+during editing, with the result displayed at the bottom left of
+the dialog. As of version 11.65, concave polygons are also
+permitted as range color targets.
+The right pane of the dialog illustrates the shape of the polygon
+during the editing session, with the vertex currently being edited
+highlighted by a small blue circle. Pressing the OK button will
+save the current polygon in the <a class="reference external" href="idh_edit_color_target.html">Color
+Target</a>.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

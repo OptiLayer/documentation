@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric">Example 2. Intensity
+and phase properties of
+quarter-wave mirrors. Phase of
+the amplitude reflection
+coefficient in the p-case.
+:n</p>
+<p>ame: example-2.-intensity-and-pha
+se-properties-of-quarter-wave-mir
+rors.-phase-of-the-amplitude-refl
+ection-coefficient-in-the-p-case.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</div></blockquote>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The main purpose of this example is to demonstrate the evaluation
+of the intensity and phase spectral properties of QWM. In parallel
+with this demonstration, it is shown how the designs in the RAM
+can be modified and stored to the design database. The
+introduction of the phase of the amplitude reflection coefficient
+in the p-case is also discussed. It is shown that the p-phase in
+OptiLayer is introduced in the most logical way.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D2. The datafiles needed to run this exercise are already
+loaded into RAM. These are the substrate Glass n=1.52, the layer
+materials n=2.35 and n=1.46, and the design QWM-19, c.w. 600 nm.</p>
+<p>Open the T&amp;R&amp;Phase option in the Analysis menu. The transmittance
+of the 19-layer QWM is displayed in the spectral range of 400 to
+800 nm.</p>
+<p>To check the change in mirror transmittance when changing the
+number of mirror layer, go to the Synthesis -&gt; Modify Design
+option and increase the number of design layers from 19 to 25.</p>
+<p>Check that the design spreadsheet now has 25 rows. After clicking
+OK, the changes are applied to the design in RAM.</p>
+<p></p>
+<p> Note that the steepness of the transmittance slopes at the
+boundaries of the high reflection region has increased
+considerably.</p>
+<p>To save the modified mirror design to the design database stored
+on the hard disk, select Data -&gt; Save Data -&gt; Save Design option.
+Give the saved design a name and click OK. You can now see the new
+design datafile in the Design database window.</p>
+<p>Load the original 19-layer QWM into RAM. Let us study the
+dependence of the mirror spectral characteristics on the angle of
+incidence. For oblique light incidence, we should consider
+characteristics for two polarization states, s- and p-states.
+Right-click in the evaluation window and select the Plot -&gt; Plots
+options.</p>
+<p>Click the Add button to add new characteristics to display. Let us
+choose reflectances and phase shifts on reflection for the s- and
+p- polarized light at 45-degree light incidence (four plots). Use
+different colors for s- and p- characteristics, solid and dashed
+curves for intensity and phase characteristics.</p>
+<p>We see that the phase shifts on reflection for the s- and
+p-polarized light are the same at the wavelength in the center of
+the high reflection zone. As the incidence tends toward normal
+incidence, the s- and p-phases approach each other in a wide
+wavelength range and then coincide at normal incidence. This can
+be checked by changing the incidence angles to smaller values (for
+example, 5-10 degrees) in the Plot options. Of course, this is to
+be expected. But in some texts, the phase shifts on reflection for
+the s- and p-polarized light differ by 180 degrees at normal
+incidence.</p>
+<p>This difference is caused by the different introduction of the
+reflection phase in the p-case compared to OptiLayer. The example
+discussed shows that the p-phase definition used in OptiLayer is
+the most natural.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OptiLayer Data Files</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="optilayer-data-files">
+<h1>OptiLayer Data Files</h1>
+<div class="docutils container" id="printheader">
+<p>OptiLayer Data Files</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  General Information on OptiLayer &gt; OptiLayer
+Components &gt;</p>
+<p>OptiLayer Data Files</p>
+</div>
+</div>
+<p>` &lt;single_file_mode.html&gt;`__ ` &lt;idh_optilayer.html&gt;`__
+` &lt;idh_spreadsheet_editing.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container">
+<p>Here is the breakdown of how OptiLayer handles data storage and
+management:
+Decentralized Data Storage (Default Mode):
+  - OptiLayer stores databases containing user data on the hard
+disk.
+  - Data related to specific problems can be stored in separate
+directories with corresponding specific names called Problem
+directories.
+  - This decentralized data storage is convenient for
+investigating multiple design or characterization problems
+simultaneously or when used by multiple users.
+File Transfer Option:
+  - Enables the transfer of data files between different problem
+directories, reducing the time needed for data preparation.
+  - For example, substrate data files for various types of glass
+can be transferred from the Catalog directory.
+Backup/Restore Option:
+  - Allows the creation of a backup file (*.zip file) for any
+Problem directory and restoration on the same or different
+computers running OptiLayer.
+  - Facilitates data exchange between users and computers.
+Loading Data for Analysis or Synthesis:
+  - Before starting calculations, all necessary data, including
+substrate and incident medium information, optical materials of
+thin films, and design description, must be loaded into memory.
+  - If the procedure involves optimizing a merit function, the
+desired coating spectral response (target) must also be provided.
+  - Data files containing this information are stored in databases
+accessible from the <a class="reference external" href="idh_menu_data.html">Data menu</a>.
+Databases Accessible from the Data Menu:
+  - Target, Color Target, Light Source, Detector, Cone Angle,
+Substrate, Layer Material and Design are commands that access
+databases in the <a class="reference external" href="idh_menu_data.html">Data menu</a>.</p>
+</div>
+<p>Groups of database files:</p>
+<p class="p-heading4indentnobefore rubric" id="target-files">Target files</p>
+<p>A <a class="reference external" href="target_editor.html">target</a> in OptiLayer is a set of values for
+one or more spectral characteristics that define the desired optical
+properties of a coating over a specific spectral band. A <a class="reference external" href="target_editor.html">Target
+file</a> containing these desired values is
+required for any optimization or synthesis procedure in
+OptiLayer.  The Target database in OptiLayer stores these target
+files and can be accessed using the Target command in the <a class="reference external" href="idh_menu_data.html">Data
+menu</a>. A target file can contain a set of
+values for a group of one or more characteristics such as
+reflectance, transmittance, absorptance, and phase properties of a
+coating for one or more polarization states (if applicable) and one
+or more angles of incidence. Having a target file allows OptiLayer to
+optimize coating designs to meet specific optical requirements,
+ensuring that the resulting coatings exhibit desired optical
+properties within the specified spectral band. By providing the
+target values, users can guide the optimization process towards
+achieving the desired performance of the coatings.</p>
+<p class="p-heading4indent rubric" id="integral-target-files">Integral Target files</p>
+<p>In OptiLayer, another type of target function is the <a class="reference external" href="integral_target.html">Integral
+Target</a>. The Integral Target describes
+requirements for integral values of spectral characteristics. This
+type of target function is particularly useful for applications such
+as solar cells, where integral properties of the optical response are
+crucial. Additionally, color requirements can also be expressed as
+Integral Targets in OptiLayer. The Integral Targets in OptiLayer are
+implemented as a specific database dedicated to storing and managing
+these types of target functions. By using Integral Targets, users can
+specify constraints and requirements on the overall performance of
+the coating, particularly focusing on integral values of spectral
+characteristics rather than point-by-point optimization. For
+applications where the overall integrated performance of the coating
+is more important than specific spectral features at individual
+wavelengths, the use of Integral Targets provides a valuable tool for
+optimizing coatings to meet these broader requirements. The specific
+database for Integral Targets in OptiLayer streamlines the process of
+defining and applying these constraints in the optimization and
+synthesis procedures.</p>
+<p class="p-heading4indent rubric" id="color-target-files">Color Target files</p>
+<p>In OptiLayer, another type of target function is the <a class="reference external" href="idh_edit_color_target.html">Color
+Target</a>.The Color Target describes
+the spectral composition of transmitted or reflected light by
+specifying its color coordinates. This target can be defined for
+different angles of incidence as well as different polarizations of
+light, allowing for precise control over the color properties of the
+coating. Spectral (angular) targets and color targets in OptiLayer
+are specified using convenient spreadsheet formats, making it easy
+for users to input and manage the desired color requirements for
+their coatings. Spectral (angular) targets can be entered at multiple
+separate data pages, allowing users to specify targets for different
+angles of incidence or polarization states independently. This
+flexibility in defining targets in separate data pages is incredibly
+convenient, as it enables users to incorporate a wide range of target
+data into the design procedure simultaneously. Users can input and
+manipulate different target values for various spectral
+characteristics, angles of incidence, or polarization states,
+tailoring the optimization process to meet specific design
+requirements and achieve the desired optical properties of the
+coating.</p>
+<p class="p-heading4indent rubric" id="light-source-and-detector-files">Light Source and Detector files</p>
+<p>To accurately assess how the human eye perceives the color of
+reflected or transmitted light from a coated surface, it is important
+to consider the spectral energy distribution of the incident light.
+In OptiLayer, the <a class="reference external" href="idh_edit_light_source.html">Light Source and
+Detectors</a> commands open the
+LightSource/Detectors database. Light source files within this
+database are used to specify the energy distribution of the light
+spectrum that illuminates the coating being analyzed. By default,
+OptiLayer assumes a uniform distribution spectrum for the light
+source when analyzing a coating, meaning that there is equal energy
+at all wavelengths. However, in reality, light sources do not have
+uniform spectra; each source has a unique characteristic spectrum
+associated with it. To account for this, OptiLayer provides
+additional light source files with varying spectral distributions to
+aid in color calculations. These files can be transferred into any
+Problem database from the Catalog database that comes with OptiLayer.
+Note that files in the Catalog database can only be accessed using
+the FileTransfer command. Furthermore, users have the option to
+create custom Light Source and Detectors files and store them in the
+LightSource/Detectors database. This flexibility allows users to
+accurately model the spectral characteristics of the incident light
+and customize the analysis to match real-world lighting conditions,
+resulting in more accurate predictions of color perception for
+coatings.</p>
+<p class="p-heading4indent rubric" id="cone-angle-files">Cone Angle files</p>
+<p>In OptiLayer, the Cone Angle database stores parameters that describe
+the cone angle averaging procedure used in computations involving
+parameters like Reflectance (Ra), Transmittance (Ta), and
+Bidirectional Reflectance (BRa). When a <a class="reference external" href="coneangledatabase.html">Cone
+Angle</a> file is loaded into memory, all
+computations related to these parameters are performed using the cone
+averaging procedure specified in the file. If you wish to disable the
+cone angle averaging and revert to standard calculations without cone
+angle correction, you can simply unload the Cone Angle file from
+memory using the “Remove Cone Angle” menu command. By removing the
+Cone Angle file, you can ensure that subsequent calculations for
+parameters like Ra, Ta, and BRa are performed without cone angle
+averaging, providing results based on standard assumptions and
+calculations.</p>
+<p class="p-heading4indent rubric" id="materials-files">Materials Files</p>
+<p>In OptiLayer, the Layer Materials command opens the <a class="reference external" href="idh_edit_layer_material.html">Layer
+Materials database</a>, where users
+can define the optical properties of various materials used in the
+design of coatings. Layer materials are referenced with single-letter
+abbreviations within the design. These materials can be
+non-dispersive, characterized by a single refractive index value, or
+dispersive, characterized by real and imaginary parts of the
+refractive index at different wavelengths.
+To specify the optical properties of substrates, incident media, and
+layer materials, users can utilize spreadsheet formats for dispersive
+data or define refractive index formulas. OptiLayer provides a
+variety of formulas for defining dispersive optical properties,
+including:</p>
+<ul class="simple">
+<li><ul>
+<li></li>
+<li><p>Several Sellmeier formulas,</p></li>
+<li><p>Cauchy formulas,</p></li>
+<li><p>Hartmann and Hartmann-2 formulas,</p></li>
+<li><p>Schott Glass formula,</p></li>
+<li><p>Drude formula,</p></li>
+<li><p>Spline interpolation.</p></li>
+</ul>
+</li>
+</ul>
+<p>By using these formulas, users can accurately model the
+wavelength-dependent refractive indices of dispersive materials,
+allowing for more detailed and precise analysis of coatings with
+varying optical properties across different wavelengths.
+Additionally, these formulas provide flexibility and customization
+options for designing coatings with specific optical characteristics.</p>
+<p class="p-heading4indent rubric" id="substrate">Substrate</p>
+<p>In OptiLayer, the Substrate command opens the <a class="reference external" href="idh_edit_layer_material.html">Substrate
+database</a>, where users can define the
+optical properties of substrate materials used in coating designs.
+Substrate materials are specified in the same manner as layer
+materials, with single-letter abbreviations within the design. Files
+from the Substrate database can be loaded not only as substrates but
+also as Incident Medium and Exit Medium files. To load substrate
+files for these purposes, users can utilize the right-click popup
+menu of the <a class="reference external" href="idh_modify_database.html">Database window</a>. This
+allows for easy access to substrate data and seamless integration
+into the design process for specifying substrates, incident media,
+and exit media with defined optical properties from the Substrate
+database.</p>
+<p class="p-heading4indent rubric" id="design-files">Design Files</p>
+<p>In OptiLayer, <a class="reference external" href="idh_design.html">Design Files</a> are used to
+describe the structure of coatings. Users can access the database
+archive of design files by using the Design command in the <a class="reference external" href="idh_menu_data.html">Data
+menu</a>. A design file specifies the number of
+layers in a coating, their thicknesses, the materials they are made
+of, and the order of the layers. During the optimization and
+synthesis processes, the number of layers and layer parameters may be
+adjusted to meet design requirements.</p>
+<p>Designs can be specified using a spreadsheet format, allowing for the
+synchronous presentation of layer thickness in various units such as
+Physical thickness, Optical thickness, QWOT, and FWOT (full
+wavelength optical thickness). Alternatively, designs can be
+specified using a standard formula presentation, providing
+flexibility in defining the structure of coatings. Each design can
+have up to 65535 layers, allowing for complex multilayer coatings to
+be accurately represented and optimized within OptiLayer’s design
+environment. This capability enables users to create detailed and
+customized coating designs to meet specific optical performance
+requirements.</p>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

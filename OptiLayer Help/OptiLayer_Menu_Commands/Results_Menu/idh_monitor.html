@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OptiLayer Monitor</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="optilayer-monitor">
+<h1>OptiLayer Monitor</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="OptiLayer_Monitor/automatic_monitoring_strategie.html">Automatic Monitoring Strategies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OptiLayer_Monitor/fixing_wavelength_of_some_laye.html">Fixing Wavelength of Some Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OptiLayer_Monitor/wavelength_adjustment.html">Wavelength Adjustment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OptiLayer_Monitor/spectra_display.html">Spectra display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OptiLayer_Monitor/gain_and_zero.html">Gain and Zero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OptiLayer_Monitor/linewidth.html">Line Width</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OptiLayer_Monitor/miscellaneousmonitoringoptio.html">Miscellaneous Monitoring Options</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p>OptiLayer Monitor</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_results.html">Results
+Menu</a> &gt;</p>
+<p>OptiLayer Monitor</p>
+</div>
+</div>
+<p>` &lt;idh_menu_results.html&gt;`__ ` &lt;idh_menu_results.html&gt;`__
+` &lt;automatic_monitoring_strategie.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Creating a good set of instructions for an optical monitoring
+system can be a tedious task. The OptiLayer Monitor option,
+accessible from the / <a class="reference external" href="idh_menu_results.html">Results menu</a>,
+enables the user to create a monitoring spreadsheet for the design
+currently loaded in memory. The OptiMonitor dialog window allows
+the user to specify the parameters required for this purpose.
+The OptiMonitor window is divided into three sections. The
+proportions of the three sections in the monitor window can be
+adjusted by placing the mouse on the dividing bar between the
+sections. When this is done, a set of short parallel lines with
+outward-pointing arrows appears. Clicking with the left mouse
+button and dragging the divider bar will allow you to adjust the
+proportions of the OptiMonitor window. The Monitoring Spreadsheet
+occupies the left upper part of the window. The Witness
+Spreadsheet occupies the right upper part of the window; it is
+used to specify information about the witness chips. The Graphic
+Display occupies the lower part of the window; it displays a
+graphical representation of the reflection from (or transmission
+through) the witness chip as the layers of the coating are being
+deposited. The graph emulates the theoretical response of the
+optical monitor system during the deposition process.</p>
+<p><img alt="image1" src="../../_images/monitor.png" /></p>
+<p class="p-heading2 rubric" id="the-monitoring-spreadsheet">The Monitoring Spreadsheet</p>
+<p>The Monitoring Spreadsheet consists of 15 columns (some columns
+are hidden by default; use the top-left grid corner to activate a
+pull-down menu controlling the visibility of individual columns).</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>The first two columns show layer material abbreviations
+(Abbr) and layer physical thicknesses (Th.) for the design
+loaded in memory.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 3rd column (C) indicates the number of the witness chip
+on which the corresponding design layers will be deposited.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 4th column (L) displays the number of design layers to be
+deposited on each particular chip, starting from 1. The
+correspondence between the design layers and witness chips is
+set in the Witness Spreadsheet located in the right upper
+part of the window (see below).</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>In the 5th column, the user can specify correction factors
+(Corr) representing the ratios between the physical
+thicknesses of layers on a witness chip and the actual
+physical thicknesses of the material being deposited on the
+actual parts being coated. Note that default correction
+factors are equal to 1.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 6th column (λ) is used to specify the wavelength at which
+the optical monitoring is being done for each specific layer.
+It is possible to use the / <a class="reference external" href="wavelength_adjustment.html">Monitoring Wavelength
+Adjustment</a> option invoked by
+clicking the button λ in the left upper corner of the window.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 7th column (Fixed) allows the user to freeze the layer
+and exclude it from strategy generators.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 8th column (Q&#64;λ) is used to represent the quarter-wave
+optical thickness at the λ monitoring wavelength.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 9th column (Gain) displays scaling factors obtained after
+the use of the / <a class="reference external" href="gain_and_zero.html">Gain and Zero</a>
+option. These values can also be edited directly in the
+Monitoring Spreadsheet.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 10th column (InR) displays Initial Readouts values.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 11th column (Zero) represents Zero Offset values entered
+with the help of the <a class="reference external" href="gain_and_zero.html">Gain and Zero</a>
+option. These values can also be edited directly in the
+Monitoring Spreadsheet.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 12th column (Δd) shows overshoot values. When a non-zero
+overshoot value is specified, the monitoring spreadsheet is
+corrected for these values.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 13th column (Ratio) displays the ratio between the values
+of the spectral response at the end and the beginning of each
+layer deposition.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 14th column (Swing, %) displays the signal swing value
+determined as the ratio of the difference between the
+trigger-point signal value and the maximum of the signal to
+the signal amplitude. Signal amplitude is the difference
+between the signal maximum and minimum values. If a maximum
+or minimum of the signal, or both, are not available during
+layer deposition, OptiLayer considers a sufficient virtual
+increase in the layer thickness until the required extrema
+are located.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The 15th column (Response) shows more detailed information on
+the spectral response during the layer deposition. The first
+and last values in this column correspond to the
+transmittance/reflectance of the witness chip at the
+beginning and end of the layer deposition, respectively.
+Between these values, all spectral response maxima and minima
+that occur during the layer deposition are shown. Spectral
+response maxima are shown in red while spectral response
+minima are shown in green. For additional details on the
+spectral response, refer to the plots below.</p>
+</div>
+</li>
+</ul>
+<div class="docutils container">
+<p><img alt="image2" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: It is possible to control the visibility of columns using the
+button at the top-left corner of the spreadsheet. The visibility of the
+columns is preserved between OptiLayer sessions. See also / <a class="reference external" href="fixing_wavelength_of_some_laye.html">Fixing
+Wavelength of Some Layers</a>.</p>
+<p>General settings related to the physical configuration of the monitor
+system are made in the upper-left corner of the monitoring spreadsheet.
+The user can choose the Mode of the spectral response (T for
+transmittance or R for reflectance). The polarization of the light on
+the witness chip (monitor glass) is specified in the Pol field, and the
+angle of incidence at which the light from the monitor source hits the
+witness chip is set in the Angle field. In the case where the monitoring
+is done in reflectance, the user should uncheck the Back Side box if the
+reflectance from the Back Side of the witness chip is suppressed.</p>
+<section id="graphical-representation">
+<h2>Graphical representation</h2>
+<p>The theoretical spectral response of the monitor system is plotted in
+the bottom portion of the OptiMonitor window. With the help of the
+Display control, the user can choose whether to show the plot for one
+layer only (Current) or for all the layers at once (All). To easily
+distinguish between the layers, the responses for different layers are
+colored alternately. The Axis control allows you to select an
+appropriate scale for the response plot. The numerical values of the
+plotted response characteristic can be found in the monitoring
+spreadsheet in the upper part of the window (columns Ratio and
+Response).</p>
+<p><img alt="image3" src="../../_images/monitoptionsgr.png" /></p>
+<p>This control can be opened by hovering the mouse over the Options field
+to the left of the graphical representation of the monitoring signals.
+The Bad Monitoring control allows one to visualize layers having a
+monitoring signal with bad quality for reliable monitoring purposes. It
+can also be opened by hovering the mouse over the left side of the plots
+window.</p>
+<p><img alt="image4" src="../../_images/badmonitoring.png" /></p>
+<p>Selecting different conditions, corresponding levels, and the
+visualization color, it is easy to visualize layers with bad monitoring
+conditions, as shown in the illustration below.</p>
+<p><img alt="image5" src="../../_images/monbadpointsvis.png" /></p>
+</section>
+<section id="the-witness-spreadsheet-setting-up-the-witness-chip-parameters">
+<h2>The Witness spreadsheet - setting up the witness chip parameters</h2>
+<p>The choice of which type of material to use for a witness chip, how many
+chips to use to monitor the deposition of a design, and how many layers
+should be deposited on each chip is essential for the development of a
+successful monitoring scheme. These parameters are selected in the
+Witness spreadsheet in the upper right corner of the Monitoring window.
+Please note that two different strategies of chip management are
+supported. If Permit Reusing of Chips is selected (see / <a class="reference external" href="miscellaneousmonitoringoptio.html">Miscellaneous
+Monitoring Options</a>), then
+repetitive use of chips is allowed, and the appearance of the monitoring
+spreadsheet is adjusted accordingly.
+The chip material can be chosen from any of the substrate materials in
+the current Problem directory. The available materials can be reviewed
+by clicking the small arrow to the right of the Def Chip field in the
+upper right-hand corner of the OptiMonitor window. This will open a
+small popup window. Use the scroll bar to review all the material
+choices and double-click on the material you will use for the monitor
+chip.
+The first column in the Witness spreadsheet displays the witness chip
+number, with chip #1 being the chip that the first layer is deposited
+on.
+The second column in the Witness spreadsheet, labeled L, displays the
+number of layers to be deposited on the corresponding witness chip. The
+program always assumes by default that all layers in a design will be
+deposited on one witness chip. This is indicated by the fact that
+initially chip #1 has a number in column L that is the same as the total
+number of layers in the design. In most cases, the default choice will
+not be correct. Enter the number of layers you want to deposit on chip
+#1 in column L and press the Enter key. A second chip will automatically
+be created with the remaining layers of the design assigned to it. Enter
+the number of layers to be deposited on the second chip in column L and
+repeat the process described above until all the layers in the design
+have been assigned to a witness chip.
+The third column of the Witness spreadsheet is labeled with the letter
+T, signifying the thickness of the witness chip. You can also
+appropriately modify the thicknesses of each chip. The thickness of the
+witness chip is important if the material displays any significant
+absorption.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

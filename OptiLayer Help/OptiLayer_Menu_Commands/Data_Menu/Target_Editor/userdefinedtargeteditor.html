@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>User-Defined Target Editor</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="user-defined-target-editor">
+<h1>User-Defined Target Editor</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">User-Defined Target Editor</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt; <a class="reference external" href="target_editor.html">Target
+Editor</a> &gt;</p>
+<p class="p-heading1 rubric" id="user-defined-target-editor-1">User-Defined Target Editor</p>
+</div>
+</div>
+<p>` &lt;floating_constant_targets.html&gt;`__ ` &lt;target_editor.html&gt;`__
+` &lt;extended_argument_definition.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image1" src="../../../_images/udt_ed.png" /></p>
+<p>A User-Defined Target (UDT) in OptiLayer can be an arbitrary
+expression that includes all available elementary targets (such as
+RS, TS, etc.), constants, previously defined (intermediate)
+targets, and arithmetic operators. It can also involve elementary
+functions such as trigonometric functions (Sin(), Cos()),
+exponentials (Exp()), hyperbolic functions (Sh(), Ch(), Th()), and
+absolute value (Abs()).
+Additional functions were introduced in 2015:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Sqrt: square root</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Cbrt: cubic root</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Log: logarithm</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Log10: base-10 logarithm</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Tan: tangent</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>ASin: arcsin</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>ACos: arccos</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>ATan: arctan</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Erf: error function</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>ASinh: hyperbolic arcsin</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>ACosh: hyperbolic arccos</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>ATanh: hyperbolic arctan</p>
+</div>
+</li>
+</ul>
+<p>These functions enhance the flexibility and capability of defining
+user-specific targets with more advanced mathematical expressions.</p>
+<p><img alt="image2" src="../../../_images/arrow_r.png" />        Note: Please exercise caution when using these
+functions, as they may not be defined for all values of the
+argument.</p>
+<p>In the User-Defined Target (UDT) Editor, the UDT is constructed
+starting from the Result #1 row to the last Result row.
+For example, if the UDT Editor window defines the following
+target:
+UDT = 0.5 * (RS / TS + RP / TP)
+Once defined, the UDT can be used like any other OptiLayer target.
+If the current targets include a UDT target, the UDT Evaluation
+window can be used to plot the UDT target (under
+<a class="reference external" href="idh_menu_analysis.html">Analysis</a>-&gt;UDT menu item).</p>
+<div class="docutils container">
+<p><img alt="image3" src="../../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note:  UDT Evaluation utilizes the UDT expressions defined in the
+currently loaded Target.</p>
+<p>In the current version of OptiLayer, up to 32 different UDT expressions
+can be used. The number of UDTs can be adjusted using the “The number of
+UDT expressions” entry field at the top of the UDT Editor.
+To select a UDT for editing or inspection, you can use the tabs on the
+right side of the dialog or the drop-down list opened with the
+down-arrow button. To delete the current UDT, click the “x” button. To
+add a new UDT, use the “+” button in the dialog.
+Each UDT expression can be assigned its own name that is more
+descriptive than the default names UDT1, UDT2, and so on. Use the Name
+entry field to adjust the UDT names. These names will appear in the list
+of available targets in the current <a class="reference external" href="target_editor.html">Target
+editor</a>.</p>
+<p>Clicking the More &gt;&gt; button opens the <a class="reference external" href="extended_argument_definition.html">Extended Argument
+Definition</a> Editor.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

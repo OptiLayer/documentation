@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Import X,Y data</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="import-x-y-data">
+<h1>Import X,Y data</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="import-xy-data">Import X,Y data</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>This option is useful when it is necessary to import simple ASCII
+two-column files. Typically, the first column represents the
+wavelength (or wavenumber), while the second column represents a
+specific characteristic (such as Reflectance, Transmittance,
+etc.).</p>
+<p><img alt="image1" src="../../_images/import_xy.png" /></p>
+<p>To import X, Y data in OptiLayer, use the Import X, Y data options
+dialog box. In this dialog box, you can specify the type of
+measured characteristic and units for the X and Y columns. The
+data extracted from the current file will be displayed on the
+right side of the dialog box.
+The File contents box allows you to scroll through the imported
+file’s content. The X column represents the wavelength grid, and
+you should select the proper wavelength unit in the X-Units field.
+The Y column displays one of the six possible spectral
+characteristics: Ts, Tp, Ta, Rs, Rp, Ra, BRs, BRp, BRa. Choose the
+appropriate characteristic in the Characteristic field, and
+specify its range (0-1 or 0-100%) in the Y-units field. You can
+also specify the Incident Angle if needed.
+In the Destination field, the name of the data file being edited
+and the destination page are indicated. You can choose to append
+data, overwrite data in the current file, or overwrite only the
+current page in the file.
+When you press the OK button, the content of the destination file
+will be overwritten with the content of the X, Y data file. If the
+number of rows in the source file exceeds the number of rows in
+the destination page, additional destination pages will be
+automatically added, and the extra data will be written to these
+pages.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

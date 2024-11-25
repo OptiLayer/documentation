@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Monochromatic Monitoring Simulation - Simulation of Deposition</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="monochromatic-monitoring-simulation-simulation-of-deposition">
+<h1>Monochromatic Monitoring Simulation - Simulation of Deposition</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Monochromatic Monitoring Simulation - Simulation of
+Deposition</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt; <a class="reference external" href="monochromatic_monitoring.html">Monochromatic Monitoring
+Simulation</a> &gt;</p>
+<p class="p-heading1 rubric" id="monochromatic-monitoring-simulation-simulation-of-deposition-1">Monochromatic Monitoring Simulation - Simulation of
+Deposition</p>
+</div>
+</div>
+<p>` &lt;single_wavelength_signal_errors.html&gt;`__
+` &lt;monochromatic_monitoring.html&gt;`__ ` &lt;single_wavelength_result.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image1" src="../../../_images/singlemon_step4.png" /></p>
+<p>At the fourth step of the dialog, press the Start button to run
+the computational manufacturing experiment. During computations,
+this button is designated as the Terminate button and allows
+interrupting computations.</p>
+<p>In the course of the computational manufacturing experiment,
+successive online single-wavelength data are analyzed by the
+incorporated control algorithm to determine termination times for
+layer depositions. To select a type of algorithm, click the
+Options… button to invoke the selection dialog.</p>
+<p><img alt="image2" src="../../../_images/singlemon_step4_opt.png" /></p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>The Comprehensive Correction algorithm implements a
+monitoring strategy aimed at suppressing the cumulative
+effect in the previously deposited coating layers. Please
+refer to our paper for more details:
+A. V. Tikhonravov and M. K. Trubetskov, “Elimination of
+cumulative effect of thickness errors in monochromatic
+monitoring of optical coating production: theory,” Appl. Opt.
+46, 2084-2090 (2007)
+<a class="reference external" href="http://www.opticsinfobase.org/abstract.cfm?URI=ao-46-11-2084">http://www.opticsinfobase.org/abstract.cfm?URI=ao-46-11-2084</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The Min-Max Correction algorithm uses a simple approach to
+correct the termination level according to measured extrema
+during layer deposition.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The No Correction algorithm is the simplest one, determining
+the termination moment according to reaching the predefined
+termination levels. This is a completely passive strategy.</p>
+</div>
+</li>
+</ul>
+<p>The running heading above the Start button indicates which layer
+is currently being deposited. Two bars below the Start button
+indicate the theoretical layer thickness (green bar) and the
+growing thickness of the deposited layer (red bar).</p>
+<p>The measured (i.e., simulated) signal is represented with a red
+curve in the right pane. Aqua lines help track extrema values
+predicted by the monitoring run-sheet and termination levels
+obtained from the monitoring run-sheet or obtained with the
+correction algorithm (as mentioned above).</p>
+<p>The Pause checkbox regulates whether there are time intervals
+between depositions of layers or not.</p>
+<p>You can view all layers in the design simultaneously or only the
+current layer. Use the Axis and Display groups of controls to
+achieve a more suitable presentation in the right pane of the
+window.</p>
+<p>See also:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="single_dep_rates.html">Monochromatic Monitoring Simulation - Deposition
+Rates</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="broadmonsim_deprates.html">Monochromatic</a> <a class="reference external" href="single_par_deviations.html">Monitoring
+Simulation - Parameters
+Deviations</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="broadmonsim_deprates.html">Monochromatic</a> <a class="reference external" href="single_wavelength_signal_errors.html">Monitoring
+Simulation - Signal
+Errors</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="broadmonsim_deprates.html">Monochromatic</a> <a class="reference external" href="single_wavelength_result.html">Monitoring
+Simulation - Resulting
+Performance</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

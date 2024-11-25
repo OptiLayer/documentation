@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Adjusting Scales</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="adjusting-scales">
+<h1>Adjusting Scales</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Adjusting Scales</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Axis page of the
+<a class="reference external" href="idh_synthesis_options.html">Options</a> dialog in the Analysis
+and Synthesis menus allows the user to change the format of the
+plots displayed on the screen.</p>
+<p><img alt="image1" src="../../../_images/s_o_axes.png" /></p>
+<p>Set the minimum and maximum spectral range limits using the X-axis
+controls. Units for these limits are defined in the
+<a class="reference external" href="idh_config_units.html">Configuration/Options</a> menu command.
+You can reverse the X-axis by checking the Reverse box.</p>
+<p>Note that in the <a class="reference external" href="idh_data_display_modes.html">Angular mode</a>,
+the X-axis corresponds to the angles of incidence, and X values
+are displayed in degrees.</p>
+<p>Set display limits for the T &amp; R axis using the corresponding
+window fields. You can switch between linear, logarithmic, and
+diabatic scales by clicking the appropriate button in the Type
+box. The diabatic scale is determined by the relation Y = 1 -
+log10(-log10(T)), and allows the representation of spectral
+characteristics in the ranges where T is close to 0 or 1 in more
+detail, as well as using an almost homogeneous scale in the T
+range of 0.2-0.8.</p>
+<p>The “Reset on Target Load” option specifies whether it is
+necessary to set automatic scales, plot selection, and other
+parameters on each new target load.</p>
+<p>The above picture shows only one possible dialog window for
+setting X and Y-axis scales. If your figure contains phase
+characteristics, select the Phase page, and set angle limits
+(default values are 0 and 360 degrees).</p>
+<p>Automatic option sets auto-scaling mode. It is especially useful
+when the Continuous Phase Plots option is activated since
+OptiLayer tries to perform a phase unwrapping procedure when
+plotting the phase.</p>
+<p><img alt="image2" src="../../../_images/s_o_axes_phase.png" /></p>
+<div class="docutils container">
+<p><img alt="image3" src="../../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: Phase unwrapping is also performed during synthesis with phase
+targets if the Continuous Phase Plots option is enabled.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The page labeled GD &amp; GDD is used to set plotting limits for Group Delay
+and Group Delay Dispersion. You can choose the default settings by
+checking the Automatic boxes on this page.</p>
+<p><img alt="image4" src="../../../_images/s_o_axes_gd_gdd.png" /></p>
+<p>The Ellipsometry page allows the user to set limits for plotting
+ellipsometric angles Delta and Phi.</p>
+<p><img alt="image5" src="../../../_images/s_o_axes_ell.png" /></p>
+<p>The UDT page allows users to change scales for UDT (<a class="reference external" href="userdefinedtargeteditor.html">User-Defined
+Targets</a>) plots.</p>
+<p><img alt="image6" src="../../../_images/s_o_axes_udt.png" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Lay Abs page allows changing scales for the <a class="reference external" href="layer_absorptance.html">Layer Absorptance
+Evaluation</a> window.</p>
+<p><img alt="image7" src="../../../_images/s_o_axes_lay_abs.png" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Default button resets all values to their default settings. The
+default values are as follows: the spectral range of the X-axis is 20%
+wider than the spectral range of the target function loaded in memory,
+the range of the Y-axis is from 0 to 1, or from 0 to 100% depending on
+settings in the Configuration menu. If a target function has not been
+loaded, the default range of the X-axis is from 0.4 to 0.8 micrometers.
+See also:</p>
+<ul>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options.html">Analysis and Synthesis Options</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_method.html">Selecting Optimization Method and Needle
+Options</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_plot.html">Selecting Characteristics To Be
+Plotted</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_design_b.html">Selecting Design Bar
+Presentation</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_material.html">Selecting Material Abbreviations and
+States</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="trapping.html">Trapping Options</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="robust_synthesis.html">Robust Synthesis</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_header.html">Editing Header and Legend</a></p>
+</div>
+</li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

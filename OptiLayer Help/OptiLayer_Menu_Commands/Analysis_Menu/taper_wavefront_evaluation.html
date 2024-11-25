@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Taper/Wavefront Evaluation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="taper-wavefront-evaluation">
+<h1>Taper/Wavefront Evaluation</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="taperwavefront-evaluation">Taper/Wavefront Evaluation</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="taperwavefront-evaluation-1">Taper/Wavefront Evaluation</p>
+</div>
+</div>
+<p>` &lt;layer_absorptance.html&gt;`__ ` &lt;idh_menu_analysis.html&gt;`__
+` &lt;additionalevaluationwindows.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>When a multilayer coating is applied to a substrate with
+noticeable curvature, such as lenses, or if there is significant
+non-uniformity within the deposition chamber, the intended
+spectral characteristics of the coating might be compromised. This
+leads to deviations in both reflectance and transmittance from
+their theoretical predictions, as well as inducing wavefront
+distortions.
+For instance, consider plotting the wavefront distortions
+(relative to the wavelength) for a high reflector used in <a class="reference external" href="example3.html">Example
+LEC03D3</a>, at the wavelength of 500 nm. Assume
+parabolic thickness non-uniformity from the center to the edge of
+the substrate, with corresponding taper coefficients of 0.95 and
+0.99 for high- and low-index materials, respectively. This visual
+representation would illustrate the impact of non-uniform
+deposition on the optical performance of the coated lens.</p>
+<p><img alt="image1" src="../../_images/evtaperwavefront.png" /></p>
+<p>The wavelength can be adjusted either through a slider or by
+directly entering values in the current entry field. It is also
+possible to specify the angle of incidence, polarization, and the
+step increment for the wavelength control slider.
+Thickness non-uniformity is modeled using taper factors, as
+detailed under the <a class="reference external" href="taper_function.html">Taper Function</a>
+topic. The method by which these taper coefficients are
+incorporated during the evaluation is managed through the
+“Parameters…” dialog, which can be accessed and adjusted as
+needed.</p>
+<p><img alt="image2" src="../../_images/taperwavepars1.png" /></p>
+<p>If only one environment is defined for the current problem, the
+Taper/Wavefront parameters dialog allows you to specify the Taper
+coefficients for each layer material at extreme positions (such as
+the edges of the lens surface).
+To Plot combobox includes the following characteristics:</p>
+<p><img alt="image3" src="../../_images/taperwavepars2.png" /></p>
+<p>The taper coefficient values for intermediate positions are
+computed according to the Taper Interpolation selection: Parabolic
+or Linear, and the coefficients at the initial position (for
+example, the centers of the lenses) are equal to 1.0.
+The selected characteristic is plotted (x-axis) as a function of
+the Relative Coordinate (i.e., from the lens center to the lens
+edge) or the Wavelength.
+If the Wavelength is selected as the x-axis variable in the
+Taper/Wavefront parameters dialog, the evaluation window looks
+different:</p>
+<p><img alt="image4" src="../../_images/taperwavepars3.png" /></p>
+<p>In this case, the slider or the Current entry field controls the
+Relative Coordinate.
+If <a class="reference external" href="taper_function.html">Taper Coefficients</a> are specified with
+the <a class="reference external" href="envmanfrm.html">Environments Manager</a>, they can be used
+in the Taper/Wavefront Evaluation. In this case, the
+Taper/Wavefront parameters dialog has an additional tab:
+Environments.</p>
+<p><img alt="image5" src="../../_images/taperwavepars4.png" /></p>
+<p>In this scenario, where four distinct environments are configured,
+it is necessary to specify the Relative Position for each
+environment. This positioning uses a coordinate system that
+extends from the center to the edge of the lens. The taper
+coefficients for each position are obtained from the
+configurations of the environments, and linear interpolation is
+used for intermediate positions.
+It should be noted that parabolic settings are not available when
+specifying environments. The rest of the dialog is similar to the
+Simple case described above.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

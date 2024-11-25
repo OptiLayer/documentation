@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 6. Design of an edge filter</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-6-design-of-an-edge-filter">
+<h1>Exercise 6. Design of an edge filter</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 6. Design of an edge filter</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>In the <a class="reference external" href="idh_problem_directory.html">Problem directory</a> EX6 you
+will find data necessary for the design of a short-wave-pass edge
+filter with the target reflectance equal to 0 in the spectral
+region from 400 to 560nm and 100% in the spectral region from 560
+to 740nm at the normal light incidence. Open the <a class="reference external" href="target_editor.html">Target
+database</a> and browse the file with the name
+Ef-swp. Note that the transition zone between 0 and 100%
+reflectance  levels is very narrow (only 5nm).</p>
+<p>In <a class="reference external" href="single_file_mode.html">SF Mode</a> you need to use Import
+Problem Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load the target file to memory. Also load substrate GLASS and
+layer materials SIO2 and TIO2. As a starting design we will use a
+20 layer quarter-wave mirror with the control wavelength 650nm.
+This mirror is specified in the file QWM in the Design database.
+Load it also. Open <a class="reference external" href="idh_evaluation.html">Evaluation window</a> and
+note that this mirror is a rather good starting design for the
+considered problem because it has required properties in the
+high-reflection zone. The control wavelength of 650nm was chosen
+to adjust the high reflection band of the mirror to the spectral
+region from 565 to 740nm where the target reflectance is equal to
+100%.</p>
+<p><img alt="image1" src="../_images/ex6_ev1.png" /></p>
+<p>In the <a class="reference external" href="idh_synthesis_options_method.html">Analysis and Synthesis
+Options</a> dialog select the
+Newton method and then go to <a class="reference external" href="idh_refinement.html">Refinement
+command</a> in the Synthesis menu. After a few
+iterations of the optimization procedure you will get a 20 layer
+edge filter with the merit function value equal to 6.910376E+000
+(see below).</p>
+<p><img alt="image2" src="../_images/ex6_ev2.png" /></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QtHelpProject version="1.0">
+    <namespace>org.sphinx.opticharhelp</namespace>
+    <virtualFolder>doc</virtualFolder>
+    <customFilter name="OptiCharHelp ">
+        <filterAttribute>OptiCharHelp</filterAttribute>
+        <filterAttribute></filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>OptiCharHelp</filterAttribute>
+        <filterAttribute></filterAttribute>
+        <toc>
+            <section title="OptiCharHelp 0.0.1 documentation" ref="index.html">
+                <section title="General Information on OptiChar" ref="General%20Information%20on%20OptiChar.html">
+                    <section title="OptiChar Main Features" ref="General_Information_on_OptiChar/idh_optilayer_general.html"/>
+                    <section title="OptiLayer Development" ref="General_Information_on_OptiChar/optilayer_development.html"/>
+                    <section title="Hardware Requirements" ref="General_Information_on_OptiChar/hardwarerequirements.html"/>
+                    <section title="Installation" ref="General_Information_on_OptiChar/oc_installation.html">
+                        <section title="Important:" ref="General_Information_on_OptiChar/oc_installation.html#important"/>
+                    </section>
+                    <section title="OptiChar Components" ref="General_Information_on_OptiChar/OptiChar%20Components.html">
+                        <section title="OptiChar Data Files" ref="General_Information_on_OptiChar/OptiChar_Components/idh_data.html"/>
+                        <section title="Spreadsheet Editing" ref="General_Information_on_OptiChar/OptiChar_Components/idh_spreadsheet_editing.html"/>
+                        <section title="Output Options" ref="General_Information_on_OptiChar/OptiChar_Components/idh_output.html">
+                            <section title="Characterization" ref="General_Information_on_OptiChar/OptiChar_Components/Output_Options/characterization.html"/>
+                        </section>
+                    </section>
+                    <section title="Keyboard Keys Assignment" ref="General_Information_on_OptiChar/idh_keys_assignment_oc.html"/>
+                    <section title="OptiChar Menu and Toolbar" ref="General_Information_on_OptiChar/idh_optilayer_main.html"/>
+                    <section title="Right Mouse Button Popup Menus" ref="General_Information_on_OptiChar/idh_popup_menu.html"/>
+                    <section title="Quick Start" ref="General_Information_on_OptiChar/quickstart.html"/>
+                </section>
+                <section title="OptiLayer Menu Commands" ref="OptiChar%20Menu%20Commands.html">
+                    <section title="File Menu" ref="OptiChar_Menu_Commands/idh_menu_file.html">
+                        <section title="Problem Directory" ref="OptiChar_Menu_Commands/File_Menu/idh_problem_directory.html">
+                            <section title="New Problem directory" ref="OptiChar_Menu_Commands/File_Menu/Problem_Directory/new_problem_directory.html"/>
+                        </section>
+                        <section title="File Transfer" ref="OptiChar_Menu_Commands/File_Menu/idh_file_transfer.html">
+                            <section title="Select Directory or Project" ref="OptiChar_Menu_Commands/File_Menu/File_transfer/idh_select_directory.html"/>
+                            <section title="File Transfer dialog" ref="OptiChar_Menu_Commands/File_Menu/File_transfer/filetransferdialog.html"/>
+                        </section>
+                        <section title="Problem directory backup" ref="OptiChar_Menu_Commands/File_Menu/idh_file_backup.html"/>
+                        <section title="Catalog" ref="OptiChar_Menu_Commands/File_Menu/catalog.html"/>
+                        <section title="Refractiveindex.INFO Database" ref="OptiChar_Menu_Commands/File_Menu/refractiveindex_info_database.html"/>
+                        <section title="Import ZEMAX Glass data" ref="OptiChar_Menu_Commands/File_Menu/import_zemax_glass_data.html"/>
+                        <section title="Page Setup" ref="OptiChar_Menu_Commands/File_Menu/page_setup.html"/>
+                    </section>
+                    <section title="Edit Menu" ref="OptiChar_Menu_Commands/idh_menu_edit.html">
+                        <section title="Copy Special" ref="OptiChar_Menu_Commands/Edit_Menu/copy_special.html"/>
+                        <section title="Column Editor" ref="OptiChar_Menu_Commands/Edit_Menu/idh_column_editor.html"/>
+                        <section title="Grid Generator" ref="OptiChar_Menu_Commands/Edit_Menu/idh_grid_generator.html"/>
+                        <section title="Text Data Import" ref="OptiChar_Menu_Commands/Edit_Menu/idh_import.html">
+                            <section title="Data Import Options" ref="OptiChar_Menu_Commands/Edit_Menu/Text_Data_Import/idh_import_options.html"/>
+                        </section>
+                        <section title="Paste buffer" ref="OptiChar_Menu_Commands/Edit_Menu/idh_paste_buffer.html">
+                            <section title="Trasform function" ref="OptiChar_Menu_Commands/Edit_Menu/Paste_Buffer/trasform_function.html"/>
+                        </section>
+                    </section>
+                    <section title="View Menu" ref="OptiChar_Menu_Commands/idh_menu_view.html">
+                        <section title="General Information Window" ref="OptiChar_Menu_Commands/View_Menu/idh_general_information_window.html"/>
+                        <section title="Windows List" ref="OptiChar_Menu_Commands/View_Menu/idh_window_list.html"/>
+                        <section title="Data Fitting" ref="OptiChar_Menu_Commands/View_Menu/idh_data_fitting.html">
+                            <section title="Model Peak List" ref="OptiChar_Menu_Commands/View_Menu/Data_Fitting/model_peaks.html"/>
+                        </section>
+                        <section title="Partial Discrepancies" ref="OptiChar_Menu_Commands/View_Menu/partial_discrepancies.html"/>
+                        <section title="Total Losses" ref="OptiChar_Menu_Commands/View_Menu/total_losses.html"/>
+                        <section title="Color Evaluation" ref="OptiChar_Menu_Commands/View_Menu/idh_color_evaluation_oc.html">
+                            <section title="Color Evaluation Parameters" ref="OptiChar_Menu_Commands/View_Menu/Color_Evaluation/idh_color_evaluation_parameter_oc.html"/>
+                        </section>
+                        <section title="Current Substrate" ref="OptiChar_Menu_Commands/View_Menu/idh_current_substrate.html"/>
+                        <section title="Current Layer" ref="OptiChar_Menu_Commands/View_Menu/idh_current_layer.html"/>
+                        <section title="Substrate Plots" ref="OptiChar_Menu_Commands/View_Menu/idh_substrate_plots.html"/>
+                        <section title="Layer Plots" ref="OptiChar_Menu_Commands/View_Menu/idh_layer_plots.html"/>
+                        <section title="Integrated Extinction Coefficient" ref="OptiChar_Menu_Commands/View_Menu/idh_integral_extinction_coeffi.html"/>
+                        <section title="Compare Index Plots" ref="OptiChar_Menu_Commands/View_Menu/compare_index_plots.html"/>
+                        <section title="Collection" ref="OptiChar_Menu_Commands/View_Menu/idh_collection.html"/>
+                    </section>
+                    <section title="Import Menu" ref="OptiChar_Menu_Commands/import_menu.html">
+                        <section title="Import Multiple Files" ref="OptiChar_Menu_Commands/Import_Menu/import_multiple_files.html"/>
+                        <section title="Import Spectra from Excel" ref="OptiChar_Menu_Commands/Import_Menu/import_spectra_from_excel.html"/>
+                        <section title="Import X,Y data" ref="OptiChar_Menu_Commands/Import_Menu/importxydata_meas.html"/>
+                        <section title="Agilent Cary options" ref="OptiChar_Menu_Commands/Import_Menu/varian_options.html"/>
+                        <section title="Zeiss Optoplex" ref="OptiChar_Menu_Commands/Import_Menu/zeiss_optoplex.html"/>
+                        <section title="Zeiss ThinProcess" ref="OptiChar_Menu_Commands/Import_Menu/zeiss_thinprocess.html">
+                            <section title="Zeiss ThinProcess Login" ref="OptiChar_Menu_Commands/Import_Menu/Zeiss_ThinProcess/zeiss_thinprocess_login.html"/>
+                        </section>
+                        <section title="JCAMP-DX options" ref="OptiChar_Menu_Commands/Import_Menu/idh_jcamp_dx_options.html"/>
+                        <section title="Perkin Elmer options" ref="OptiChar_Menu_Commands/Import_Menu/perkin_elmer_options.html"/>
+                        <section title="Hitachi options" ref="OptiChar_Menu_Commands/Import_Menu/hitachi_options.html"/>
+                        <section title="JASCO options" ref="OptiChar_Menu_Commands/Import_Menu/jasco_options.html"/>
+                        <section title="Woollam options" ref="OptiChar_Menu_Commands/Import_Menu/idh_woolam_options.html"/>
+                        <section title="Horiba Ellipsometers" ref="OptiChar_Menu_Commands/Import_Menu/horiba_ellipsometers.html"/>
+                        <section title="Sopra Ellipsometers" ref="OptiChar_Menu_Commands/Import_Menu/sopra_ellipsometers.html"/>
+                        <section title="Sentech Ellipsometers" ref="OptiChar_Menu_Commands/Import_Menu/sentech_ellipsometers.html"/>
+                    </section>
+                    <section title="Data Menu" ref="OptiChar_Menu_Commands/idh_menu_data.html">
+                        <section title="Database Access Dialog" ref="OptiChar_Menu_Commands/Data_Menu/idh_modify_database.html">
+                            <section title="Loading data from OptiChar database" ref="OptiChar_Menu_Commands/Data_Menu/Database_Access_Dialog/idh_loading_data.html"/>
+                            <section title="Creating New Database File" ref="OptiChar_Menu_Commands/Data_Menu/Database_Access_Dialog/idh_database_new_file.html"/>
+                            <section title="Saving Current Measurements and other data" ref="OptiChar_Menu_Commands/Data_Menu/Database_Access_Dialog/idh_save_database_file.html"/>
+                            <section title="Configure Database Columns" ref="OptiChar_Menu_Commands/Data_Menu/Database_Access_Dialog/configure_database_columns.html"/>
+                        </section>
+                        <section title="Measurement Editor" ref="OptiChar_Menu_Commands/Data_Menu/target_editor.html">
+                            <section title="Spectral Characteristics Abbreviations" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_spectral_abbreviations.html"/>
+                            <section title="Measurement Selection" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_spectral_characteristics.html"/>
+                            <section title="Angles of Incidence" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_modify_angles.html"/>
+                            <section title="Measurement Wavelengths" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_modify_wavelengths.html"/>
+                            <section title="Measurement Preprocessing" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/measurement_preprocessing.html"/>
+                            <section title="Measurement Peak List" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/target_peaks.html"/>
+                        </section>
+                        <section title="Combine Measurements" ref="OptiChar_Menu_Commands/Data_Menu/combine_measurements.html"/>
+                        <section title="Color Target" ref="OptiChar_Menu_Commands/Data_Menu/idh_edit_color_target.html">
+                            <section title="Anchor Parameters" ref="OptiChar_Menu_Commands/Data_Menu/Color_Target/anchor_parameters.html"/>
+                            <section title="Color Range Targets" ref="OptiChar_Menu_Commands/Data_Menu/Color_Target/color_range_targets.html"/>
+                        </section>
+                        <section title="Light Source/Detector Database" ref="OptiChar_Menu_Commands/Data_Menu/idh_edit_light_source.html"/>
+                        <section title="Blackbody Source Settings" ref="OptiChar_Menu_Commands/Data_Menu/blackbodysourcesettings.html"/>
+                        <section title="Cone Angle Database" ref="OptiChar_Menu_Commands/Data_Menu/coneangledatabase.html"/>
+                        <section title="Line Width Database" ref="OptiChar_Menu_Commands/Data_Menu/line_width_database.html"/>
+                        <section title="Substrate and Layer Material" ref="OptiChar_Menu_Commands/Data_Menu/idh_edit_layer_material.html">
+                            <section title="Table from Formula" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_from_formula.html"/>
+                            <section title="Table from Composition" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/tablefromcomposition.html"/>
+                            <section title="Table from R/T Measurements" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_from_rt.html"/>
+                            <section title="Formula from Table" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/formula_from_table.html"/>
+                            <section title="Composition from Table" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/compositionfromtable.html"/>
+                            <section title="Table Simplify" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_simplify.html"/>
+                        </section>
+                        <section title="Layer Material Database" ref="OptiChar_Menu_Commands/Data_Menu/idh_database.html">
+                            <section title="Saving Layer Refractive Index" ref="OptiChar_Menu_Commands/Data_Menu/Layer_Material_Database/idh_saving_layer_refractive_in.html">
+                                <section title="Wavelength Region and Options" ref="OptiChar_Menu_Commands/Data_Menu/Layer_Material_Database/Saving_Layer_refractive_Index/wavelength_region_for_saved_da.html"/>
+                            </section>
+                        </section>
+                        <section title="Layer Model Editor" ref="OptiChar_Menu_Commands/Data_Menu/layer_model_editor.html"/>
+                    </section>
+                    <section title="Characterization Menu" ref="OptiChar_Menu_Commands/idh_characterization_menu.html">
+                        <section title="Layer Characterization" ref="OptiChar_Menu_Commands/Characterization_Menu/idh_layer_characterization.html"/>
+                        <section title="Layer Refinement" ref="OptiChar_Menu_Commands/Characterization_Menu/idh_layer_refinement.html"/>
+                        <section title="Index Shift" ref="OptiChar_Menu_Commands/Characterization_Menu/indexshift.html"/>
+                        <section title="Mixture" ref="OptiChar_Menu_Commands/Characterization_Menu/mixdlg.html"/>
+                        <section title="Porosity" ref="OptiChar_Menu_Commands/Characterization_Menu/porosity.html"/>
+                        <section title="Bulk Inhomogeneity" ref="OptiChar_Menu_Commands/Characterization_Menu/idh_bulk_inhomogeneity.html"/>
+                        <section title="Surface Inhomogeneity" ref="OptiChar_Menu_Commands/Characterization_Menu/idh_surface_inhomogeneity.html"/>
+                        <section title="Simplify model" ref="OptiChar_Menu_Commands/Characterization_Menu/idh_simplify_model.html"/>
+                        <section title="Substrate Characterization" ref="OptiChar_Menu_Commands/Characterization_Menu/idh_substrate_characterization.html"/>
+                        <section title="Modifying Measurements" ref="OptiChar_Menu_Commands/Characterization_Menu/modify_measurements_oc.html"/>
+                        <section title="Modify Color Target" ref="OptiChar_Menu_Commands/Characterization_Menu/modify_color_measurements_oc.html"/>
+                        <section title="Modify Model" ref="OptiChar_Menu_Commands/Characterization_Menu/modify_model.html"/>
+                        <section title="Characterization Options" ref="OptiChar_Menu_Commands/Characterization_Menu/idh_characterization_options.html"/>
+                    </section>
+                    <section title="Results Menu" ref="OptiChar_Menu_Commands/idh_menu_results.html">
+                        <section title="Output Window" ref="OptiChar_Menu_Commands/Results_Menu/outputwindow.html"/>
+                        <section title="Plot Menu" ref="OptiChar_Menu_Commands/Results_Menu/idh_plot_menu.html"/>
+                    </section>
+                    <section title="Configuration Menu" ref="OptiChar_Menu_Commands/idh_menu_configuration.html">
+                        <section title="General Configuration" ref="OptiChar_Menu_Commands/Configuration_Menu/idh_configuration.html"/>
+                        <section title="Data Display Modes" ref="OptiChar_Menu_Commands/Configuration_Menu/idh_data_display_modes.html"/>
+                        <section title="Units" ref="OptiChar_Menu_Commands/Configuration_Menu/idh_config_units.html"/>
+                        <section title="Thickness Units" ref="OptiChar_Menu_Commands/Configuration_Menu/idh_config_thickness_units.html"/>
+                        <section title="Source/Detector options" ref="OptiChar_Menu_Commands/Configuration_Menu/sourcedetectoroptions.html"/>
+                        <section title="Color options" ref="OptiChar_Menu_Commands/Configuration_Menu/coloroptions.html">
+                            <section title="Color Rendering Index Options" ref="OptiChar_Menu_Commands/Configuration_Menu/Color_Options/colorrenderingindexoptions.html"/>
+                        </section>
+                        <section title="GD &amp; GDD options" ref="OptiChar_Menu_Commands/Configuration_Menu/gd___gdd_options.html"/>
+                        <section title="Sorting Order, User Name, and Database view options" ref="OptiChar_Menu_Commands/Configuration_Menu/idh_config_sorting.html">
+                            <section title="User name" ref="OptiChar_Menu_Commands/Configuration_Menu/Sorting_Order/idh_user_name.html"/>
+                        </section>
+                        <section title="Date/Time/Logo Options" ref="OptiChar_Menu_Commands/Configuration_Menu/idh_config_time.html"/>
+                    </section>
+                    <section title="Window Menu" ref="OptiChar_Menu_Commands/idh_window_menu.html"/>
+                    <section title="OptiChar On-Line Help" ref="OptiChar_Menu_Commands/idh_optilayer.html"/>
+                </section>
+            </section>
+        </toc>
+        <keywords>
+
+        </keywords>
+        <files>
+            <file>Advanced Examples.html</file>
+            <file>General Information on OptiChar.html</file>
+            <file>OptiChar Menu Commands.html</file>
+            <file>genindex.html</file>
+            <file>index.html</file>
+            <file>General_Information_on_OptiChar/OptiChar Components.html</file>
+            <file>General_Information_on_OptiChar/hardwarerequirements.html</file>
+            <file>General_Information_on_OptiChar/idh_keys_assignment_oc.html</file>
+            <file>General_Information_on_OptiChar/idh_optilayer_general.html</file>
+            <file>General_Information_on_OptiChar/idh_optilayer_main.html</file>
+            <file>General_Information_on_OptiChar/idh_popup_menu.html</file>
+            <file>General_Information_on_OptiChar/oc_installation.html</file>
+            <file>General_Information_on_OptiChar/optilayer_development.html</file>
+            <file>General_Information_on_OptiChar/quickstart.html</file>
+            <file>General_Information_on_OptiChar/OptiChar_Components/idh_data.html</file>
+            <file>General_Information_on_OptiChar/OptiChar_Components/idh_output.html</file>
+            <file>General_Information_on_OptiChar/OptiChar_Components/idh_spreadsheet_editing.html</file>
+            <file>General_Information_on_OptiChar/OptiChar_Components/Output_Options/characterization.html</file>
+            <file>OptiChar_Menu_Commands/idh_characterization_menu.html</file>
+            <file>OptiChar_Menu_Commands/idh_menu_configuration.html</file>
+            <file>OptiChar_Menu_Commands/idh_menu_data.html</file>
+            <file>OptiChar_Menu_Commands/idh_menu_edit.html</file>
+            <file>OptiChar_Menu_Commands/idh_menu_file.html</file>
+            <file>OptiChar_Menu_Commands/idh_menu_help.html</file>
+            <file>OptiChar_Menu_Commands/idh_menu_results.html</file>
+            <file>OptiChar_Menu_Commands/idh_menu_view.html</file>
+            <file>OptiChar_Menu_Commands/idh_optilayer.html</file>
+            <file>OptiChar_Menu_Commands/idh_plot_menu.html</file>
+            <file>OptiChar_Menu_Commands/idh_window_menu.html</file>
+            <file>OptiChar_Menu_Commands/import_menu.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/idh_bulk_inhomogeneity.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/idh_characterization_options.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/idh_layer_characterization.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/idh_layer_refinement.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/idh_simplify_model.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/idh_substrate_characterization.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/idh_surface_inhomogeneity.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/indexshift.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/mixdlg.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/modify_color_measurements_oc.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/modify_measurements_oc.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/modify_model.html</file>
+            <file>OptiChar_Menu_Commands/Characterization_Menu/porosity.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/coloroptions.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/gd___gdd_options.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/idh_config_sorting.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/idh_config_thickness_units.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/idh_config_time.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/idh_config_units.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/idh_configuration.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/idh_data_display_modes.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/sourcedetectoroptions.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/Color_Options/colorrenderingindexoptions.html</file>
+            <file>OptiChar_Menu_Commands/Configuration_Menu/Sorting_Order/idh_user_name.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/blackbodysourcesettings.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/combine_measurements.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/coneangledatabase.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/idh_database.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/idh_edit_color_target.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/idh_edit_layer_material.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/idh_edit_light_source.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/idh_modify_database.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/layer_model_editor.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/line_width_database.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/target_editor.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Color_Target/anchor_parameters.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Color_Target/color_range_targets.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Database_Access_Dialog/configure_database_columns.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Database_Access_Dialog/idh_database_new_file.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Database_Access_Dialog/idh_loading_data.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Database_Access_Dialog/idh_save_database_file.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Layer_Material_Database/idh_saving_layer_refractive_in.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Layer_Material_Database/Saving_Layer_refractive_Index/wavelength_region_for_saved_da.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_modify_angles.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_modify_wavelengths.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_spectral_abbreviations.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_spectral_characteristics.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/measurement_preprocessing.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/target_peaks.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/compositionfromtable.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/formula_from_table.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_from_formula.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_from_rt.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_simplify.html</file>
+            <file>OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/tablefromcomposition.html</file>
+            <file>OptiChar_Menu_Commands/Edit_Menu/copy_special.html</file>
+            <file>OptiChar_Menu_Commands/Edit_Menu/idh_column_editor.html</file>
+            <file>OptiChar_Menu_Commands/Edit_Menu/idh_grid_generator.html</file>
+            <file>OptiChar_Menu_Commands/Edit_Menu/idh_import.html</file>
+            <file>OptiChar_Menu_Commands/Edit_Menu/idh_paste_buffer.html</file>
+            <file>OptiChar_Menu_Commands/Edit_Menu/Paste_Buffer/trasform_function.html</file>
+            <file>OptiChar_Menu_Commands/Edit_Menu/Text_Data_Import/idh_import_options.html</file>
+            <file>OptiChar_Menu_Commands/File_Menu/catalog.html</file>
+            <file>OptiChar_Menu_Commands/File_Menu/idh_file_backup.html</file>
+            <file>OptiChar_Menu_Commands/File_Menu/idh_file_transfer.html</file>
+            <file>OptiChar_Menu_Commands/File_Menu/idh_problem_directory.html</file>
+            <file>OptiChar_Menu_Commands/File_Menu/import_zemax_glass_data.html</file>
+            <file>OptiChar_Menu_Commands/File_Menu/page_setup.html</file>
+            <file>OptiChar_Menu_Commands/File_Menu/refractiveindex_info_database.html</file>
+            <file>OptiChar_Menu_Commands/File_Menu/File_transfer/filetransferdialog.html</file>
+            <file>OptiChar_Menu_Commands/File_Menu/File_transfer/idh_select_directory.html</file>
+            <file>OptiChar_Menu_Commands/File_Menu/Problem_Directory/new_problem_directory.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/hitachi_options.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/horiba_ellipsometers.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/idh_jcamp_dx_options.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/idh_woolam_options.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/import_multiple_files.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/import_spectra_from_excel.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/importxydata_meas.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/jasco_options.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/perkin_elmer_options.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/sentech_ellipsometers.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/sopra_ellipsometers.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/varian_options.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/zeiss_optoplex.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/zeiss_thinprocess.html</file>
+            <file>OptiChar_Menu_Commands/Import_Menu/Zeiss_ThinProcess/zeiss_thinprocess_login.html</file>
+            <file>OptiChar_Menu_Commands/Results_Menu/idh_plot_menu.html</file>
+            <file>OptiChar_Menu_Commands/Results_Menu/outputwindow.html</file>
+            <file>OptiChar_Menu_Commands/Results_Menu/Output_Window/exporttomsexceloptions.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/compare_index_plots.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/idh_collection.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/idh_color_evaluation_oc.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/idh_current_layer.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/idh_current_substrate.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/idh_data_fitting.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/idh_general_information_window.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/idh_integral_extinction_coeffi.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/idh_layer_plots.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/idh_substrate_plots.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/idh_window_list.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/partial_discrepancies.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/total_losses.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/Color_Evaluation/idh_color_evaluation_parameter_oc.html</file>
+            <file>OptiChar_Menu_Commands/View_Menu/Data_Fitting/model_peaks.html</file>
+            <file>_images/about_oc.png</file>
+            <file>_images/arrow_r.png</file>
+            <file>_images/c_clear.png</file>
+            <file>_images/c_layer_btn.png</file>
+            <file>_images/c_lchar.png</file>
+            <file>_images/c_lref.png</file>
+            <file>_images/c_measur.png</file>
+            <file>_images/c_model_btn.png</file>
+            <file>_images/c_subchar.png</file>
+            <file>_images/c_substr.png</file>
+            <file>_images/col_ed.png</file>
+            <file>_images/copy_btn.png</file>
+            <file>_images/cri_options.png</file>
+            <file>_images/csubstr_char.png</file>
+            <file>_images/csurfinh.png</file>
+            <file>_images/cut_btn.png</file>
+            <file>_images/data_menu_oc.png</file>
+            <file>_images/filemenu_oc_1.png</file>
+            <file>_images/filemenu_oc_2.png</file>
+            <file>_images/filemenu_oc_3.png</file>
+            <file>_images/filemenu_oc_4.png</file>
+            <file>_images/filemenu_oc_5.png</file>
+            <file>_images/fitting_popup_menu.png</file>
+            <file>_images/gconfig_gd_gdd_oc.png</file>
+            <file>_images/gencfg_sourcedet_2.png</file>
+            <file>_images/hw_attach.png</file>
+            <file>_images/import_agf_zemax.png</file>
+            <file>_images/import_meas_menu.png</file>
+            <file>_images/impthinproclogin1.png</file>
+            <file>_images/newprob_dir.png</file>
+            <file>_images/oc_removedata.png</file>
+            <file>_images/oc_savedata.png</file>
+            <file>_images/pagesetup_!.png</file>
+            <file>_images/paste_btn.png</file>
+            <file>_images/pastespecial.png</file>
+            <file>_images/plot_menu.png</file>
+            <file>_images/plot_menu_submenu.png</file>
+            <file>_images/print_btn.png</file>
+            <file>_images/printpreview_btn.png</file>
+            <file>_images/prob_btn.png</file>
+            <file>_images/redo_btn.png</file>
+            <file>_images/result_menu_oc.png</file>
+            <file>_images/rightclickgeninfo.png</file>
+            <file>_images/rightclicktext.png</file>
+            <file>_images/saveas_btn.png</file>
+            <file>_images/tablesimplify1.png</file>
+            <file>_images/undo_btn.png</file>
+            <file>_images/view_menu_oc_1.png</file>
+            <file>_images/view_menu_oc_2.png</file>
+            <file>_images/winrearrange.png</file>
+            <file>_static/about_oc.png</file>
+            <file>_static/aex12_ge_1.png</file>
+            <file>_static/aex12_tgt.png</file>
+            <file>_static/aex_12_bp_evgdd.png</file>
+            <file>_static/aex_12_bp_evr.png</file>
+            <file>_static/aex_12_ge_evgdd.png</file>
+            <file>_static/aex_12_ge_evr.png</file>
+            <file>_static/angles.png</file>
+            <file>_static/angles_w.png</file>
+            <file>_static/arrow_r.png</file>
+            <file>_static/backup.png</file>
+            <file>_static/basic.css</file>
+            <file>_static/bgblue80.png</file>
+            <file>_static/blackbodysettings.png</file>
+            <file>_static/bulkinhom.png</file>
+            <file>_static/c_clear.png</file>
+            <file>_static/c_colevalrange.png</file>
+            <file>_static/c_collect.png</file>
+            <file>_static/c_ed_meas.png</file>
+            <file>_static/c_evac.png</file>
+            <file>_static/c_eval.png</file>
+            <file>_static/c_eval_discr.png</file>
+            <file>_static/c_eval_lab.png</file>
+            <file>_static/c_eval_p.png</file>
+            <file>_static/c_eval_polar.png</file>
+            <file>_static/c_layer_btn.png</file>
+            <file>_static/c_laymod1.png</file>
+            <file>_static/c_laymod2.png</file>
+            <file>_static/c_laymod_modify.png</file>
+            <file>_static/c_lchar.png</file>
+            <file>_static/c_lref.png</file>
+            <file>_static/c_measur.png</file>
+            <file>_static/c_mix.png</file>
+            <file>_static/c_mod_mes.png</file>
+            <file>_static/c_model_btn.png</file>
+            <file>_static/c_subchar.png</file>
+            <file>_static/c_substr.png</file>
+            <file>_static/c_windows.png</file>
+            <file>_static/cat.png</file>
+            <file>_static/cex1_fitt0.png</file>
+            <file>_static/cex1_fitt1.png</file>
+            <file>_static/cex1_fitt2.png</file>
+            <file>_static/cex1_inh.png</file>
+            <file>_static/cex1_layer0.png</file>
+            <file>_static/cex1_layer1.png</file>
+            <file>_static/cex2_del1.png</file>
+            <file>_static/cex2_psi1.png</file>
+            <file>_static/cex2_psi2.png</file>
+            <file>_static/cex3_fitt0.png</file>
+            <file>_static/cex3_fitt1.png</file>
+            <file>_static/cex3_fitt3.png</file>
+            <file>_static/cex4_fitt0.png</file>
+            <file>_static/cex4_fitt1.png</file>
+            <file>_static/cex4_fitt2.png</file>
+            <file>_static/cex4_fitt3.png</file>
+            <file>_static/cex4_fitt4.png</file>
+            <file>_static/cex5_f10.png</file>
+            <file>_static/cex5_f11.png</file>
+            <file>_static/cex5_f12.png</file>
+            <file>_static/cex5_f13.png</file>
+            <file>_static/cex5_f14.png</file>
+            <file>_static/cex5_f15.png</file>
+            <file>_static/cex5_f16.png</file>
+            <file>_static/cex5_f17.png</file>
+            <file>_static/cex5_f18.png</file>
+            <file>_static/cex5_f19.png</file>
+            <file>_static/cex5_f2.png</file>
+            <file>_static/cex5_f20.png</file>
+            <file>_static/cex5_f21.png</file>
+            <file>_static/cex5_f22.png</file>
+            <file>_static/cex5_f23.png</file>
+            <file>_static/cex5_f24.png</file>
+            <file>_static/cex5_f3.png</file>
+            <file>_static/cex5_f4.png</file>
+            <file>_static/cex5_f5.png</file>
+            <file>_static/cex5_f6.png</file>
+            <file>_static/cex5_f7.png</file>
+            <file>_static/cex5_f8.png</file>
+            <file>_static/cex5_f9.png</file>
+            <file>_static/cex6_f1.png</file>
+            <file>_static/cex6_f2.png</file>
+            <file>_static/cex6_f3.png</file>
+            <file>_static/cex6_f4.png</file>
+            <file>_static/cex6_f5.png</file>
+            <file>_static/cex6_f6.png</file>
+            <file>_static/cex7_compareall.png</file>
+            <file>_static/cex7_comparedb.png</file>
+            <file>_static/cex7_fit1.png</file>
+            <file>_static/cex7_fit2.png</file>
+            <file>_static/cex7_fit3.png</file>
+            <file>_static/cex7_laych.png</file>
+            <file>_static/cex7_refrcomp.png</file>
+            <file>_static/cex7_refsetup.png</file>
+            <file>_static/cex7_ren_1.png</file>
+            <file>_static/cex8_fit1.png</file>
+            <file>_static/cex8_fit2.png</file>
+            <file>_static/cex8_fit3.png</file>
+            <file>_static/cex8_fit4.png</file>
+            <file>_static/cex8_fit5.png</file>
+            <file>_static/cex8_fit6.png</file>
+            <file>_static/cex8_fit7.png</file>
+            <file>_static/cex8_fit8.png</file>
+            <file>_static/cex8_geninfo.png</file>
+            <file>_static/cex8_refr1.png</file>
+            <file>_static/cex8_refr2.png</file>
+            <file>_static/cex8_refrext.png</file>
+            <file>_static/cex8_removegap.png</file>
+            <file>_static/cex8_sub1.png</file>
+            <file>_static/cex8_sub2.png</file>
+            <file>_static/cex8_subchar.png</file>
+            <file>_static/cex9_fit1.png</file>
+            <file>_static/cex9_fit2.png</file>
+            <file>_static/cex9_fit2_zoom.png</file>
+            <file>_static/cex9_fit3.png</file>
+            <file>_static/cex9_fit4.png</file>
+            <file>_static/cex9_laychar1.png</file>
+            <file>_static/cex9_layer1.png</file>
+            <file>_static/cex9_layerfin.png</file>
+            <file>_static/cex9_layref.png</file>
+            <file>_static/cex9_layref2.png</file>
+            <file>_static/cex_5_f1.png</file>
+            <file>_static/char_menu.png</file>
+            <file>_static/char_nk_options.png</file>
+            <file>_static/charopt_general.png</file>
+            <file>_static/charopt_hwqwip.png</file>
+            <file>_static/charopt_plotranges.png</file>
+            <file>_static/col_ed.png</file>
+            <file>_static/col_ed2.png</file>
+            <file>_static/col_ed3.png</file>
+            <file>_static/col_patch.png</file>
+            <file>_static/col_targ.png</file>
+            <file>_static/col_targ_p.png</file>
+            <file>_static/colev_diff1.png</file>
+            <file>_static/colev_diff2.png</file>
+            <file>_static/color_opt_oc.png</file>
+            <file>_static/coltgt_anchor.png</file>
+            <file>_static/combine2.png</file>
+            <file>_static/compareindexplots.png</file>
+            <file>_static/coneang1.png</file>
+            <file>_static/coneang2.png</file>
+            <file>_static/coneang3.png</file>
+            <file>_static/config_menu.png</file>
+            <file>_static/configdbcols_re.png</file>
+            <file>_static/copy_btn.png</file>
+            <file>_static/copy_spec_dlg.png</file>
+            <file>_static/copy_spec_excel.png</file>
+            <file>_static/copy_spec_menu.png</file>
+            <file>_static/crefinement.png</file>
+            <file>_static/cri.png</file>
+            <file>_static/cri_options.png</file>
+            <file>_static/csubstr_char.png</file>
+            <file>_static/csurfinh.png</file>
+            <file>_static/ctoolbar.png</file>
+            <file>_static/cut_btn.png</file>
+            <file>_static/data_menu_oc.png</file>
+            <file>_static/db_combine1.png</file>
+            <file>_static/db_oc.png</file>
+            <file>_static/db_with_preview.png</file>
+            <file>_static/dbcolumnsreim.png</file>
+            <file>_static/delete_dir.png</file>
+            <file>_static/edit_menu_grid.png</file>
+            <file>_static/edit_menu_oc_1.png</file>
+            <file>_static/edmat_composite.png</file>
+            <file>_static/edmat_formula.png</file>
+            <file>_static/edmat_imn1.png</file>
+            <file>_static/edmat_preview.png</file>
+            <file>_static/edmat_ren_delta1.png</file>
+            <file>_static/edmat_tab.png</file>
+            <file>_static/edmat_table.png</file>
+            <file>_static/ell_depol.png</file>
+            <file>_static/embim1.png</file>
+            <file>_static/excel0.png</file>
+            <file>_static/excel_export.png</file>
+            <file>_static/f_from_t1.png</file>
+            <file>_static/f_from_t2.png</file>
+            <file>_static/file.png</file>
+            <file>_static/file_tra_oc.png</file>
+            <file>_static/filemenu_oc_1.png</file>
+            <file>_static/filemenu_oc_2.png</file>
+            <file>_static/filemenu_oc_3.png</file>
+            <file>_static/filemenu_oc_4.png</file>
+            <file>_static/filemenu_oc_5.png</file>
+            <file>_static/filetransfer_oc.png</file>
+            <file>_static/fitting_plot_oc.png</file>
+            <file>_static/fitting_popup_menu.png</file>
+            <file>_static/gconfig_data_oc.png</file>
+            <file>_static/gconfig_gd_gdd_oc.png</file>
+            <file>_static/gconfig_thick_oc.png</file>
+            <file>_static/gconfig_timedate_oc.png</file>
+            <file>_static/gconfig_units_oc.png</file>
+            <file>_static/gencfg_sourcedet_2.png</file>
+            <file>_static/geninfo_oc.png</file>
+            <file>_static/geninfo_oc_popup.png</file>
+            <file>_static/gmode.png</file>
+            <file>_static/grid_gen.png</file>
+            <file>_static/help_menu_oc.png</file>
+            <file>_static/hitachiimp1.png</file>
+            <file>_static/hm-keyword-page-icon.png</file>
+            <file>_static/hm_webhelp_buttons_black.png</file>
+            <file>_static/hm_webhelp_buttons_blue.png</file>
+            <file>_static/hm_webhelp_buttons_grey.png</file>
+            <file>_static/hm_webhelp_buttons_orange.png</file>
+            <file>_static/hm_webhelp_buttons_white.png</file>
+            <file>_static/hm_webhelp_buttons_yellow.png</file>
+            <file>_static/hmlogo.png</file>
+            <file>_static/hw_attach.png</file>
+            <file>_static/icon-book.png</file>
+            <file>_static/icon-bookopen.png</file>
+            <file>_static/icon-page.png</file>
+            <file>_static/imp_excel_1.png</file>
+            <file>_static/imp_excel_options.png</file>
+            <file>_static/imp_opt.png</file>
+            <file>_static/import.png</file>
+            <file>_static/import_agf_zemax.png</file>
+            <file>_static/import_meas_menu.png</file>
+            <file>_static/import_xy.png</file>
+            <file>_static/impthinproc1.png</file>
+            <file>_static/impthinproclogin1.png</file>
+            <file>_static/indshift.png</file>
+            <file>_static/intext.png</file>
+            <file>_static/jasco_options.png</file>
+            <file>_static/jcamp_dx.png</file>
+            <file>_static/laychar.png</file>
+            <file>_static/layer_plot.png</file>
+            <file>_static/layer_ss.png</file>
+            <file>_static/layerrefinementnk.png</file>
+            <file>_static/layoutsdlg.png</file>
+            <file>_static/light_sr.png</file>
+            <file>_static/light_sr_p.png</file>
+            <file>_static/linew_ed1.png</file>
+            <file>_static/linew_ed2.png</file>
+            <file>_static/load_oc.png</file>
+            <file>_static/mater_popup_menu.png</file>
+            <file>_static/matinh1.png</file>
+            <file>_static/meas_ang.png</file>
+            <file>_static/meas_selection_oc.png</file>
+            <file>_static/mega-icons.png</file>
+            <file>_static/minus.png</file>
+            <file>_static/modelpeaks.png</file>
+            <file>_static/modifycolortgt.png</file>
+            <file>_static/multi_files_1.png</file>
+            <file>_static/multi_files_2.png</file>
+            <file>_static/multi_files_browse_icon.png</file>
+            <file>_static/new_db_file.png</file>
+            <file>_static/newprob_dir.png</file>
+            <file>_static/nonav.css</file>
+            <file>_static/oc_re_file_menu_sf.png</file>
+            <file>_static/oc_removedata.png</file>
+            <file>_static/oc_savedata.png</file>
+            <file>_static/oc_start.png</file>
+            <file>_static/optichar_icon.png</file>
+            <file>_static/or_savemat.png</file>
+            <file>_static/out_block.png</file>
+            <file>_static/out_excel.png</file>
+            <file>_static/out_minus.png</file>
+            <file>_static/out_plus.png</file>
+            <file>_static/out_print.png</file>
+            <file>_static/out_saveas.png</file>
+            <file>_static/output_ol.png</file>
+            <file>_static/pagesetup_!.png</file>
+            <file>_static/partdis_pc.png</file>
+            <file>_static/paste_btn.png</file>
+            <file>_static/paste_bu.png</file>
+            <file>_static/pastespecial.png</file>
+            <file>_static/pe_options.png</file>
+            <file>_static/peaklist1.png</file>
+            <file>_static/plot_menu.png</file>
+            <file>_static/plot_menu_submenu.png</file>
+            <file>_static/plus.png</file>
+            <file>_static/porosity.png</file>
+            <file>_static/preproc_measur_oc.png</file>
+            <file>_static/print_btn.png</file>
+            <file>_static/printpreview_btn.png</file>
+            <file>_static/prob_btn.png</file>
+            <file>_static/prob_dir.png</file>
+            <file>_static/probbrowse.png</file>
+            <file>_static/probdirrename.png</file>
+            <file>_static/pygments.css</file>
+            <file>_static/rangeed.png</file>
+            <file>_static/rangetgt2.png</file>
+            <file>_static/rangetgtbase.png</file>
+            <file>_static/redo_btn.png</file>
+            <file>_static/refrindexinfo_1.png</file>
+            <file>_static/refrindexinfo_accept.png</file>
+            <file>_static/refrindexinfo_submenu.png</file>
+            <file>_static/resampl.png</file>
+            <file>_static/result_menu_oc.png</file>
+            <file>_static/rightclickgeninfo.png</file>
+            <file>_static/rightclicktext.png</file>
+            <file>_static/saveas_btn.png</file>
+            <file>_static/savemeas.png</file>
+            <file>_static/sel_dir.png</file>
+            <file>_static/simplifymodel.png</file>
+            <file>_static/substr_plot.png</file>
+            <file>_static/substr_ss.png</file>
+            <file>_static/t_from_f.png</file>
+            <file>_static/tabfromcomp.png</file>
+            <file>_static/tablesimplify1.png</file>
+            <file>_static/tabtocomp1.png</file>
+            <file>_static/tabtocomp2.png</file>
+            <file>_static/tot_losses.png</file>
+            <file>_static/transform_paste.png</file>
+            <file>_static/undo_btn.png</file>
+            <file>_static/user.png</file>
+            <file>_static/varian1.png</file>
+            <file>_static/varian2.png</file>
+            <file>_static/varian3.png</file>
+            <file>_static/view_menu_oc_1.png</file>
+            <file>_static/view_menu_oc_2.png</file>
+            <file>_static/window_menu_oc.png</file>
+            <file>_static/winrearrange.png</file>
+            <file>_static/woolam.png</file>
+            <file>_static/zeissop_imp1.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>

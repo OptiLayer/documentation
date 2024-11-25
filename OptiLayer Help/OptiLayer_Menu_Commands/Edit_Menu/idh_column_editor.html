@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Column Editor</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="column-editor">
+<h1>Column Editor</h1>
+<div class="docutils container" id="printheader">
+<p><img alt="image1" src="../../_images/col_ed.png" /> Column Editor</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_edit.html">Edit
+Menu</a> &gt;</p>
+<p><img alt="image2" src="../../_images/col_ed.png" /> Column Editor</p>
+</div>
+</div>
+<p>` &lt;copy_special.html&gt;`__ ` &lt;idh_menu_edit.html&gt;`__
+` &lt;idh_grid_generator.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Column Editor is one of OptiLayer’s special <a class="reference external" href="idh_spreadsheet_editing.html">Spreadsheet
+Editing Tools</a> designed to provide
+fast and convenient modifications of spreadsheet columns. It is
+particularly useful when you need to enter a whole column of
+constants or a set of uniformly increasing or decreasing values.
+If no specific lines in the column have been marked (selected with
+the F7 key, displayed as highlighted entries), then the editor
+acts on the entire column. If a specific set of rows in the column
+has been selected, then the Column Editor will only act on the
+selected portion of the column.</p>
+<p>The Column Editor is accessible from every place where you may
+need to edit a spreadsheet. You can activate it through the
+OptiLayer <a class="reference external" href="idh_menu_edit.html">Edit menu</a>, from the toolbar, or
+by pressing the F6 key. Some modal dialogs have special buttons to
+access the Column Editor.</p>
+<p><img alt="image3" src="../../_images/Column_ed_1_new.png" /></p>
+<p>When you start the Column Editor, it displays the spreadsheet
+column you are editing in the title bar. You can select which rows
+of the column will be edited by setting appropriate values in the
+Editing rows fields. By default, the whole column is chosen.
+However, if certain rows were selected in the spreadsheet, the
+edited rows initially displayed in the Column Editor Window will
+correspond to the selected ones.
+In the Apply to box, you can select one of the modes (All, Odd and
+Even) if you need to modify the values in a more specific manner.
+When editing <a class="reference external" href="idh_design_editor.html">design data</a> the
+abbreviations of the design materials are appended to the Apply to
+edit choices. This additional option allows you to change only
+those cells of the design column that correspond to a selected
+material.
+To fill a column with identical values, enter the desired value in
+the Starting value edit box, and set the Increment box value to
+zero. If you set a positive increment, the column will be filled
+with an increasing sequence of values. You can enter a negative
+increment to obtain a decreasing sequence of values as well.
+The Column Editor also provides additional functionality through
+the Percentage tab. This tab allows the user to change selected
+values by a percentage of the current values rather than by an
+absolute value.</p>
+<p><img alt="image4" src="../../_images/Column_ed_2_new.png" /></p>
+<p>In this mode, it is possible to apply relative corrections
+(measured in percent) to the values of the selected column.
+Negative values are also permitted, allowing for the decrease of
+values as well.
+One more convenient operation is available through the Transform
+tab.</p>
+<p><img alt="image5" src="../../_images/Column_ed_3_new.png" /></p>
+<p>In this mode, you can specify a linear transformation relation as:</p>
+<p>  Vnew = a · Vold + b</p>
+<p>where Vnew and Vold are the new and old values of the selected
+column cells, and a and b are the coefficients of the linear
+transformation. Additionally, it is possible to reverse the order
+of values.</p>
+<p><img alt="image6" src="../../_images/arrow_r.png" /> Note<strong>:</strong> It is possible to specify a range of rows
+that is wider than the range of rows available in the current
+spreadsheet. In this case, the spreadsheet will be expanded
+accordingly to accommodate the specified range of rows.</p>
+<p>See also: <a class="reference external" href="idh_grid_generator.html">Grid Generator</a>.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Constrained Optimization</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="constrained-optimization">
+<h1>Constrained Optimization</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Constrained Optimization</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="constrained-optimization-1">Constrained Optimization</p>
+</div>
+</div>
+<p>` &lt;inhomogeneities_interlayers_re.html&gt;`__ ` &lt;idh_menu_synthesis.html&gt;`__
+` &lt;formula_constrained_optimizati.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>OptiLayer has a variety of options for constrained optimizations.
+These options are aimed at meeting various feasibility demands and
+providing better manufacturing properties for coating designs.</p>
+<p><img alt="image1" src="../../_images/constropt1.png" /></p>
+<p>It is possible to set constraints for individual layer
+thicknesses. Each layer can have:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Active (A),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a href="#id2"><span class="problematic" id="id3">**</span></a>Fixed (F) or **</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Optical Fixed (O)</strong></p>
+</div>
+</li>
+</ul>
+<p>states, which indicate whether the thickness of this layer can
+vary during optimization. If the state is Optical Fixed, the
+physical thickness and refractive index vary but only so that
+their product, i.e., optical thickness, remains constant.
+Another type of constrained optimization is called Group
+optimization. In this mode, thicknesses of layers within each
+group specified by the user are kept proportional; they are
+controlled by a single factor, which is subject to optimization.
+To create a group of layers, use the Groups tab of the Constrained
+Optimization Setup window.</p>
+<p><img alt="image2" src="../../_images/constropt2.png" /></p>
+<p>For each group of layers, it is possible to specify a starting
+value for the group factor and the corresponding constraints. The
+unit factor value corresponds to the initial thicknesses of layers
+in the group. Each group can have an Active or Fixed state. When a
+group is created, its number is available in the drop-down combo
+box in the Group column of the Constraints tab of the Constrained
+Optimization Setup window.</p>
+<p>The Limits… button opens an additional <a class="reference external" href="limits_generator.html">Limits
+Generator</a> dialog to invoke recalculation
+of upper and lower constraints for layer thicknesses (Th.Min and
+Th.Max columns).</p>
+<p>The Reset button allows setting the default values for all data
+instantly.</p>
+<p>The Apply &amp; Run button will start computations without closing the
+Constrained Optimization Setup window. This is very convenient for
+repetitive experiments with slightly varying constraints.
+Please note that it is convenient to use the <a class="reference external" href="idh_column_editor.html">Column
+Editor</a> for editing purposes. It is
+possible to apply column assignments to All layers, Odd or Even
+layers only, or layers of a specific material.</p>
+<div class="docutils container">
+<p><img alt="image3" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: Constrained optimization when a <a class="reference external" href="stack_database.html">Stack</a>
+loaded to memory is now possible. Layers of designs in a stack are
+numbered consecutively using two numbers: design number and the number
+of the layer in this design.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

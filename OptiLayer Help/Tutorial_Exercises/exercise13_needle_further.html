@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 13. Needle Optimization - further experience</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-13-needle-optimization-further-experience">
+<h1>Exercise 13. Needle Optimization - further experience</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 13. Needle Optimization - further experience</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>In this exercise we shall consider the design of a coating with
+non-standard spectral properties.  The target function for this
+exercise was considered by Li Li and J.Dobrowolski (Applied
+Optics, 1992, vol. 31, pp. 3790-3799).</p>
+<p>Necessary files for this exercise are located in the <a class="reference external" href="idh_problem_directory.html">Problem
+directory</a> EX13. In <a class="reference external" href="single_file_mode.html">SF
+Mode</a> you need to use Import Problem
+Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load GLASS substrate, and layer materials with the names 1.35 and
+2.35 to memory (the names of layer materials correspond to their
+refractive index values).</p>
+<p>As a supplementary exercise you can experiment with the OptiLayer
+option intended for entering numerical data from any ASCII file.
+If you don’t want to do this, then go directly to the next
+paragraph. To experiment with <a class="reference external" href="idh_import.html">ASCII import
+function</a> examine first the ASCII file
+Target.dat located in the same directory EX13. This file contains
+data for the Li Li and J.Dobrowolski target function. Note, that
+wavelength data in the Target.dat file are in microns while
+transmittance data are in absolute units, so it is necessary to
+set <a class="reference external" href="idh_config_units.html">units</a> in OptiLayer Configuration
+menu accordingly. Create a new file with any name using the New
+button in the Target database, specify the number of spectral
+points in the target spreadsheet equal to 36 as in the Target.dat
+ASCII file and then follow Help directions on <a class="reference external" href="idh_import.html">Data
+Import</a> (F9) and <a class="reference external" href="idh_paste_buffer.html">Paste
+Buffer</a> (F10).</p>
+<p>For your convenience the required target function is provided in
+the Target database under the name Exotic. Load this file into
+memory. In the <a class="reference external" href="idh_config_thickness_units.html">Thickness
+Units</a> section of the
+Configuration dialog switch both Thickness Units and Design Bar
+Display options to Optical Thickness.</p>
+<p>Choose the Newton method (<a class="reference external" href="idh_synthesis_options_method.html">Analysis and Synthesis
+Options</a> dialog).</p>
+<p>Since the target function has a high reflection zone, we will try
+a quarter-wave mirror as a starting design. Load the QWM 10 layers
+file and run the <a class="reference external" href="idh_needle_optimization.html">Needle Optimization
+AUTO</a> procedure. As a result you
+should obtain the 11-layer design with the merit function value of
+5.345881.</p>
+<p>In order to obtain better result it is necessary to use thicker
+starting designs. Load the QWM 20 layers file and repeat the
+<a class="reference external" href="idh_needle_optimization.html">Needle Optimization AUTO</a>
+procedure. Much better solution will be obtained.</p>
+<p>You can repeat Needle Optimization AUTO procedure with the same
+starting design using different <a class="reference external" href="idh_synthesis_options_method.html">optimization
+methods</a>, results will be
+quite often different. This is connected with very complicated
+multi-extremal nature of thin film synthesis problems. One of
+often obtained solutions is shown below:</p>
+<p><img alt="image1" src="../_images/ex13_ev1.png" /></p>
+<p>As an alternative you can use a coating with large number of
+layers as a starting design. Load the 50 LAYERS file from the
+Design database and repeat the <a class="reference external" href="idh_needle_optimization.html">Needle Optimization
+AUTO</a> procedure.</p>
+<p>The main conclusion of this exercise is that the performance of a
+coating is improving with growing design total optical thickness.
+To check this you can run the Needle Optimization procedure again
+with various starting designs and watch the total optical
+thickness value (Th=) indicated at the design bar in the bottom
+part of the <a class="reference external" href="idh_evaluation.html">Evaluation</a> window. Another
+conclusion is that the total optical thickness is rather
+conservative parameter that is only slightly varying in the course
+of the Needle Optimization procedure. So thicker starting designs
+generally result in better solutions. On the other hand, starting
+design should not be too thick, because a resulting coating can be
+too complicated for manufacture.</p>
+<p>The recognition of the key role of design total optical thickness
+has resulted in the development of a new OptiLayer synthesis
+strategy that is called Gradual Evolution. Go to the <a class="reference external" href="exercise14_gradual_evolution.html">next
+Exercise</a> to experience this
+strategy.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

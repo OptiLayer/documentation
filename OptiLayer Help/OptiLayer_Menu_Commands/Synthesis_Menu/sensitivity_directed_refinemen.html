@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Sensitivity-Directed Refinement</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="sensitivity-directed-refinement">
+<h1>Sensitivity-Directed Refinement</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Sensitivity-Directed Refinement</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="sensitivity-directed-refinement-1">Sensitivity-Directed Refinement</p>
+</div>
+</div>
+<p>` &lt;formula_constrained_form.html&gt;`__ ` &lt;idh_menu_synthesis.html&gt;`__
+` &lt;idh_needle_optimization.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Sensitivity-directed refinement should be used in situations where
+a good initial guess about desired solutions is available, or when
+it is desirable to preserve the design structure suitable for
+production as much as possible. Therefore, it is important to have
+a reasonably good starting design for this option.
+The sensitivity-directed refinement algorithm works as follows:
+Initially, all design layers have a fixed status.
+At each iteration, it computes the <a class="reference external" href="idh_layer_sensitivity_evaluati.html">layer
+sensitivities</a> of all
+design layers and releases a given number of the most sensitive
+layers. After this, the design is refined and optionally a needle
+iteration is also performed. This process is repeated until all
+layers of the design are released. Due to this algorithm
+organization, the maximum decrease of the merit function is
+achieved already in the first iteration with a small number of
+active layers. In most cases, it preserves the initial structure
+of the design.</p>
+<p><img alt="image1" src="../../_images/Sensitivity_directed_Refinement1.png" /></p>
+<p>Sensitivity-Directed Refinement Setup dialog allows you to specify
+the parameters of this algorithm. It is possible to change the
+number of layers released at each iteration. Additionally, you can
+activate or deactivate the application of Needle Optimization (Use
+Needle Optimization checkbox) and specify how often the Needle
+Optimization step should be used (After each xxx iteration(s)).</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

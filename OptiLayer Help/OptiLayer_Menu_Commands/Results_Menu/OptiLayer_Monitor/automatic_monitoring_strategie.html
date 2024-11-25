@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Automatic Monitoring Strategies</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="automatic-monitoring-strategies">
+<h1>Automatic Monitoring Strategies</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Automatic Monitoring Strategies</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_results.html">Results
+Menu</a> &gt; <a class="reference external" href="idh_monitor.html">OptiLayer
+Monitor</a> &gt;</p>
+<p class="p-heading1 rubric" id="automatic-monitoring-strategies-1">Automatic Monitoring Strategies</p>
+</div>
+</div>
+<p>` &lt;idh_monitor.html&gt;`__ ` &lt;idh_monitor.html&gt;`__
+` &lt;fixing_wavelength_of_some_laye.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>It is possible to create a monitoring strategy using an automatic
+tool for this purpose. Automatic strategy generators are
+accessible through a special button in the OptiMonitor window.</p>
+<p><img alt="image1" src="../../../_images/monstrategies.png" /></p>
+<p>These generators are also accessible using the right-click menu of
+the OptiMonitor window.</p>
+<p><img alt="image2" src="../../../_images/monstrategiesmenu1.png" /></p>
+<div class="p-normal docutils container">
+<p>Strategy 1 is based on the choice of the most sensitive
+wavelength for each layer.</p>
+</div>
+<div class="p-normal docutils container">
+<p>Strategy 2 aims at minimizing the cumulative effect of
+thickness errors.</p>
+</div>
+<div class="p-normal docutils container">
+<p>Strategy 3 aims at minimizing the cumulative effect of
+thickness errors and takes into account additional requirements
+that are necessary in order to increase the robustness and
+reliability of real-time algorithms working with Optical
+Monitoring Systems.</p>
+</div>
+<div class="p-normal docutils container">
+<p>Strategy 4 is an advanced strategy taking into account many
+criteria, with the ability to weigh different requirements and
+simultaneously minimize the number of different monitoring
+wavelengths.</p>
+</div>
+<div class="p-normal docutils container">
+<p>Strategy 5 is an even more advanced strategy, considering some
+additional requirements compared to Strategy 4.</p>
+</div>
+<p>Details on the automatic strategies’ algorithms can be found in
+these papers:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>A. V. Tikhonravov, M. K. Trubetskov, and T. V. Amotchkina,
+“Statistical approach to choosing a strategy of monochromatic
+monitoring of optical coating production,” Appl. Opt. 45,
+7863-7870 (2006)
+<a class="reference external" href="http://www.opticsinfobase.org/abstract.cfm?URI=ao-45-30-7863">http://www.opticsinfobase.org/abstract.cfm?URI=ao-45-30-7863</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>A. V. Tikhonravov and M. K. Trubetskov, “Elimination of
+cumulative effect of thickness errors in monochromatic
+monitoring of optical coating production: theory,” Appl. Opt.
+46, 2084-2090 (2007)
+<a class="reference external" href="http://www.opticsinfobase.org/abstract.cfm?URI=ao-46-11-2084">http://www.opticsinfobase.org/abstract.cfm?URI=ao-46-11-2084</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>A. V. Tikhonravov, M. K. Trubetskov, and T. V. Amotchkina,
+“Computational experiments on optical coating production
+using monochromatic monitoring strategy aimed at eliminating
+a cumulative effect of thickness errors,” Appl. Opt. 46,
+6936-6944 (2007)
+<a class="reference external" href="http://www.opticsinfobase.org/abstract.cfm?URI=ao-46-28-6936">http://www.opticsinfobase.org/abstract.cfm?URI=ao-46-28-6936</a></p>
+</div>
+</li>
+</ul>
+<div class="docutils container">
+<p><img alt="image3" src="../../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: Currently, strategies can be automatically generated both for the
+case of monitoring at a single witness chip and for multi-chip
+strategies.</p>
+<p>For the first three strategies, the setup dialog is rather simple:</p>
+<p><img alt="image4" src="../../../_images/mon_strategiessetup1.png" /></p>
+<p>It is necessary to specify the allowed range for wavelength changes and
+the wavelength step that will be used for strategy generation.
+Computational time is dependent on this step; it should not be smaller
+than the accuracy of wavelength settings in the current monitoring
+device.
+For Strategy 4, the setup dialog is more complicated:</p>
+<p><img alt="image5" src="../../../_images/mon_strategiessetup2.png" /></p>
+<p>It is necessary to specify a number of additional criteria:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>The number of different wavelengths (possible values range from 1
+to 5). Since Strategy 4 is based on an exhaustive search approach,
+with a larger number of different wavelengths, computational time
+grows noticeably. On the other hand, strategies with the smallest
+number of different wavelengths are the most interesting ones.</p>
+</div>
+</li>
+</ul>
+<p>Each of the following criteria can be activated or deactivated, and
+different weights can be assigned to every criterion.</p>
+<div class="p-normal docutils container">
+<p>Signal Swing In: lower and upper thresholds for the Input Swing
+value. The defaults are 20% and 80%.</p>
+</div>
+<div class="p-normal docutils container">
+<p>Signal Swing Fin: lower and upper thresholds for the Final (output)
+Swing value. The defaults are 30% and 70%.</p>
+</div>
+<div class="p-normal docutils container">
+<p>Amplitude (max-min): amplitude of the signal in the layer (distance
+between the signal maximum and signal minimum). If one or both of the
+extrema are not located inside the layer, they will be computed for
+the layer with an accordingly increased thickness. The default value
+is 4%.</p>
+</div>
+<div class="p-normal docutils container">
+<p>Trigger Point to Next TP dist: the distance from the Trigger Point to
+the next Turning Point. For some monitoring devices, this is a quite
+important value and should not be too small. The default value is 2%.</p>
+</div>
+<p>For Strategy 5, the setup dialog has additional configuration settings
+compared to Strategy 4:</p>
+<p><img alt="image6" src="../../../_images/mon_strategiessetup3.png" /></p>
+<p>Additional criteria for Strategy 5 include:</p>
+<div class="p-normal docutils container">
+<p>Swing ratio (1 extr, same λ): the requirement for the ratio of output
+swing to input swing in the case of exactly one extremum of the
+signal inside the deposited layer and the monitoring wavelength
+staying the same.</p>
+</div>
+<div class="p-normal docutils container">
+<p>STRONG&gt;Swing ratio (1 extr, changed λ): the requirement for the ratio
+of output swing to input swing in the case of exactly one extremum of
+the signal inside the deposited layer and the monitoring wavelength
+changing.</p>
+</div>
+<div class="p-normal docutils container">
+<p>At least 1 extr after λ change: the requirement to have at least one
+signal extremum in the layer after the monitoring wavelength change.</p>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

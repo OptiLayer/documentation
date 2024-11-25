@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p>Example 11. Optimization with
+random starting designs: hot
+mirrors are used as example.</p>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer design
+options and random nature of some of their elements, the results
+obtained may differ from those previously saved in the design
+database.</p>
+<p>The main purpose of this example is to demonstrate the Random
+optimization … mode, which finds designs through multiple
+optimizations with random starting designs.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D11. Datafiles needed to run this exercise are already loaded
+into RAM. These are the substrate Glass n=1.52, the layer
+materials n=2.35 and n=1.46, and the Hot mirror target. This
+target specifies requirements for 100% transmittance in the
+400-690 nm spectral range and 0% transmittance in the 710-1200 nm
+spectral range. The target transmittance can be viewed in the
+Preview tab of the Target editor.</p>
+<p>In the previous LEC24D10 example, a gradual evolution design
+procedure was used to design the required hot mirrors. Elimination
+of thin layers in designs has been shown to be challenging. The
+design option considered in this example allows the application of
+lower and upper constraints on the thicknesses of all coating
+layers. It will be shown that constrained optimization with random
+starting designs will allow us to obtain designs without thin
+layers and better merit function values than that of the design
+obtained in the previous example after removing thin layers.</p>
+<p>In the Synthesis menu, select the Randon Optimization… option. The
+window for setting random optimization parameters will open. This
+window has two tabs: Global and Local. The Global tab allows you
+to run the option with starting designs generated in entire area
+specified by the Min and Max parameters in the window, and the
+Local tab sets parameters for selecting starting designs in some
+vicinity to a given design.</p>
+<p>** **</p>
+<p>It is generally recommended to start the design procedure from the
+Global tab options. The results of the gradual evolution procedure
+in LEC24D10 give us a general idea of the number of layers and
+total optical thickness of the design required to achieve the
+desired level of approximation of the hot mirror target
+transmittance. We will set 40 in The number of layers field and
+set the average optical thicknesses of H and L materials to 200
+nm. This will ensure that the total optical thicknesses of
+starting designs are close to the value of 8000 nm set for
+calculations in LEC24D10. The lower and upper limits (Min and Max
+fields) on the optical thicknesses of all layers will be 100 nm
+and 350 nm, respectively.</p>
+<p>Make sure that in the Materials nearest to the substrate field the
+abbreviation H for the high index layer is set.</p>
+<p>Click the OK button and go to the main window of the Random
+Optimization… option. Clicking the Run button starts the design
+procedure. The progress of the design procedure is reflected on
+the left side of the window, and the MF, N, and TOT parameters of
+the final designs obtained using randomly generated starting
+designs are shown on the right side of the window. The results
+obtained are sorted in accordance with the merit functions values
+achieved at each optimization procedure. You can terminate the
+design procedure at any time by clicking the Stop button.</p>
+<p>You can select any design with the parameters listed on the right
+side of the window and use the Load button to move it to the
+General Information window and T&amp;R&amp;Phase window. The design can
+then be saved in the design database.</p>
+<p>Alternatively, it may be worth searching for a better design in
+the vicinity of the selected design. To do this, click the
+Parameters button and switch to the Local tab at the top of the
+parameters window. If this tab is active, further optimization
+procedures will be performed using the starting designs from the
+vicinity of the selected design. This vicinity is determined by
+the related parameters set in the RMS or Relative RMS columns.
+Click the OK button and then the Run button in the main window to
+continue optimization. Often the best results are achieved this
+way.</p>
+<p>It may be worth running random optimization using different local
+optimization methods, since it is impossible to predict which one
+will work best for your specific project.</p>
+<p>Sample hot mirror designs HM1 and HM2 are saved in the design
+database.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

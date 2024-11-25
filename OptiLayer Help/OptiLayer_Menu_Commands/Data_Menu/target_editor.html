@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Target Editor</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="target-editor">
+<h1>Target Editor</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/numberofspectralpointsest.html">Number of Spectral Points Estimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/target_interpolation.html">Target Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/idh_target_qualifier.html">Target Qualifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/idh_spectral_abbreviations.html">Spectral Characteristics Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/idh_spectral_characteristics.html">Target Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/floating_constant_targets.html">Floating Constant Targets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/userdefinedtargeteditor.html">User-Defined Target Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/extended_argument_definition.html">Extended Argument Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/idh_modify_angles.html">Angles of Incidence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/idh_modify_wavelengths.html">Target Wavelengths</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/target_generator.html">Target Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/phasegdgdd_target_generator.html">Phase/GD/GDD Target Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Target_Editor/target_peaks.html">Target Peak List</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p>Target Editor</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  OptiLayer Menu
+Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p>Target Editor</p>
+</td>
+<td><p>` &lt;c
+onfigure_database_columns.html&gt;`__
+` &lt;idh_menu_data.html&gt;`__
+` &lt;
+numberofspectralpointsest.html&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Target window is used for entering and editing target data. It
+has two parts: the upper part is for setting key parameters
+related to the target data, and the lower part is a spreadsheet
+for displaying and entering the target data.
+The upper part of the window, under the Spreadsheet tab, contains
+information fields where users can specify the number of spectral
+points for entering target data, the incidence angles at which
+data will be entered, and the type of spectral characteristics for
+which data will be supplied.</p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image3" src="../../_images/arrow_r.png" /></p></td>
+<td><p>Before using the Target Editor, it is useful to review
+the expression for the Target function used in
+OptiLayer. This information can be found in the
+/ <a class="reference external" href="idh_synthesis.html">Refinement and Synthesis Tools</a>
+section.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The Preview, GD &amp; GDD Preview, and UDT Preview tabs allow users to
+preview entered targets. Note that the last two tabs will only
+appear when corresponding targets are specified.
+If you are in / <a class="reference external" href="idh_data_display_modes.html">Spectral mode</a>,
+the Target editing dialog will appear as follows:</p>
+<p><img alt="image4" src="../../_images/Target_Editor_new_1.png" /></p>
+<p>To estimate the required number of spectral points, click on the
+button “?” next to the corresponding entry field to invoke the
+/ <a class="reference external" href="numberofspectralpointsest.html">Number of Spectral Points
+Estimation</a> dialog.</p>
+<p>The button # can be used to open the Target Interpolation dialog,
+which is useful for adjusting the number of spectral points in
+targets, particularly for targets with complex structures.
+In Spectral mode, a target function file can contain multiple data
+pages, with each page corresponding to a different angle of
+incidence. The currently displayed page is determined by the value
+in the Incident angle field. You can switch between different
+pages (angles of incidence) by selecting the necessary angles at
+the bottom of the spreadsheet. Each page of a target function file
+can be modified independently by using different sets of spectral
+characteristics and/or wavelengths for different angles of
+incidence.
+To add or remove target function pages, click on the Angles…
+button (see / <a class="reference external" href="idh_modify_angles.html">Modifying Angles</a> for
+more details).</p>
+<p>Specify the number of wavelengths at which you want to set targets
+in the Number of Spectral Points field.
+Clicking on the Edit UDT… button opens a dialog where you can
+specify the definition of a / <a class="reference external" href="userdefinedtargeteditor.html">User-Defined
+Target</a>/ <strong>.</strong></p>
+<p>The Generator… button opens a specialized / <a class="reference external" href="target_generator.html">Target
+Generator</a> dialog  for specifying complex
+targets consisting of multiple pages and several bands on each
+target page.</p>
+<p>Clicking on the GD/GDD… button opens the / <a class="reference external" href="phasegdgdd_target_generator.html">Phase/GD/GDD Target
+Generator</a> dialog, allowing
+you to create Phase/GD/GDD wavelength dependencies using terms
+familiar to specialists in ultra-fast optics.</p>
+<p class="p-heading2 rubric" id="characteristics">Characteristics</p>
+<p>You can specify characteristics to be matched in the design
+process by entering their abbreviations in the Characteristic(s)
+field. The list of available characteristics can be obtained by
+pressing the button to the right of the Characteristic(s) field,
+as indicated in the <a class="reference external" href="idh_spectral_characteristics.html">Target
+Selection</a>/  / interface. The
+/ <a class="reference external" href="idh_spectral_abbreviations.html">abbreviations</a> for the
+characteristics include:</p>
+<ul>
+<li><div class="p-normal docutils container">
+<p>Reflectance: RS, RP, and RA (for S-, P-, and Average
+polarizations),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Back Reflectance: BRS, BRP, and BRA (for S-, P-, and Average
+polarizations),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Transmittance: TS, TP, and TA (for S-, P-, and Average
+polarizations),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Absorptance: AS, AP, and AA (for S-, P-, and Average
+polarizations),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Phase Shift on Reflection: PRS and PRP (for S- and
+P-polarizations),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Differential Phase Shift for Reflection: DPR,</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Phase Shift on Transmission: PTS and PTP (for S- and
+P-polarization),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Differential Phase Shift for Transmission: DPT,</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Group delay and group delay dispersion on reflection: GDRS,
+GDRP, GDDRS, GDDRP,</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Group delay and group delay dispersion on transmission: GDTS,
+GDTP, GDDTS, GDDTP,</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="userdefinedtargeteditor.html">User-Defined Target</a> (UDT).</p>
+</div>
+</li>
+</ul>
+<p>You can enter a set of these characteristics separated by blanks
+or commas, and they will be included in the set of targets for the
+current angle of incidence.
+When you add characteristics, the corresponding columns are
+immediately added to the spreadsheet. For each characteristic,
+three columns will be present in the list box:</p>
+<ul>
+<li><div class="p-normal docutils container">
+<p>Target function values</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Target function tolerance values</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Target qualifiers (labeled as “Q” and displayed in a
+different color)</p>
+</div>
+</li>
+</ul>
+<p>Additionally, you have the option to specify that any target
+includes / <a class="reference external" href="floating_constant_targets.html">Floating Constants</a>.
+This allows for greater flexibility in defining and adjusting the
+target parameters within the design process.</p>
+<p class="p-heading2 rubric" id="target-qualifiers">Target qualifiers</p>
+<p>To set a qualifier for a target, click on a qualifier cell in the
+selected row and choose one of the following
+/ <a class="reference external" href="idh_target_qualifier.html">qualifier</a> abbreviations:</p>
+<ul>
+<li><div class="p-indentlist2 docutils container">
+<p>“A” corresponds to the Bypass Above option: OptiLayer
+bypasses the target when the corresponding characteristic is
+greater than a target value.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>“B” corresponds to the Bypass Below option: OptiLayer
+bypasses the target when the corresponding characteristic is
+less than a target value.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>“R” corresponds to the Range option: OptiLayer bypasses the
+target when the corresponding characteristic falls within a
+specified segment. When using the Range qualifier, an
+additional column will appear in the Target editor
+automatically, allowing you to specify the upper value for
+the ranges.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>Blank (empty) field indicates a usual target without any
+special qualifiers.</p>
+</div>
+</li>
+</ul>
+<p class="p-heading2 rubric" id="angular-mode">Angular Mode</p>
+<p>In the <a class="reference external" href="idh_data_display_modes.html">Angular Mode,</a>  the dialog
+may have a different layout or options compared to the standard
+mode.</p>
+<p><img alt="image5" src="../../_images/Angular_mode_target_new.png" /></p>
+<p>In the Angular Mode, a target function file can contain multiple
+data pages, with each page corresponding to a specific wavelength.
+The currently displayed page is characterized by the value printed
+in the Wavelength field. You can switch between different pages
+representing different wavelengths by selecting the necessary
+values at the bottom of the spreadsheet. Different pages of a
+target function file can be modified independently, allowing you
+to use different sets of spectral characteristics and/or angles of
+incidence for different wavelengths.
+To add or remove target function pages for different wavelengths,
+you can press the “Wavelengths…” button, which will open a
+dialog for / <a class="reference external" href="idh_modify_wavelengths.html">Modifying
+Wavelengths</a>/ <strong>.</strong></p>
+<p>Specify the number of angles of incidence at which you want to set
+targets in the “Number of angular points” field.
+You have the flexibility to switch between Spectral and Angular
+modes using the Popup Menu invoked with the right mouse button.
+This menu also allows you to access features such as starting the
+Angles or Wavelengths editor and selecting target function
+characteristics.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

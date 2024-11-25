@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric">Example
+20. Pre-production error
+analysis: hot mirror HM2 from
+LEC24D11 is used as an
+example.
+:</p>
+<p>name: example-20.-pre-production-
+error-analysis-hot-mirror-hm2-fro
+m-lec24d11-is-used-as-an-example.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</div></blockquote>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer options and
+random nature of some of their elements, the results obtained may
+differ from those described below.</p>
+<p>The main purpose of this example is to demonstrate the
+Pre-production Estimation of Errors… mode of the Monitoring menu,
+which is used to evaluate the effects associated with error
+correlation in the case of optical monitoring of coating
+production.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D20. Datafiles needed to run this exercise are already loaded
+into RAM. These are the substrate Glass n=1.52, the layer
+materials n=2.35 and n=1.46, and the hot mirror design HM-2 from
+LEC24D11. Open the T&amp;R&amp;Phase window to view the transmittance of
+the loaded design.</p>
+<p>Unlike the error analysis options provided in the Analysis menu
+and illustrated in LECD24D16 and LEC24D17, the Pre-production
+Estimation of Errors option of the Monitoring menu is aimed to
+evaluate the effects associated with correlated thickness errors
+that are typical for production with optical monitoring. There is
+a wide variety of optical monitoring techniques and strategies for
+their application. The discussed option is aimed at assessing the
+effects associated with direct optical monitoring when
+measurements are carried out on one of the produced samples. It is
+useful for assessing the cumulative effect of increasing thickness
+errors with increasing number of deposited layers. The option can
+be used for both monochromatic and broadband optical monitoring.</p>
+<p>Let us start with broadband optical monitoring (Monitoring -&gt;
+Pre-production Estimation of Errors -&gt; Broadband Monitoring…). In
+the window that opens, select normal incidence transmittance as
+the monitoring signal. Set the broadband measurement range to
+400-900 nm with 501 uniformly distributed spectral points. In the
+Errors field check Random Spectral, which means that independent
+normally distributed random errors with zero mean values will be
+added to the simulated transmittance measurement data. In the
+corresponding input field, set the level of these errors to 1%.
+This means that the standard deviations of the simulated
+transmittance errors will be 1% of the simulated T values.</p>
+<p>Click the OK button to run the option. The Pre-production
+Estimation of Errors in the window will show the expected levels
+of errors in the layer thicknesses caused by random errors
+measured transmittance data. The levels of errors are not very
+large, but the cumulative effect of increasing errors is clearly
+visible.</p>
+<p>Now suppose that 0.5 nm random errors are introduced during a
+deposition of each new mirror layer. Such errors may be due to
+inaccuracies in the deposition process. Since errors in early
+layers affect the measured transmittance for subsequent layers,
+this will cause additional errors in all layers starting with the
+second layer (an effect called correlation of errors in layer
+thicknesses). To estimate the errors of a new type, it is possible
+to use the Parameters button in the lower left corner of the
+Pre-production Estimation of Errors window. In the parameter’s
+settings window, switch to Direct Thickness Errors and set the
+levels of these errors to 0.5 nm.</p>
+<p>Click OK to run the option. Again, the cumulative effect of
+increasing errors is clearly visible in the Pre-production
+Estimation of Errors window. In all layers, starting with the
+second layer, the error levels are higher than the 0.5 nm level of
+errors made directly in these layers. This is a negative
+consequence of the correlation of thickness errors by the optical
+monitoring procedure. It is worth noting that the error pattern
+for the last part of the mirror layers resembles that observed in
+the previous experiment with random measurement errors. This is
+due to the fact that the additional errors caused by the
+cumulative effect prevail over the errors of individual layers,
+which means that the cumulative effect works in a similar way for
+errors related to the deposition process and errors related to
+optical monitoring.</p>
+<p>Similar experiments can be performed with monochromatic optical
+monitoring. They are applicable for the case of direct level
+monitoring when the transmittance levels for terminating layer
+depositions are not adjusted during the layer depositions. A setup
+window similar to the one described above opens when selecting
+Monitoring -&gt; Pre-production Estimation of Errors -&gt; Monochromatic
+Monitoring… option. In the Monitoring Wavelength field, set the
+monitoring wavelength. Let us set the wavelength of 400 nm. When
+setting the error levels in the Errors field, it should be taken
+into account that monochromatic monitoring is much more sensitive
+to random measurement errors than broadband monitoring. Therefore,
+we will experiment with a level of such errors of 0.05%. Note that
+this value is 20 times smaller than the random error level used in
+the experiments with broadband monitoring.</p>
+<p>Experiment with different monitoring wavelengths. You can change
+the monitoring wavelength using the Parameters tab at the lower
+left corner of the window.
+ Note that despite the much lower level of measurement errors, the
+estimated thickness errors are much higher than in the case of
+broadband monitoring.
+ Note that the estimated thickness errors are very dependent of
+the choice of monitoring wavelength.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Material Dispersion Evaluation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="material-dispersion-evaluation">
+<h1>Material Dispersion Evaluation</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Material Dispersion Evaluation</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="material-dispersion-evaluation-1">Material Dispersion Evaluation</p>
+</div>
+</div>
+<p>` &lt;pulse_options.html&gt;`__ ` &lt;idh_menu_analysis.html&gt;`__
+` &lt;pre_production_broadband.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Using this option, it is possible to calculate the dispersion
+accumulated by a pulse passing through a dispersive medium of a
+given thickness.</p>
+<p><img alt="image1" src="../../_images/matdispev1.png" /></p>
+<p>It is necessary to specify the type of medium (taken from the
+<a class="reference external" href="idh_edit_layer_material.html">Substrate</a> database) and its
+thickness.</p>
+<p>Optionally, it is possible to exclude the term (A + B*ω) from the
+phase characteristic and the constant term B from the GD plot.
+These terms do not affect the GDD characteristic.</p>
+<p>If a combination of several media needs to be analyzed, it can be
+performed with the help of the Stack object.</p>
+<p><img alt="image2" src="../../_images/matdispev2.png" /></p>
+<p>In this case, all media specified in the <a class="reference external" href="stack_database.html">Stack
+object</a> are considered. Coatings, if
+present, are ignored during Material Dispersion Evaluation.</p>
+<div class="docutils container">
+<p><img alt="image3" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: The Substrate object (Substrate + Thickness mode) or all media in
+the Stack object (Stack mode) should be represented as formulas, as the
+calculation of GD/GDD requires differentiation operations.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

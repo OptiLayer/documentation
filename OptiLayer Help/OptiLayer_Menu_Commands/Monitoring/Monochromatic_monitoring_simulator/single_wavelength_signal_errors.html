@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Monochromatic Monitoring Simulation - Singal Errors</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="monochromatic-monitoring-simulation-singal-errors">
+<h1>Monochromatic Monitoring Simulation - Singal Errors</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="monochromatic-monitoring-simulation-signal-errors">Monochromatic Monitoring Simulation - Signal Errors</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt; <a class="reference external" href="monochromatic_monitoring.html">Monochromatic Monitoring
+Simulation</a> &gt;</p>
+<p class="p-heading1 rubric" id="monochromatic-monitoring-simulation-signal-errors-1">Monochromatic Monitoring Simulation - Signal Errors</p>
+</div>
+</div>
+<p>` &lt;single_par_deviations.html&gt;`__ ` &lt;monochromatic_monitoring.html&gt;`__
+` &lt;single_wavelength_simulation.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image1" src="../../../_images/Mono_monitor3.png" /></p>
+<p>At the third step of the dialog, errors in measured online data
+are specified.</p>
+<p>The Random errors entry field specifies the level of random noise
+in online data.</p>
+<p>The Fluctuations group of entry fields allows the user to specify
+piece-wise linear fluctuations of measurement data over time. The
+Drift entry field specifies the level of additive measurement data
+drift in a random time interval specified by the next two fields.
+The value in the Mean time entry field is the mean value of this
+interval, and the value in the RMS field is the standard deviation
+of this interval.</p>
+<p>The Calibration Drifts group of entry fields is used to simulate
+shifts and calibration drifts of online spectrophotometric
+measurements over time. The rate of shift or calibration drift is
+specified in the Rate,
+%<a class="reference external" href="tg://bot_command/?command=1000s">/1000s</a> entry field. If
+the Shift radio button is checked, then measurement data is
+shifted by a% in 1000 seconds. If the Scale radio button is
+checked, a measurement data calibration drift is simulated. This
+means that the baseline transmittance of an open optical path is
+measured as 100% + a% in 1000 seconds after its calibration as
+100%. The Recalibration time entry field allows the user to
+specify the time interval in which recalibration of the online
+monitoring device is done.</p>
+<p>The Time interval entry field allows specifying how often
+monochromatic measurements are performed.</p>
+<p>The Update button performs a repaint operation of the simulated
+signals in the right pane.</p>
+<p>See also:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="single_dep_rates.html">Monochromatic Monitoring Simulation - Deposition
+Rates</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="broadmonsim_deprates.html">Monochromatic</a> <a class="reference external" href="single_par_deviations.html">Monitoring
+Simulation - Parameters
+Deviations</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="broadmonsim_deprates.html">Monochromatic</a> <a class="reference external" href="single_wavelength_simulation.html">Monitoring
+Simulation - Simulation of
+Deposition</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="broadmonsim_deprates.html">Monochromatic</a> <a class="reference external" href="single_wavelength_result.html">Monitoring
+Simulation - Resulting
+Performance</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

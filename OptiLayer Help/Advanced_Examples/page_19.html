@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric">Example 15. Color
+options.</p>
+<dl class="field-list simple">
+<dt class="field-odd">name<span class="colon">:</span></dt>
+<dd class="field-odd"><p>example-15.-color-options.
+:class: p_Heading1</p>
+</dd>
+</dl>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer design
+options and random nature of some of their elements, the results
+obtained may differ from those previously saved in the design
+database</p>
+<p>The main purpose of this example is to demonstrate the Color
+analysis and synthesis options of the OptiLayer software.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D15. Datafiles needed to run this exercise are already loaded
+into RAM. These are the substrate Polycarbonate, the layer
+materials Nb2O5 and SiO2 from the Rochester Institute of
+Technology database, the target file AR at 380-780 nm, 0-45
+degree, and the 6-layer AR design. The target file specifies
+requirements for zero Rs and Rp reflectances in the spectral range
+from 380 to 780 nm and for a set of incidence angles in the
+0–45-degree range.</p>
+<p>Open the T&amp;R&amp;Phase option in the Analysis menu to see the spectral
+characteristics of the loaded design. Note that it provides
+excellent antireflection properties.</p>
+<p>Let us examine the color properties of the loaded design in
+reflected light. To do this, open the Color… option in the
+Analysis menu. In the Characteristic field of the Color Evaluation
+Parameters window select Reflectance as the characteristic to
+examine. In the Polarization field select the Average option.</p>
+<p>To examine the color properties in a range of incidence angles,
+select the Range option and set the minimum and maximum angle
+values to 0 and 45. Enter 10 as the number of points in the
+specified angular range. In the Display field, leave only Color
+Target and Design selected. The Design selection will allow us to
+see the colors of the loaded design in reflected light at
+different angles. The color target is not loaded yet, but this
+selection will be needed later. Leave all other selections as
+their defaults. Clicking the Calculate button opens the Color
+Evaluation window with the choice of CIE xyz (1931) (see the top
+tabs) Color Diagram (see the bottom tabs).  Note that bottom tabs
+allow you to switch between Spreadsheet and Color Diagram
+presentations of the color analysis results, while the top tabs
+are used to select different color spaces. The set of red
+triangles on the color diagram shows how the color changes as the
+viewing angle changes.</p>
+<p>Suppose we want to apply an antireflection coating to eye-glasses
+and we do not want the color to change with the viewing angle. We
+will formulate this requirement for the angular range of 0-45
+degrees. This is done by introducing the color target White color
+in reflected light 0-45 degree. In the Data -&gt; Color Target
+database, select this file and use the Edit tab to see the color
+target specification. You can use the Preview tab of the Color
+Target window to view the target on the Color diagram.</p>
+<p>Load the color target file into RAM. Note that it is marked on the
+color diagram.</p>
+<p>Select the Refinement option in the Synthesis menu. The MF value
+shown in the first line on the right side of the window
+corresponds to the merit function composed of the spectral and
+color merit function. Check in Options that the Sequential QP
+local optimization method is selected. Click the Run button. In a
+few seconds, you will get an optimized design with the MF reduced
+by a factor of 3.</p>
+<p>Select the top line corresponding to this design and click the
+Load button to place it in the General Information and evaluation
+windows.</p>
+<p>Examine Color Evaluation window. Note that the colors in reflected
+light are close to the target color for all requested incidence
+angles. Also look at the T&amp;R&amp;Phase window. It is clear that the
+requested color properties were achieved at the expense of some
+increase in the reflectances in the angular range 0-45 degree. But
+this increase is not very large.</p>
+<p>The relationship between the requirements for the target color and
+spectral properties is controlled by applying weights to the color
+and spectral merit functions, which are additive terms of the
+composed MF. Giving more wight to one of these functions means
+more stringent requirements for the approximation of the
+corresponding target. Target weights can be controlled via the
+General Information window. To change the weight, click the error
+in the desired Target line.</p>
+<p>The design obtained taking into account the color requirements is
+saved in the design database.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Removing thin layers</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="removing-thin-layers">
+<h1>Removing thin layers</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Removing Thin Layers</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="removing-thin-layers-1">Removing Thin Layers</p>
+</div>
+</div>
+<p>` &lt;idh_design_cleaner.html&gt;`__ ` &lt;idh_menu_synthesis.html&gt;`__
+` &lt;idh_modify_design.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Thin Layer Removal command is accessible from the <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a>, allowing the user to remove
+thin layers from the obtained design.</p>
+<p>The Thin Layer Removal window displays the expected merit function
+values after removing various design layers (MF increase column).
+Layers in the list box are sorted by their physical thickness
+values in ascending order.
+In Automatic mode, Thin Layer Removal will continue until one of
+the termination criteria is met. Termination criteria include
+stopping based on the allowed increase of the merit function value
+and/or stopping when there are no layers thinner than a given
+value.
+The “Exclude material(s)” list enables the exclusion of specific
+materials from consideration. This feature is particularly useful
+when dealing with thin metal layers present in the design.</p>
+<p><img alt="image1" src="../../_images/thin_lay.png" /></p>
+<p>In Manual mode, it is possible to remove one layer at a time.</p>
+<p><img alt="image2" src="../../_images/thin_lay_manual.png" /></p>
+<p>To remove a layer in Manual mode, select the corresponding row in
+the list box (the name of the layer will appear in the message
+line above the list box), and click the OK button. You can only
+remove one layer at a time.</p>
+<blockquote>
+<div><p><img alt="image3" src="../../_images/thin_lay_confirm.png" /></p>
+</div></blockquote>
+<p>If the Finish with Refinement checkbox is checked, OptiLayer will
+automatically conduct the Refinement procedure after each layer
+removal.</p>
+<p>Click the Cancel button to exit the dialog without removing any
+layers.
+You can also utilize the <a class="reference external" href="idh_design_cleaner.html">Design
+Cleaner</a> procedure to automatically
+decrease the number of layers within the acceptable increase in
+merit function value.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

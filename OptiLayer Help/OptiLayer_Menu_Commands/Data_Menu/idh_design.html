@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Design Database</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="design-database">
+<h1>Design Database</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Design_Database/idh_material_abbreviations.html">Layer Material Abbreviations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Design_Database/idh_design_editor.html">Design Editor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Design_Database/Design_Editor/idh_design_formula.html">Design Formula Editing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Design_Database/Design_Editor/idh_layer_status.html">Layer Optimization Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Design_Database/Design_Editor/design_inhom_inter.html">Design Inhomogeneities/Interlayers</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p>Design Database</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p>Design Database</p>
+</div>
+</div>
+<p>` &lt;idh_layer_material_status.html&gt;`__ ` &lt;idh_menu_data.html&gt;`__
+` &lt;idh_material_abbreviations.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>OptiLayer Design essentially comprises a collection of data that
+details the sequence and physical characteristics of a set of
+layers. Each layer is defined by its thickness, the material from
+which it is made, and its status. The material is denoted by an
+abbreviation for ease of reference.
+Using <a class="reference external" href="idh_material_abbreviations.html">abbreviations</a> to
+represent layer materials enables the design structure to be
+independent of the specific materials of the layers. In the
+system, each material is assigned an abbreviation, which can be
+modified via the Materials tab in the <a class="reference external" href="idh_synthesis_options_material.html">Options
+dialog</a>.</p>
+<p>Layer <a class="reference external" href="idh_config_thickness_units.html">thicknesses</a> can be
+designated in several units: metric, optical, Quarter-Wave (QWOT),
+or Full-Wave (FWOT). Once a design and the corresponding materials
+for the abbreviations used in the design are loaded into the
+system, an automatic association is maintained among these four
+types of thickness measurements. It’s important to note that for
+QWOT and FWOT units, the control wavelength must be defined in the
+design document. The control wavelength serves as a crucial
+parameter for establishing a relationship between the physical and
+the optical thickness of a layer. This parameter should not be
+confused with the Reference Wavelength found in the
+<a class="reference external" href="idh_configuration.html">Configuration dialog</a> (under the
+<a class="reference external" href="idh_config_thickness_units.html">Thickness Units</a> tab), which
+is solely used for displaying the thicknesses of layers.</p>
+<p>Layer <a class="reference external" href="idh_layer_status.html">status</a> enables users to dictate
+whether a layer’s thickness is variable or fixed during the
+optimization process. Thicknesses with an active status (indicated
+as “A”) can be adjusted throughout the optimization process,
+whereas those with a fixed status (“F”) remain constant. The
+default status is “active”. Users can modify this parameter by
+editing the respective entry in the design document’s right-hand
+column.</p>
+<p>Important Notes<strong>:</strong></p>
+<div class="docutils container">
+<p><img alt="image1" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>If the specific materials corresponding to the character abbreviations
+in a design file are changed, the optical thicknesses of the layers in a
+design will remain constant, while only the physical (metric)
+thicknesses of the layers will adjust.</p>
+<div class="docutils container">
+<p><img alt="image2" src="../../_images/arrow_r.png" /></p>
+</div>
+<p>To maintain the physical thicknesses unchanged, it is essential to
+activate the “Keep physical thicknesses” option located at the bottom of
+the Design Editor dialog.</p>
+<p>For more details on how to alter design parameters, refer to the
+<a class="reference external" href="idh_modify_design.html">Modifying Design</a> section.</p>
+<p>At the bottom of the Design Editor, summary information is displayed.
+This summary includes the total physical thickness, total optical
+thickness, total Full-Wave Optical Thickness (FWOT), total Quarter-Wave
+Optical Thickness (QWOT), and the total number of layers. A more
+detailed report on the design can be obtained by using the “Σ” button.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pre-production Estimation of Errors - Monochromatic Monitoring</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="pre-production-estimation-of-errors-monochromatic-monitoring">
+<h1>Pre-production Estimation of Errors - Monochromatic Monitoring</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Pre-production Estimation of Errors - Monochromatic
+Monitoring</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Main ideas of the option allowing to estimate the effect of error
+accumulation in the case of monochromatic monitoring were
+published in Applied Optics in 2006:</p>
+<div class="line-block">
+<div class="line">A. V. Tikhonravov, M. K. Trubetskov, and T. V. Amotchkina,
+“Statistical approach to choosing a strategy of monochromatic
+monitoring of optical coating production,” Appl. Opt. 45,
+7863-7870 (2006)</div>
+<div class="line"><a class="reference external" href="http://www.opticsinfobase.org/abstract.cfm?URI=ao-45-30-7863">http://www.opticsinfobase.org/abstract.cfm?URI=ao-45-30-7863</a></div>
+</div>
+<p>Main settings of the pre-production estimation of errors for the
+monochromatic monitoring case are entered in the setup dialog.
+Before using this option, you will need to create a <a class="reference external" href="idh_monitor.html">monitoring
+spreadsheet</a>, otherwise you will see the
+warning:</p>
+<p><img alt="image1" src="../../../_images/pre_monoch_warning.png" /></p>
+<p>Results of pre-production estimation of errors in the
+monochromatic monitoring case are definitely dependent on the
+selected monitoring strategy.</p>
+<p><img alt="image2" src="../../../_images/mono_1.png" /></p>
+<p>It is necessary to specify what kind of errors are of interest.</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Random errors (and their level in %)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Systematic shift (and the corresponding level in %)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Direct Thickness Errors (in nm)</p>
+</div>
+</li>
+</ul>
+<p>In order to provide a properly scaled bar diagram, it is possible
+to indicate the truncation level for errors that are too high
+(“Don’t plot errors higher than”) in the entry field.</p>
+<p><img alt="image3" src="../../../_images/mono_2.png" /></p>
+<div class="line-block">
+<div class="line">As a result, a bar chart will display expected error levels.
+Using this chart, it is possible to analyze the obtained design
+with respect to manufacturability with the selected monitoring
+type and parameters.</div>
+</div>
+<div class="docutils container">
+<p><img alt="image4" src="../../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: Since 2014, multi-chip configurations (deposition strategies with
+multiple witness chips) are supported. The strategy should be specified
+in the <a class="reference external" href="idh_monitor.html">OptiMonitor window</a>.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

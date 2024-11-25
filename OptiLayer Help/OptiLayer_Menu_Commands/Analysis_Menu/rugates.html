@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Rugates</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="rugates">
+<h1>Rugates</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Rugates/creatematerialassistant.html">Create Material Assistant</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Rugates</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="rugates-1">Rugates</p>
+</div>
+</div>
+<p>` &lt;export_target_setup.html&gt;`__ ` &lt;idh_menu_analysis.html&gt;`__
+` &lt;creatematerialassistant.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Rugates option allows for the analysis of so-called rugate
+coatings. Rugate coatings are described by an analytical
+expression that gives the dependence of the refractive index on
+the coating thickness. In OptiLayer, the dependence of the
+refractive index is described with the help of a fraction function
+based on <a class="reference external" href="idh_edit_layer_material.html">Changeable Composite</a>
+material.</p>
+<p><a class="reference external" href="idh_edit_layer_material.html">Changeable Composite</a> material is
+a mixture of two materials, which we will call High Index and Low
+Index material. If the Change option of such material is “Per
+Layer,” it can be used for the rugate filter description.
+Therefore, it is necessary to create and load at least one Layer
+material that is a Changeable Composite into memory. For easy
+creation, you can use the “Create!” button in the Rugates dialog,
+which will invoke the <a class="reference external" href="creatematerialassistant.html">Create Material
+Assistant</a> for you.</p>
+<p><img alt="image1" src="../../_images/rug1.png" /></p>
+<p>One of the examples is shown in this figure. It is a rugate filter
+with quintic apodization. In the expression determining the
+dependence of the fraction on coordinate, it is possible to use
+the following predefined variables:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>N - Number of Layers</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>L - Current Layer Number</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>TotalThickness - Total Physical or Optical Thickness (μm)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>LayerThickness - Physical or Optical Thickness of one layer
+(μm)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Thickness - Cumulative Physical or Optical Thickness to the
+center of the current layer (μm)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Control Wavelength - Control Wavelength (μm)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Result - Output characteristic describing the rugate filter,
+that is, the fraction or packing density of High Material</p>
+</div>
+</li>
+</ul>
+<p>The Total Thickness, Control Wavelength, and Number of Layers
+entry fields determine the corresponding predefined variable
+values.</p>
+<p class="p-heading2 rubric" id="short-description-of-expression-syntax">Short description of expression syntax</p>
+<p>The syntax of the expression is quite simple. Generally, it
+consists of a sequence of expressions that should be placed on
+separate lines and terminated with a semicolon. Any text after a
+semicolon is ignored and can be used as a comment.
+New variables can be defined by expressions of the type:</p>
+<p><strong>NewVar</strong> = something;</p>
+<p>After definition, the value of the new expression can be used on
+the right-hand side of expressions.
+The precedence of operations from highest to lowest is as follows:</p>
+<ol class="arabic">
+<li></li>
+<li><div class="p-normal docutils container">
+<p><strong>^</strong> (power)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>*</strong> (multiplication),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>/</strong> (division),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>div</strong> (integer division),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>%</strong> (remainder)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>+</strong> (addition),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>-</strong> (subtraction)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>&gt;, &gt;=, &lt;, &lt;=,</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>!=</strong> (not equal),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>==</strong> (equal)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>!</strong> (not)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>||</strong> (or),</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>&amp;&amp;</strong> (and), <strong>~</strong> (xor)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>=</strong> (assign)</p>
+</div>
+</li>
+</ol>
+<p>The result of logical operations is false (value 0) or true (value
+1).</p>
+<p>The following elementary functions are predefined and can be used
+in expressions:</p>
+<ul>
+<li></li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>exp(x)</strong> - exponent,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>sqr(x)</strong> - square of x, the same as x^2,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>sqrt(x)</strong> - the square root of a number,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>abs(x)</strong> - absolute value,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>round(x)</strong> - round to a nearest integer,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>trunc(x)</strong> - truncates a real number to an integer’,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>ln(x)</strong> - natural logarithm of x,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>log10(x)</strong> - logarithm base 10 of x,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>logN(x, y)</strong> - logarithm base x of y,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>power(x, y)</strong> - power, the same as x^y,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>max(x, y)</strong> - the maximum of both arguments,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>min(x, y)</strong> - the minimum of both arguments,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>sin(x)</strong> - sine of an angle in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>cos(x)</strong> - cosine of an angle in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>tan(x)</strong> - tangent of an angle in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>arcsin(x)</strong> - inverse sine in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>arccos(x)</strong> - inverse cosine in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>arctan2(x, y)</strong> - inverse tangent (x/y) in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>arctan(x)</strong> - inverse tangent in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>sinh(x)</strong> - hyperbolic sine of an angle in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>cosh(x)</strong> - hyperbolic cosine of an angle in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>tanh(x)</strong> - hyperbolic tangent of an angle in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>arcsinh(x)</strong> - inverse hyperbolic sine in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>arccosh(x)</strong> - inverse hyperbolic cosine in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>arctanh(x)</strong> - inverse hyperbolic tangent in rad,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>degtorad(x)</strong> - conversion of degrees to radians,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>radtodeg(x)</strong> - conversion of radians to degrees,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>random</strong> - generates uniformily distributed rundom numbers
+in the semi-interval [0, 1).</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><strong>randg(Mean, StdDev)</strong> - produces random numbers with
+Gaussian distribution about the Mean.</p>
+</div>
+</li>
+</ul>
+<p>The fraction profile can be observed on the Preview page of the
+Rugates dialog.</p>
+<p><img alt="image2" src="../../_images/rug2.png" /></p>
+<p>Note that the y-axis is marked as “Result” now.
+When entering complicated expressions, it is very useful to view
+intermediate values of expressions. For this purpose, select any
+left-hand side expressions and switch to the Preview tab again.
+For example, after selecting the Apodization variable in the
+expression editor, the Preview page will look as follows.</p>
+<p><img alt="image3" src="../../_images/rug3.png" /></p>
+<p>Note that the y-axis is now designated as “Apodization.”
+The repository can be used to store Rugate filters definitions.
+Several additional examples found in the repository demonstrate
+different techniques and can help you start working with the
+Rugates option.
+Press the Generate button to create a rugate-like coating and to
+export it to the OptiLayer environment.
+Below, you can see the refractive index profile corresponding to
+the considered example and its spectral performance.</p>
+<p><img alt="image4" src="../../_images/rug4.png" /></p>
+<p>We recommend using <a class="reference external" href="idh_synthesis_options_plot.html">HiRes
+Plots</a> mode when working with
+Rugate coatings, because high total optical thicknesses require
+dense wavelength grids for proper display of fine features.</p>
+<p><img alt="image5" src="../../_images/rug5.png" /></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

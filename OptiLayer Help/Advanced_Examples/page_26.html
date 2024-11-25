@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric" id="e">Example 22. Low-E
+(low emissivity) coatings for
+glazing applications.</p>
+<p>xample-22.-low-e-low-emissivity-c
+oatings-for-glazing-applications.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</div></blockquote>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer options and
+random nature of some of their elements, the results obtained may
+differ from those described below.</p>
+<p>This example presents an analysis of the spectral and color
+properties of optical coatings used to reduce heat transfer in
+double and triple glazing. We use materials typical for such
+coatings, with refractive index wavelength dependencies taken from
+the open access database Refractive Index Info. In particular, the
+refractive index NiCr is modeled based on the Ni and Cr data,
+assuming 80% - 20% nickel and chromium content.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D22. Datafiles needed to run this exercise are already loaded
+into RAM. These are the substrate Soda lime glass, the layer
+materials Si3N4, Ag, and NiCr, the design Double silver low-E, and
+the target AR 420-680 nm + low-E 900-1800 nm. Open the T&amp;R&amp;Phase
+window to see the spectral target and normal incidence
+transmittance of the loaded design. The loaded design is a 9-layer
+coating with layer thicknesses set in the ranges specified in the
+above-mentioned patent.</p>
+<p>The loaded materials have abbreviations H, A, and N for the Si3N4,
+Ag, and NiCr, respectively.</p>
+<p> Note: that the design has two Ag layers of 11 and 15 nm thickness
+and four very thin NiCr layers with the thicknesses of 0.7 nm
+each. These NiCr layers are used to improve adhesion at the
+boundaries of the Ag and nearby Si3N4 layers.</p>
+<p> Note that due to the presence of two silver layers, the 9-layer
+design under consideration has a low transmittance in the IR
+region, and, accordingly, a low thermal emissivity. In the most
+part of the specified AR region, it has a transmittance of over
+70%.</p>
+<p>To analyze the color properties of this design, go to the Analysis
+-&gt; Color… option and in the Color Evaluation Parameters window,
+check Transmittance and Reflectance in the Characteristic field.</p>
+<p>Click the Calculate button at the bottom of this window. The Color
+Evaluation window will open with the CIE xyz (1931) chromaticity
+diagram. It shows that the color of the transmitted light is close
+to white, and the color of the reflected light is in the blue
+color range.</p>
+<p>It is worth doing a couple of experiments with the 9-layer design.
+First, we will try to improve the transmittance in the AR region
+while keeping the NiCr layer thicknesses at 0.7 nm. Use the Edit
+command in the design database to see the design spreadsheet of
+the Double silver low-E design.</p>
+<p>Note that in the Status column of the spreadsheet, all NiCr layers
+have the status F, which means that their thicknesses will be kept
+unchanged during the refinement procedure.</p>
+<p>Go to the Synthesis -&gt; Refinement option and click the Run button
+to start the refinement procedure. The transmittance in the AR
+region has increased slightly, but this increase is hardly
+significant.</p>
+<p>Now let us load the Double silver low-E design again. Go to the
+Modify Design option and change the status of all NiCr layer to A
+(active).</p>
+<p>Open the Refinement option again and run the refinement procedure.
+A significant improvement in transmittance in the AR region is
+observed. Note that this improvement was achieved by removing all
+NiCr layers from the design structure. The resulting design has
+only 5 layers. It is saved in the design database under the name
+Double silver low-E refined NiCr not fixed.</p>
+<p>It is worth loading this design and checking its color properties.
+They are close to the color properties of the original 9-layer
+design.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

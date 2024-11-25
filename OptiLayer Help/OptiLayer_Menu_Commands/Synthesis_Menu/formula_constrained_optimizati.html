@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Formula Constrained Optimization</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="formula-constrained-optimization">
+<h1>Formula Constrained Optimization</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Formula_Constrained_Optimization/formula_constrained_vars.html">Formula Constrained Optimization - Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Formula_Constrained_Optimization/formula_constrained_form.html">Formula Constrained Optimization - Formula</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Formula Constrained Optimization</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Formula constrained optimization is a specialized optimization
+option based on the formula representation of a multilayer
+coating. Some formula parameters may be considered as unknown
+parameters, some of which are continuous variables changing within
+certain limits, while others may be integer parameters with a
+predefined set of values.
+For example, a quarter-wave stack with n pairs of layers, along
+with another non-quarter wave stack with m pairs and QWOT
+thicknesses equal to a and b, can be represented as:</p>
+<p> <strong>(H L)^n (a H b L)^m</strong></p>
+<p>We can consider a set of possible values for integers n and m. For
+each combination of n and m, OptiLayer will attempt to find the
+optimal values of continuous parameters a and b, optimizing the
+design performance with respect to the loaded targets.
+Another example could be a stack with periods having varying
+optical thicknesses. Ultra-wide range high reflectors, chirp
+mirrors, and other coatings can be designed using this method.
+Consider a formula:</p>
+<p> <strong>((a*iL+b)H (c*iL+d)L)^n</strong></p>
+<p>where a, b, c, and d are continuous variables, and iL is a
+predefined integer equal to the layer number in the design.
+Additional constraints are implicitly formulated for expressions
+in this formula:</p>
+<p> <strong>(a*iL+b) ≥ 0</strong></p>
+<p>and</p>
+<p> <strong>(c*iL+d) ≥ 0</strong></p>
+<p>More complex problems can be specified using the Formula
+Constrained Optimization option.</p>
+<p><img alt="image1" src="../../_images/arrow_r.png" /> Note 1: Layers in the formula in this option are
+numbered starting from the substrate.</p>
+<p><img alt="image2" src="../../_images/arrow_r.png" /> Note 2: Two-character abbreviations are allowed, so it
+is necessary to separate coefficients and material abbreviation
+symbols by blanks.</p>
+<p><img alt="image3" src="../../_images/arrow_r.png" /> Note 3: To differentiate between variables and material
+abbreviations, it is recommended to use small letters for
+variables and capital letters for material abbreviations.</p>
+<p>See also:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="formula_constrained_vars.html">Formula Constrained Optimization -
+Variables</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="formula_constrained_form.html">Formula Constrained Optimization -
+Formula</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric" id="exam">Example 16. Thickness
+error analysis.</p>
+<dl class="simple">
+<dt>ple-16.-thickness-error-analysis.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer design
+options and random nature of some of their elements, the results
+obtained may differ from those previously saved in the design
+database</p>
+<p>The main purpose of this example is to demonstrate the results of
+statistical error analysis with uncorrelated thickness errors of
+individual coating layers.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D16. Some datafiles needed to run this exercise are already
+loaded into RAM. These are the substrate Glass n=1.52, the layer
+materials n=2.35 and n=1.46. In the design database, select the
+file SWP-21, by quasi-Newton and load it.</p>
+<p>Open the T&amp;R&amp;Phase option in the Analysis menu to see the
+transmittance of this short-wave pass filter in the 400-700 nm
+spectral range.</p>
+<p>In the Analysis menu, select Errors-&gt; Error Analysis… option. In
+the Error Analysis Setup window, use Characteristic tab to set the
+analyzed spectral characteristic and statistical analysis
+parameters. By default, the calculation of mathematical
+expectation (M) and corridor of deviations (D) is enabled. This
+means that at the end of the statistical analysis, the results of
+individual error tests will be replaced by these statistical
+characteristics.</p>
+<p>Use Thickness tab to set levels of errors in layer thicknesses.
+Recall that in this option we consider uncorrelated thickness
+errors of individual layers. It is possible to consider two types
+of such errors, which are called additive and relative thickness
+errors. The level of errors of the first type does not depend of
+the layer thickness, and the level of errors of the second type is
+proportional to the layer thickness. We assume that in both cases
+the mathematical expectations of errors are equal to zero. In this
+case, the level of errors is determined by the standard
+deviation σ of the normal distribution: randomly generated errors
+will be within the corridor from -σ to +σ  with a probability of
+68.2%. The standard deviation is called the level of thickness
+errors. In the case of additive thickness errors, we set the level
+of thickness errors directly in nanometers (Layer Errors Abs
+field). In the case of relative errors, their level is set as a
+percentage of the thicknesses of the respective layers (Layer
+Errors Rel field). For example, a relative error of 1% means that
+the standard deviation σ is 2 nm for a 200 nm layer and 0.5 nm for
+a 50 nm layer.</p>
+<p>Error levels can be the same for all coating layers (Coating tab),</p>
+<p>the same for layers of a given material (Material tab),</p>
+<p>or set individually for each coating layer (Thickness tab).</p>
+<p>Let us set 1% relative errors for all coating layers. Click the
+Run button to start error analysis. Because the calculations are
+fast and plotting a large number of individual error test results
+can cause confusion on the screen, you will see the final
+statistical characteristics of M (Exp) and D.</p>
+<p>To view the results of individual error tests, you can specify a
+Pause after each plot in seconds.</p>
+<p>A notable result of the performed analysis is the insignificant
+influence of layer thickness errors on the spectral characteristic
+of the filter in the high reflection region. There is a general
+theoretical result stating that errors in layer thicknesses cause
+only small changes in the spectral characteristics of optical
+coatings in regions of high reflectance compared to other regions.</p>
+<p>To run the second example, load the design 66-layer 4-cavity NBF
+at 600 nm. In the T&amp;R&amp;Phase window, set the wavelength range to
+585-615 nm. You will see the transmittance of a narrow band pass
+filter with a central wavelength of 600 nm and a 50% passband
+width of about 4 nm.</p>
+<p>The filter has steep transmittance slopes, which is due to its
+special structure. This is a four-cavity filter that can be seen
+using the Refractive Index Profile window.</p>
+<p>Let us run the Error Analysis with the same parameters as before,
+that is, with 1% relative errors for all coating layers. Click the
+Run button to start error analysis. The statistical
+characteristics of M (Exp) and D show that at this level of errors
+the spectral properties of the filter are completely destroyed.</p>
+<p>Reduce the relative error level from 1% to 0.1%, set the Number of
+tests to 20 and the Pause after each plot to 1 second.</p>
+<p>Run the Error Analysis mode again. The results of individual error
+tests are still completely unsatisfactory.</p>
+<p> Note that a relative error level of 1% corresponds to an additive
+thickness error level of about 0.1 nm or less. It is therefore
+obvious that multicavity filters of the type in question cannot be
+manufactured using time or quartz crystal monitoring. The only way
+to successfully manufacture such filters is to use turning point
+optical monitoring, which provides self-compensation for thickness
+errors in different coating layers.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

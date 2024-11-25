@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 5. Refinement of Dr. A.Thelen’s AR coating</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-5-refinement-of-dr-a-thelen-s-ar-coating">
+<h1>Exercise 5. Refinement of Dr. A.Thelen’s AR coating</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="exercise-5-refinement-of-dr-a-thelens-ar-coating">Exercise 5. Refinement of Dr. A.Thelen’s AR coating</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><a class="reference external" href="idh_problem_directory.html">Problem directory</a> EX5 starts
+Illustration of the application of OptiLayer refinement methods.
+ In <a class="reference external" href="single_file_mode.html">SF Mode</a> you need to use Import
+Problem Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load GLASS substrate, MGF2 and ZRO2 layer materials, THELEN design
+(these files are exactly the same as in the <a class="reference external" href="exercise4_fourlayerantiref.html">Exercise
+4</a>).</p>
+<p>Open <a class="reference external" href="idh_evaluation.html">Evaluation window</a> and specify the
+axis range for the reflectance plot from 0 to 2%. Note the text
+“Merit function = N/A” in the bottom left corner of the Evaluation
+window.</p>
+<p>Go to the Target database and load the file Ar-vis. This file
+specifies zero target reflectance in the spectral range from 400
+to 700nm. You can observe how this target is specified using the
+Edit option in the Target database.</p>
+<p>Look at the Evaluation window and note that the merit function
+value has been displayed in the status bar in the left bottom
+corner of this window. Merit function is automatically generated
+by OptiLayer as soon as a target file is loaded. Merit function
+estimates the difference between actual and target spectral
+characteristics. Note that yellow crosses have appeared in the
+Evaluation window, they mark our target function. Note also that
+the scales have been changed both for x- and y-axis.  The
+wavelength range is automatically chosen by OptiLayer when a
+target function is loaded into memory, it is 20% wider than the
+spectral region specified in the target function file.  The range
+of the y-axis is usually from 0 to 100%. These settings are easily
+changed with the help of <a class="reference external" href="idh_synthesis_options.html">Options
+dialog</a>, change the range of the
+y-axis to be from 0 to 2%.</p>
+<p>Go to the Substrate database and load another substrate with the
+name SUB1.64. Dr. A.Thelen’s design on the new substrate gives
+higher value of the merit function, because the coating was not
+designed for the substrate of this index. Go to the Synthesis menu
+and start the <a class="reference external" href="idh_refinement_window.html">Refinement</a>. The
+design will be adjusted to the new substrate in a few iterations.
+The reflectance of the refined design should look as follows.</p>
+<p><img alt="image1" src="../_images/ex5_ev.png" /></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

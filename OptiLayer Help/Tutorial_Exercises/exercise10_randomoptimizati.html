@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 10. Random optimization</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-10-random-optimization">
+<h1>Exercise 10. Random optimization</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 10. Random optimization</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>In many cases it is difficult to find a suitable starting design
+for the refinement procedure.  In such cases it may be useful to
+carry out a sequence of optimization procedures with random
+starting designs. The <a class="reference external" href="idh_random_optimization.html">Random
+optimization</a> option is intended
+for this purpose. Because of highly efficient optimization
+algorithms used in OptiLayer, this design approach often provides
+good results.</p>
+<p>To demonstrate this option of OptiLayer we shall design a set of
+anti-reflection coatings for the visible spectral range. Required
+files are located in the <a class="reference external" href="idh_problem_directory.html">Problem
+directory</a> EX10. In <a class="reference external" href="single_file_mode.html">SF
+Mode</a> you need to use Import Problem
+Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load GLASS substrate, SIO2 and TIO2 layer materials, and Ar-vis
+target. Target has 20 logarithmically distributed spectral points
+in the range from 400 to 800nm.</p>
+<p>Start the <a class="reference external" href="idh_random_optimization.html">Random optimization</a>
+(<a class="reference external" href="idh_menu_synthesis.html">Synthesis</a> menu) and specify in the
+<a class="reference external" href="idh_random_optimization_parame.html">Random Optimization
+Parameters</a> window 10
+layers and Average optical thicknesses 50nm for the both materials
+(Av.Opt.Th column). The Random optimization procedure starts after
+clicking the OK button. This is a potentially infinite sequence of
+cycles consisting of automatic generations of random starting
+designs followed by optimization procedures. After each cycle a
+new local minimum of the merit function is found, the resulting
+design is analyzed and stored by OptiLayer.</p>
+<p>OptiLayer stores up to 100 best designs in a special storage named
+<a class="reference external" href="idh_collection.html">Collection</a>.  The designs are ordered
+according to their merit function values. It often happens that
+some results are obtained  several times, in such cases the
+repeated result is discarded.</p>
+<p>To generate layer thicknesses of random starting designs,
+OptiLayer uses random numbers which are uniformly distributed in
+the interval from 0.0 to twice the average value which was entered
+in the Random Optimization Parameters window.</p>
+<p>In many cases it is advisable to set up a Random optimization
+procedure by specifying a rather large number of layers and
+relatively small average layer thicknesses. As a general rule the
+number of layers specified in the <a class="reference external" href="idh_random_optimization_parame.html">Random Optimization
+Parameters</a> window will be
+reduced during the optimization process.  Since the process is a
+random one designs saved in the Collection will have different
+numbers of layers. This may be helpful for choosing the most
+practical design basing on the designers personal opinion about
+the most suitable combination of three major design parameters
+indicated in the Collection window (merit function value, number
+of design layers, and design total thickness).</p>
+<p>Once started, the Random optimization procedure will run
+indefinitely until explicit termination. After the termination the
+best obtained result will be automatically loaded from the
+<a class="reference external" href="idh_collection.html">Collection</a> storage.</p>
+<p>Because of the stochastic nature of the Random optimization
+procedure we can not predict exactly what results you will obtain.
+In our case the Collection window looks as follows.</p>
+<p><img alt="image1" src="../_images/ex10_collection.png" /></p>
+<p>Note that you can analyze the contents of the
+<a class="reference external" href="idh_collection.html">Collection</a> in more detail after finishing
+the Random optimization procedure. To analyze any design use the
+Extract button.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

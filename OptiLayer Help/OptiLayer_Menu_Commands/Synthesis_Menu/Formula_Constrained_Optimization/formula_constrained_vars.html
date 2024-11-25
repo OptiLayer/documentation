@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Formula Constrained Optimization - Variables</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="formula-constrained-optimization-variables">
+<h1>Formula Constrained Optimization - Variables</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Formula Constrained Optimization - Variables</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Independent variables are specified in the first step of the
+<a class="reference external" href="formula_constrained_optimizati.html">Formula Constrained Optimization
+Setup</a> dialog.</p>
+<p><img alt="image1" src="../../../_images/form_constr_vars.png" /></p>
+<div class="line-block">
+<div class="line">Independent Integer variables are specified in the left pane of
+this dialog. It is necessary to set the number of integer
+variables, provide a unique name for each variable, and set
+start, end, and step parameters describing a set of possible
+values.</div>
+</div>
+<p>The total number of combinations is displayed below for reference.
+It should not be too large, as exhaustive search may take too
+long.</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>iL: Represents the current layer number and is computed
+automatically. Numbering starts with the value 1.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>iM: Represents the current layer number in the sequence of
+the same material. Numbering starts with the value 1.</p>
+</div>
+</li>
+</ul>
+<p>Independent Continuous variables are specified in the right pane
+of this dialog. It is necessary to set the number of continuous
+variables, provide a unique name for each variable, and set the
+value, lower, and upper limits.</p>
+<p>Below, it is necessary to specify the Control Wavelength for the
+formula (default value is equal to the Reference Wavelength in
+<a class="reference external" href="idh_config_thickness_units.html">General Configuration</a>
+dialog) and the Formula itself.</p>
+<p>The “Randomization, attempts” option allows adding a randomization
+multi-start procedure at each integer iteration of the Formula
+Constrained Optimization. When this option is active, you can
+specify the number of multi-start refinement steps.
+After clicking the Next button, the <a class="reference external" href="formula_constrained_form.html">Formula Constrained
+Optimization - Formula</a> step of
+the Formula Constrained Optimization Setup dialog will open.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Optimization methods and Needle options</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="optimization-methods-and-needle-options">
+<h1>Optimization methods and Needle options</h1>
+<div class="docutils container" id="printheader">
+<p>Selecting Optimization Method and Needle Options</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a> &gt; <a class="reference external" href="idh_synthesis_options.html">Analysis and Synthesis
+Options</a> &gt;</p>
+<p>Selecting Optimization Method and Needle Options</p>
+</div>
+</div>
+<p>` &lt;idh_synthesis_options.html&gt;`__ ` &lt;idh_synthesis_options.html&gt;`__
+` &lt;idh_synthesis_options_axes.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The <a class="reference external" href="idh_synthesis_options.html">Synthesis Options</a> is
+accessible via the Options command in the <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+menu</a>. Access to this window is also
+available during the refinement process by clicking the Options
+button at the bottom of the <a class="reference external" href="idh_refinement_window.html">Refinement
+window</a>. The Method page allows the
+user to choose one of the optimization methods available in
+OptiLayer, even during the refinement process. The optimization
+method can be changed.</p>
+<p><img alt="image1" src="../../../_images/s_o_method.png" /></p>
+<p class="p-heading2 rubric" id="optimization-methods">Optimization methods</p>
+<ul>
+<li></li>
+<li><p class="p-heading2 rubric" id="the-hyper-newton-method-is-a-modification-of-the-newton-method-based-on-ideas-from-the-damped-least-squares-method-it-requires-significant-computer-memory-but-offers-fast-convergence">The Hyper Newton method is a modification of the
+Newton method based on ideas from the Damped Least Squares
+method. It requires significant computer memory but offers
+fast convergence.</p>
+</li>
+<li><p class="p-heading2 rubric" id="the-modified-damped-least-squares-modified-dls-method-is-powerful-providing-rapid-convergence-at-the-early-stages-of-refinement-but-may-slow-down-towards-the-end-particularly-in-complex-designs-with-many-layers">The Modified Damped Least Squares (Modified DLS)
+method is powerful, providing rapid convergence at the early
+stages of refinement but may slow down towards the end,
+particularly in complex designs with many layers.</p>
+</li>
+<li><p class="p-heading2 rubric" id="the-newton-method-is-a-2nd-order-optimization-approach-that-employs-full-analytic-second-order-derivatives-of-the-merit-function-it-is-well-suited-for-problems-with-a-large-number-of-optimization-parameters-and-poor-convergence-of-the-merit-function-while-newtons-second-order-method-is-one-of-the-most-potent-optimization-techniques-it-may-not-converge-rapidly-at-the-initial-stages-but-is-often-a-good-choice-towards-the-end-of-the-refinement-process">The Newton method is a 2nd order optimization
+approach that employs full analytic second-order derivatives
+of the merit function. It is well-suited for problems with a
+large number of optimization parameters and poor convergence
+of the merit function. While Newton’s second-order method is
+one of the most potent optimization techniques, it may not
+converge rapidly at the initial stages but is often a good
+choice towards the end of the refinement process.</p>
+</li>
+<li><p class="p-heading2 rubric" id="the-quasi-newton-dls-method-utilizes-full-information-on-partial-jacobian-matrices-for-a-merit-function-that-is-a-sum-of-squares-offering-fast-convergence-but-may-not-be-suitable-for-problems-with-qualifiers-in-targets">The Quasi-Newton DLS method utilizes full
+information on partial Jacobian matrices for a merit function
+that is a sum of squares, offering fast convergence but may
+not be suitable for problems with qualifiers in targets.</p>
+</li>
+<li><p class="p-heading2 rubric" id="the-sequential-qp-method-is-founded-on-sequential-approximations-of-the-optimization-problem-through-quadratic-programming-qp-problems-providing-good-convergence-and-recommended-for-complex-problems">The Sequential QP method is founded on sequential
+approximations of the optimization problem through Quadratic
+Programming (QP) problems, providing good convergence and
+recommended for complex problems.</p>
+</li>
+</ul>
+<p class="p-heading2 rubric" id="two-other-methods-are-historically-the-first-used-for-optical-coatings-design-they-are-primarily-useful-for-educational-purposes">Two other methods are historically the first used for
+optical coatings design. They are primarily useful for
+educational purposes.</p>
+<ul>
+<li></li>
+<li><p class="p-heading2 rubric" id="the-conjugate-gradients-method-is-well-known-and-widely-used-stable-and-typically-converges-faster-than-the-steepest-descent-method">The Conjugate Gradients method is well-known and
+widely used, stable, and typically converges faster than the
+Steepest Descent method.</p>
+</li>
+<li><p class="p-heading2 rubric" id="the-steepest-descent-method-is-the-simplest-and-historically-the-first-applied-to-optimization-problems-however-it-converges-slower-compared-to-other-methods">The Steepest Descent method is the simplest and
+historically the first applied to optimization problems,
+however, it converges slower compared to other methods.</p>
+</li>
+</ul>
+<p class="p-heading2 rubric" id="termination">Termination</p>
+<p>This field allows the user to select termination criteria used in
+optimization procedures.</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>The Relaxed option can expedite computations by causing early
+termination of the optimization procedure when there is
+modest potential for improvement in the merit function from
+iteration to iteration.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The Standard option is the default termination criteria.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The Strict option is recommended for complicated problems
+where high-quality design is crucial, albeit it may increase
+computational time as optimization stops only when the
+potential for improvement in the merit function from
+iteration to iteration is minimal as measured by the normal
+gradient of the merit function.</p>
+</div>
+</li>
+</ul>
+<p class="p-heading2 rubric" id="needle-variations">Needle variations</p>
+<p>The Needle Sensitivity field controls how early Needle variations
+will be terminated. The settings are similar to the termination
+criteria of optimization procedures. In cases where too many thin
+layers are inserted during the course of the Needle Optimization
+or Gradual Evolution procedures without a significant improvement
+in merit function values, the level of Needle Sensitivity can be
+decreased using this option. In many cases, this prevents the
+insertion of too many thin layers and improves computational
+speed.
+It is possible to use more than one needle variation at each
+iteration of the <a class="reference external" href="idh_needle_optimization.html">Needle
+Optimization</a> procedure. Selecting
+multiple needle variations can, in some cases, improve the
+convergence of this procedure. The optimal number of
+simultaneously performed needle variations is specific to each
+problem and should be determined experimentally.
+Pressing the Default button restores the initial settings of the
+optimization method, termination criteria, and the number of
+simultaneous needle variations.</p>
+<p class="p-heading2 rubric" id="power">Power</p>
+<p>Integer power is used in determining the merit function
+expression. The default and most suitable value for most cases is
+2. It can be selected from the list of values: 1, 2, 4, 6, 8, 12,
+16. With higher values of the power, the merit function behavior
+becomes more unfavorable from an optimization perspective.</p>
+<blockquote>
+<div><p>Notes:</p>
+</div></blockquote>
+<div class="docutils container">
+<p><img alt="image2" src="../../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Power = 1 should only be used with targets having extreme values. For
+instance, transmittance or reflectance with values of 0% and 100%
+without intermediate points. In other cases, the optimization
+convergence may be very poor.</p>
+<div class="docutils container">
+<p><img alt="image3" src="../../../_images/arrow_r.png" /></p>
+</div>
+<p>The Hyper-Newton method only works with Power = 2 and targets without
+qualifiers.</p>
+<section id="symmetric-design-mode">
+<h2>Symmetric Design mode</h2>
+<p>The Symmetric Design mode restricts all designs to symmetrical
+configurations with respect to the design center. This configuration is
+particularly useful for immersed coatings, especially when only half of
+a coating is applied to multiple substrates, and these coated substrates
+are later connected with optical glue after production.
+See also:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options.html">Analysis and Synthesis Options</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_axes.html">Adjusting Scales</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_plot.html">Selecting Characteristics To Be
+Plotted</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_design_b.html">Selecting Design Bar
+Presentation</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_material.html">Selecting Material Abbreviations and
+States</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="trapping.html">Trapping Options</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="robust_synthesis.html">Robust Synthesis</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_header.html">Editing Header and Legend</a></p>
+</div>
+</li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

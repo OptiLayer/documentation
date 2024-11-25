@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 9. Design of a cold mirror</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-9-design-of-a-cold-mirror">
+<h1>Exercise 9. Design of a cold mirror</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 9. Design of a cold mirror</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The objective of this exercise is to obtain a long wave-pass
+filter with a high reflection zone from 0.4 to 0.8 microns and a
+the low reflection zone from 0.8 to 1.4 micron, otherwise known as
+a cold mirror. This exercise is used to demonstrate some basic
+concepts related to the choice of starting design and target
+function.</p>
+<p>After selection of EX9 <a class="reference external" href="idh_problem_directory.html">Problem
+directory</a> go to the Options command
+of the Configuration menu and select microns as Length and
+Spectral units in the <a class="reference external" href="idh_config_units.html">Units tab</a> of the
+General Configuration dialog.  In <a class="reference external" href="single_file_mode.html">SF
+Mode</a> you need to use Import Problem
+Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load GLASS substrate, SIO2 and TIO2 layer materials.</p>
+<p>First, we will use target function Cm with evenly distributed
+spectral points. Browse this file located in the Target database
+and load it to memory.</p>
+<p>We shall start refinement with a quarter-wave mirror as a starting
+design (file QWM). Load it and open the <a class="reference external" href="idh_evaluation.html">Evaluation
+window</a>. You can see that the
+high-reflection zone of our starting design is more narrow than
+that specified by the target function. Choose the Newton method
+(<a class="reference external" href="idh_synthesis_options_method.html">Analysis and Synthesis
+Options</a> dialog) and perform
+the <a class="reference external" href="idh_refinement.html">Refinement procedure</a>. We see that the
+obtained solution is not good. Note that the refinement is a local
+optimization technique which converges to the design which is
+rather close to the starting one. In other words this technique
+allows finding only local minima of the merit function. In order
+to obtain better solution with the help of the refinement
+procedure one needs to use better starting design.</p>
+<div class="docutils container">
+</div>
+<p>At the moment let us use a combination of three quarter-wave
+mirrors as a starting design in order to provide high reflectance
+in the spectral region from 0.4 micron to 0.8 micron. We shall use
+a combination of three mirrors with control wavelengths of 0.65
+micron, 0.55 micron and 0.48 micron. This starting design is
+specified in the file CM START in the Design database. Load this
+file and compare starting design reflectance with the target
+reflectance using the <a class="reference external" href="idh_evaluation.html">Evaluation window</a>.
+Perform the Refinement procedure. We get a solution that has lower
+merit function value comparing to the previous case. The result is
+a 23-layer design with a merit function value of 3.689116E+000.</p>
+<p><img alt="image4" src="../_images/ex9_ev1.png" /></p>
+<p>In the Evaluation window one can observe multiple ripples of the
+design reflectance in the high-transmission zone. Quite often such
+ripples are connected with incorrect choice of a target function.
+This is just the case in our exercise. The wavelength grid used to
+specify target function is too sparse. Thus a new target function
+with more dense wavelength grid should be used. It is also
+necessary to note that non-uniform wavelength grids are preferable
+in the case of wideband spectral regions. Such grids should be
+more dense in a short wavelength region.</p>
+<p>OptiLayer has convenient options allowing generation of
+non-uniform wavelength grids. These options are accessible through
+the <a class="reference external" href="idh_grid_generator.html">Grid Generator</a> command of the
+Edit menu. Such target can be found in the Target database. It has
+a name Cm40log. Open this file using the Edit command and make
+sure that the wavelength grid is more dense in a short wavelength
+region. There is one more specific feature of this new target.
+Note that target tolerances (DRs% column) are set equal to 10 at
+two wavelength points near the transition zone between high and
+low reflectance region. Target tolerances are also used to
+automatically construct OptiLayer merit functions. High tolerances
+decrease a relative weight of the discrepancy between actual and
+target reflectances in calculating merit function value.</p>
+<p>Load Cm40log target file and CM START starting design to memory.</p>
+<p>After running Refinement procedure you will obtain 23-layer design
+with MF=3.350604E+000. This design is saved in the Design database
+with the name COLDMIR.</p>
+<p><img alt="image5" src="../_images/ex9_ev2.png" /></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

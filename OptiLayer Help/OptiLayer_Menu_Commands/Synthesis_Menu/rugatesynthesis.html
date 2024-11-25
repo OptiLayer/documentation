@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Rugate Synthesis</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="rugate-synthesis">
+<h1>Rugate Synthesis</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Rugate Synthesis</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Before starting the Rugate Synthesis procedure, it is necessary to
+specify initial parameters.
+If you select the option “New Rugate,” you can enter the initial
+total physical thickness of the Rugate coating.
+The “Thickness fixed” checkbox specifies whether the thickness
+will change during the synthesis procedure or remain the same.
+The “Number of thin layers” parameter specifies how many layers
+will be used in the Rugate representation. This parameter is
+analogous to the parameter in the <a class="reference external" href="rugates.html">Rugate
+Analysis</a> option.</p>
+<p><img alt="image1" src="../../_images/rugsynth1.png" /></p>
+<p>To describe the rugate refractive index profile, it is necessary
+to create and load a
+<a class="reference external" href="idh_edit_layer_material.html">Changeable</a> or <a class="reference external" href="idh_edit_layer_material.html">Changeable
+Composition</a> material (Per Layer
+type) into memory. In the case of a Changeable material, the
+refractive index profile will be described directly by the
+corresponding values of Re(n) and/or Im(n). If using a Changeable
+Composition material, the refractive index profile will be
+described with the help of Fraction distribution.
+Clicking the “Create” button will launch a wizard (<a class="reference external" href="creatematerialassistant.html">Create
+Material Assistant</a>)  to assist in
+creating a Changeable Composition material in the Layer Material
+database and loading it into memory.
+The Rugate Synthesis procedure will start with a constant value of
+Re(n) and Im(n) situated in the middle of the specified
+constraints (Lower Limit and Upper Limit parameters in the <a class="reference external" href="idh_edit_layer_material.html">Layer
+Material Editor</a>).</p>
+<p>For more complex cases, the “Existing Design” option can be
+utilized.</p>
+<p><img alt="image2" src="../../_images/rugsynth2.png" /></p>
+<p>This allows using a Rugate coating created with the help of Rugate
+Analysis as a starting point for Rugate Synthesis. Furthermore, a
+Rugate coating can consist of several different layers with a
+continuous change of refractive index, or it can even be a hybrid
+coating.</p>
+<p>For these more complicated cases, starting designs should be
+created using the <a class="reference external" href="idh_design_editor.html">Design Editor</a>.</p>
+<p>The following simple rules should be used to define complicated
+Rugate coatings:
+A Rugate layer, i.e., a layer with a continuous change of
+refractive index is defined as follows:</p>
+<ol class="arabic">
+<li><div class="p-normal docutils container">
+<p>It must consist of more than 31 thin layers.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The thicknesses of all thin layers inside one Rugate layer
+must be the same.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>All thin layers must have the same abbreviation
+corresponding to a Changeable or Changeable Composition
+material with Per Layer change type. Changeable Composition
+must use the Average Weighted Value of Refractive Indices as
+a formula for refractive index calculations.</p>
+</div>
+</li>
+</ol>
+<p>If several Rugate layers are required, it is possible to use
+materials with different abbreviations or assign slightly
+different thicknesses to thin layers inside different layers.
+After pressing the OK button, the Rugate Synthesis procedure will
+start.</p>
+<p><img alt="image3" src="../../_images/rugsynth3.png" />.<img alt="image4" src="../../_images/rugsynth4.png" /></p>
+<p>The Rugate Synthesis window displays the current spectral
+characteristics. A special control window allows for the
+interactive control of the smoothness of the profile using slider
+controls.
+In the case of more complex layers consisting of several Rugates,
+the number of sliders will be adjusted accordingly, as shown
+below. This allows for the independent adjustment of the
+smoothness of each Rugate layer.</p>
+<p><img alt="image5" src="../../_images/rugsynth5.png" /> <img alt="image6" src="../../_images/rugsynth6.png" /></p>
+<p>We recommend reading the paper dedicated to this subject:</p>
+<div class="line-block">
+<div class="line">A. V. Tikhonravov, M. K. Trubetskov, T. V. Amotchkina, M. A.
+Kokarev, N. Kaiser, O. Stenzel, S. Wilbrandt, and D. Gäbler,
+“New optimization algorithm for the synthesis of rugate optical
+coatings,” Appl. Opt. 45, 1515-1524 (2006)</div>
+<div class="line"><a class="reference external" href="http://www.opticsinfobase.org/abstract.cfm?URI=ao-45-7-1515">http://www.opticsinfobase.org/abstract.cfm?URI=ao-45-7-1515</a></div>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

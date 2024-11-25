@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Layer Material Status</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="layer-material-status">
+<h1>Layer Material Status</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Layer Material Status</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>In order to control the manner in which a material behaves during
+the <a class="reference external" href="idh_needle_optimization.html">Needle Optimization</a>
+process, it is assigned a material status state. There are four
+possible states that may be assigned to a material: Active (A),
+Inactive (I), Passive (P), and Exclusionary (E). The default state
+assigned to each material when it is loaded is Active.
+During the Needle Optimization process:</p>
+<ul>
+<li><div class="p-normal docutils container">
+<p>An Active material may be inserted into any other layer in
+the design, and any other material designated as Active or
+Exclusionary may be inserted into it.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>An Inactive material may not be inserted into any other layer
+in the design, nor may any other material be inserted into
+it.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>A Passive material may not be inserted into any other layer
+in the design, but any other material designated as Active or
+Exclusionary may be inserted into it.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>An Exclusionary material may be inserted into any other layer
+in the design, but no other material may be inserted into it.</p>
+</div>
+</li>
+</ul>
+<p>To change a layer material’s status, select the
+<a class="reference external" href="idh_synthesis_options_material.html">Options</a> command in the
+Analysis or Synthesis menus, and then select the Materials tab in
+the Synthesis Options dialog window. It is also possible to use
+the Arrange Materials menu item from the <a class="reference external" href="idh_menu_data.html">Data
+menu</a>. Note that the material state
+assignments are global; thus, changes made in the Synthesis
+Options menu also affect the Analysis Options, and vice versa. A
+quick way to open the same dialog is to use the Arrange Materials
+command from the <a class="reference external" href="idh_menu_data.html">Data menu</a>.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Error Analysis</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="error-analysis">
+<h1>Error Analysis</h1>
+<div class="docutils container" id="printheader">
+<p>Error Analysis</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt; <a class="reference external" href="idh_error_analysis.html">Errors
+Analysis</a> &gt;</p>
+<p>Error Analysis</p>
+</div>
+</div>
+<p>` &lt;idh_error_analysis_setup_refra.html&gt;`__ ` &lt;idh_error_analysis.html&gt;`__
+` &lt;color_error_analysis.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>This window is displayed after the <a class="reference external" href="idh_error_analysis.html">Error
+Analysis</a>  command in the <a class="reference external" href="idh_menu_analysis.html">Analysis
+menu</a> is invoked. This computational
+procedure provides a statistical evaluation of the effect that
+errors in layer thicknesses and refractive indices in a design
+will have on the spectral response of a designated spectral
+characteristic. As the computations proceed, a sequence of curves
+corresponding to the number of statistical tests is plotted on the
+screen. During the computations, the progress of the statistical
+procedure is indicated by a percentage bar at the bottom of the
+window.
+At the conclusion of the computational procedure, the original
+(theoretical) spectral characteristic is plotted on the screen. It
+is accompanied by the mathematical expectation (denoted as “Exp”
+in the window legend) and two curves indicating the probability
+corridor for a given error level (these curves are denoted as
+“Exp±D” in the legend). The width of the probability corridor
+corresponds to the magnitude of the errors that were set in the
+<a class="reference external" href="idh_error_analysis_setup_chara.html">Error Analysis Setup</a>.</p>
+<p><img alt="image1" src="../../../_images/ErrorAnalysis_4.png" /></p>
+<p>At the bottom of this window, the value of the Merit function is
+presented.
+Also, there is a value E(dMF) describing the expected variations
+of the merit function. We calculate this value by the following
+procedure.</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>First, we create a new artificial target as a copy of the
+initial target loaded into memory, but replace all target
+values with the corresponding values provided by the
+theoretical design. This new artificial target may be
+interpreted as a measure of the deviations of actual spectral
+characteristics from the theoretical ones. The corresponding
+merit function is designated as dMF. It is clear that dMF
+computed for the theoretical design must be equal to zero by
+definition.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Second, we compute the mathematical expectation of the dMF
+values when the error analysis procedure is over. This value
+can be considered an estimation of merit function deviations
+from the optimal value due to specified manufacturing errors.</p>
+</div>
+</li>
+</ul>
+<p>Numerical estimation of possible variations is very helpful for
+the comparison of sensitivities of different theoretical designs
+to manufacturing errors.
+Related topics:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_error_analysis_setup_chara.html">Setting Error Analysis
+Characteristics</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_error_analysis_setup_thick.html">Thickness Error Analysis
+Setup</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_error_analysis_setup_refra.html">Refractive Index Error Analysis
+Setup</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Errors Analysis</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="errors-analysis">
+<h1>Errors Analysis</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Errors_Analysis/idh_error_analysis_setup_chara.html">Error Analysis Characteristics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Errors_Analysis/idh_error_analysis_setup_thick.html">Thickness Error Analysis Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Errors_Analysis/idh_error_analysis_setup_refra.html">Refractive Index Error Analysis Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Errors_Analysis/idh_error_analysis_results.html">Error Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Errors_Analysis/color_error_analysis.html">Color Error Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Errors_Analysis/electric_field_error_analysis.html">Electric Field Error Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Errors_Analysis/integral_values_error_analysis.html">Integral Values Error Analysis</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p>Errors Analysis</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Error Analysis command in the / <a class="reference external" href="idh_menu_analysis.html">Analysis
+menu</a> initiates a computational
+procedure that provides a statistical evaluation of the effect
+that errors in the layer thicknesses and refractive indices in a
+design will have on the spectral response of a designated spectral
+characteristic. As the computations proceed, a sequence of curves
+corresponding to the statistical tests being performed is plotted
+on the screen. During the computations, the progress of the
+statistical procedure is indicated by the percentage bar at the
+bottom of the window. This command of the / <a class="reference external" href="idh_analysis.html">OptiLayer
+Analysis</a> tools allows estimating the
+influence of errors in layer thicknesses and refractive indices on
+the spectral characteristics of the current design.
+The Error Analysis computation can be performed for only one
+spectral characteristic at a time. You must specify the
+characteristic (Transmittance, Reflectance, etc.), the state of
+polarization, and the angle of incidence prior to the calculations
+(see <a class="reference external" href="idh_error_analysis_setup_chara.html">Setting Error Analysis
+Characteristics).</a></p>
+<div class="line-block">
+<div class="line">You can perform Error Analysis for layer thickness errors,
+refractive index errors, or both. In all cases, it is necessary
+to specify the root-mean-square errors of the corresponding
+parameters in special setup windows.
+Since the estimation of error influence is a statistical
+procedure, a reasonable number of tests should be specified (by
+default, the number of tests is 20).
+For more details on setting these parameters and starting Error
+Analysis, see:</div>
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_error_analysis_setup_thick.html">Thickness Errors Analysis
+Setup</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_error_analysis_setup_refra.html">Refractive Index Errors Analysis
+Setup</a></p>
+</div>
+</li>
+</ul>
+<p>At the conclusion of the computational procedure, the original
+(theoretical) spectral characteristic is plotted on the screen. It
+is accompanied by the mathematical expectation (denoted as Exp in
+the legend) and two curves indicating the probability corridor for
+a given error level (these curves are denoted as Exp±D in the
+legend). The width of the probability corridor corresponds to the
+magnitude of the errors that were set in the Error Analysis Setup.
+The default setting for the width of the probability corridor is
+for one standard deviation.
+For more detail on the error evaluation output, see / <a class="reference external" href="idh_error_analysis_results.html">Error
+Analysis Results.</a></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

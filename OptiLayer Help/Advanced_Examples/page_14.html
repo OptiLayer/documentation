@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric" id="example-10">Example 10. Thin
+layer removal: hot mirror
+obtained using gradual
+evolution design procedure is
+used as example.</p>
+<p>thin-layer-removal-hot-mirror-obt
+ained-using-gradual-evolution-des
+ign-procedure-is-used-as-example.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</div></blockquote>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer design
+options and random nature of some of their elements, the results
+obtained may differ from those previously saved in the design
+database.</p>
+<p>The main purpose of this example is to demonstrate the Thin Layer
+Removal option, which allows one to eliminate thin layers of a
+design structure at an expense of some increase in the merit
+function value.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D10. Datafiles needed to run this exercise are already loaded
+into RAM. These are the substrate Glass n=1.52, the layer
+materials n=2.35 and n=1.46, and the Hot mirror target. This
+target specifies requirements for 100% transmittance in the
+400-690 nm spectral range and 0% transmittance in the 710-1200 nm
+spectral range. The target transmittance can be viewed in the
+Preview tab of the Target editor.</p>
+<p>Using the General Information window, make sure that there is no
+design loaded into RAM. In the Synthesis menu, select the Gradual
+evolution design mode. Ensure that a total optical thickness (TOT)
+of 8000 nm is specified as the active termination criterion. The
+high TOT value was chosen because the target transmittance places
+a fairly high requirement for the steepness of the transmittance
+in the transition region from 690 to 710 nm.</p>
+<p> Make sure that the Newton method is selected as the local
+optimization method.</p>
+<p>Click the Run button in the lower left corner of the window. The
+progress of the gradual evolution design procedure is reflected in
+the right, history part of the window. The hot mirror design thus
+obtained is stored in the design database as HM by GE with Newton
+method. It has 58 layers and pretty good MF value of 0.314.</p>
+<p>Load this design and select the Thickness tab in the Refractive
+Index Profile window to see the structure of the design. The
+design has 20 layers with an optical thickness of less than 50 nm.
+Eight layers have a physical thickness of less than 10 nm.</p>
+<p>Because it is difficult to monitor thin layers, it may be
+desirable to eliminate thin layers from the design structure. The
+Thin Layer Removal option of the Synthesis menu allows you to do
+this at an expense of some increase in the merit function value.
+Load the design HM by GE with Newton method and open this option.
+The Thickness tab of the Thin Layer Removal window allows you to
+visually control the removal of thin layers.</p>
+<p>Click the Start button in the lower left corner of the window. A
+new window will open in which you can choose between Automatic and
+Manual modes of the option (top tabs). Select Manual mode.
+Typically, the checkbox Finish with Refinement should be marked.
+This means that the design will be re-optimized after each new
+thin layer is removed.</p>
+<p>It is advisable to start with the thinnest layer. At the bottom
+part of the window, select the layer you want to remove and click
+the Remove button. The parameters of designs obtained after each
+layer removal are shown on the right part of the main window of
+the option. You can proceed with removing thin layers by clicking
+the Start button again. It is your decision when to stop the
+procedure. A couple of designs derived from the original 58-layer
+design are stored in the design database. To save any intermediate
+design obtained by the procedure, select it on the right part of
+the main window and click the Load button to transfer it to the
+general information and main evaluation windows.</p>
+<p>After this, the design can be saved in the design database using
+the Data -&gt; Save data-&gt; Save Design … option.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

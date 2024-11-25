@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QHelpCollectionProject version="1.0">
+    <assistant>
+        <title>OptiCharHelp 0.0.1 documentation</title>
+        <homePage>qthelp://org.sphinx.opticharhelp/doc/index.html</homePage>
+        <startPage>qthelp://org.sphinx.opticharhelp/doc/index.html</startPage>
+    </assistant>
+    <docFiles>
+        <generate>
+            <file>
+                <input>OptiCharHelp.qhp</input>
+                <output>OptiCharHelp.qch</output>
+            </file>
+        </generate>
+        <register>
+            <file>OptiCharHelp.qch</file>
+        </register>
+    </docFiles>
+</QHelpCollectionProject>

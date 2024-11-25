@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Substrate and Layer Material</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="substrate-and-layer-material">
+<h1>Substrate and Layer Material</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Substrate_and_Layer_material/table_from_formula.html">Table from Formula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Substrate_and_Layer_material/tablefromcomposition.html">Table from Composition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Substrate_and_Layer_material/table_from_rt.html">Table from R/T Measurements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Substrate_and_Layer_material/formula_from_table.html">Formula from Table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Substrate_and_Layer_material/compositionfromtable.html">Composition from Table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Substrate_and_Layer_material/table_simplify.html">Table Simplify</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Substrate and Layer Material</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  OptiLayer Menu
+Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p class="rubric">Substrate and Layer
+Material
+:nam</p>
+<dl class="simple">
+<dt>e: substrate-and-layer-material-1</dt><dd><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+<td><p>` &lt;line_width_database.html&gt;`__
+` &lt;idh_menu_data.html&gt;`__
+` &lt;table_from_formula.html&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Layer Material and Substrate/Incident/Exit Medium dialog
+windows assist in creating and modifying database files that
+describe the optical properties of Layer Materials and Substrates.
+The header of the dialog window indicates which material is
+currently being edited. In the screenshot below, the data file for
+the material “QUARTZ Disp. Data” in the Substrate database is
+being displayed.
+An isotropic material is defined by its complex refractive index,
+which comprises a real refractive index Re(n) and an imaginary
+component Im(n) that represents absorption (commonly referred to
+as the extinction coefficient).</p>
+<p>To create a data file and set material optical properties in table
+format (located under the Table tab of the window), begin by
+entering the desired number of spectral points at which you wish
+to define the material refractive index in the ‘Spectral points’
+field. For materials that are not dispersive, only one point is
+required.
+To input a refractive index value, select a cell in the Re(n)
+column and utilize standard editing options. To specify an
+extinction coefficient value, select a cell in the Im(n) column.
+For ease of editing, utilize the / <a class="reference external" href="idh_spreadsheet_editing.html">Spreadsheet Editing
+Tools</a>, which can be accessed
+through the Menu, Toolbar, or by using hotkeys.
+If you prefer to specify the refractive index using δ values (δ =
+1 - Re(n)), particularly relevant for EUV and X-ray applications,
+you can switch between these conventions using the specialized
+combo box found in the caption of the Re(n) column.
+This allows for seamless modification of optical properties based
+on your specific requirements.</p>
+<p><img alt="image2" src="../../_images/DB_layerMaterial_12.png" /></p>
+<p>In the Layer Material Editor, the extinction coefficient Im(n) can
+also be specified as the Absorption coefficient. The definition
+for the Absorption coefficient is as follows: Absorption
+coefficient = 4π Im(n)/λ.
+This formula allows you to calculate and input the Absorption
+coefficient based on the provided values for Im(n) and the
+wavelength (λ). This feature provides an additional method for
+defining and adjusting the optical properties of the material
+within the Layer Material Editor.</p>
+<p>./ <img alt="image3" src="../../_images/DB_layerMaterial_13.png" /></p>
+<div class="line-block">
+<div class="line">When working with substrates, the extinction coefficient Im(n)
+can be specified in the units of Internal Transmittance or
+Optical Density. These settings can be controlled through a
+specialized combo box, as displayed in the figure below.
+For accurate measurement and calculation, the thickness of the
+test sample is critical when using Internal Transmittance or
+Optical Density units. You can specify the thickness of the
+sample in the provided Thickness entry field.</div>
+</div>
+<p><img alt="image4" src="../../_images/edmat_tab.png" /></p>
+<div class="docutils container">
+</div>
+<p><img alt="image8" src="../../_images/arrow_r.png" />/  If the value of Thickness is changed, the Internal
+transmittance will be recalculated using the updated thickness
+value. This revised thickness value will then be utilized as the
+default setting in other Substrate and Layer Material Editors.</p>
+<p><img alt="image9" src="../../_images/arrow_r.png" />/  It is possible to specify Im(n) &lt; 0 values (an
+optically active substrate). For this purpose activate the
+corresponding option using right-click menu.</p>
+<p class="p-heading2 rubric" id="formula">Formula</p>
+<p>Another method to specify material properties is by utilizing the
+Formula tab within the edit dialog windows.</p>
+<p><img alt="image10" src="../../_images/DB_layerMaterial_21.png" /></p>
+<p>When working with material properties in the software, users have
+the option to select different formulas to describe the refractive
+index (Re(n)) or extinction coefficient (Im(n)) of a material. If
+a formula for either Re(n) or Im(n) is chosen on the Formula page,
+the corresponding column in the Table page will be grayed out and
+unavailable for editing.</p>
+<div class="docutils container">
+</div>
+<p class="p-heading2 rubric" id="composition">Composition</p>
+<p>You can create Composite materials, which are combinations of
+different materials from the current database, available under the
+Composition tab in the edit dialog windows. The refractive index
+of a composite material can be determined using the average
+weighted value of the dielectric permittivities, Bruggemann’s
+formula, or the average weighted value of refractive indices. It
+is possible to blend up to 5 distinct materials to form any
+Composite material. It is important to note that only materials
+defined through the Table or Formula tabs can be utilized to
+specify a Composite material.</p>
+<p><img alt="image14" src="../../_images/DB_layerMaterial_31.png" /></p>
+<p class="p-heading2 rubric" id="changeable">Changeable</p>
+<p>OptiLayer offers the capability to utilize what are known as
+Changeable materials. These are artificial materials whose
+refractive indices and/or extinction coefficients can be adjusted
+during the optimization process, accessible through the Changeable
+tab in the edit dialog window. The Changeable tab feature is
+exclusively available within the Layer Material database.
+Employing Changeable materials facilitates index optimization,
+significantly broadening the possibilities for experimenting with
+optimizations of the merit function.</p>
+<p><img alt="image15" src="../../_images/edmat_changeable.png" /></p>
+<p>The “Changeable” check box activates the option to modify material
+properties. It is required to set the boundaries within which the
+material’s refractive index and extinction coefficient can vary,
+as well as their initial values. The “Change” column indicates the
+nature of permissible changes:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Fixed implies that the specific value remains constant and
+does not undergo alteration.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Per Material signifies that the refractive indices/extinction
+coefficients of all layers labeled with the material’s
+abbreviation will change in unison, effectively treating them
+as a single value.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Per Layer indicates that the refractive index/extinction
+coefficients of each marked layer can vary independently from
+one another.</p>
+</div>
+</li>
+</ul>
+<p>Changeable materials are compatible with the “Refinement” and
+“Needle Optimization” features. It’s important to note that when
+using these options, the values of the refractive indices and
+extinction coefficients are included in the current design file
+and may be stored within the design database. The <a class="reference external" href="idh_design_editor.html">Design
+Editor</a> includes a supplementary tab
+dedicated to editing the values of refractive indices and
+extinction coefficients.
+Additionally, there is a type of material known as Changeable
+Composition. This category serves as a blend between Changeable
+and Composite materials. A Changeable Composition material is
+configurable when its corresponding checkbox is selected, offering
+a dynamic approach to material composition within design
+optimization processes.</p>
+<p><img alt="image16" src="../../_images/edchangecomposition.png" /></p>
+<p>A Changeable Composition material is defined as a blend of two
+materials: High Material and Low Material, which can be selected
+from the current Material database. The variable parameter is the
+proportion of High Material in the mixture. During synthesis
+procedures, this proportion operates as an optimization parameter,
+in a manner similar to the refractive index value in Changeable
+type materials (as mentioned previously). For a Changeable
+Composition material, one can specify the limits, starting value,
+and change type for this fraction.</p>
+<div class="docutils container">
+</div>
+<p class="p-heading2 rubric" id="thickvar">ThickVar</p>
+<p>ThickVar materials possess optical properties that vary with the
+thickness of the layer. A common example of this type of material
+is metal-island films. Typically, the optical properties of such
+materials are determined for several characteristic thicknesses
+through characterization. It is assumed that these properties are
+stored in the Layer Material database, with the names reflecting
+these thicknesses for convenience.
+A ThickVar material is constructed as a collection of these
+material files. In this assembly, the corresponding thickness is
+indicated in the second column, while the names of the files are
+listed in the first one:</p>
+<p><img alt="image20" src="../../_images/matthickvar.png" /></p>
+<p>There are two distinct categories of ThickVar material, each
+defined by how the refractive index interacts with the physical
+characteristics of the layer:
+1. Constant: In this type, the refractive index remains constant
+throughout the coating and is not influenced by the coating’s
+vertical position or coordinate. However, the specific value of
+the refractive index of a ThickVar layer is determined by the
+Thickness parameter. This type aptly describes the behavior of
+metal-island films, where the optical properties do not vary with
+position within the film but depend significantly on the volume or
+amount of material deposited. This reflects situations where the
+material’s behavior is homogeneous across the layer but varies
+according to how thick the layer is.
+2. Profile: Unlike the Constant type, the refractive index in this
+case varies according to the coating’s coordinate. The refractive
+index for a Profile ThickVar material is determined based on two
+parameters: the coordinate ‘z’ (which represents depth or vertical
+position within the coating) and the wavelength ‘λ’. Essentially,
+the spreadsheet defining a Profile ThickVar material presents how
+the refractive index changes with depth into the material and with
+wavelength. The overall thickness of the layer dictates which
+segment of this defined refractive index profile is utilized for
+the current layer, offering a nuanced approach to modeling how the
+optical properties of a material can vary with depth and
+wavelength simultaneously.</p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image23" src="../../_images/arrow_r.png" /></p></td>
+<td><p>Note: For all instances, linear interpolation is
+utilized to ascertain values within the provided grids
+for wavelength and thickness. In situations where a
+needed value falls outside the established bounds of
+the spreadsheet, those values are perpetuated as
+constants—specifically, they are extended to match the
+nearest available value documented within the
+spreadsheet. This approach is known as constant
+extrapolation.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p> Inhomogeneity</p>
+<p>The Inhomogeneity tab within the Layer Material Editor provides
+the functionality to define the degree of inhomogeneity for a
+material. This parameter can be determined and saved by OptiChar
+as an outcome of the Layer Characterization process, using the
+linear inhomogeneity model. Alternatively, users have the option
+to manually input this value. It is important to note that the
+inhomogeneity level set in this manner applies uniformly to all
+layers made of this material, regardless of their individual
+thicknesses.</p>
+<p><img alt="image24" src="../../_images/matinh1.png" /></p>
+<p>The definition of the Inhomogeneity Level is:</p>
+<p>where n2 and n1 are refractive indices at the top and bottom
+boundaries of the layer and is the averaged refractive index.</p>
+<p>In OptiLayer, this Inhomogeneity level serves as the default layer
+inhomogeneity whenever the design’s inhomogeneity is connected to
+this material (refer to <a class="reference external" href="idh_design_editor.html">Design Editor</a>
+description). Calculations involving Inhomogeneity factors are
+executed solely when the / <a class="reference external" href="idh_data_display_modes.html">Inhomogeneities/Interlayers
+option</a> is active.</p>
+<p>Preview</p>
+<p>To swiftly verify the material parameters inputted in the Layer
+Material and Substrate/Incident/Exit Medium dialog windows,
+utilizing the Preview tab within these windows proves to be
+convenient.</p>
+<p><img alt="image25" src="../../_images/DB_layerMaterial_41.png" /></p>
+<p>The Options button or the right-click menu offers functionalities
+to execute transformations among table, formula, and composite
+material presentations:</p>
+<p><img alt="image26" src="../../_images/mater_popup_menu.png" /></p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image29" src="../../_images/arrow_r.png" /></p></td>
+<td><p>Note: The right-click menu also provides quick access
+to the “Export Bühler Leybold Dispersion Data”
+operation.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>See also:</p>
+<ul>
+<li><div class="p-indentlist2 docutils container">
+<p><a class="reference external" href="table_from_formula.html">Table from Formula…</a></p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><a class="reference external" href="tablefromcomposition.html">Table from Composition…</a></p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><a class="reference external" href="formula_from_table.html">Formula from Table…</a></p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><a class="reference external" href="compositionfromtable.html">Composition from Table…</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

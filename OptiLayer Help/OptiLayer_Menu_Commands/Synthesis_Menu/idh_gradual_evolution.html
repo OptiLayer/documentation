@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Gradual Evolution</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="gradual-evolution">
+<h1>Gradual Evolution</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Gradual Evolution</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="gradual-evolution-1">Gradual Evolution</p>
+</div>
+</div>
+<p>` &lt;idh_needle_optimization_dialog.html&gt;`__ ` &lt;idh_menu_synthesis.html&gt;`__
+` &lt;wdm_filter_design___material_s.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image1" src="../../_images/Gradual_Ev2.png" /></p>
+<p>The Gradual Evolution command is a powerful <a class="reference external" href="idh_synthesis.html">synthesis
+tool</a>  in situations where the total
+thickness of the current design is insufficient to achieve the
+desired value of the merit function or in situations where the
+user wants the program to synthesize a design from a very simple
+starting design or even without any starting design. The Gradual
+Evolution Setup window allows the user to specify termination
+criteria such as the value of the merit function, the maximum
+physical or optical thickness, or the maximum number of layers in
+the final design.
+In the Gradual Evolution process, an additional thick layer is
+automatically inserted into the design when the needle
+optimization is complete and termination criteria are not yet met.
+The insertion can occur near the substrate, the incident medium,
+or within the design. Materials with <a class="reference external" href="idh_layer_material_status.html">Inactive
+Status</a> can be excluded from the
+Gradual Evolution procedure, controlled in the Modifications group
+of the Gradual Evolution Setup window. The material and thickness
+of the additional layer are chosen automatically from the
+specified materials in the Materials to Consider box. It is
+important to note that after the insertion of a new layer, the
+merit function value typically increases.
+The option “Start with Needle Optimization step” modifies the
+start of the Gradual Evolution procedure. When active, the Gradual
+Evolution step is performed only after the initial Needle
+Optimization procedure is completed, which is useful for
+restarting terminated computational gradual evolution processes.
+The “Preemptive Gradual Evolution” option helps prevent the
+insertion of many thin layers with minimal improvement during the
+Gradual Evolution procedure. It triggers a new Gradual Evolution
+step instead of adding insignificant layers when consecutive
+Needle variations provide negligible merit function improvement.
+The example illustrates that the gradual evolution step will be
+initiated when three Needle variations yield a relative merit
+function improvement less than 0.001.</p>
+<div class="line-block">
+<div class="line">After the insertion of a new layer, Needle Optimization AUTO
+automatically restarts. The <a class="reference external" href="idh_needle_optimization.html">Needle
+Optimization</a> process continues
+until a termination criterion is met. If termination criteria
+are not satisfied, another thick layer is added, and the process
+cycle repeats.</div>
+</div>
+<p>It is worth noting that a starting design is not essential for
+running Gradual Evolution. Loading Target data, Substrate, and at
+least two Layer Materials with Active or Exclusionary status is
+required (see <a class="reference external" href="idh_synthesis_options_material.html">Selecting
+Materials</a>).</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

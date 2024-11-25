@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Stack Editor</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="stack-editor">
+<h1>Stack Editor</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Stack_Editor/swap_coatings.html">Swap Coatings</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Stack Editor</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Stack Editor allows you to create and modify stacks in the
+<a class="reference external" href="stack_database.html">Stack Database</a> and in OptiLayer memory.</p>
+<p>An example is presented below. This stack consists of two glass
+media with thicknesses of 1 mm and 2 mm, respectively. A coating
+from the <a class="reference external" href="idh_design.html">Design database</a> named “Filter” is
+placed between these media. External surfaces of both glass media
+are covered with the same antireflection coatings named “ARCoat.”</p>
+<p><img alt="image1" src="../../../_images/DB_stack_11.png" /></p>
+<p>The Media group of columns allows changes to be made:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>The Name column lists the names of media that should be used
+in the stack. These files must be present in the Substrate
+database of the current <a class="reference external" href="idh_problem_directory.html">Problem
+Directory</a>.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The Thickness column allows you to enter the thickness of
+each medium in the stack (in millimeters).</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The Type column allows you to specify how non-coherent
+interactions of surfaces should be handled:</p>
+</div>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Parallel type selection means that all reflections from all
+boundaries should be taken into account.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Wedged type selection means that radiation reflected from
+the boundaries of this medium goes out of the optical path
+of the device and needs to be neglected.</p>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<p>The Coatings group of columns allows changes to be made:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>The Name column lists the names of coatings placed at a
+boundary indicated in the Boundary column. These files must
+be present in the <a class="reference external" href="idh_design.html">Design database</a> of the
+current <a class="reference external" href="idh_problem_directory.html">Problem Directory</a>.</p>
+</div>
+</li>
+</ul>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image2" src="../../../_images/arrow_r.png" /></p></td>
+<td><p>Important:</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li></li>
+<li><div class="p-indentlist2 docutils container">
+<p>The Local column indicates how the current coating is stored.
+If a cell in this column is blank, the coating will be taken
+from the Design Database. If a cell in this column contains a
+button marked “…,” then the coating is stored together with
+the current stack, and additional options are available.
+These options can be accessed by clicking the button:</p>
+</div>
+<ul>
+<li></li>
+<li><div class="p-indentlist2 docutils container">
+<p>The Save Coating As… command allows you to save a coating
+as a design file in the Design Database for further
+independent use.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>The Reset Coating command will discard any modifications to
+the coating and reload this coating from the Design
+Database. Please note that Reset Coating affects only the
+coating at the corresponding stack boundary.</p>
+</div>
+</li>
+</ul>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>The Direction column allows specification of how the layers
+in a stack coating are numbered:</p>
+</div>
+<ul>
+<li></li>
+<li><div class="p-indentlist2 docutils container">
+<p>Forward direction means that the incident radiation passes
+through the last layer of the coating first. In other
+words, layer numbers are ascending in the direction
+opposite to light propagation.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>Reverse direction means that the incident radiation passes
+through the first layer of the coating first. In other
+words, layer numbers are ascending in the direction of
+light propagation.</p>
+</div>
+</li>
+</ul>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>The State column allows indication of whether the coating
+layer thicknesses are included for refinement and synthesis
+(Active state) or are merely fixed (Fixed state). The Hidden
+state can be used to temporarily hide (or exclude) a coating
+from the computations without actually removing it from the
+stack.</p>
+</div>
+</li>
+</ul>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image5" src="../../../_images/arrow_r.png" /></p></td>
+<td><p>Note: If the names of coatings in the stack are
+identical, the layer thicknesses of these coatings will
+remain constant during all refinement and synthesis
+operations. If you want coatings at different stack
+boundaries to be optimized independently, create the
+required number of design copies and assign them to the
+corresponding stack boundaries.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="line-block">
+<div class="line">For example, to design a stack consisting of one medium
+(substrate) that is covered with the same anti-reflection (AR)
+coating on both sides, you would specify the stack in the
+following form:</div>
+</div>
+<p><img alt="image6" src="../../../_images/DB_stack_21.png" /></p>
+<ol class="arabic">
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Substrate Layer: Specify the medium used as the substrate
+including its thickness and type.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>AR Coating on Entry Side: Specify the AR coating used on the
+entry side of the substrate. Include details such as the
+name of the coating, thickness of each layer within the
+coating, and optical properties.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>AR Coating on Exit Side: Specify the AR coating on the exit
+side, ensuring it matches the entry side in composition and
+thickness for symmetrical optical performance.</p>
+</div>
+</li>
+</ol>
+<p>Ensure both sides of the substrate are specified to have the same
+AR coating unless different properties are required for specific
+applications. This setup helps in reducing reflections on both
+interfaces of the substrate with the external environment,
+improving transmission and reducing backscatter in optical
+applications.</p>
+<p>In this example, a medium named “GLASS” with a thickness of 1 mm
+will be used. It will be covered by two identical coatings on both
+sides, and the layer thicknesses of these coatings will be
+optimized. The initial coatings are taken from the Design Database
+and are named “AR1.”
+We selected the Reverse direction for the second coating because,
+at the rear side, the direction of incident light propagation will
+coincide with the ascending order of the coating layers.
+The Preview tab allows visualization of all the coatings in the
+stack in graphical form:</p>
+<p><img alt="image7" src="../../../_images/DB_stack_31.png" /></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>
