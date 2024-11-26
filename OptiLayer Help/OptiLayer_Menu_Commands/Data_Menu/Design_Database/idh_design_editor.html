@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Design Editor</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="design-editor">
+<h1>Design Editor</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Design_Editor/idh_design_formula.html">Design Formula Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Design_Editor/idh_layer_status.html">Layer Optimization Status</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Design_Editor/design_inhom_inter.html">Design Inhomogeneities/Interlayers</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p>Design Editor</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt; <a class="reference external" href="idh_design.html">Design
+Database</a> &gt;</p>
+<p>Design Editor</p>
+</div>
+</div>
+<p>` &lt;idh_material_abbreviations.html&gt;`__ ` &lt;idh_design.html&gt;`__
+` &lt;idh_design_formula.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Design Editor enables direct editing of a design in memory
+(refer to the section on <a class="reference external" href="idh_modify_design.html">Modifying
+Design</a>) or within the Design database.</p>
+<p><img alt="image1" src="../../../_images/Design_editor.png" /></p>
+<p class="p-heading2 rubric" id="upper-controls">Upper controls</p>
+<p>Use the “Number of layers” field to adjust the number of layers in
+a design. Newly added layers are assigned a default thickness of
+one quarter-wavelength and are given a material according to the
+preferences set in the “Materials” field. The maximum number of
+layers that can be used in OptiLayer is mainly limited only by the
+computer’s performance and memory size, which is currently 65536.
+The “Control wavelength” field is used to correlate the physical
+thickness of a given design to its optical thicknesses. This
+correlation is based on the refractive indices of materials loaded
+into memory, the match angle value, and the match medium
+refractive index, and is defined as follows:</p>
+<p><img alt="image2" src="../../../_images/des_form1.gif" /></p>
+<p>Here, Q represents the thickness in quarter-wave optical thickness
+(QWOT) units, λ0 <em>is the control wavelength, θm</em> is the match
+angle, n(λ0) <em>is the material’s refractive index at the control
+wavelength, nm</em> is the refractive index of the match medium,
+and d is the physical thickness. It is important to note that
+altering the control wavelength modifies the physical thickness
+but leaves the optical, full-wave optical thickness (FWOT), and
+QWOT thicknesses unchanged (provided the “Keep physical thickness”
+box is unchecked). If the goal is to maintain the physical
+thickness of the design layers, simply adjust the state of the
+“Keep physical thickness” option.
+The “Match angle” field enables you to accurately adjust physical
+thicknesses to optical thicknesses at oblique angles of incidence.
+How thicknesses will change when varying the “Match Angle”
+parameter once again depends on the state of the “Keep physical
+thickness” option.
+The “Match medium” field permits the change of the incident
+medium’s refractive index used for matching physical thicknesses
+to optical thicknesses. You can enter its value manually, or opt
+to use the incident medium refractive index that is loaded into
+memory. Press the “Use loaded” button to populate this entry with
+the current control wavelength’s incident medium refractive index.</p>
+<p class="p-heading2 rubric" id="spreadsheet">Spreadsheet</p>
+<div class="line-block">
+<div class="line">The first four columns of the table are meticulously designed to
+represent layer thicknesses in varied forms. Values in these
+columns are interlinked, ensuring that any change in one
+automatically propagates corresponding adjustments across the
+remaining three.</div>
+</div>
+<p>The Physical Thickness column showcases the layer’s thickness in
+metric units (micrometers, nanometers, or Angstroms), which can be
+set in the <a class="reference external" href="idh_config_units.html">Units page</a> of the
+<a class="reference external" href="idh_configuration.html">Configuration menu</a>. The values here
+are deduced from the optical thickness calculations.</p>
+<ul>
+<li></li>
+<li><div class="p-indentlist2 docutils container">
+<p>Optical Thickness represents the product of the physical
+thickness and the refractive index at the specified control
+wavelength. Displayed in metric units, which are configurable
+in the <a class="reference external" href="idh_configuration.html">Configuration menu</a>,
+optical thickness is fundamental to any OptiLayer design.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>FWOT (Full-Wave Optical Thickness) denotes optical thickness
+in units of the control wavelength.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>QWOT (Quarter-Wave Optical Thickness) measures the optical
+thickness as a quarter of the control wavelength length,
+serving as a critical unit in thin film design.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>In the Material column, you input character
+<a class="reference external" href="idh_material_abbreviations.html">abbreviations</a>  to
+identify layer materials. These materials, once loaded into
+memory, are selectable from the <a class="reference external" href="idh_general_information_window.html">General Information
+Window</a> and can be
+modified via the <a class="reference external" href="idh_synthesis_options_material.html">Materials
+page</a> of the <a class="reference external" href="idh_synthesis_options.html">Options
+dialog</a>. The physical thickness
+calculation for a layer is based on the corresponding
+material’s refractive index if its abbreviation matches a
+material in memory. Note, optical, FWOT, and QWOT thickness
+measurements remain unaffected by material choice. An alert
+will be triggered if a non-existing material abbreviation is
+attempted to be added to the design.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>The <a class="reference external" href="idh_layer_status.html">Status</a>
+<a class="reference external" href="idh_layer_status.html">column</a> enables control over the
+layer thickness during the optimization process. Selecting
+“A” (Active) allows the corresponding layer thickness to be
+modified during optimization, whereas “B” (Fixed) will keep
+the layer thickness constant.</p>
+</div>
+</li>
+</ul>
+<p>The Glue Layers checkbox is a feature that enables users to
+control the automatic merging of adjacent layers made from the
+same material. If you employ the Formula tab to input a formula
+that results in the creation of multiple adjacent layers of the
+same material, activating this option can be beneficial to prevent
+the accumulation of an excessive number of layers that don’t add
+any unique physical properties to the design.
+Conversely, there are circumstances where you might prefer to keep
+layers separate, even if they are made of the same material. This
+is particularly true if the material in question has a variable or
+adjustable composition index on a per-layer basis. In such cases,
+despite sharing an abbreviation, different layers can exhibit
+varied refractive indices. Another scenario involves rugate and
+rugate-like coatings, which consist of numerous thin layers
+designated by the same abbreviation, yet their refractive indices
+are dictated by the Fraction parameter of the associated material.
+By default, the Glue Layers option is enabled. This means that
+OptiLayer will automatically consolidate adjacent layers composed
+of the same material into a single layer, with the total thickness
+being the sum of all individual layers combined. This automatic
+merging is a common procedure during the synthesis process,
+streamlining the design by reducing redundancy without
+compromising the overall structure’s efficacy.</p>
+<p class="p-heading2 rubric" id="summary">Summary</p>
+<p>Pressing the small “Σ” button opens an additional Summary window,
+which provides more detailed information regarding the total
+values in the current design:</p>
+<p><img alt="image3" src="../../../_images/des_summ.png" /></p>
+<p>In the Design Summary window, you can view the total values
+corresponding to the material of each layer within the design.</p>
+<p class="p-heading2 rubric" id="formula-the-formula-button-enables-the-generation-and-modification-of-a-design-formula-for-further-information-on-the-application-of-the-design-formula-option-please-refer-to-the-next-topic">Formula
+The “Formula…” button enables the generation and modification
+of a <a class="reference external" href="idh_design_formula.html">Design Formula.</a> For further
+information on the application of the Design Formula option,
+please refer to the <a class="reference external" href="idh_design_formula.html">next topic.</a></p>
+<p class="p-heading2 rubric" id="refractive-indices">Refractive Indices</p>
+<p>When utilizing materials with changeable properties, it is
+possible to edit the values of refractive indices and extinction
+coefficients through the “Refractive Indices” tab within the
+Design Editor.
+<img alt="image4" src="../../../_images/Refractive_indices11.png" /></p>
+<p>Values that cannot be altered are displayed with disabled
+attributes, indicating that they are fixed. You are only able to
+modify values that correspond to materials designated with the
+<a class="reference external" href="idh_edit_layer_material.html">Per Layer changeable</a> status.
+This status detail can be further explored in the <a class="reference external" href="idh_edit_layer_material.html">Editing Layer
+Material</a> topic. Additionally,
+if a material with a “Changeable Composition” and “Per Layer”
+status is present within the design, it is the Fraction values
+that can be edited, as opposed to the refractive index and
+extinction coefficient values.</p>
+<p>Preview</p>
+<p>The Preview tab provides a view of the refractive index profile of
+your design, where thickness is consistently represented in
+Quarter-Wave Optical Thickness (QWOT) units.</p>
+<p>For convenient editing access, you can utilize any of the
+<a class="reference external" href="idh_spreadsheet_editing.html">Spreadsheet Editing Tools</a>
+available from the main toolbox, the toolbar, or by using the
+corresponding keyboard shortcuts. Additionally, the Reverse Layers
+command found in the <a class="reference external" href="idh_menu_edit.html">Edit Menu</a> allows you
+to invert the layer order in your design.
+To confirm and apply any edits, click the OK button. If you wish
+to discard all changes and exit the Design editor, simply click
+the Cancel button.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

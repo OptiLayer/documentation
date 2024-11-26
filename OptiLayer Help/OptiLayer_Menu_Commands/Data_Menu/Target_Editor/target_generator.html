@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Target Generator</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="target-generator">
+<h1>Target Generator</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Target Generator</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt; <a class="reference external" href="target_editor.html">Target
+Editor</a> &gt;</p>
+<p class="p-heading1 rubric" id="target-generator-1">Target Generator</p>
+</div>
+</div>
+<p>` &lt;idh_modify_wavelengths.html&gt;`__ ` &lt;target_editor.html&gt;`__
+` &lt;phasegdgdd_target_generator.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image1" src="../../../_images/tgtgen1.png" /></p>
+<p>The Target Generator dialog enables the specification of a complex
+target in terms of angular planes and spectral bands. For each
+spectral band, you can define the target characteristics of
+interest, their starting and ending values, and the number of
+spectral points.
+At the top of this dialog, you can specify the total number of
+planes. Additional controls are available to expand and collapse
+child levels within this dialog. The Column Editor can also be
+accessed in this dialog using a special button.
+On the first level of the dialog, for each plane, you can specify
+the angle of incidence and a set of target characteristics. The
+child levels adjust automatically based on the specified
+parameters.
+On the second level of the dialog, you can insert, append, and
+remove spectral bands for each plane using control buttons. Each
+band can have a different number of spectral points (N) and
+different starting and ending wavelength values (λ0 and λ1). The
+type of spectral point distribution should be specified in the
+“Grid” column and can be Logarithmic, Linear, or Inversely
+Proportional.
+At the third level of the dialog, you can specify starting and
+ending values for each target characteristic, along with
+corresponding tolerance values and
+<a class="reference external" href="idh_target_qualifier.html">qualifiers</a>. When target values are
+computed for wavelength values within each band, linear
+interpolation is used.
+Clicking the OK button will initiate the Target Generator
+procedure, which will replace the current target editor content
+with the newly created target.</p>
+<p class="p-heading2sub rubric" id="example-1">Example 1</p>
+<p>To quickly create a target for the <a class="reference external" href="example7.html">Advanced Example
+LEC03D7</a> in the Target Generator dialog, you can
+use the following settings:</p>
+<p><img alt="image2" src="../../../_images/tgtgen2.png" /></p>
+<p>Only one plane is utilized, featuring three bands for the TS
+characteristic under normal incidence. Each band consists of 50
+logarithmically distributed spectral points. The first band ranges
+from λ0=400 nm to λ1=495 nm, with TS values set to 100%. The
+second band covers λ0=505 nm to λ1=595 nm, with TS values set to
+0%. The third band extends from λ0=605 nm to λ1=800 nm, with TS
+values once again set to 100%.</p>
+<p class="p-heading2sub rubric" id="example-2">Example 2</p>
+<p>Target for the <a class="reference external" href="example5.html">Advanced Example LEC03D5</a> can be
+quickly created with the following settings in the <em>Target
+Generator</em> dialog (all levels are expanded):</p>
+<p><img alt="image3" src="../../../_images/tgtgen3.png" /></p>
+<p>In this example, three planes with different angles of incidence
+0°, 30°, and 45° are specified, each having different
+characteristics. Each plane is equipped with 40 spectral points
+logarithmically distributed in the range from 400 nm to 700 nm.
+The target reflectances are set to zero values for each plane and
+each band.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

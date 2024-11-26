@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 1. Evaluation of quarter-wave mirror</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-1-evaluation-of-quarter-wave-mirror">
+<h1>Exercise 1. Evaluation of quarter-wave mirror</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 1. Evaluation of quarter-wave mirror</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>All necessary files for this exercise are located in the directory
+EX1. Select this directory using the
+<a class="reference external" href="idh_problem_directory.html">Problem</a> menu command.  In <a class="reference external" href="single_file_mode.html">SF
+Mode</a> you need to use Import Problem
+Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Open the Substrate database in the <a class="reference external" href="idh_menu_data.html">Data
+menu</a> and <a class="reference external" href="idh_loading_data.html">Load</a>
+file GLASS as a substrate. Using the bottom tabs in the Database
+dialog switch to the Layer Materials database and load MGF2 and
+ZNS as layer materials. After this switch to the Design database
+and load QWM as a design. In every database you can use the Edit
+command in order to check data inside each file. Data can be
+examined in both numerical and graphical forms (Preview page of
+corresponding editors).</p>
+<p>Check the state of the <a class="reference external" href="idh_general_information_window.html">General Information
+window</a>, that should look
+as follows:</p>
+<p><img alt="image1" src="../_images/geninfoex1.png" /></p>
+<p>OptiLayer assumes that the default for the incident medium is air
+and loads the Air file automatically.  You need to specify and
+load the refractive index of the incident medium only if this
+medium differs from air. Note that the same database is used to
+store refractive indices of substrates and the incident media.</p>
+<p>In this example zinc sulfide and magnesium fluoride layer
+materials are non-dispersive for the sake of simplicity and have
+refractive indices 2.30 and 1.38, respectively. Note that after
+loading the first file, its name, accompanied by the character
+abbreviation H, appears in the <a class="reference external" href="idh_general_information_window.html">General Information
+Window</a>.  After loading of
+the second file you can see both names in the General Information
+Window with the character abbreviations H and L (high and low)
+automatically assigned to the names in accordance with their
+refractive indices values. These  character abbreviations are used
+in the design descriptions.</p>
+<p>Examine the QWM design file using the Edit command of the Design
+database. This is a 12 layer quarter-wave mirror with the control
+wavelength 500nm. Refer to the <a class="reference external" href="idh_design_editor.html">Design
+Editor</a> help for more details.</p>
+<p>It is important to note that the link between the loaded layer
+materials data files and character abbreviations used in the
+design description is performed when the design is loaded from the
+disk to memory.</p>
+<p>The connection between character abbreviations H and L and
+specific layer materials which have been loaded into memory is
+indicated in the General Information window. The refractive
+indices of these materials at the design control wavelength are
+used to connect design physical thicknesses with the design
+optical thicknesses specified in the design description.</p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image4" src="../_images/arrow_r.png" /></p></td>
+<td><p>Note: In OptiLayer layers are numbered starting from the
+substrate.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Open Evaluation window with the help of <a class="reference external" href="idh_evaluation.html">Analysis-&gt;T &amp; R &amp;
+Phase</a> command. Make experiments with
+various plotting options using the
+<a class="reference external" href="idh_synthesis_options.html">Analysis-&gt;Options</a> dialog. For
+quick access to these options it is possible to use right-click
+pop up menu of the Evaluation window.</p>
+<p>It is recommended to experiment with:</p>
+<p>·Axis ranges and types (linear/logarithmic)</p>
+<p>·Plotted characteristics (it is possible to use up to 50 various
+plots in each Evaluation window)</p>
+<p>·Lines styles (solid, dotted, dashed, etc.) and colors</p>
+<p>·Appearance of the design bar</p>
+<p>·Legend and header settings.</p>
+<p>For advanced use note that there is an ability to open <a class="reference external" href="additionalevaluationwindows.html">additional
+Evaluation</a> windows. As an
+example, use Analysis -&gt; Additional option to display the main
+high reflection zone and intermediate zone separately as presented
+below. Both windows are displayed simultaneously and use different
+X- and Y-axis settings.</p>
+<p><img alt="image5" src="../_images/addev1.png" /></p>
+<p><img alt="image6" src="../_images/addev2.png" /></p>
+<p>Use the <a class="reference external" href="idh_modify_design.html">Modify Design</a> command in the
+Synthesis menu to make in-memory design modifications. Note that
+modifications are instantly reflected in the both Evaluation
+windows. All windows in OptiLayer are synchronized. This means
+that changes are reflected immediately everywhere. There is only
+one exception from this rule. Report windows created using the
+<a class="reference external" href="idh_menu_results.html">Results menu</a> reflect the state of
+OptiLayer at the moment of the creation of the corresponding
+report.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

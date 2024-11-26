@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 15. Metal-dielectric coating</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-15-metal-dielectric-coating">
+<h1>Exercise 15. Metal-dielectric coating</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 15. Metal-dielectric coating</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>This exercise demonstrates the design of a metal-dielectric
+filter. Required files are located in the <a class="reference external" href="idh_problem_directory.html">Problem
+Directory</a> EX15. In <a class="reference external" href="single_file_mode.html">SF
+Mode</a> you need to use Import Problem
+Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load GLASS substrate, and layer material files with the names 2.35
+and AG. The last file presents silver refractive index and
+extinction coefficient in the spectral range from 400 to 2000nm.
+Note that in the same directory you can find the ASCII file AG.DAT
+with this data and experiment with <a class="reference external" href="idh_import.html">import ASCII
+data</a> option of OptiLayer.</p>
+<p>Using <a class="reference external" href="idh_synthesis_options_material.html">Arrange Materials</a>
+menu item of the Data menu assign the abbreviation A to the AG
+material.</p>
+<p>Also in <a class="reference external" href="idh_menu_configuration.html">General Configuration</a>
+dialog set microns as <a class="reference external" href="idh_config_units.html">Length units</a> and
+Physical as <a class="reference external" href="idh_config_thickness_units.html">Thickness units</a>.
+As soon as we are working with a metal layer, physical units for
+thicknesses are more convenient.</p>
+<p>Examine the target function stored in the file Mdfilter in the
+Target database. We shall design a short wave-pass filter having a
+high transmittance zone in the spectral range from 0.4  to 0.8
+micron and a low transmittance zone in the spectral range from 0.8
+to 2.0 microns. Load this file to memory.</p>
+<p>Choose the Newton method (<a class="reference external" href="idh_synthesis_options_method.html">Analysis and Synthesis
+Options</a> dialog).</p>
+<p>Try different strategies to design the required filter. It is
+possible to start with the <a class="reference external" href="idh_random_optimization.html">Random
+Optimization</a> and then to proceed
+with the <a class="reference external" href="idh_needle_optimization.html">Needle Optimization
+AUTO</a>. Good results are obtained
+with the following <a class="reference external" href="idh_random_optimization_parame.html">Random Optimization
+Settings</a>:</p>
+<p><img alt="image1" src="../_images/ex15_randomsetup.png" /></p>
+<p>It is also possible to use the <a class="reference external" href="idh_gradual_evolution.html">Gradual
+Evolution</a> option. It is important
+that this option provides a general understanding about the
+achievable spectral performance and about the price one should pay
+for improving the design performance. Most likely that with the
+given materials it is sufficient to limit the number of design
+layers by 7. Further increase of design thickness and the number
+of layers give only a small improvement of the merit function.</p>
+<p>Here you can see the obtained 8-layer design (finalizing Needle
+Optimization procedure added one more layer):</p>
+<p><img alt="image2" src="../_images/ex15_ev1.png" /></p>
+<p>Layer number 1 has physical thickness 2.88nm and can be removed
+with the help of <a class="reference external" href="idh_remove_thin_layers.html">Thin Layer
+Removal</a> command without noticeable
+degradation of the obtained design. You will obtain the following
+design:</p>
+<p><img alt="image3" src="../_images/ex15_ev2.png" /></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

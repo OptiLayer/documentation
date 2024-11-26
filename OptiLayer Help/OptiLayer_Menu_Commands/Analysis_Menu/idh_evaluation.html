@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Evaluation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="evaluation">
+<h1>Evaluation</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Evaluation/peak_list.html">Peak List</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p>Evaluation</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The evaluation commands in the <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> (T &amp; R &amp; Phase, GD &amp; GDD,
+Ellipsometric Angles) allow the user to evaluate the spectral
+characteristics of the design currently loaded into the memory.
+The evaluation results are shown as plots in the Evaluation
+window.</p>
+<p>Different Evaluation windows may be displayed simultaneously, each
+showing one of the following groups of spectral characteristics:</p>
+<ol class="arabic">
+<li></li>
+<li><div class="p-normal docutils container">
+<p>T &amp; R &amp; Phase - correspond to Transmittance, Reflectance,
+and Phase characteristics of the current design;</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>GD &amp; GDD - correspond to <a class="reference external" href="idh_gd_gdd.html">Group Delay and Group Delay
+Dispersion</a> characteristics;</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Ellipsometric Angles - correspond to <a class="reference external" href="idh_ellipsometry_evaluation.html">Ellipsometric
+Angles</a> as functions of
+the wavelength or angle of incidence.</p>
+</div>
+</li>
+</ol>
+<p>The display formatting for the characteristics to be evaluated and
+plotted are set up independently for each of these three groups in
+the <a class="reference external" href="idh_synthesis_options.html">Analysis Options</a> menu.</p>
+<p>The design is represented by the design bar showing layers in
+different colors, the number of layers N, and the overall
+thickness Th of the coating. The design bar is located underneath
+the graphic display; it represents a cross-section of the coating
+with the layers being displayed in proportion to their physical
+thicknesses.
+If a target function is loaded, the Merit function value is
+displayed at the bottom of the window.
+The contents and style (color, scale, etc.) of the graphic window
+and the design bar are defined by the corresponding settings in
+the <a class="reference external" href="idh_synthesis_options.html">Analysis Options</a>. The
+<a class="reference external" href="idh_synthesis_options_header.html">Legends and Header</a> tab in
+the Options menu allow adding legend and header comments to the
+evaluation plot.</p>
+<p><img alt="image1" src="../../_images/TRPhase_21.png" /></p>
+<p>If Spectral/Angular Specification is loaded, it is displayed by a
+semi-transparent area, whose color depends on whether the formal
+specification requirement is met at each wavelength or angular
+point.</p>
+<p><img alt="image2" src="../../_images/ol_evspec1.png" /></p>
+<p>For example, in this figure, we see one of the initial steps of AR
+design (<a class="reference external" href="example3.html">Example LEC03D3</a>). We additionally
+loaded a simple specification file with the requirement RS &lt;= 2%
+for the wavelength range from 400 to 1200 nm (100
+logarithmically-distributed spectral points). We can clearly see
+spectral points where this requirement is still violated (shown in
+red). The metric Q = 46.0% shows the relative number of points
+with good quality (where the requirement is fulfilled).
+The final solution completely satisfies this specification.</p>
+<p><img alt="image3" src="../../_images/ol_evspec2.png" /></p>
+<p>In the <a class="reference external" href="idh_data_display_modes.html">Angular mode</a>, curves are
+represented as functions of incidence angles, where each curve
+corresponds to one wavelength.</p>
+<p>It is possible to change the size of the area occupied by the
+design bar by using the mouse to move a boundary between two
+subwindows.</p>
+<div class="docutils container">
+<p><img alt="image4" src="../../_images/eval_right_menu.png" /></p>
+</div>
+</div>
+</div>
+<p>You can click the right mouse button to invoke the popup menu, which
+allows setting graphic options and switching between the Spectral and
+Angular modes.</p>
+<p>This right-click popup menu gives access to many other frequently used
+operations, such as:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p><strong>Chart Editor</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Templates (saving and applying)</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Save, Print, Copy operations</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Axis and Plots settings</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Design Bar settings</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Materials settings</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Header and footer of the chart</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Unit settings</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="inhomogeneities_interlayers.html">Inhomogeneities/Interlayers</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="peak_list.html">Peak List…</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Spectral/Angular mode</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>High resolution plots</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Grid display</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Memorize commands</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Digitize function</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Filter mode</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>Reports</strong></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><strong>and more</strong></p>
+</div>
+</li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

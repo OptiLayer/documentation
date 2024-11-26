@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric">Example 13. Design of
+coatings with intensity and
+phase targets.
+:name</p>
+<p>: example-13.-design-of-coatings-
+with-intensity-and-phase-targets.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</div></blockquote>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer design
+options and random nature of some of their elements, the results
+obtained may differ from those previously saved in the design
+database</p>
+<p>The main purpose of this example is to demonstrate that intensity
+and phase properties of optical coatings are not completely
+independent. There are situations where perfect matching of
+intensity and phase targets cannot be achieved simultaneously due
+to fundamental physical limitations.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D13. Some datafiles needed to run this exercise are already
+loaded into RAM. These are the substrate Glass n=1.52, the layer
+materials n=2.35 and n=1.46. In the target database, there is a
+target Mirror with constant phase. Select this file and use Edit
+-&gt; Preview to see the target requirements. It is necessary to
+design a high reflector with a target reflectance of 100% and a
+constant phase shift on reflection of 180-degree in the spectral
+region of 550-650 nm.</p>
+<p>To solve this problem, we will use a 21-layer quarter wave mirror
+as the starting design. In the design database, select the file
+QWM-21, c.w. 600 nm and load it. Open the T&amp;R&amp;Phase option in the
+Analysis menu. There is already a fairly good agreement between
+the reflectance and phase shift on reflection of the starting
+design and the intensity and phase targets. The phase shift is
+exactly 180-degree at the central wavelength of 600 nm, and it is
+only necessary to make its wavelength dependence flat in the
+target region.</p>
+<p>In the Synthesis -&gt; Options… select the Newton optimization
+method. Select the Needle Optimization AUTO mode from the
+Synthesis menu and click the Run button. The result of
+optimization is obtained in a few seconds.</p>
+<p>You will see that when you try to reduce the slope of the phase
+shift versus wavelength, the reflectance deteriorates
+significantly. But due to this, only a practically insignificant
+decrease in the steepness of the phase shift is achieved. You can
+try other local optimization methods by accessing them through the
+Options button at the bottom of the Needle AUTO window. If you
+want to start with the same QWM-21… design as before, simply click
+on that design in the History part of the Needle AUTO window.</p>
+<p>You can save your own results in the design database. As a
+reminder, to do this, you need to click the Load button in the
+Needle AUTO window to bring this design to the T&amp;R&amp;Phase
+evaluation window. You can then save the resulting design to the
+design database using the Data -&gt; Save Data -&gt; Save Design option.</p>
+<p> Note: There are already a couple of designs stored in this
+database. You will see that all attempts to reduce the slope of
+the phase shift versus wavelength have failed.</p>
+<p>The reason for the failure to achieve a constant phase shift on
+reflection is related to the fundamental limitation on the
+steepness of the phase shift in the high reflection zone. It turns
+out that this steepness cannot be below a certain limit,
+determined by the refractive index of the outer mirror layer (A.
+Tikhonravov, Optical coatings: design, characterization,
+monitoring, SPIE Press, 2024).</p>
+<p>The next example demonstrates the successful design of a phase
+retarding mirror with the target requirements specified in the
+target file HR with DPR. Here DPR means differential phase shift,
+i.e. the difference between phase shifts on reflection for the s-
+and p- polarized light. The target spectral characteristics are
+specified on a wavelength grid with a step of 1 nm in the spectral
+region from 1054 nm to 1074 nm and at an angle of incidence of
+45°. The target s- and p- reflectances are 100% and the target
+differential phase shift is 90°.</p>
+<p>Such mirrors are used in industrial laser systems to convert a
+linearly polarized laser beam into a circularly polarized laser
+beam. Let us recall that there are two possible definitions of the
+phase shift on reflection for p-polarized light, differing in
+the sign of this phase shift. In OptiLayer we use a more logical
+definition, from which it follows that the phase shifts on
+reflection in the s- and p- cases coincide when the light
+incidence tends to normal incidence.</p>
+<p>Load the target file HR with DPR and the design file QWM-21 at
+45-deg, c.w. 1064 nm as a starting design. The starting design is
+a 21-layer quarter wave mirror, which reflectances and
+differential phase shift can be viewed in the T&amp;R&amp;Phase window.
+The differential phase shift of the starting design is close to
+zero.</p>
+<p>In the Refinement mode of the Synthesis menu, clear History,
+select the Truncated Newton method, and click the Run button. The
+resulting design has a differential phase shift very close to 90°.
+This was achieved with a small reduction in p-reflectance of
+approximately 1%.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

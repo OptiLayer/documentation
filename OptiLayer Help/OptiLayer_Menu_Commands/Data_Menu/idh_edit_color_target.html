@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Color Target</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="color-target">
+<h1>Color Target</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Color_Target/color_range_targets.html">Color Range Targets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Color_Target/anchor_parameters.html">Anchor Parameters</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p>Setting Up the Color Target</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p>Setting Up the Color Target</p>
+</div>
+</div>
+<p>` &lt;integral_target.html&gt;`__ ` &lt;idh_menu_data.html&gt;`__
+` &lt;color_range_targets.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Color Target feature outlines the necessary color coordinates
+for reflected or transmitted light.
+When you open the Spreadsheet tab, you’ll see two sections. The
+upper part is where you can input the total number of color
+targets, while the lower part displays and formats the data in a
+spreadsheet.
+With the Color Space drop-down menu, you can select the Color
+Target and apply the correct conventions for your color
+specifications.</p>
+<p><img alt="image1" src="../../_images/color_Target_12.png" /></p>
+<p>The program can handle up to 99 color targets. When you input the
+number of color targets in the upper section of the window, the
+corresponding number of rows will appear in the spreadsheet in the
+lower section. Each row typically represents one color target,
+although identical data rows are permissible.
+Each row in the spreadsheet includes the following information:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Angle: The angle of incidence.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Type: Characteristics that align with the selected Color
+Space. If the Color Space changes, the available
+characteristics in this column will update accordingly.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Char: Spectral characteristic, such as R (reflectance), BR
+(Back Reflectance), or T (transmittance).</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Pol: Polarization type, which can be S, P, or A (averaged).</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Target: The value of the X, Y, or Z coordinate, or other
+coordinates based on the Type setting.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Tol%: Tolerance, measured in percent, used for proper
+normalization of a merit function.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Q: Target value qualifier similar to <a class="reference external" href="idh_target_qualifier.html">Target
+Qualifiers</a> and may have
+values A, B, or be left blank (for a standard target). The R
+qualifier is used for <a class="reference external" href="color_range_targets.html">Range Color
+Targets</a> specified as convex
+polygons. <a class="reference external" href="color_range_targets.html">Range Color
+Targets</a> are available for
+certain color spaces only.
+The qualifier “C” corresponds to <a class="reference external" href="anchor_parameters.html">AnChor
+color</a>, where the
+target represents the difference between the current color
+value and a similar color value for the Anchor Color.</p>
+</div>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>It is important to note that color-related calculations will
+default to using a light source and detector with a uniform
+spectral power distribution if no specific <a class="reference external" href="idh_edit_light_source.html">Light Source or
+Detector</a>  is explicitly stated.</p>
+<p>Additionally, the Preview tab can be utilized for a quick check of
+the entered targets.</p>
+<p><img alt="image2" src="../../_images/col_targ_p.png" /></p>
+<p>The crosses on the Preview window indicate the targets that have
+been entered on the Spreadsheet tab.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

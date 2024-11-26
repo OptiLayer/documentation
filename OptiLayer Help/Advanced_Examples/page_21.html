@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric" id="example-17">Example
+17. Refractive index error
+analysis.</p>
+<dl class="simple">
+<dt>-refractive-index-error-analysis.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer design
+options and random nature of some of their elements, the results
+obtained may differ from those previously saved in the design
+database</p>
+<p>The main purpose of this example is to demonstrate the results of
+statistical error analysis with refractive index errors and to
+show the benefit of monitoring optical thicknesses during the
+coating production.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D17.  Datafiles needed to run this exercise are already
+loaded into RAM. These are the substrate Glass n=1.52, the layer
+materials n=2.35 and n=1.46, and the design SWP-21, by
+quasi-Newton.</p>
+<p>Open the T&amp;R&amp;Phase option in the Analysis menu to see the
+transmittance of this short-wave pass filter in the 400-700 nm
+spectral range.</p>
+<p>In the Analysis menu, select Errors-&gt; Error Analysis… option. In
+the Error Analysis Setup window, use Characteristic tab to set the
+analyzed spectral characteristic and statistical analysis
+parameters. By default, the calculation of mathematical
+expectation (M) and corridor of deviations (D) is enabled. This
+means that at the end of the statistical analysis, the results of
+individual error tests will be replaced by these statistical
+characteristics.</p>
+<p>In the Thickness tab, make sure errors in layer thicknesses are
+set to zero and open the Refractive Index tab to set errors in
+layer refractive indices. To set independent errors in layers of a
+given material, the checkbox Per Material Errors should not be
+checked. Otherwise, the same errors will be simulated in all
+layers of a given material. Independent errors better reflect the
+refractive index errors associated with random variations in films
+density within the deposition chamber. It can be theoretically
+shown (A. Tikhonravov, Optical coatings: design, characterization,
+monitoring, SPIE Press, 2024) that changes in the reflectance and
+transmittance are proportional to the ratio Δn/n’. Therefore, it
+is advisable to consider the relative errors of the refractive
+index. Let us set 2% relative errors in refractive indices of
+high-index coating layers.</p>
+<p>Click the Run button to start error analysis. As in the case of
+thickness errors, the performed analysis shows a negligible
+influence of errors on the spectral characteristic of the filter
+in the high reflection region. This is a consequence of the
+general theoretical result that refractive index errors cause only
+small changes in the spectral characteristics of optical coatings
+in regions of high reflectance compared to other regions.</p>
+<p>In the above analysis, there were no errors in the layer
+thicknesses, and these thicknesses were fixed at theoretically
+planned values. It is advisable to check what happens if we fix
+not physical but optical thicknesses. This can be done using the
+checkbox Keep Optical Thicknesses. When it is checked, the
+physical layer thicknesses are adjusted to maintain the
+theoretically planned optical thicknesses.</p>
+<p>To make the results of further analysis more visual, we will
+increase the relative errors in the indices of H-layers from 2% to
+4%. Run error analysis with the checkbox checked and unchecked. A
+significant decrease in variations of the spectral transmittance
+in the first case is clearly seen.</p>
+<p>The experiment performed can serve as an argument in favor of
+optical monitoring procedures, that control not the physical, but
+the optical thicknesses of the coating layers. If there are
+fluctuations in the refractive indices of the deposited layers,
+then with such monitoring procedures the physical thicknesses of
+the layers will be automatically adjusted to maintain the planned
+optical thickness values.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

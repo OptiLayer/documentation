@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Layer Sensitivity Setup</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="layer-sensitivity-setup">
+<h1>Layer Sensitivity Setup</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Layer Sensitivity Setup</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt; Layer Sensitivity &gt;</p>
+<p class="p-heading1 rubric" id="layer-sensitivity-setup-1">Layer Sensitivity Setup</p>
+</div>
+</div>
+<p>` &lt;idh_worstcase_analysis.html&gt;`__ ` &lt;idh_menu_analysis.html&gt;`__
+` &lt;idh_layer_sensitivity_evaluati.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image1" src="../../../_images/Layer_Sensitivity_1.png" /></p>
+<p>Layer Sensitivity Setup dialog allows you to choose the layer
+thickness variation values for each layer material used in the
+current design independently. Thickness variations can be
+expressed as either Relative Errors or Absolute Errors.
+The computation of Layer Sensitivities can be based on the
+variations of the current Target (conventional, Color, etc.)
+loaded into memory (Sensitivity relative to Target selected at the
+bottom of the dialog), or on the deviations of spectral
+characteristics from the theoretical ones. This corresponds to
+Sensitivity relative to Theoretical Design selection.
+In the case of Sensitivity relative to Theoretical Design
+selection, the spectral and angular grid, types of
+characteristics, and the rest of the target structure are taken
+from the loaded target file, but target values are replaced with
+computed characteristics of the initial theoretical design. This
+option can be considered as an intrinsic sensitivity study as
+opposed to sensitivity study with respect to the targets.
+The computational procedure consists of varying layer thicknesses
+one by one and estimating the obtained variations of the merit
+function (based on either Target or Theoretical Design):</p>
+<p> ΔMFj = MF(d1, d2,…,dj+Δdj,…dN) - MF(d1, d2,…,dj,…dN)</p>
+<p>After obtaining these values of ΔMFj they are scaled to the
+maximum ΔMFj and expressed as a percentage relative to this
+maximum deviation. Graphical and numerical representations can be
+observed in the <a class="reference external" href="idh_layer_sensitivity_evaluati.html">Layer Sensitivity
+Evaluation</a> window.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

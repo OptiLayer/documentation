@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Formula Constrained Optimization - Formula</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="formula-constrained-optimization-formula">
+<h1>Formula Constrained Optimization - Formula</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Formula Constrained Optimization - Formula</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a> &gt; <a class="reference external" href="formula_constrained_optimizati.html">Formula Constrained
+Optimization</a> &gt;</p>
+<p class="p-heading1 rubric" id="formula-constrained-optimization-formula-1">Formula Constrained Optimization - Formula</p>
+</div>
+</div>
+<p>` &lt;formula_constrained_vars.html&gt;`__
+` &lt;formula_constrained_optimizati.html&gt;`__
+` &lt;sensitivity_directed_refinemen.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Derived variables and formulas are specified in the second step of
+the <a class="reference external" href="formula_constrained_optimizati.html">Formula Constrained Optimization
+Setup</a> dialog.</p>
+<p><img alt="image1" src="../../../_images/form_constr_form.png" /></p>
+<p>On the left pane of this dialog, a short list of already defined
+variables (see <a class="reference external" href="formula_constrained_vars.html">Step 1</a>) is
+listed for convenience.
+On the right pane, Derived Variables may be defined when
+necessary. It is necessary to set the number of Derived Variables,
+set a unique name for each variable, and program an algorithm
+defining an expression for each Derived Variable.
+Defining the algorithm is done in a special pop-up window.</p>
+<p><img alt="image2" src="../../../_images/form_constr_form_algo.png" /></p>
+<p>The algorithm is defined as a sequence of operations connecting
+results starting with #1 until the last one, integer and
+continuous independent variables, constants connected with
+arithmetic operators.
+This approach is quite similar to the <a class="reference external" href="userdefinedtargeteditor.html">User-Defined
+Targets</a> editor.</p>
+<p>Below, the same editors for the control wavelength and the formula
+itself are present.
+Randomization and attempts options can also be adjusted at this
+second step of configuration.
+Click the Apply &amp; Run button to start computations. The Back
+button allows you to return to <a class="reference external" href="formula_constrained_vars.html">Step
+1</a> when corrections are
+necessary.</p>
+<p><img alt="image3" src="../../../_images/arrow_r.png" /> Note 1: Formula Constrained Optimization uses a
+specialized modification of the SQP (Sequential Quadratic
+Programming) optimization method. Therefore, the settings in the
+<a class="reference external" href="idh_synthesis_options_method.html">Analysis and Synthesis
+Options</a> dialog do not affect
+computations.</p>
+<p><img alt="image4" src="../../../_images/arrow_r.png" /> Note 2: Computations can be terminated using the
+Terminate button in the <a class="reference external" href="idh_refinement_window.html">Refinement
+window</a> as usual.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

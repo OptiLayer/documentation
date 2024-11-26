@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Line Width Database</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="line-width-database">
+<h1>Line Width Database</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Line Width Database</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="line-width-database-1">Line Width Database</p>
+</div>
+</div>
+<p>` &lt;coneangledatabase.html&gt;`__ ` &lt;idh_menu_data.html&gt;`__
+` &lt;idh_edit_layer_material.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Line Width database feature enables the storage of settings
+related to the width of instrumentation spectral lines. This width
+may vary depending on the wavelength.</p>
+<p><img alt="image1" src="../../_images/Line_Width_11.png" /></p>
+<p>In the Line Shape feature, users can choose between Rectangular or
+Gaussian shapes for the spectral line.
+The Integration points parameter specifies the number of points
+utilized during the evaluation of integrals that depict the impact
+of a finite line width. Increasing the number of Integration
+points enhances accuracy but also extends computational time,
+which scales proportionally with this value. Typically,
+Integration points values range from 5 to 15 for optimal
+performance.
+Within the Wavelength points section and corresponding spreadsheet
+below, users can define the dependency of the spectral line width
+on wavelength. The spectral line width is specified by
+Full-Width-at-Half-Maximum (FWHM) values as a function of
+wavelength. Piece-wise linear interpolation is employed to
+represent values between the specified wavelength points, while
+extrapolation is achieved using a constant value for wavelengths
+outside the specified range.</p>
+<p><img alt="image2" src="../../_images/Line_Width_21.png" /></p>
+<p>The “Preview” tab displays the specified dependency in a graphical
+format, allowing users to visualize the relationship between
+spectral line width and wavelength.</p>
+<div class="docutils container">
+<p><img alt="image3" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: Loading an item from the Line Width database will result in all
+evaluation and design computations being conducted while considering the
+line width settings specified in the database.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

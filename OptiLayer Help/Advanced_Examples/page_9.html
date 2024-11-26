@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric">Example 5.
+Needle optimization technique:
+design of RAMP coating.
+:name</p>
+<p>: example-5.-needle-optimization-
+technique-design-of-ramp-coating.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</div></blockquote>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The main purpose of this example is to demonstrate the operation
+of the needle optimization technique and the dependence of its
+final results on the total optical thickness of a starting design.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D5. Some datafiles needed to run this exercise are already
+loaded into RAM. These are the substrate Glass n=1.52 and the
+layer materials n=2.35 and n=1.46. First it is necessary to create
+a spectral target and single-layer starting design in the
+corresponding databases.</p>
+<p>** **</p>
+<p>In the target database, create a new target with the name RAMP
+400-800 nm.  In the Number of spectral points filed, enter 201. A
+target spreadsheet with 201 rows will be created.</p>
+<p>You can use the convenient editing functions Grid Generator and
+Column Editor, which are accessible by right mouse click. In the
+Wavelength column, set a uniform grid from 200 to 800 nm with the
+2 nm wavelength step.</p>
+<p>In the TS column, define a linearly increasing target
+transmittance in 0.5 % increments. In the target tolerances (DTS)
+column, leave the default values of 1% for all target tolerances.
+Use the Preview tab to ensure that the linearly increasing target
+transmittance is specified in the range of 400 to 800 nm.</p>
+<p>Load the target into RAM. In the design database, create a single
+layer starting design with an optical thickness of 1200 nm.</p>
+<p>Load this design into RAM and open the T&amp;R&amp;Phase evaluation window
+to see the correspondence between the transmittance of the
+starting design and the target transmittance.</p>
+<p>In the Synthesis menu, select the Needle Optimization AUTO mode
+and click the Run button in the upper left corner of its window.
+In a fraction of a second, the final design is obtained. The
+achieved merit function value (MF), number of design layers (N),
+and total thickness of the design (TT) are shown in the top line
+of the window representing the history of the needle optimization
+procedure.</p>
+<p>Make sure that in the Configuration-&gt; Settings optical thicknesses
+are selected as Thickness units for the design representation. To
+save the obtained design, click the Load button in the lower right
+part of the window. The obtain design is now presented in the
+T&amp;R&amp;Phase evaluation window and you can save it in the design
+database using Data -&gt; Save Data -&gt; Save Design option.</p>
+<p><img alt="image1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAMCAMAAABYzB2OAAADAFBMVEX////ujZHzjHziBQDnPzX65eL0raDnHgv4aUD99evwRxzVABnxVi/aBijVACToBSmSAAw7AAFmAAC8lKKxAAd0AAL6///QqK7Ssbna292uVGeIOUZ3MTjctL3nWWLNeIZ+AFwAdABwAG0AYwBtAGgAXAByAGEAcgB3AG8AXwAuAHIAcABnAG4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAACw/SD1qHUAdbAAAAAAAAAAAQDRAAB3FYQZ3MgAAAAwAAAAAAAAAAAAAAAoAAB3FYUAAAAAAAAAAAAAAAAAAAD2TAAAdbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADEAAB3GnuPPggAAA4AA+gAAAAAAAAAAAAAAAAAAAAAAAAAAABkAAAAAAAAAACOyAAfDnoAAAAAAAAANQBYAB8Ojy6PPgiOuA4ADnoD6AAAAADdBADmABl3FjwXrEkAAHcAAAAAAAAAAAAAAAAAAAAAAAANYScwPNCodaQAGd2kMF0AAHUAAAAAAAAAAAAwe8BgdaQAAAAAAAAABQCAAAAAAAAQAIAAAMAAAAAAAAcAAAAAAgBwAAAAcgCPPggAAA4IAAAOjz4AAADcwAAAdTEABQAAAAAAGAAAAAAAAAAZ3UgAQAAAAAAAAAAZ3ZgAAAAAAAAAAAAAAAAAAAAAAAAAAAD9NCAADA4CAAAAAADsQi9bAAAAAWJLR0T/pQfyxQAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAHlJREFUCNddztsSgyAMRdEgSlAJEkCx9vb/f1mgHZ2yHzKZ9XQAvgkBbZ3sh4YUSql/OIwlUFM/S+wq4VQyWpMllKgyGUNzyWaipaLWS43I5uPYB8Doc+vqsjjmsAGkkFLab0ekyHwft2uEiJ4fz79dL897M/V9nO8HVZsGXGBQoGYAAAAASUVORK5CYII=" /> Note that there is already the design 11-layer RAMP in
+the design database that was previously obtained using the same
+starting design.</p>
+<p><img alt="image2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAMCAMAAABYzB2OAAADAFBMVEX////ujZHzjHziBQDnPzX65eL0raDnHgv4aUD99evwRxzVABnxVi/aBijVACToBSmSAAw7AAFmAAC8lKKxAAd0AAL6///QqK7Ssbna292uVGeIOUZ3MTjctL3nWWLNeIZ+AFwAdABwAG0AYwBtAGgAXAByAGEAcgB3AG8AXwAuAHIAcABnAG4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAACw/SD1qHUAdbAAAAAAAAAAAQDRAAB3FYQZ3MgAAAAwAAAAAAAAAAAAAAAoAAB3FYUAAAAAAAAAAAAAAAAAAAD2TAAAdbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADEAAB3GnuPPggAAA4AA+gAAAAAAAAAAAAAAAAAAAAAAAAAAABkAAAAAAAAAACOyAAfDnoAAAAAAAAANQBYAB8Ojy6PPgiOuA4ADnoD6AAAAADdBADmABl3FjwXrEkAAHcAAAAAAAAAAAAAAAAAAAAAAAANYScwPNCodaQAGd2kMF0AAHUAAAAAAAAAAAAwe8BgdaQAAAAAAAAABQCAAAAAAAAQAIAAAMAAAAAAAAcAAAAAAgBwAAAAcgCPPggAAA4IAAAOjz4AAADcwAAAdTEABQAAAAAAGAAAAAAAAAAZ3UgAQAAAAAAAAAAZ3ZgAAAAAAAAAAAAAAAAAAAAAAAAAAAD9NCAADA4CAAAAAADsQi9bAAAAAWJLR0T/pQfyxQAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAHlJREFUCNddztsSgyAMRdEgSlAJEkCx9vb/f1mgHZ2yHzKZ9XQAvgkBbZ3sh4YUSql/OIwlUFM/S+wq4VQyWpMllKgyGUNzyWaipaLWS43I5uPYB8Doc+vqsjjmsAGkkFLab0ekyHwft2uEiJ4fz79dL897M/V9nO8HVZsGXGBQoGYAAAAASUVORK5CYII=" /> Due to the continuous improvement of OptiLayer design
+options and random nature of some of their elements, the results
+obtained may differ from those previously saved in the design
+database.</p>
+<p>The achieved match to the target transmittance is already fairly
+good, but we can easily obtain a different design with a
+transmittance that matches the target transmittance much better.
+In the history part of the Needle Auto window, select the initial
+single layer design and load it into RAM.</p>
+<p>Close the Needle optimization window. Use Synthesis-&gt; Modify
+Design option and double the optical thickness of this design to
+2400 nm.</p>
+<p>Run again the Needle Optimization AUTO procedure with this new
+starting design. Again, the final design is obtained in a fraction
+of a second. The transmittance of the obtained design matches the
+target transmittance much better than before – see the achieved
+merit function value (MF) in the top line on the right part of the
+window.</p>
+<p> Note that a much better fit was obtained at an expense of
+increasing the number of design layers (N) and total thickness of
+the design (TT).</p>
+<p>To save the obtained design, click the Load button to place the
+design into RAM, and then use the Data -&gt; Save Data -&gt; Save Design
+option to save it in the design database.</p>
+<p> Note that there is already the design 23-layer RAMP that was
+previously obtained using the same design steps.</p>
+<p><strong>Basic conclusion: Total optical thickness of the starting design
+plays a key role in the design procedure. By increasing its value,
+one can get much better solution to the design problem.</strong></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

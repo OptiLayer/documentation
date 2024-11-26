@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Data Display Modes</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="data-display-modes">
+<h1>Data Display Modes</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Data Display Modes</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_configuration.html">Configuration
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="data-display-modes-1">Data Display Modes</p>
+</div>
+</div>
+<p>` &lt;idh_configuration.html&gt;`__ ` &lt;idh_menu_configuration.html&gt;`__
+` &lt;idh_config_units.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>OptiLayer can represent data arranged by wavelength or by angle of
+incidence. This choice corresponds to the Spectral and Angular
+data display modes, respectively. The choice of modes, spectral or
+angular, may be made on the Mode page of the  <a class="reference external" href="idh_configuration.html">Configuration
+dialog</a>.</p>
+<p><img alt="image1" src="../../_images/Data_display_models.png" /></p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>In the Spectral mode, all Target spreadsheets are arranged in
+pages where each page corresponds to a specific angle of
+incidence and contains data for different wavelengths.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>In the Angular mode, all Target spreadsheets are arranged in
+pages where each page corresponds to a certain wavelength and
+contains data for different angles of incidence.</p>
+</div>
+</li>
+</ul>
+<p>The choice of a display mode also affects the way coating
+characteristics are plotted.</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>In the Spectral mode, the function argument is the
+wavelength, and different curves correspond to different
+angles of incidence.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>In the Angular mode, the function argument is the angle of
+incidence, and different curves correspond to different
+wavelengths.</p>
+</div>
+</li>
+</ul>
+<p>Due to this difference, the functionality of some editing tools is
+appropriately modified. For example, when editing a Target file in
+the Spectral mode, you can modify the number of angles of
+incidence with the <a class="reference external" href="idh_modify_angles.html">Angles</a> button
+(accessible from the <a class="reference external" href="idh_menu_edit.html">Edit menu</a>).  In the
+Angular mode, the Angles button is replaced with the
+<a class="reference external" href="idh_modify_wavelengths.html">Wavelengths</a> button, with
+similar functionality.</p>
+<p>The current setting of the display mode is shown in the <a class="reference external" href="idh_general_information_window.html">General
+Information window</a> that is
+accessible from the <a class="reference external" href="idh_menu_view.html">View menu</a>.</p>
+<p>You can switch between Angular and Spectral modes using the
+<a class="reference external" href="idh_configuration.html">Configuration Options</a> menu.  In most
+graphic windows, you can click the right mouse button to access
+the <a class="reference external" href="idh_popup_menu.html">pop-up menu</a> to switch between modes.
+When you switch between modes, the data representation is changed
+automatically throughout all OptiLayer windows.
+Additionally, it is possible to select a different convention for
+light incidence presentation. It can be expressed as Angle of
+Incidence measured from the normal to the coating, or as a Grazing
+Angle measured from the coating surface. Grazing angle
+presentation is more commonly used in EUV and X-ray applications.
+Inhomogeneities/Interlayers option activates a special mode of
+OptiLayer for studying the effect of bulk inhomogeneities in the
+coating layers or/and the effect of interlayers between coating
+layers (appearing as the result of inter-diffusion or surface
+roughness).
+Access to Advanced Features (Scientific mode) checkbox controls
+the availability of commands normally not visible even in the
+<a class="reference external" href="idh_config_sorting.html">Expert mode</a>.</p>
+<div class="docutils container">
+<p><img alt="image2" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: Scientific options are used for the further development of the
+software and algorithms. They can be unstable, and the results should be
+verified additionally. Use these options only if you are an expert!</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

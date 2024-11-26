@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>U- and g-values</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="u-and-g-values">
+<h1>U- and g-values</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">U- and g-values</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_results.html">Results
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="u-and-g-values-1">U- and g-values</p>
+</div>
+</div>
+<p>` &lt;material_dispersion_setup.html&gt;`__ ` &lt;idh_menu_results.html&gt;`__
+` &lt;tabulatereportsetup.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>U- and g-values definitions and descriptions can be found in DIN
+EN 410 and DIN EN 673 standards. These values are often used in
+the architectural glass industry to describe the quality of
+glazing.
+In OptiLayer, it is possible to consider a double-glazing
+configuration.</p>
+<div class="line-block">
+<div class="line"><img alt="image1" src="../../_images/ug_2glazing_1.png" /></div>
+<div class="line">or triple-glazing configurations:</div>
+</div>
+<p><img alt="image2" src="../../_images/ug_3glazing_1.png" /></p>
+<p>This can be selected with tabs at the upper part of the window.
+The schematic of the glazing is shown in the middle of the window;
+the external space is to the left and the building interior is to
+the right.</p>
+<p class="p-heading2sub rubric" id="glasses">Glasses</p>
+<p>Glass Name entries allow you to select a glass from the <a class="reference external" href="idh_edit_layer_material.html">Substrate
+database</a>. Two standard glasses
+named IFT Float and EuroFloat are pre-created in the substrate
+database when you first open the U- and g-values window.
+The Thickness mm field allows you to set the thickness of the
+glasses.
+P1/P3, P2/P4, … entry fields allow you to set a coating from the
+Design database for each surface of each glass. Look at the
+schematic to check the correct position of the surface. Coating
+layers are always numbered in the direction away from the glass.
+There is also a special object <strong>Current</strong> in the
+configuration list. If <strong>Current</strong> is selected as a coating on
+one or more surfaces, the currently loaded design in memory will
+be used in this place. This allows you to estimate the U- and
+g-values dynamically in the course of solving a synthesis problem,
+as they are updated every time the design is updated.
+The Preview row contains buttons that open small windows with
+spectral curves for each of the glasses composing the glazing.
+This allows a quick check of the correct specifications for each
+glass. For example:</p>
+<p><img alt="image3" src="../../_images/ug_preview_1.png" /></p>
+<p>Transmittance, Reflectance, and Back Reflectance of the glass are
+shown. Coatings on both sides (if present) are taken into account
+in this preview.</p>
+<p class="p-heading2sub rubric" id="gas-spaces">Gas Spaces</p>
+<p>Gas type entry fields allow you to select the gas filling the
+space between the glasses.
+Thickness mm allows you to select the thickness of the space
+between the glasses.
+ε P2, ε P3, ε P2/P4, ε P3/P5 entries specify the so-called
+corrected emissivity factors (DIN EN 673).</p>
+<p>The temperature at the bottom of the window indicates the ambient
+temperature for which the U and g values are being calculated.</p>
+<blockquote>
+<div><p><img alt="image4" src="../../_images/Temp_UG.png" /></p>
+</div></blockquote>
+<p>U- and g-values are represented at the bottom of the window. They
+are recalculated every time any of the settings is changed.</p>
+<div class="docutils container">
+<p><img alt="image5" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: Single glazing mode is also available in this option starting from
+version 12.12.</p>
+<p><img alt="image6" src="../../_images/ug_1.png" /></p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

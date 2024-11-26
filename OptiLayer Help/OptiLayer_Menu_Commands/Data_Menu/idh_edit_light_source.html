@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Light Source/Detector Database</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="light-source-detector-database">
+<h1>Light Source/Detector Database</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="light-sourcedetector-database">Light Source/Detector Database</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Light Source and Detector databases in OptiLayer store the
+spectral power distributions of light sources and detectors. These
+databases are utilized in the Color Evaluation feature of
+OptiLayer, and can be optionally employed during the calculations
+of transmittances and reflectances for coatings. Access these
+settings through the
+<a class="reference external" href="source_detector_cone_integral.html">Source/Detector/Cone/Integral</a>
+page in the <a class="reference external" href="idh_configuration.html">General Configuration</a>
+dialog.</p>
+<p>Within the Light Source/Detector window, users can define the
+spectral distribution of a light source. Light source power
+distributions are determined by their relative intensities across
+different wavelengths.
+When using the Spreadsheet tab in the window, the field labeled
+“Spectral points” in the upper section allows users to specify the
+number of spectral points where light source data will be entered.
+The lower section of the window presents a spreadsheet format for
+inputting and editing data, where users can enter wavelength
+values and their corresponding spectral power values. This
+information is essential for accurately defining the spectral
+characteristics of the light source.</p>
+<p><img alt="image1" src="../../_images/DB_source_11.png" /></p>
+<p>To customize the spectral distribution of a light source in the
+Light Source/Detector window, follow these steps:</p>
+<ol class="arabic">
+<li><div class="p-normal docutils container">
+<p>Set the desired number of Spectral points in the edit field
+located at the top of the window.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Manually enter the desired values or utilize the
+<a class="reference external" href="idh_spreadsheet_editing.html">Spreadsheet Editing
+Tools</a> to modify the data
+within the spreadsheet format provided.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Use the <a class="reference external" href="blackbodysourcesettings.html">Blackbody…</a>button to generate a light source with a spectrum
+corresponding to that of a blackbody with a specified
+temperature (in Kelvin). The spectrum is normalized,
+ensuring that the highest intensity is set to 100%.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Utilize the Normalize button to adjust an arbitrary spectrum
+so that the maximum value of the spectral distribution is
+set to 100%.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Navigate to the Preview tab to visually observe the spectral
+characteristics of the light source data. This feature
+allows users to visually inspect the spectral properties of
+the defined light source.</p>
+</div>
+</li>
+</ol>
+<p><img alt="image2" src="../../_images/DB_source_21.png" /></p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image5" src="../../_images/arrow_r.png" /></p></td>
+<td><p>Note: Within the Catalog feature, users can access data
+files containing information on various standard light
+sources and detectors. These files provide standardized
+spectral data for common light sources and detectors,
+offering convenient and readily available reference
+points for spectral distributions.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OptiChar Data Files</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="optichar-data-files">
+<h1>OptiChar Data Files</h1>
+<div class="docutils container" id="printheader">
+<p>OptiChar Data Files</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  General
+Information on OptiChar &gt;
+OptiChar Components &gt;</p>
+<p>OptiChar Data Files</p>
+</td>
+<td><p>` &lt;single_file_mode.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+`</p>
+<blockquote>
+<div><p>&lt;idh_spreadsheet_editing.htm&gt;`__</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>In blue color, we designate the instructions related to the old
+decentralized data storage, which is currently active by default.</p>
+<p>OptiChar stores databases with user data on the hard disk. Data
+related to specific problems can be organized into separate
+directories, known as Problem directories. This decentralized
+storage is particularly useful when multiple design or
+characterization problems are being analyzed simultaneously or
+when the software is used by multiple users.</p>
+<p>The File Transfer option allows users to transfer data files
+between different Problem directories, reducing preparation time.
+For example, substrate data files for various types of glass can
+be easily transferred from the Catalog directory.</p>
+<p>The Backup/Restore option is another convenient feature in
+OptiChar. It lets users create a backup file (*.zip) of any
+Problem directory, which can later be restored on this or any
+other computer with OptiChar installed. This feature provides a
+straightforward method for data exchange between users and
+systems.</p>
+<p>Before starting any analysis or synthesis procedure, all necessary
+data must be loaded into memory. This includes substrate
+information, measurement data, and optionally, layer material
+properties. Data files containing this information are stored in
+appropriately named databases accessible from the <a class="reference external" href="idh_menu_data.htm">Data
+menu</a>.</p>
+<p>The commands that access databases in the <a class="reference external" href="idh_menu_data.htm">Data
+menu</a> are: Measurements Data, Substrate,
+Layer, and Layer Model.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Groups of database files:</p>
+<p class="p-heading4indent rubric" id="measurements-data">Measurements Data</p>
+<p><a class="reference external" href="target_editor.htm">Measurements data</a>  files store a
+collection of measured values for various characteristics, which
+can vary depending on wavelength or angle of incidence. This data
+is archived in the Measurements database and can be accessed using
+the Measurements Data command in the <a class="reference external" href="idh_menu_data.htm">Data
+menu.</a> The commands that access these
+databases in the Data menu include:
+- Measurements Data
+- Substrate
+- Layer
+- Layer Model</p>
+<p>A measurements data file may include values for multiple
+characteristics, such as:
+- Reflectance
+- Transmittance
+- Ellipsometric angles (Psi and Delta)
+- Group Delay (GD)
+- Group Delay Dispersion (GDD)
+These values can be recorded for one or more polarization states
+(when applicable) and across multiple angles of incidence.</p>
+<p class="p-heading4indent rubric" id="materials-files">Materials Files</p>
+<p>The Layer Materials command opens the <a class="reference external" href="idh_edit_layer_material.htm">Layer Materials
+database</a>.   Users can either
+transfer a layer material file from an existing database within a
+different problem menu or generate a new file.  Layer materials
+are characterized by their refractive indices, which vary as a
+function of wavelength:
+  - Non-dispersive materials: Specified by a single refractive
+index value.
+  - Dispersive materials: Specified in tabular format, detailing
+the real and imaginary parts of the refractive index at various
+wavelengths.</p>
+<p>Users can specify substrate, incident medium, and layer materials
+using spreadsheet formats for dispersive data or through
+refractive index formulas, which include:
+  - Sellmeier formulas
+  - Cauchy formulas
+  - Hartmann and Hartmann-2 formulas
+  - Schott Glass formula
+  - Drude formula
+  - Spline interpolation</p>
+<p class="p-heading4indent rubric" id="substrate">Substrate</p>
+<p>The Substrate command opens the <a class="reference external" href="idh_edit_layer_material.htm">Substrate
+database</a>.  A substrate material
+is specified similarly to a layer material. Files from the
+Substrate database can be used as:
+  - Substrates
+  - Incident Medium
+  - Exit Medium</p>
+<p>  Users can utilize the right-click popup menu in the <a class="reference external" href="idh_modify_database.htm">Database
+window</a> for this purpose.</p>
+<p class="p-heading4indent rubric" id="layer-model">Layer Model</p>
+<p>Layer Model database stores models obtained by OptiChar during
+characterization procedure.  The Layer Model database is accessed
+using the Layer Model command in the <a class="reference external" href="idh_menu_data.htm">Data
+menu</a>. These models can be loaded to memory
+at any time and used, for example, Users can load these models
+into memory at any time, using them as starting approximations for
+further characterization activities. The Layer Model database
+features a specialized <a class="reference external" href="layer_model_editor.htm">Layer Model
+Editor</a> that allows users to adjust
+significant parameters of the model as necessary.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

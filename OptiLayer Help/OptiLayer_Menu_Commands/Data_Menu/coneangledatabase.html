@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cone Angle Database</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="cone-angle-database">
+<h1>Cone Angle Database</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Cone Angle Database</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="cone-angle-database-1">Cone Angle Database</p>
+</div>
+</div>
+<p>` &lt;blackbodysourcesettings.html&gt;`__ ` &lt;idh_menu_data.html&gt;`__
+` &lt;line_width_database.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Cone Angle database enables the creation of cone angles
+averaging specifications. When a Cone Angle file is loaded into
+OptiLayer’s memory, all calculations involving Transmittance,
+Reflectance, Back Reflectance, and Absorptance consider cone angle
+averaging. Additionally, all synthesis procedures take cone
+averaging into account.
+It’s important to note that the sole exception to this rule is a
+<a class="reference external" href="userdefinedtargeteditor.html">target with UDT characteristics</a>.</p>
+<div class="docutils container">
+<p><img alt="image1" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: While calculations are meaningful only for averaged polarization
+of light, it is technically feasible to compute for s- and
+p-polarizations as well.</p>
+<p>For coatings that necessitate designs with varying Cone Angle
+specifications, the Multi-Environment feature of OptiLayer can be
+utilized to achieve this. Refer to the <a class="reference external" href="envmanfrm.html">Environments
+Manager</a> to make use of this functionality.</p>
+<p><img alt="image2" src="../../_images/Cone_angle_11.png" /></p>
+<p>Cone specifications can be defined using Half-angle (in degrees),
+f/number, or Numerical aperture. Computations are carried out on an
+angular grid, where accuracy improves with a greater number of points,
+but computational time also increases proportionally. OptiLayer employs
+precise integration techniques, meaning that 10-20 points are often
+sufficient for most cases.
+The distribution type can be set to Uniform Intensity, Lambertian, or
+User-Defined.
+For non-uniform distributions, the calculations are as follows:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>If θ is less than or equal to the Half-angle, the User Defined
+Intensity (θ) is utilized with piece-wise interpolation for
+intermediate values.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>If θ is greater than the Half-angle, the intensity is considered to
+be zero.</p>
+</div>
+</li>
+</ul>
+<p>User-defined intensity can extend beyond the half-angle grid, with
+values outside the cone having no impact on the final outcome. This
+approach allows for convenient adjustments to the cone half angle
+without needing to redefine the intensity distribution.
+In the Cone Angle Editor, users can specify the number of Angular points
+for the Cone Angle Intensity distribution within the spreadsheet. This
+number should not align with the Cone averaging grid parameter, as
+OptiLayer will perform the required interpolation procedures
+automatically.</p>
+<p><img alt="image3" src="../../_images/Cone_angle_21.png" /></p>
+<p>If needed, the distribution can be normalized by using the “Normalize”
+button to ensure that the maximum level does not exceed 100%.
+The “Preview” tab enables users to visually inspect the entered
+distribution.</p>
+<p><img alt="image4" src="../../_images/Cone_angle_31.png" /></p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

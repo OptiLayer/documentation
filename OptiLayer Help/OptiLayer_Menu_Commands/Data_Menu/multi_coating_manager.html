@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Multi-Coating Manager</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="multi-coating-manager">
+<h1>Multi-Coating Manager</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Multi-Coating Manager</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>In order to design complex multi-mirror systems such as dispersive
+mirrors, pulse compressors, and other elements of ultrafast
+optics, one needs to consider and optimize systems consisting of
+several mirrors.
+For examples, you can refer to the papers:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>V. Pervak, A.V.Tikhonravov, M.K.Trubetskov, S. Naumov,
+F.Krausz, A.Apolonski, “1.5-octave chirped mirror for pulse
+compression down to sub-3 fs”, <a class="reference external" href="https://link.springer.com/article/10.1007%2Fs00340-006-2467-8">Appl. Phys. B 87, 5-12
+(2006)</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>V. Pervak, I. Ahmad, M. Trubetskov, A. Tikhonravov, and F.
+Krausz, “Double-angle multilayer mirrors with smooth
+dispersion characteristics,” <a class="reference external" href="https://www.osapublishing.org/oe/abstract.cfm?uri=oe-17-10-7943">Opt. Express 17, 7943-7951
+(2009)</a>.</p>
+</div>
+</li>
+</ul>
+<p><img alt="image1" src="../../_images/multcoat_1.png" /></p>
+<p>First of all, it is necessary to activate the Multi-Coating Mode
+in OptiLayer; otherwise, all other controls are locked.
+In Multi-Coating Mode, all other controls become available for
+editing.</p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image4" src="../../_images/arrow_r.png" /></p></td>
+<td><p>Note: Up to 10 different coatings can be specified,
+allowing for the design of extremely complex dispersive
+mirror compressors.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p-heading2 rubric" id="complementary-pair-configuration">Complementary pair configuration</p>
+<p><img alt="image5" src="../../_images/multcoat_2.png" /></p>
+<p>This configuration describes a complementary pair of mirrors
+working at the same angle of incidence, specified in the Resulting
+Target file.
+The number of coatings specifies how many mirrors are considered
+in this configuration. In the case of a double-angle
+configuration, this number includes the reflection from a similar
+window at a different angle of incidence. This number can range
+from 2 up to 10 in the current version. Once this number is
+specified, the Multi-Coating Manager is redisplayed with the
+required number of sub-panels.
+In each panel, you could specify:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Substrate (select one from the Substrate database)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Design (select one from the Design database)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>optional Target (select one from the Target database if
+necessary). These targets are used to avoid large
+oscillations in individual reflection curves, and the
+corresponding weight should usually be less than 1.0, with
+levels of 0.05 being quite reasonable.</p>
+</div>
+</li>
+</ul>
+<p>[…] button to the right of the Design name opens the local
+<a class="reference external" href="idh_modify_design.html">Design Editor</a>, allowing you to
+edit each design’s thicknesses directly in memory without saving
+the designs to the Design database.
+The optimization target should be specified in the Resulting
+Target entry field. It uses the efficient values of R and Phase
+characteristics:   RƩ = (R1ˑR2ˑ…ˑRp)1/p, and PhaseƩ = (Phase1 +
+Phase2 + … + Phasep) / p. Phase characteristics can include just
+phase, or GD, or GDD. This convention is convenient as it reduces
+the total performance of the whole system to a single bounce.
+The Reload check box instructs the Multi-Coating Manager to reload
+a design from the database if the OK or Update buttons are
+clicked.
+The Plot check box activates the presentation of individual
+Reflectance and Phase curves in the <a class="reference external" href="idh_evaluation.html">Evaluation
+windows</a>.</p>
+<p>For example, if individual plots are selected for this
+configuration, we obtain:</p>
+<p><img alt="image6" src="../../_images/multcoat_evr.png" /></p>
+<p>and</p>
+<p><img alt="image7" src="../../_images/multcoat_evgdd.png" /></p>
+<p>These evaluation windows clearly demonstrate how this
+complementary pair suppresses the oscillation of each of the
+mirrors in the resulting GDD performance.</p>
+<p class="p-heading2 rubric" id="double-angle-configuration">Double-angle configuration</p>
+<p>For the double-angle configuration, it is necessary to disable the
+Master check box on the second sub-panel of the dialog. In this
+case, Design 2 will be a Slave design, meaning that its layer
+thicknesses are entirely defined by the thicknesses of the first
+Master design to the left.</p>
+<p><img alt="image8" src="../../_images/multcoat_doubleang1.png" /></p>
+<p>It is possible to adjust the Slave design proportion of
+thicknesses expressed as a percentage in the Current field. If a
+range of values for the Current is specified (From and To fields),
+the Current proportion value will be included in the Refinement
+procedure. This case can be considered as the simultaneous
+deposition of both mirrors in the same run using well-calibrated
+and properly adjusted differences in deposition rates in different
+positions in the chamber, for example.
+If all proportions (Current, From, and To) are zeroes, the
+thicknesses of the Slave design are exactly equal to the
+thicknesses of the Master design.
+The Override Angle check boxes activate the use of angles of
+incidence different from those specified in the Resulting Target.
+The values of angles are entered into the related entry fields and
+then used during the calculation of the reflection at each mirror.
+In this way, the double-angle case can be described.
+The Override Bounces option allows for the change in the number of
+reflections from each of the mirrors. This option is sometimes
+required for the design of complex dispersive mirror compressors.
+One of the double-angle solutions is shown below.</p>
+<p><img alt="image9" src="../../_images/multcoat_doubleang2.png" /></p>
+<p>Note that in this case, only one mirror cross-section is displayed
+in the design bar. The oscillation of GDD on each reflection is
+efficiently suppressed by the utilization of the angular shift in
+the double-angle configuration.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

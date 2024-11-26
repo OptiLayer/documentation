@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Environment Manager</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="environment-manager">
+<h1>Environment Manager</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Enviroment_manager/taper_function.html">Taper Function</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Environment Manager</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="environment-manager-1">Environment Manager</p>
+</div>
+</div>
+<p>` &lt;idh_back_side_options.html&gt;`__ ` &lt;idh_menu_data.html&gt;`__
+` &lt;taper_function.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Environment Manager can be used as an alternative to
+the <a class="reference external" href="idh_loading_data.html">Load command</a> for corresponding
+databases.</p>
+<p>Multiple environments can be defined with the help of the “Number
+of Environments” entry field. In this case, all synthesis
+procedures will automatically take into account all valid
+environments.
+The active environment is the environment for which all graphics
+windows are displaying corresponding data. The active environment
+can be easily changed with the corresponding entry field or by
+clicking on the “Environments” caption in the spreadsheet.</p>
+<p><img alt="image1" src="../../_images/envman1.png" /></p>
+<p>For each environment, it is possible to define different Targets,
+Integral Targets, Color Targets, Efi Targets, Light Sources,
+Detectors, Incident Media, Exit Media, Substrates, the state of
+the Back Side, Substrate Thickness, and the presence of Back Side
+coating. It is also possible to define different materials for the
+same index abbreviation. The last option can be useful for
+investigating coatings with materials depending on some external
+factor.
+Modified and not applied cells are displayed in yellow. Each entry
+can be selected from drop-down lists containing items from the
+corresponding <a class="reference external" href="idh_modify_database.html">database</a>.</p>
+<p>During synthesis, the resulting merit function value is determined
+by the formula:</p>
+<p>(MFtotal)2 = 1/NEnv * (MF12 + MF22 + … + MFNEnv2)</p>
+<p>In this formula, summation is performed only by valid
+environments, i.e., environments that have a defined merit
+function value. Such environments should have the Substrate and
+Incident Medium loaded, and at least one of the targets should
+also be loaded.
+Environments can also be used with
+<a class="reference external" href="stack_database.html">Stack</a> objects.</p>
+<p><img alt="image2" src="../../_images/envman2.png" /></p>
+<p>In this case, Layer Absorptance targets and EFi Targets are not
+available since they are not defined for Stack objects. Also, the
+Substrate is missing because for stacks, it is necessary to define
+only the Incident and Exit media.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

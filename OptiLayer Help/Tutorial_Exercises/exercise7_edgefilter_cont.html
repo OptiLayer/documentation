@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 7. Design of an edge filter (continued)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-7-design-of-an-edge-filter-continued">
+<h1>Exercise 7. Design of an edge filter (continued)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 7. Design of an edge filter (continued)</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The final design of the previous exercise features considerable
+oscillations of the reflectance in the high transmission zone,
+especially in the neighborhood of 560nm.  The reason for these
+oscillations is that the transition zone between the regions of
+high and low reflection, specified by the target function, is too
+narrow.  To improve the properties of the reflectance in the high
+transmission region it is necessary to modify the target function.</p>
+<p>Select the <a class="reference external" href="idh_problem_directory.html">Problem directory</a> EX7.
+ In <a class="reference external" href="single_file_mode.html">SF Mode</a> you need to use Import
+Problem Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>Load substrate GLASS, layer materials SIO2 and TIO2, and the
+starting design QWM.</p>
+<p>Go to the Target database. You will find two target files with the
+names Ef-swp and Ef-swp mod. Compare these files with the help of
+Edit command in the Target database. It is possible to open both
+files simultaneously and to place <a class="reference external" href="target_editor.html">Target
+Editor</a> windows side-by-side. Note that
+Ef-swp mod target has wider transition zone between low and high
+reflection regions (25nm).</p>
+<p>Target files are opened in the corresponding editors but are not
+loaded to memory. Due to this reason the Refinement command of the
+Synthesis menu is unavailable (grayed). Load the Target file
+Ef-swp mod to memory, choose the Newton method (<a class="reference external" href="idh_synthesis_options_method.html">Analysis and
+Synthesis Options</a> dialog)
+and execute the <a class="reference external" href="idh_refinement.html">Refinement</a> procedure.
+This time the final design will have a merit function value of
+7.003406E-001. The improvement of the reflectance is readily
+visible on the screen.</p>
+<p>You may want to save the design we have just obtained. There are
+several ways to do this. The first way is to output the result in
+the form of an ASCII file creating <a class="reference external" href="idh_menu_results.html">Current Design
+Report</a>.  The second way is to save the
+result in the Design database (this function is disabled in the
+DEMO version). The second way is recommended when you want to save
+the result for further computations.  Any design stored in the
+Design database can be easily loaded into memory for further use.
+To save the result in the Design database, go to the Data menu and
+select <a class="reference external" href="idh_save_database_file.html">Save Design</a> item. The
+obtained design was already saved for the sake of comparison (file
+name EF20SW).</p>
+<p><img alt="image1" src="../_images/ex7_ev.png" /></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

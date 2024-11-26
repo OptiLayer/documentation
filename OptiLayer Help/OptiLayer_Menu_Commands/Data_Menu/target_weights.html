@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Target Weights</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="target-weights">
+<h1>Target Weights</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Target Weights</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="target-weights-1">Target Weights</p>
+</div>
+</div>
+<p>` &lt;thickness_stress_target.html&gt;`__ ` &lt;idh_menu_data.html&gt;`__
+` &lt;spectral_angular_specification.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Adjust Target Weights dialog provides the functionality to
+alter the relative weight of each target that is currently loaded
+into memory. This feature enables you to adjust the importance or
+priority of individual targets in the optimization process by
+assigning different weights to each target.</p>
+<p><img alt="image1" src="../../_images/tgt_weight.png" /></p>
+<p>It is a convenient and straightforward method to fine-tune the
+significance of various requirements in complex optimization
+problems.
+The resulting Merit Function value is computed using the following
+formula:</p>
+<p><img alt="image2" src="../../_images/embim2.gif" /></p>
+<p>Here MFconv, MFcol, MFint, MFEFi , MFLA  are Conventional
+<a class="reference external" href="idh_modify_target.html">Target</a>, <a class="reference external" href="idh_edit_color_target.html">Color
+Target</a>, <a class="reference external" href="integral_target.html">Integral
+Target</a>, <a class="reference external" href="electric_field_target.html">Electric Field
+Target</a>, and <a class="reference external" href="layer_absorptance_target.html">Layer Absorptance
+Target</a></p>
+<p>wconv, wcol, wint, wEFi , wLA are corresponding weights.</p>
+<p>By adjusting weights, you can effectively manage the relative
+importance of different target requirements in multi-criteria
+design problems.
+Alternatively, Target Weights can also be adjusted through the
+<a class="reference external" href="idh_general_information_window.html">General Information
+Window</a>.</p>
+<p>Another useful feature of the Adjust Target Weights dialog is that
+it displays the relative contribution of different target types,
+providing insight into how each target contributes to the overall
+optimization process.</p>
+<p><img alt="image3" src="../../_images/tgt_weight_preview.png" /></p>
+<p>This information can be extremely valuable for making the
+appropriate adjustments to target weights, ensuring that the
+optimization process is fine-tuned to achieve the desired outcomes
+effectively and efficiently.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

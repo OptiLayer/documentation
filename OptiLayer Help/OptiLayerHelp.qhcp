@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QHelpCollectionProject version="1.0">
+    <assistant>
+        <title>OptiLayerHelp 0.0.1 documentation</title>
+        <homePage>qthelp://org.sphinx.optilayerhelp/doc/index.html</homePage>
+        <startPage>qthelp://org.sphinx.optilayerhelp/doc/index.html</startPage>
+    </assistant>
+    <docFiles>
+        <generate>
+            <file>
+                <input>OptiLayerHelp.qhp</input>
+                <output>OptiLayerHelp.qch</output>
+            </file>
+        </generate>
+        <register>
+            <file>OptiLayerHelp.qch</file>
+        </register>
+    </docFiles>
+</QHelpCollectionProject>

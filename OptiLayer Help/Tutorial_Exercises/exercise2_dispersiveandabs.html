@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 2. Dispersive and absorbing materials</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="exercise-2-dispersive-and-absorbing-materials">
+<h1>Exercise 2. Dispersive and absorbing materials</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Exercise 2. Dispersive and absorbing materials</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>All necessary files for this exercise are located in the directory
+EX2. Select this directory using the
+<a class="reference external" href="idh_problem_directory.html">Problem</a> menu command.  In <a class="reference external" href="single_file_mode.html">SF
+Mode</a> you need to use Import Problem
+Directory command (<a class="reference external" href="idh_menu_file.html">File Menu</a>).</p>
+<p>First, load the Substrate GLASS into memory.</p>
+<p>Zinc sulfide and thorium fluoride are the high and low index layer
+materials used in this example.  Both materials are considered to
+be dispersive.  Enter the <a class="reference external" href="idh_database.html">Layer Material</a>
+database and examine the ZNS file, dispersive properties of this
+material are specified in a tabular form:</p>
+<p><img alt="image1" src="../_images/ex2_mat.png" /></p>
+<p>Similarly, THF4 file defines the low index material that has
+dispersion and absorption. Use Edit command of the <a class="reference external" href="idh_database.html">Layer
+Material</a> database to examine this file. Note
+that Preview tab allows to observe data in graphical form.</p>
+<p>Load both materials. They will get abbreviations H and L, as it
+was discussed in the previous Exercise.</p>
+<p>Switch to the Design database and try to load QWM design. You will
+get “Material A is not loaded!” error message. Open QWM file with
+the help of the Edit command and note that this file uses material
+abbreviation A for all even layers. Corresponding fields for
+physical thicknesses are disabled and have zero values. This means
+that the corresponding layer material is not loaded to memory and
+OptiLayer is not able to calculate the layer physical thicknesses
+basing on optical thicknesses. Indeed, we have only H and L
+materials in memory.</p>
+<p>Go to the <a class="reference external" href="idh_synthesis_options_material.html">Arrange
+Materials</a> command of Data
+menu. This dialog also can be accessed through Analysis-&gt;Options
+command. Change the abbreviation of THF4 material from L to A.
+Open again the Design Editor if it was closed and notice that now
+all physical thicknesses are available. Load the QWM design to the
+memory (it is a 12 layer quarter-wave mirror with the control
+wavelength 2000nm).</p>
+<p>Open the Evaluation window and select plotting range (X-axis) from
+500nm to 3000nm. Set also R (reflectance) as plotted
+characteristic. Two high-reflection zones will be displayed in the
+<a class="reference external" href="idh_evaluation.html">Evaluation window</a>. Activate HiRes option
+to use more spectral points for plotting, it makes plots more
+accurate at the expense of increasing plotting time.</p>
+<p>Use the <a class="reference external" href="idh_configuration.html">General Configuration</a> dialog
+to change wavelength and T, R units. Changes are reflected
+immediately in all opened windows. Corresponding units are also
+shown in the Units section of the <a class="reference external" href="idh_general_information_window.html">General Information
+Window</a>.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

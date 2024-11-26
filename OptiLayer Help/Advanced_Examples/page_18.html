@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric" id="example-14-design">Example 14. Design of
+chirped mirrors, range
+targets.</p>
+<dl class="simple">
+<dt>of-chirped-mirrors-range-targets.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer design
+options and random nature of some of their elements, the results
+obtained may differ from those previously saved in the design
+database</p>
+<p>The main purpose of this example is to demonstrate the design of
+chirped mirrors that must meet group delay dispersion (GDD)
+targets along with the demand for high reflection. In addition,
+the specification of spectral range targets is demonstrated.
+Before starting the example, it is worth to recall that the group
+delay (GD) and the group delay dispersion (GDD) are the first and
+second derivatives of the phase with respect to the circular
+frequency with a minus sign.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D14. Some datafiles needed to run this exercise are already
+loaded into RAM. These are the substrate Glass n=1.52, the layer
+materials n=2.35 and n=1.46. In the target database, select the
+target file <strong>Chirped mirror 700-900 nm GDD= -55 fs^2</strong> and choose
+Edit to view the contents of this file. The target requirement is
+for 100% reflectance in the 700-900 nm spectral range. In
+addition, there is a target requirement for -55 fs^2 GDD in the
+same spectral range.</p>
+<p> Note that the tolerances (DGDDrs column) for assessing the
+closeness of the GDD to this value are set to 1 fs^2. They are
+chosen in such a way to assign approximately equal weights to the
+two simultaneously specified requirements. There is also one more
+target file that will be discussed later.</p>
+<p>Load the target file Chirped mirror 700-900 nm GDD= -55 fs² into
+the RAM and load the 49-layer quarter wave mirror QWM-49 at 800 nm
+as a starting design. Open the T&amp;R&amp;Phase and GD&amp;GDD windows to see
+the match between the R and GDD of the starting design and the
+target requirements. The loaded starting design has excellent
+reflectance in the required spectral range, but the GDD is far
+away from the specified target.</p>
+<p>To see the GDD of the starting design you can choose the GDD scale
+from -65 to 20 fs².</p>
+<p>In the Synthesis -&gt; Options… select the SQP optimization method.
+Select the Needle Optimization AUTO mode from the Synthesis menu
+and click the Run button. The result of optimization is a 48-layer
+design saved in the design database under the name CM by Needle
+with SQP.</p>
+<p>Click the Load button in the Needle optimization window to load
+the obtained design into the General Information and Evaluation
+windows. In the T&amp;R&amp;Phase window, change the R scale to 95-100%,
+and in the GD&amp;GDD window, select the GDD scale from -65 to -45
+fs². Note that the reflectance is below 99% at the left part of
+the target spectral region, which should be avoided. The GD&amp;GDD
+window shows fluctuations in the group delay dispersion. It can be
+theoretically shown that such fluctuations are inevitable in the
+high reflection region.</p>
+<p>Knowing that GDD fluctuations are inevitable can help to
+reformulate the design problem more realistically. If a certain
+level of fluctuations is acceptable, then the design problem can
+be set as follows. Let us design a mirror with the highest
+possible reflectivity in the considered wavelength range, provided
+that the GDD fluctuations do not exceed an acceptable level. The
+acceptable level of the GDD fluctuations can be specified using
+range spectral targets. An example of such a target is stored in
+the target database under the name Range target from -58 to -52
+fs². Use Edit tab to examine this target. It specifies the
+acceptable GDD fluctuations of ±3 fs² from the initial target
+value of -55 fs² .</p>
+<p>Load the range target into RAM. Note that the MF value in the
+lower left part of the Needle optimization window has been reduced
+due to the new relaxed target requirements. Click the Run button
+to start a new optimization procedure. The obtained design is
+stored in the design database under the name CM by Needle with SQP
+and range target. Click the Load button in the Needle optimization
+window to load the obtained design into the General Information
+and Evaluation windows. The T&amp;R&amp;Phase window shows that the
+reflectance is now higher than 99.9% over the entire range from
+700 to 900 nm. The GD&amp;GDD window shows that the GDD fluctuations
+have increased, but they do not exceed the level specified by the
+range target.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

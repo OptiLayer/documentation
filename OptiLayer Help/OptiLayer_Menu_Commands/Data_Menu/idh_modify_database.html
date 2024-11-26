@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Database Access Dialog</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="database-access-dialog">
+<h1>Database Access Dialog</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Database_access_dialog/idh_loading_data.html">Loading data from OptiLayer database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Database_access_dialog/idh_database_new_file.html">Creating New Database File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Database_access_dialog/idh_save_database_file.html">Saving Current Targets and other data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Database_access_dialog/configure_database_columns.html">Configure Database Columns</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p>Database Access Window</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p>Database Access Window</p>
+</div>
+</div>
+<p>` &lt;idh_menu_data.html&gt;`__ ` &lt;idh_menu_data.html&gt;`__
+` &lt;idh_loading_data.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The unified database access window in OptiLayer offers a
+streamlined and efficient way to access various types of data
+critical for optical coating design and analysis. This approach
+provides a cohesive user experience by allowing you to easily
+switch between different data types necessary for your project
+without the need to navigate through separate interfaces or menus
+for each data type. Here’s a breakdown of how it works and the
+types of data you can manage through this unified access window:</p>
+<p>Types of Data Accessible
+Within the unified database access window, you can select and
+manage the following types of data:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Target: Specifications for the desired optical performance of
+your coating.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Integral Target: Aggregate performance targets over a
+specified range or conditions.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Color Target: Specifications for the colorimetric properties
+or goals for the coating.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Light Source: Characteristics of the light source used in
+performance simulations or analysis.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Detector: Details about the detector used to measure the
+coating’s performance.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Cone Angle: Information regarding the angular distribution of
+light for the analysis.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Substrate: Specifications and properties of the substrate
+material onto which coatings are applied.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Layer Material: Properties of the materials available or used
+for coating layers.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Design: Specific configurations and layer structures designed
+to meet the target specifications.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Stack: Defined sequences of materials or design prototypes
+archived or under consideration.</p>
+</div>
+</li>
+</ul>
+<p>Navigating the Database
+The unified database access window features a tab for each data
+type listed above, located at the bottom of the window. This
+design allows you to:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Open the Access Window: Initially, you’ll open the window
+with a specific type of data in mind, but you’re not limited
+to viewing or manipulating only that data type.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Switch Between Data Types: Simply click on the appropriate
+tab at the bottom of the window to switch to a different type
+of data. This capability ensures you can efficiently manage
+all aspects of your coating design without multiple open
+windows or redundant navigation steps.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Incremental Search Functionality: Quickly find the file you
+need by starting to type the first few letters of its name in
+the search bar. The database will incrementally filter the
+list of files to match your input, making it easier to locate
+specific files among potentially large datasets.</p>
+</div>
+</li>
+</ul>
+<p><img alt="image1" src="../../_images/Database_new1.png" /></p>
+<p>In version 14.57, we introduced the instant preview function. This
+feature allows any database file to be visualized in a small
+Preview window, significantly simplifying the work with large
+databases.</p>
+<p><img alt="image2" src="../../_images/Database_new2.png" /></p>
+<p>The Preview sub-window can be detached from the database window
+and positioned arbitrarily on the screen. It can also be docked on
+other sides of the database window. For this purpose, use the
+drag-and-drop operation with the Preview window’s caption.
+Actions on database files are performed using the menu bar at the
+top of the window. The buttons on the menu bar execute commands
+that allow you to Load a file, Edit an existing file, create a New
+file, make a Copy of a file, Rename a file, Delete a file, create
+a text Output of the file contents, and Sort the files in the
+database in different ways.
+The Load, Edit, Copy, Rename, Delete, and Output commands are
+applied to a selected file. A file is selected by clicking on it
+or by scrolling with the arrow keys.</p>
+<ul>
+<li></li>
+<li><div class="docutils container">
+<p>Load
+/ This command loads a selected file from the disk into the
+computer memory. For further details, see “/ <a class="reference external" href="idh_loading_data.html">Loading Data
+Files.</a>/ “ In some situations
+(Substrate, Incident Medium, Exit Medium, for example), the
+same file can be utilized in different ways. Note the small
+arrow to the right of the Load button; it invokes a special
+popup menu providing access to additional options. These
+options are also accessible through the right-click menu of
+the Database window.</p>
+</div>
+</li>
+<li><div class="docutils container">
+<p>Edit
+/ This command can be used to modify a selected file. For
+more detail, refer to:</p>
+</div>
+<ul>
+<li></li>
+<li><div class="docutils container">
+<p><a class="reference external" href="target_editor.html">Editing Target</a></p>
+</div>
+</li>
+<li><div class="docutils container">
+<p><a class="reference external" href="integral_target.html">Editing Integral Target</a></p>
+</div>
+</li>
+<li><div class="docutils container">
+<p><a class="reference external" href="idh_edit_color_target.html">Editing Color Target</a></p>
+</div>
+</li>
+<li><div class="docutils container">
+<p><a class="reference external" href="idh_edit_light_source.html">Editing Light Source or
+Detector</a></p>
+</div>
+</li>
+<li><div class="docutils container">
+<p><a class="reference external" href="coneangledatabase.html">Editing Cone Angle parameters</a></p>
+</div>
+</li>
+<li><div class="docutils container">
+<p><a class="reference external" href="idh_edit_layer_material.html">Editing Material
+Properties</a></p>
+</div>
+</li>
+<li><div class="docutils container">
+<p><a class="reference external" href="idh_design_editor.html">Editing Design</a></p>
+</div>
+</li>
+<li><div class="docutils container">
+<p><a class="reference external" href="stack_editor.html">Editing Stack</a>/
+Important Notes
+/  Editing a file in a database does not affect the
+contents of the file currently residing in memory; it
+affects only the contents of the file stored on the disk.
+To change the memory contents, use the Load command.
+ Design, Stack, and Target files may be edited in memory by
+using the Modify Design, Modify Stack, Modify Color Target,
+Modify Integral Target, and Modify Target commands in the
+/ / / / / / / / <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+menu</a>/ / / / / / / / .</p>
+</div>
+</li>
+</ul>
+</li>
+<li><div class="docutils container">
+<p>New
+/ This command allows you to create a new file. When this
+command is selected, you are prompted for a new filename and
+an optional comment (see “/ <a class="reference external" href="idh_database_new_file.html">Creating a New Database
+File</a>/ “). Then, you
+automatically enter Edit mode to modify the contents of the
+new file. Some data fields are already filled with default
+values; these should be changed to suit your problem.
+           Warning: The maximum number of files in each
+database is 799.</p>
+</div>
+</li>
+<li><div class="docutils container">
+<p>Copy
+/ This command allows you to copy a file. This is useful if
+it is appropriate to modify an existing file to suit a new
+purpose. After selecting this command, you will be asked to
+confirm the copy process or to cancel it. Upon confirmation,
+you will be prompted to enter a new filename and comments,
+the same way as for the New command.
+           Warning: The maximum number of files in each
+database is 799.</p>
+</div>
+</li>
+<li><div class="docutils container">
+<p>Rename
+/ This command allows you to rename a selected file. When
+this command is selected, a dialog box titled “Rename to”
+will open with the name of the selected file highlighted, and
+a second field for the comment associated with the file is
+also displayed. After changing either of these fields and
+clicking the OK button, the database will be updated to
+reflect the new name and/or comment.</p>
+</div>
+</li>
+<li><div class="docutils container">
+<p>Delete
+/ This command allows you to delete any file in a database.
+You will be prompted as to whether you really want to delete
+a selected file. Upon confirming the deletion, the file will
+be removed from the database.
+           Warning: Deleting a file permanently erases its
+contents; once deleted, it cannot be recovered.</p>
+</div>
+</li>
+<li><div class="docutils container">
+<p>Output
+/ The output command enables the creation of a text report on
+the contents of a selected file (see “/ <a class="reference external" href="idh_output.html">Creating Text
+Output</a>/ “). You can save this report as
+an ASCII file (using the Save Output As command) or send it
+directly to the printer (using the Print command) from the
+/ <a class="reference external" href="idh_menu_file.html">File Menu</a>/ .</p>
+</div>
+</li>
+<li><div class="docutils container">
+<p>Sort
+/ This command allows the sorting of filenames in a database
+in different ways. Files can be sorted by the alphabetical
+order of their names, the names of their creators, by the
+creation or revision dates. Any sorted category may be
+arranged in reverse order. For details, see “/ <a class="reference external" href="idh_config_sorting.html">Setting
+Sorting Options.</a>/ “</p>
+</div>
+</li>
+<li><div class="docutils container">
+<p>Find
+/ Opens an additional search tool. You can specify a name
+pattern to search for the required file in large databases.</p>
+</div>
+</li>
+<li><div class="docutils container">
+<p>Quit
+/ This command closes the database window</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

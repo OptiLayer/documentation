@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Layer Material Abbreviations</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="layer-material-abbreviations">
+<h1>Layer Material Abbreviations</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Layer Material Abbreviations</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt; <a class="reference external" href="idh_design.html">Design
+Database</a> &gt;</p>
+<p class="p-heading1 rubric" id="layer-material-abbreviations-1">Layer Material Abbreviations</p>
+</div>
+</div>
+<p>` &lt;idh_design.html&gt;`__ ` &lt;idh_design.html&gt;`__ ` &lt;idh_design_editor.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>OptiLayer design files use two-character abbreviations to identify
+layer materials instead of explicitly naming them. This approach
+simplifies the general description of the design.
+Upon loading materials from a database, default abbreviations are
+automatically assigned. The first two materials, based on their
+refractive index at the reference wavelength specified in the
+<a class="reference external" href="idh_config_thickness_units.html">Configuration Options</a>,
+are labeled “L” for the material with the lower refractive index
+and “H” for the one with the higher refractive index. For
+dispersive materials, this process involves comparing their
+refractive indices at the specified reference wavelength.
+Subsequent materials are designated with letters in alphabetical
+order (A, B, C, etc.).
+These materials and their abbreviations are then listed in the
+<a class="reference external" href="idh_general_information_window.html">General Information
+Window</a> for quick
+reference.</p>
+<p>Users have the option to customize these abbreviations via the
+<a class="reference external" href="idh_synthesis_options_material.html">Options</a> command found
+in both the Analysis and Synthesis Menus, or through the Arrange
+Materials… command located in the <a class="reference external" href="idh_menu_data.html">Data
+menu</a>. Additionally it is possible to
+specify <a class="reference external" href="idh_synthesis_options_material.html">Vacuum materials</a>,
+which finds use in various tools such as the Monitoring
+spreadsheet, BBM and Monochromatic simulators, and for the
+Preproduction estimation of errors..</p>
+<p>When abbreviations are modified, the changes are reflected across
+all design files currently loaded into memory. This ensures that
+changing an abbreviation won’t disrupt the link between design
+layers and their designated materials.</p>
+<div class="docutils container">
+<p><img alt="image1" src="../../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: In the current version, users can employ long abbreviations
+without restrictions on string length. However, it is highly recommended
+to restrict oneself to 1 or 2-character abbreviations, as they help
+maintain a simple design representation.</p>
+<p>Long abbreviations can be more convenient than the previously utilized
+one-character and two-character abbreviations, especially when many
+materials are loaded into memory or when there is a preference to denote
+material names directly.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

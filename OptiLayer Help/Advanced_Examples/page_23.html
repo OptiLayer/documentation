@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric" id="example-19-small">Example
+19. Small-scale and
+large-scale roughness.</p>
+<dl class="simple">
+<dt>-scale-and-large-scale-roughness.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The concept of small-scale and large-scale root-mean-square (rms)
+roughness was introduced by Tikhonravov et al. in the paper
+“Effects of Interface Roughness on the Spectral Properties of Thin
+Films and Multilayers” (Applied Optics, 42, 5140-5148, 2003). It
+was shown that the effect of roughness on the properties of
+optical coatings can be adequately described by these two
+parameters. The terms small-scale and large-scale rms roughness
+refer to spatial roughness harmonics with periods small or large
+compared to the wavelength of the incident light. The theoretical
+motivation for introducing two roughness parameters is that they
+have different effects on the spectral characteristics of the
+coating. The main purpose of this example is to demonstrate this
+fact.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D19.  Datafiles needed to run this exercise are already
+loaded into RAM. These are the substrate n=1.50, the layer
+materials n=1.48 and n=1.64, and the design QWM-63 at 193 nm. The
+effects of roughness are more pronounced in the short wavelength
+region, especially in the VUV spectral region. For this reason,
+the refractive indices of the substrate and layer materials have
+values typical of fluoride materials used in this region. The
+considered design is a 63-layer quarter-wave mirror with a central
+wavelength of 193nm. In the T&amp;R&amp;Phase window use the spectral
+range of 160-240 nm to view the transmittance of this design.</p>
+<p>In the Analysis menu select the Interface roughness option. The
+Interface Roughness Analysis Setup window, use Characteristic tab
+to set the analyzed spectral characteristic and mark the type of
+roughness to be examined (Small scale or Large scale). Let’s start
+with a large scale roughness and select normal incidence
+transmittance as the examined characteristic. Note that this type
+of roughness results in light loss due to scattering.</p>
+<p>The Roughness tab is used to set the rms levels of large scale
+roughness at all layer interfaces, starting with the interface of
+the first layer with the substrate and ending with the air
+boundary of the last mirror layer. We set all these values to 5
+nm.</p>
+<p>Clicking the OK button opens the Roughness Evaluation window.
+Adjust the wavelength range of this window to the range of 160-240
+nm. There are two notable effects of the large sale roughness.
+This is a narrowing of the high reflection region and a
+significant decrease in transmittance outside this region. The
+last effect is, of course, due to scattering. Close the Roughness
+Evaluation window.</p>
+<p>Let us turn our attention to small scale roughness. Select the
+Interface roughness option again. In the Characteristic tab of the
+Interface Roughness Analysis Setup window, select normal incidence
+transmittance and check Small scale roughness. Typically,
+small-scale roughness represents the film surface roughness
+associated with the deposition process. It is negligible at the
+substrate boundary and, in many cases, also negligible at the
+other layer boundaries. But there are still deposition processes
+and thin film materials that can create small-scale rms roughness
+in the range of a few nanometers. This primarily applies to
+fluoride films deposited by low energetic processes.</p>
+<p>At the Roughness tab, we set the value to zero at the interface of
+the first layer with the substrate and set all other values to 5
+nm.</p>
+<p>Click the OK button and examine the effect of small scale
+roughness in the same range of 160-240 nm. The presence of small
+scale roughness also leads to a narrowing of the high reflection
+zone. But the influence of small-scale and large-scale roughness
+outside this zone is very different. This is due to the fact that
+small scale roughness does not cause light losses for scattering.
+But it causes some redistribution of energy between transmitted
+and reflected light beams. Changes in transmittance outside the
+high reflection zone are due to this redistribution.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

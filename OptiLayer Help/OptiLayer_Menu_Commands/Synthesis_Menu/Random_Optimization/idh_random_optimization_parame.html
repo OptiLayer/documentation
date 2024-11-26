@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Setting Random Optimization Parameters</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="setting-random-optimization-parameters">
+<h1>Setting Random Optimization Parameters</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Setting Random Optimization Parameters</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a> &gt; <a class="reference external" href="idh_random_optimization.html">Random
+Optimization</a> &gt;</p>
+<p class="p-heading1 rubric" id="setting-random-optimization-parameters-1">Setting Random Optimization Parameters</p>
+</div>
+</div>
+<p>` &lt;idh_random_optimization.html&gt;`__ ` &lt;idh_random_optimization.html&gt;`__
+` &lt;exhaustive_search_option.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>This dialog appears when OptiLayer is requested to run <a class="reference external" href="idh_random_optimization.html">Random
+Optimization</a>.</p>
+<p>There are two modes of <em>Random Optimization</em>. The first mode is
+called Simple:</p>
+<p><img alt="image1" src="../../../_images/rand_par.png" /></p>
+<p>Simple mode corresponds to the first tab of the Random
+Optimization Parameters dialog. Enter the number of layers you
+wish to have in a random starting design, select at least 2
+materials that should be used in it, and the average value of
+thicknesses of layers for each of the selected materials.
+Additionally, it is necessary to select a material that will be
+placed next to the substrate in random starting designs. Please
+note that this material should also be selected in the
+spreadsheet.
+It is also possible to specify minimum and maximum limits for
+layer thicknesses, as this can significantly improve the quality
+of solutions and computational performance. In Simple mode, random
+starting designs are generated inside a specified constrained
+domain, and subsequent local optimization procedures are also
+performed while taking into account the specified limits for layer
+thicknesses.
+The “Clear Collection” selection allows clearing the
+<a class="reference external" href="idh_collection.html">Collection</a> automatically when
+restarting the Random Optimization procedure.
+The Design mode of Random Optimization can be selected with the
+second tab of the Random Optimization Parameters dialog.</p>
+<p><img alt="image2" src="../../../_images/rand_par2.png" /></p>
+<p>In the Design mode search area of the Random Optimization is
+specified as some vicinity of the loaded design. It is possible to
+specify RMS or Relative RMS for each layer thickness. It is also
+possible to select the type of the random generator that will be
+used for obtaining layer thickness deviation of the starting
+designs in the course of the Random Optimization procedure. The
+type of random values can be Uniform, Normal, or Fixed.</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>In the case of Uniform distribution, RMS columns specify an
+absolute or relative interval for the uniform random numbers.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>In the case of Normal distribution, RMS columns specify
+absolute or relative RMS values for the Normal distribution.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>In the case of Fixed selection, the value of the layer
+thickness remains unchanged.</p>
+</div>
+</li>
+</ul>
+<div class="line-block">
+<div class="line">Additionally, it is possible to set constraints for each layer
+thickness, which usually significantly improves computational
+performance and the quality of obtained solutions. In the Design
+mode, random starting designs are generated around the design
+loaded into RAM with default 15% relative root mean square
+deviations of layer thicknesses from loaded values. Specified
+layer thickness limits are taken into account both when starting
+designs are specified and when local optimization procedures are
+performed.</div>
+</div>
+<div class="docutils container">
+<p><img alt="image3" src="../../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note 1: Layers with Fixed status are fixed at the beginning of the
+refinement and released for optimization in the next step. This
+improvement allows for a more concentrated search around the selected
+design, as the thicknesses of fixed layers do not change significantly
+during the Random Optimization procedure.</p>
+<div class="docutils container">
+<p><img alt="image4" src="../../../_images/arrow_r.png" /></p>
+</div>
+<p>Note 2: RMS value specifies how big the deviations could be from the
+current design thickness. With a higher value, you extend the size of
+the search area and increase the chances of finding another good
+minimum. However, if the size is too big, the number of attempts
+required to find something good increases dramatically. There exists a
+golden middle RMS value specific to each problem that needs to be
+experimented with. If the initial minimum is obtained too often,
+increase the RMS values. If it is obtained very rarely or never, then
+the RMS values are already too big.</p>
+<p>The Starting TOT option allows you to select a starting value of the
+total optical thicknesses (TOT) for random designs to better concentrate
+random optimization around expected or desired values. When Any is
+selected, this option is not active. Selection of Design will set the
+TOT of generated random designs to be equal to the TOT of the current
+design. Selection of Value allows you to enter the desired starting TOT
+value explicitly in numerical form.</p>
+<p>Simply -&gt; Constraints button in Simple mode allows you to set initial
+settings for the Design mode according to the settings on the Simple
+tab. This is a convenient operation since Simple mode is usually used at
+the very first step of the design procedure.</p>
+<p>The Limits… button opens an additional <a class="reference external" href="limits_generator.html">Limits
+Generator</a> dialog to invoke the recalculation
+of upper and lower constraints for layer thicknesses (Th.Min and Th.Max
+columns).</p>
+<p>Press OK to start Random Optimization. The progress of the optimization
+is displayed in the <a class="reference external" href="idh_refinement.html">Refinement window</a>.</p>
+<div class="docutils container">
+<p><img alt="image5" src="../../../_images/arrow_r.png" /></p>
+</div>
+<p>Note: The random optimization procedure will run infinitely if the Time
+Limit is not set and should be terminated by the user when enough
+promising designs are collected in the <a class="reference external" href="idh_collection.html">Collection
+window</a>.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

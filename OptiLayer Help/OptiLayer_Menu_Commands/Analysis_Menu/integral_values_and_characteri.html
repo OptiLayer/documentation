@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Integral values and characteristics</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="integral-values-and-characteristics">
+<h1>Integral values and characteristics</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Integral values and characteristics</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="integral-values-and-characteristics-1">Integral values and characteristics</p>
+</div>
+</div>
+<p>` &lt;additionalevaluationwindows.html&gt;`__ ` &lt;idh_menu_analysis.html&gt;`__
+` &lt;idh_digitize.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Integral Values and Characteristics command opens the
+Integrals, Values window, which allows users to evaluate and
+monitor the following values during the design process:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Merit Function value and its components.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Integral values for spectral distributions defined in the
+current <a class="reference external" href="integral_target.html">Integral Target</a> or
+predefined spectral distributions.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Various <a class="reference external" href="idh_color_evaluation.html">Color
+characteristics</a> of the
+current coating.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Averaged values over a range of wavelengths.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Averaged values over a range of angles of incidence.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Averaged values over a 2D region of wavelengths x angles of
+incidence.</p>
+</div>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="image1" src="../../_images/int_vals_1.png" /></p>
+<p>To add a new value for display, press the <strong>[+]</strong> button, and to
+remove a selected value, press the <strong>[x]</strong> button at the top of
+the Integrals, Values window.</p>
+<p>You can adjust the font type, size, font color, and background
+color using the corresponding toolbar controls.
+It is also possible to change the number of digits displayed and
+select the scientific format when necessary (use the [E±] button
+for this purpose).
+Items in the Integrals, Values window can be moved up and down
+using the arrows.
+All settings are persistent and are stored in the OptiLayer
+configuration files.
+Alternatively, it is possible to use the right-click menu of this
+window.</p>
+<p><img alt="image2" src="../../_images/intval_menu.png" /></p>
+<p>Copy command of the right-click menu copies the current value to
+the clipboard, while Copy All allows copying the content of the
+whole Integrals, Values window.
+Save Style as Default command allows saving the currently
+configured settings as default for further use in this or other
+Problem Directories.
+Apply Default Style command allows reverting the current display
+style to the previously saved default settings.
+Apply Built-in Style command allows reverting the current display
+style to built-in settings.
+Configuration of any displayed values is possible with the help of
+the down-arrow button next to the Name field. The same dialog is
+invoked after selecting the Add command.
+The configuration sub-dialog has six tabs that allow the selection
+and configuration of each of the six available classes of values.</p>
+<p class="p-heading3 rubric" id="merit-function-value-and-its-components">Merit Function value and its components</p>
+<p>Selection of the Merit Function value and its components is
+performed with the first tab of the configuration dialog.</p>
+<p><img alt="image3" src="../../_images/intval_tab1.png" /></p>
+<p>Using this option, it is possible to monitor the contribution of
+each type of merit function to the total MF value.</p>
+<p>Remember, that:</p>
+<p>(MFTotal)2 = w1 (MFConventional)2 + w2 (MFIntegral)2 + w3
+(MFColor)2 + w4 (MFEFi)2 + w5 (MFLA)2 + w6 (MFstress)2</p>
+<div class="docutils container">
+<blockquote>
+<div><p><img alt="image4" src="../../_images/arrow_r.png" /></p>
+</div></blockquote>
+<p>Note: The “Integral values and characteristics” window displays partial
+MF (Merit Function) values multiplied by the square root of the
+respective weight or the pure MF value, depending on the selection made
+at the bottom of this window. For example, if “MFIntegral” is chosen for
+display, then the respective “Value” field of the “Integral values and
+characteristics” option shows (w2)0.5 * MFIntegral or MFIntegral in
+accordance with this selection. It is possible to exclude the weight
+factor by unchecking the <strong>Include (weight)^0.5</strong> check box.</p>
+</div>
+</div>
+</div>
+<section id="integral-values">
+<h2>Integral values</h2>
+<blockquote>
+<div><p><img alt="image5" src="../../_images/intval_tab2.png" /></p>
+<p>Use the “Integral Values” option to display any of the integrals defined
+in the currently loaded <a class="reference external" href="integral_target.html">Integral Target</a>.  It
+is possible to independently specify the “Characteristic,”
+“Polarization” of interest, and “Incident Angle.” The “Spectral Weight
+List” includes currently defined spectral weights and some predefined
+spectral weights from the <a class="reference external" href="catalog.html">Catalog</a>.</p>
+<p>The “Normalized” checkbox allows you to specify the normalization
+procedure independently for each of the displayed integral values.
+The “Use Source/Detector” checkbox controls whether the currently loaded
+source and detector are used additionally during the computations of
+this integral value.</p>
+</div></blockquote>
+</section>
+<section id="color-characteristics">
+<h2>Color characteristics</h2>
+<blockquote>
+<div><p><img alt="image6" src="../../_images/intval_tab3.png" /></p>
+<p>Use the “Color Characteristics” option to display any of the color
+characteristics available in the <a class="reference external" href="idh_color_evaluation.html">Color
+Evaluation</a> window. “Characteristic,”
+“Polarization,” and “Incident Angle” can be specified independently.</p>
+</div></blockquote>
+</section>
+<section id="averaged-values-over-a-range-of-wavelengths">
+<h2>Averaged values over a range of wavelengths</h2>
+<blockquote>
+<div><p><img alt="image7" src="../../_images/intval_tab4.png" /></p>
+<p>In the &lt;Wavelength&gt; tab, it is possible to display the average value,
+minimum value, and maximum value of a selected characteristic with
+specified polarization and incident angle over a range of wavelengths.
+The wavelength range is specified by the Start and End values, with a
+corresponding number of integration points.
+Optionally, it is possible to activate a high-precision integration
+algorithm by checking the “Use high-order accurate integration” box.</p>
+</div></blockquote>
+</section>
+<section id="averaged-values-over-a-range-of-incident-angles">
+<h2>Averaged values over a range of incident angles</h2>
+<blockquote>
+<div><p><img alt="image8" src="../../_images/intval_tab5.png" /></p>
+<p>In the <em>&lt;AOI&gt;</em> tab, it is possible to display the average value, minimum
+value, and maximum value of a selected characteristic with specified
+polarization and wavelength over a range of incident angles. The range
+of incident angles is specified by the Start and End values, along with
+a corresponding number of integration points.
+Optionally, you can activate a high-precision integration algorithm by
+selecting the “Use high-order accurate integration” checkbox.</p>
+</div></blockquote>
+</section>
+<section id="averaged-values-over-a-2d-region">
+<h2>Averaged values over a 2D region</h2>
+<blockquote>
+<div><p>In the &lt;Wavelength, AOI&gt; tab, it is possible to display the average
+value, minimum, and maximum values of a selected characteristic with a
+specified polarization, over a range of wavelengths and incident angles.
+These ranges are specified by the Start and End values, along with a
+corresponding number of integration points for each dimension. Since
+computing 2D average values is more time-consuming, it is recommended to
+select a moderate number of points for each dimension.</p>
+</div></blockquote>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

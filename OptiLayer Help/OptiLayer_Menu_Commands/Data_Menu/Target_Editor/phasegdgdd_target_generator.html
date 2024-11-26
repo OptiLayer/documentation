@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Phase/GD/GDD Target Generator</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="phase-gd-gdd-target-generator">
+<h1>Phase/GD/GDD Target Generator</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="phasegdgdd-target-generator">Phase/GD/GDD Target Generator</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt; <a class="reference external" href="target_editor.html">Target
+Editor</a> &gt;</p>
+<p class="p-heading1 rubric" id="phasegdgdd-target-generator-1">Phase/GD/GDD Target Generator</p>
+</div>
+</div>
+<p>` &lt;target_generator.html&gt;`__ ` &lt;target_editor.html&gt;`__
+` &lt;target_peaks.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image1" src="../../../_images/tgtgdd1.png" /></p>
+<p>Phase/GD/GDD Target Generator dialog is used for quick
+computations of Phase, Group Delay (GD), and Group Delay
+Dispersion (GDD) wavelength dependencies based on initial values
+commonly used by specialists in ultra-fast optics. In the upper
+part of the dialog, specify the Characteristic, Polarization for
+the target value, and the corresponding Central Wavelength.
+In the lower part of the dialog, you can specify the initial phase
+value (only for phase targets), GD value (only for phase and GD
+targets), GDD, Third Order Dispersion (TOD), and Fourth Order
+Dispersion (FOD) values at the Central Wavelength.
+Upon pressing the OK button, target characteristics will be
+evaluated based on the following formulas (where ω0 is the
+frequency corresponding to the Central Wavelength):</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>For Phase Targets (φr, φt):
+φ(ω) = φ0 - GD (ω-ω0) - 1/2 GDD (ω-ω0)2 - 1/6 TOD (ω-ω0)3 -
+1/24 FOD (ω-ω0)4</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>For GD Target (GDr, GDt):
+GD(ω) = GD + GDD (ω-ω0) + 1/2 TOD (ω-ω0)2 + 1/6 FOD (ω-ω0)3</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>For GDD Target (GDDr, GDDt):
+GDD(ω) = GDD + TOD (ω-ω0) + 1/2 FOD (ω-ω0)2</p>
+</div>
+</li>
+</ul>
+<p>The resulting target values will be displayed on the current page
+of the <a class="reference external" href="target_editor.html">Target Editor</a> for further
+analysis and adjustments as needed.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

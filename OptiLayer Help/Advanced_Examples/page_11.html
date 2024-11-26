@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric">Example 7. Gradual
+evolution design Gradual
+evolution design technique:
+design of a notch filter.
+:nam</p>
+<p>e: example-7.-gradual-evolution-d
+esign-gradual-evolution-design-te
+chnique-design-of-a-notch-filter.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</div></blockquote>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer design
+options and random nature of some of their elements, the results
+obtained may differ from those previously saved in the design
+database.
+The main purpose of this example is to demonstrate the operation
+of the gradual evolution design technique without the use of
+starting design.
+In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D7. Datafiles needed to run this exercise are already loaded
+into RAM. These are the substrate Glass n=1.52, the layer
+materials n=2.35 and n=1.46, and the Notch filter target. This
+target can be viewed in the Preview tab of the Target editor.</p>
+<p>The gradual evolution design procedure can be started without any
+starting design. In fact, this means that it uses a fictious layer
+with zero thickness as a starting design and then increases its
+thickness to a certain non-zero value. This procedure is based on
+combining a series of needle optimization procedures with a
+deliberate increase in the thickness of one of the design layers
+at the end of each of these procedures. Using the General
+Information window, make sure that there is no design loaded into
+RAM.</p>
+<p>In the Synthesis menu, select the Gradual evolution design mode.
+Ensure that a total optical thickness (TOT) of 8000 nm is
+specified as the active termination criterion to trigger gradual
+evolution. The high TOT value was chosen because we already know
+that achieving high steepness of the transmittance in the target
+transition regions is only possible at such values.</p>
+<p>Also make sure that the SQP method is selected as the local
+optimization method.</p>
+<p>Click the Run button in the upper left corner of the window. The
+progress of the gradual evolution design procedure is reflected in
+the right, history part of the window.</p>
+<p>After a couple of minutes or less, the procedure ends because the
+termination criterion has been reached. The final design provides
+excellent compliance with the target characteristic. You can use
+the History part of the window to see that a fairly good match to
+the target transmittance is provided by many designs obtained in
+the previous steps of the gradual evolution procedure. To see the
+spectral transmittance of any of these designs, click on the
+selected design.</p>
+<p>You can save any selected design to the design database. To do
+this, click the Load button in the lower right part of the window.
+The selected design is now presented in the T&amp;R&amp;Phase evaluation
+window and you can save it in the design database using Data -&gt;
+Save Data -&gt; Save Design option. Note that the design database
+already contains previously obtained results.</p>
+<p><strong>Note: An important feature of the gradual evolution design
+procedure is that allows one to obtain not one, but a series of
+solutions to the design problem with successively decreasing merit
+function values. Using this series, you can choose your “most
+practical solution to the design problem” based on a certain
+compromise between the MF value and the complexity of the
+design.</strong></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Electric Field Target</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="electric-field-target">
+<h1>Electric Field Target</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Electric Field Target</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="electric-field-target-1">Electric Field Target</p>
+</div>
+</div>
+<p>` &lt;anchor_parameters.html&gt;`__ ` &lt;idh_menu_data.html&gt;`__
+` &lt;layer_absorptance_target.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The Electric Field Target feature enables the user to minimize or
+maximize the squared modulus of the electric field amplitude.</p>
+<p><img alt="image1" src="../../_images/E-field_11.png" /></p>
+<p>The Electric Field editor allows you to specify the following
+parameters:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Incident Angle</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Polarization</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Wavelength range</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Grid type (Even, Logarithmic, Inversely Proportional)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Number of wavelength points (NLam)</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Number of discretization points (Nz) for each layer
+considered</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Target (Maximize or Minimize) for each material layer
+included in the coating that is currently loaded into memory.</p>
+</div>
+</li>
+</ul>
+<p>In the example provided, the target is to minimize the squared
+modulus of the amplitude in all high-index layers. This type of
+target is commonly used for applications involving high-intensity
+fields.</p>
+<div class="docutils container">
+<p><img alt="image2" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>If there is a need to specify Electric Field intensity requirements for
+individual layers rather than materials, here is a useful trick: create
+a duplicate copy of a material and load it into memory. Then, assign the
+desired design layers to this duplicate material and set the Electric
+Field intensity target according to your requirements for those specific
+layers.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

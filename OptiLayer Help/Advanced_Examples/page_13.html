@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric" id="example-9-de">Example 9. Design of
+narrow band pass filters.</p>
+<dl class="simple">
+<dt>sign-of-narrow-band-pass-filters.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p> Note: Due to the continuous improvement of OptiLayer design
+options and random nature of some of their elements, the results
+obtained may differ from those previously saved in the design
+database.
+This example demonstrates the operation of a special optimization
+technique used to design narrow band pass (NBP) filters with the
+additional requirement that their layers have quarter wave or
+multiple quarter wave optical thicknesses. This requirement allows
+for a special monitoring approach called turning point optical
+monitoring. Only thanks to this monitoring approach can one
+successfully manufacture NBP filters with many dozens and hundreds
+of layers.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D9. The datafiles needed to run this exercise are already
+loaded into RAM. These are the substrate Glass n=1.52 and the
+layer materials n=2.35 and n=1.46.</p>
+<p>In the Synthesis menu, select the Filter Design… mode. It is
+organized as a six-step dialog. The first step is to select the
+layer materials used to design the filter. Most often, NBP filters
+are two-component multilayers. In our case, two materials are
+loaded into RAM and their selection has been already checked.</p>
+<p>By clicking the Next button, we move on to the second dialog step,
+where the parameters of the designed filter are set. We will
+design a filter with the following parameters: filter central
+wavelength of 600 nm, 1.5 nm halfwidth at the 89.13% transmittance
+level (corresponding to an attenuation of 0.5 dB), 4.5 nm
+halfwidth at the 0.1% transmittance level (corresponding to an
+attenuation of 30 dB).</p>
+<p>Click the Next button to move on to the third dialog step. At this
+step the number of spacer layers (the number of filter cavities)
+is set. The recommendation for this number follows from the theory
+of Chebyshev filters. Based on the parameters set at the Step 2,
+the required number of spacer layers is estimated at 4.</p>
+<p>At the next, fourth step of the dialog, a filter prototype is
+selected. The parameters of the filter prototypes are listed in
+lines m and s of the Prototype Specification part of the Step 4
+window. The m value corresponds to the number of layers of the
+first (left) mirror of the prototype, and the s value indicates
+the order of the spacer layers of the selected prototype. The
+bottom line corresponds to the initial filter prototype, built
+using the design approach proposed by Alfred Thelen in 1966. The
+orders of all spacer layers of this prototype are always equal to
+1. It is possible to specify a set of almost equivalent filter
+prototypes with similar passband width. This is because there are
+two ways to control the filter bandwidth: either by changing the
+number of layers of filter mirrors, or by changing the orders of
+the spacer layers. Increasing the orders of spacer layers while
+reducing the number of mirrors layers makes it possible to obtain
+other protypes with practically equivalent spectral properties.
+Note that the transmittance of the selected filter prototype is
+shown on the right side of the window.</p>
+<p>After one of the filter prototypes has been selected, we move on
+to the next, fifth dialog step. At this step, it is necessary to
+optimize the filter parameters. These parameters are the numbers
+of layers of quarter wave mirrors that make up the filter, and the
+orders of the filter spacer layers. The optimized parameters are
+integers, and a special integer optimization procedure is launched
+when you click the Start button. The results obtained in the
+course of integer optimization are reflected on the right side of
+the Step 5 window.</p>
+<p>Usually, good filter designs are obtained in a short time, and the
+integer optimization procedure can be interrupted by clicking the
+Stop button. Note that this is the same button that was in the
+state Start before the procedure started. If this button is
+already in the Start state, it means that integer optimization has
+already completed. Now you can select any of the designs listed on
+the right side of the window and proceed to the last sixth step of
+the dialog.</p>
+<p> Note that the integer optimization was performed under the
+assumption that the incidence medium has the same refractive index
+as the substrate.</p>
+<p>At the last dialog step, the actual refractive index of the
+incidence medium (usually Air) is considered. For this reason, the
+resulting transmittance shows excellent target compliance, except
+for 100% in the pass band region. It is not a problem to improve
+the transmittance in the pass band region by applying a simple
+antireflection coating at the top of the obtained design by
+selecting this option.</p>
+<p>Now the resulting design can be loaded into the General
+Information window and the T&amp;R&amp;Phase window by clicking the Finish
+button.</p>
+<p> Note that all layers of the final design, except for the last
+two, have a quarter-wave or a multiple of a quarter-wave optical
+thickness. This ensures that turning point optical monitoring can
+be applied to produce it.</p>
+<p>Several examples of filter designs are stored in the Design
+database.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

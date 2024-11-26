@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Refinement and Synthesis Tools</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="refinement-and-synthesis-tools">
+<h1>Refinement and Synthesis Tools</h1>
+<div class="docutils container" id="printheader">
+<p>Refinement and Synthesis Tools</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<p>The refinement and synthesis procedures in OptiLayer are aimed at
+designing optical coatings with specific spectral (angular)
+characteristics by optimizing a merit function through the variation
+of construction parameters such as the number of layers, materials
+used, and their thicknesses. OptiLayer offers several refinement
+modes that utilize powerful optimization routines to achieve the
+desired coating design. Some of the optimization routines used in
+OptiLayer include:</p>
+<div class="docutils container">
+<ol class="arabic simple">
+<li></li>
+</ol>
+</div>
+<ol class="arabic">
+<li><div class="p-normal docutils container">
+<p>Modified Dumped Least Squares: This optimization method is used
+to minimize the sum of squares of the differences between the
+observed and predicted values, with modifications to enhance
+convergence and stability.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Sequential Quadratic Programming: This optimization technique
+involves solving a sequence of quadratic subproblems to
+iteratively improve the solution and converge towards the
+optimal design.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Newton Method: The Newton method is an iterative optimization
+algorithm that uses second-order derivatives to find the
+minimum of a function. It converges quickly and efficiently to
+a local minimum.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Hyper Newton Method: The Hyper Newton method is an extension of
+the Newton method that incorporates additional information or
+constraints to improve convergence and stability in complex
+optimization problems.</p>
+</div>
+</li>
+</ol>
+<p>By utilizing these advanced optimization routines, OptiLayer allows
+users to efficiently optimize the design of optical coatings by
+varying construction parameters and exploring different design
+possibilities to achieve the desired spectral and angular
+characteristics. These optimization modes help users achieve optimal
+coating designs that meet specific performance requirements and
+maximize overall coating performance.</p>
+<p>OptiLayer stands out as a unique thin film software due to its
+sophisticated analytic algorithms developed by its creators, which
+offer exceptional convergence rates and accuracy in its optimization
+routines. All optimization routines in OptiLayer are based on this
+proprietary know-how, ensuring superior performance in refining and
+synthesizing optical coatings with desired characteristics.
+One of the most powerful design techniques available in OptiLayer is
+the <a class="reference external" href="idh_needle_optimization.html">Needle Optimization</a>, which
+can be used in both manual and automatic modes:
+In the manual mode, advanced users have the ability to control the
+needle optimization procedure by selecting insertion points for new
+layers, performing multiple variations with the needle, and
+fine-tuning the design process.
+The automatic mode allows for the needle optimization procedure to
+run automatically, streamlining the design process. This mode also
+offers setup options that increase flexibility, such as multiple
+needle insertions, to further enhance the optimization process.
+Both manual and automatic modes of the Needle Optimization technique
+in OptiLayer automatically select optimal layer materials when
+multiple materials are specified for the coating design, simplifying
+the design process and ensuring that the best materials are chosen
+for the desired optical characteristics.
+Overall, OptiLayer’s unique optimization algorithms and the
+implementation of the Needle Optimization technique in both manual
+and automatic modes make it a powerful tool for designing optical
+coatings with high precision, efficiency, and flexibility in
+achieving the desired spectral and angular characteristics.</p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image3" src="../../_images/arrow_r.png" /></p></td>
+<td><p>Note: The exceptional power of the genuine Needle
+Optimization technique implemented in OptiLayer stems
+from the unparalleled mathematical expertise developed
+by the creators of OptiLayer, who have been refining
+this technique since its inception in 1982 by Professor
+A.V. Tikhonravov. This extensive experience and
+knowledge have allowed OptiLayer to leverage the full
+potential of the Needle Optimization technique, making
+it a cutting-edge tool for optimizing and designing thin
+film coatings with exceptional accuracy and efficiency.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The <a class="reference external" href="idh_gradual_evolution.html">Gradual Evolution</a> mode in
+OptiLayer expands the capabilities of the Needle Optimization
+technique by focusing on finding designs that are highly
+manufacturable. This mode allows for the generation of a range of
+designs with varying combinations of key parameters such as merit
+function value, number of design layers, and total design thickness,
+enabling users to explore and select designs that meet specific
+manufacturing criteria.
+In addition to the Needle Optimization technique, OptiLayer offers
+other non-local design techniques such as <a class="reference external" href="inhomogeneous_refinement.html">Inhomogeneous
+Refinement</a> and <a class="reference external" href="idh_random_optimization.html">Random
+Optimization</a>.</p>
+<p>These techniques are particularly valuable for addressing specialized
+modern design challenges, such as the design of gain flattening
+filters, and provide additional flexibility and tools to tackle
+diverse design problems effectively.
+For designing <a class="reference external" href="wdm_filter_design___material_s.html">WDM filters</a>,
+OptiLayer has developed an extremely efficient automatic design
+technique tailored specifically to meet the requirements of WDM
+applications. Like other design options within OptiLayer, the WDM
+design option leverages proprietary know-how that sets it apart from
+other thin film software programs, ensuring high-quality results and
+performance in WDM filter design tasks.</p>
+<p>OptiLayer allows users to specify design targets in both Spectral and
+Angular modes, with the Angular mode being particularly useful when
+design targets are defined across an angular range.</p>
+<p><strong>OptiLayer</strong> constructs a merit function automatically in the
+correspondence with user-specified targets (target values, tolerances
+and qualifiers). The following formula represents one of the
+OptiLayer merit function (MF):</p>
+<p>        <img alt="image4" src="../../_images/eqn002.gif" /></p>
+<p>Here N is the total number of targets, Tj’  are target values, DTj
+ are tolerances, and Tj are theoretical values of the spectral
+characteristics calculated for the design loaded in memory.</p>
+<p>Targets include:</p>
+<ul>
+<li></li>
+<li><div class="p-indentlist2 docutils container">
+<p>Reflectance, Back Reflectance, Transmittance, Absorptance for
+s-, p-, and average polarizations.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>Phase shifts on reflection and transmission for s- and p-
+polarizations.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>Differential phase shifts on reflection and transmission.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>Group delay and Group delay dispersion for the reflected and
+transmitted light of s- and p- polarizations.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>User-defined targets</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>Combinations of various targets listed above</p>
+</div>
+</li>
+</ul>
+<p>In OptiLayer’s Spectral mode, users have the flexibility to consider
+targets at a high resolution of up to 8192 spectral points across
+multiple target pages, with the ability to have up to 99 target
+pages. This extensive range of spectral points and target pages
+enables users to explore and optimize complex combinations of various
+targets for thin film coatings across different spectral ranges.
+Moreover, within each target page, users can specify targets that
+correspond to different incidence angles, allowing for the design of
+coatings tailored to wide spectral and angular range applications.
+This feature enhances the versatility of OptiLayer in addressing
+diverse design requirements and optimizing coatings for a broad range
+of spectral and angular conditions, ensuring that the resulting
+designs meet specific performance criteria across different
+operational scenarios.</p>
+<div class="docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="image7" src="../../_images/arrow_r.png" /></p></td>
+<td><p>Note: OptiLayer is the only software that implements a
+completely analytical approach for calculating and
+optimizing all characteristics, including group delay
+and group delay dispersion. This enables the design of
+even the most complicated coatings with the highest
+level of precision.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Color Targets can be specified simultaneously at up to 99 incidence
+angles.</p>
+<p>Color targets include:</p>
+<ul>
+<li></li>
+<li><div class="p-indentlist2 docutils container">
+<p>Chromacities,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>CIE YU’V’ 1976,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>CIE YUV 1960,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>Tristimulus,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>Hunter Lab,</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>CIE L*a*b*</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>CIE L*u*v*</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>CIE HºLC</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p>CIE C*hs(uv)</p>
+</div>
+</li>
+</ul>
+<p>for transmittance, reflectance, back reflectance for any angle of
+incidence and polarization state.</p>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QtHelpProject version="1.0">
+    <namespace>org.sphinx.optilayerhelp</namespace>
+    <virtualFolder>doc</virtualFolder>
+    <customFilter name="OptiLayerHelp ">
+        <filterAttribute>OptiLayerHelp</filterAttribute>
+        <filterAttribute></filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>OptiLayerHelp</filterAttribute>
+        <filterAttribute></filterAttribute>
+        <toc>
+            <section title="OptiLayerHelp 0.0.1 documentation" ref="index.html">
+                <section title="General Information on OptiLayer" ref="General%20Information%20on%20OptiLayer.html">
+                    <section title="OptiLayer Main Features" ref="General_Information_on_OptiLayer/idh_optilayer_general.html"/>
+                    <section title="OptiLayer Development" ref="General_Information_on_OptiLayer/optilayer_development.html"/>
+                    <section title="Hardware Requirements" ref="General_Information_on_OptiLayer/hardwarerequirements.html"/>
+                    <section title="Installation" ref="General_Information_on_OptiLayer/oc_installation.html"/>
+                    <section title="OptiLayer Components" ref="General_Information_on_OptiLayer/OptiLayer%20Components.html">
+                        <section title="OptiLayer Data Files" ref="General_Information_on_OptiLayer/OptiLayer_Components/idh_data.html"/>
+                        <section title="Spreadsheet Editing" ref="General_Information_on_OptiLayer/OptiLayer_Components/idh_spreadsheet_editing.html"/>
+                        <section title="Analysis Tools" ref="General_Information_on_OptiLayer/OptiLayer_Components/idh_analysis.html"/>
+                        <section title="Refinement and Synthesis Tools" ref="General_Information_on_OptiLayer/OptiLayer_Components/idh_synthesis.html"/>
+                        <section title="Output Options" ref="General_Information_on_OptiLayer/OptiLayer_Components/idh_output.html"/>
+                    </section>
+                    <section title="Keyboard Keys Assignment" ref="General_Information_on_OptiLayer/idh_keys_assignment.html">
+                        <section title="Editing tools access:" ref="General_Information_on_OptiLayer/idh_keys_assignment.html#editing-tools-access"/>
+                        <section title="Keys to access OptiLayer View commands:" ref="General_Information_on_OptiLayer/idh_keys_assignment.html#keys-to-access-optilayer-view-commands"/>
+                        <section title="Keys to access commands in the Analysis menu:" ref="General_Information_on_OptiLayer/idh_keys_assignment.html#keys-to-access-commands-in-the-analysis-menu"/>
+                        <section title="Keys to access commands in the Synthesis menu:" ref="General_Information_on_OptiLayer/idh_keys_assignment.html#keys-to-access-commands-in-the-synthesis-menu"/>
+                        <section title="OptiMonitor access:" ref="General_Information_on_OptiLayer/idh_keys_assignment.html#optimonitor-access"/>
+                        <section title="The following keys are of general use:" ref="General_Information_on_OptiLayer/idh_keys_assignment.html#the-following-keys-are-of-general-use"/>
+                    </section>
+                    <section title="OptiLayer Menu and Toolbar" ref="General_Information_on_OptiLayer/idh_optilayer_main.html"/>
+                    <section title="Right Mouse Button Popup Menus" ref="General_Information_on_OptiLayer/idh_popup_menu.html"/>
+                    <section title="Quick Start" ref="General_Information_on_OptiLayer/quickstart.html"/>
+                </section>
+                <section title="OptiLayer Menu Commands" ref="OptiLayer%20Menu%20Commands.html">
+                    <section title="File Menu" ref="OptiLayer_Menu_Commands/idh_menu_file.html">
+                        <section title="Problem Directory" ref="OptiLayer_Menu_Commands/File_Menu/idh_problem_directory.html">
+                            <section title="New Problem directory" ref="OptiLayer_Menu_Commands/File_Menu/Problem_Directory/new_problem_directory.html"/>
+                        </section>
+                        <section title="File Transfer" ref="OptiLayer_Menu_Commands/File_Menu/idh_file_transfer.html">
+                            <section title="File Transfer dialog" ref="OptiLayer_Menu_Commands/File_Menu/File_Transfer/filetransferdialog.html"/>
+                            <section title="Select Directory or Project" ref="OptiLayer_Menu_Commands/File_Menu/File_Transfer/idh_select_directory.html"/>
+                        </section>
+                        <section title="Problem directory backup" ref="OptiLayer_Menu_Commands/File_Menu/idh_file_backup.html"/>
+                        <section title="Catalog" ref="OptiLayer_Menu_Commands/File_Menu/catalog.html"/>
+                        <section title="Refractiveindex.INFO Database" ref="OptiLayer_Menu_Commands/File_Menu/refractiveindex_info_database.html"/>
+                        <section title="Reading and Writing ODS Files" ref="OptiLayer_Menu_Commands/File_Menu/idh_ods_file.html"/>
+                        <section title="Record Animation" ref="OptiLayer_Menu_Commands/File_Menu/recordanimation.html"/>
+                        <section title="Import ZEMAX Glass data" ref="OptiLayer_Menu_Commands/File_Menu/import_zemax_glass_data.html"/>
+                        <section title="Import Tin Model V-Grade" ref="OptiLayer_Menu_Commands/File_Menu/import_tin_model.html"/>
+                        <section title="Export ZEMAX Coating" ref="OptiLayer_Menu_Commands/File_Menu/export_zemax_coating.html">
+                            <section title="Export ZEMAX Coating description" ref="OptiLayer_Menu_Commands/File_Menu/Export_ZEMAX_Coating/export_zemax_coating_descripti.html"/>
+                            <section title="Export ZEMAX Performance Table" ref="OptiLayer_Menu_Commands/File_Menu/Export_ZEMAX_Coating/export_zemax_performance_table.html"/>
+                        </section>
+                        <section title="Export OPTIS Coating file" ref="OptiLayer_Menu_Commands/File_Menu/export_optis_coating_file.html"/>
+                        <section title="Export Code V sequence file" ref="OptiLayer_Menu_Commands/File_Menu/export_code_v_sequence_file.html"/>
+                        <section title="FRED format" ref="OptiLayer_Menu_Commands/File_Menu/fred_format.html"/>
+                        <section title="OpTaliX Multilayer format" ref="OptiLayer_Menu_Commands/File_Menu/optalix_multilayer_format.html"/>
+                        <section title="Page Setup" ref="OptiLayer_Menu_Commands/File_Menu/page_setup.html"/>
+                    </section>
+                    <section title="Edit Menu" ref="OptiLayer_Menu_Commands/idh_menu_edit.html">
+                        <section title="Copy Special" ref="OptiLayer_Menu_Commands/Edit_Menu/copy_special.html"/>
+                        <section title="Column Editor" ref="OptiLayer_Menu_Commands/Edit_Menu/idh_column_editor.html"/>
+                        <section title="Grid Generator" ref="OptiLayer_Menu_Commands/Edit_Menu/idh_grid_generator.html"/>
+                        <section title="Text Data Import" ref="OptiLayer_Menu_Commands/Edit_Menu/idh_import.html">
+                            <section title="Data Import Options" ref="OptiLayer_Menu_Commands/Edit_Menu/Text_Data_Import/idh_import_options.html"/>
+                        </section>
+                        <section title="Paste buffer" ref="OptiLayer_Menu_Commands/Edit_Menu/idh_paste_buffer.html">
+                            <section title="Trasform function" ref="OptiLayer_Menu_Commands/Edit_Menu/Paste_Buffer/trasform_function.html"/>
+                        </section>
+                        <section title="Import X,Y data" ref="OptiLayer_Menu_Commands/Edit_Menu/importxydata.html"/>
+                        <section title="General Editing" ref="OptiLayer_Menu_Commands/idh_menu_edit.html#general-editing"/>
+                        <section title="Spreadsheet Editing" ref="OptiLayer_Menu_Commands/idh_menu_edit.html#spreadsheet-editing"/>
+                        <section title="Data Import options" ref="OptiLayer_Menu_Commands/idh_menu_edit.html#data-import-options"/>
+                    </section>
+                    <section title="View Menu" ref="OptiLayer_Menu_Commands/idh_menu_view.html">
+                        <section title="General Information Window" ref="OptiLayer_Menu_Commands/View_Menu/idh_general_information_window.html"/>
+                        <section title="Windows List" ref="OptiLayer_Menu_Commands/View_Menu/idh_window_list.html"/>
+                        <section title="History" ref="OptiLayer_Menu_Commands/View_Menu/idh_history.html"/>
+                        <section title="Collection" ref="OptiLayer_Menu_Commands/View_Menu/idh_collection.html"/>
+                        <section title="Memorize Plot(s)" ref="OptiLayer_Menu_Commands/View_Menu/memorizeplots.html"/>
+                        <section title="Variator" ref="OptiLayer_Menu_Commands/View_Menu/variator.html"/>
+                    </section>
+                    <section title="Data Menu" ref="OptiLayer_Menu_Commands/idh_menu_data.html">
+                        <section title="Database Access Dialog" ref="OptiLayer_Menu_Commands/Data_Menu/idh_modify_database.html">
+                            <section title="Loading data from OptiLayer database" ref="OptiLayer_Menu_Commands/Data_Menu/Database_access_dialog/idh_loading_data.html"/>
+                            <section title="Creating New Database File" ref="OptiLayer_Menu_Commands/Data_Menu/Database_access_dialog/idh_database_new_file.html"/>
+                            <section title="Saving Current Targets and other data" ref="OptiLayer_Menu_Commands/Data_Menu/Database_access_dialog/idh_save_database_file.html"/>
+                            <section title="Configure Database Columns" ref="OptiLayer_Menu_Commands/Data_Menu/Database_access_dialog/configure_database_columns.html"/>
+                        </section>
+                        <section title="Target Editor" ref="OptiLayer_Menu_Commands/Data_Menu/target_editor.html">
+                            <section title="Number of Spectral Points Estimation" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/numberofspectralpointsest.html"/>
+                            <section title="Target Interpolation" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/target_interpolation.html"/>
+                            <section title="Target Qualifiers" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/idh_target_qualifier.html"/>
+                            <section title="Spectral Characteristics Abbreviations" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/idh_spectral_abbreviations.html"/>
+                            <section title="Target Selection" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/idh_spectral_characteristics.html"/>
+                            <section title="Floating Constant Targets" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/floating_constant_targets.html"/>
+                            <section title="User-Defined Target Editor" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/userdefinedtargeteditor.html"/>
+                            <section title="Extended Argument Definition" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/extended_argument_definition.html"/>
+                            <section title="Angles of Incidence" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/idh_modify_angles.html"/>
+                            <section title="Target Wavelengths" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/idh_modify_wavelengths.html"/>
+                            <section title="Target Generator" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/target_generator.html"/>
+                            <section title="Phase/GD/GDD Target Generator" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/phasegdgdd_target_generator.html"/>
+                            <section title="Target Peak List" ref="OptiLayer_Menu_Commands/Data_Menu/Target_Editor/target_peaks.html"/>
+                        </section>
+                        <section title="Integral Target" ref="OptiLayer_Menu_Commands/Data_Menu/integral_target.html"/>
+                        <section title="Color Target" ref="OptiLayer_Menu_Commands/Data_Menu/idh_edit_color_target.html">
+                            <section title="Color Range Targets" ref="OptiLayer_Menu_Commands/Data_Menu/Color_Target/color_range_targets.html"/>
+                            <section title="Anchor Parameters" ref="OptiLayer_Menu_Commands/Data_Menu/Color_Target/anchor_parameters.html"/>
+                        </section>
+                        <section title="Electric Field Target" ref="OptiLayer_Menu_Commands/Data_Menu/electric_field_target.html"/>
+                        <section title="Layer Absorptance Target" ref="OptiLayer_Menu_Commands/Data_Menu/layer_absorptance_target.html">
+                            <section title="Layer Absorptance Target Selection" ref="OptiLayer_Menu_Commands/Data_Menu/Layer_Absorptance_Target/layer_absorptance_target_selec.html"/>
+                        </section>
+                        <section title="Thickness/Stress Target" ref="OptiLayer_Menu_Commands/Data_Menu/thickness_stress_target.html"/>
+                        <section title="Target Weights" ref="OptiLayer_Menu_Commands/Data_Menu/target_weights.html"/>
+                        <section title="Spectral/Angular Specifications" ref="OptiLayer_Menu_Commands/Data_Menu/spectral_angular_specification.html">
+                            <section title="Specification Qualifiers" ref="OptiLayer_Menu_Commands/Data_Menu/Spectral_Angular_specification/specification_qualifiers.html"/>
+                            <section title="Specifications from Target" ref="OptiLayer_Menu_Commands/Data_Menu/Spectral_Angular_specification/specifications_from_target.html"/>
+                        </section>
+                        <section title="Integral Specifications" ref="OptiLayer_Menu_Commands/Data_Menu/integral_specifications.html"/>
+                        <section title="Color Specifications" ref="OptiLayer_Menu_Commands/Data_Menu/color_specification.html"/>
+                        <section title="Light Source/Detector Database" ref="OptiLayer_Menu_Commands/Data_Menu/idh_edit_light_source.html"/>
+                        <section title="Blackbody Source Settings" ref="OptiLayer_Menu_Commands/Data_Menu/blackbodysourcesettings.html"/>
+                        <section title="Cone Angle Database" ref="OptiLayer_Menu_Commands/Data_Menu/coneangledatabase.html"/>
+                        <section title="Line Width Database" ref="OptiLayer_Menu_Commands/Data_Menu/line_width_database.html"/>
+                        <section title="Substrate and Layer Material" ref="OptiLayer_Menu_Commands/Data_Menu/idh_edit_layer_material.html">
+                            <section title="Table from Formula" ref="OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_from_formula.html"/>
+                            <section title="Table from Composition" ref="OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/tablefromcomposition.html"/>
+                            <section title="Table from R/T Measurements" ref="OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_from_rt.html"/>
+                            <section title="Formula from Table" ref="OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/formula_from_table.html"/>
+                            <section title="Composition from Table" ref="OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/compositionfromtable.html"/>
+                            <section title="Table Simplify" ref="OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_simplify.html"/>
+                        </section>
+                        <section title="Layer Material Database" ref="OptiLayer_Menu_Commands/Data_Menu/idh_database.html">
+                            <section title="Layer Material Status" ref="OptiLayer_Menu_Commands/Data_Menu/Layer_material_database/idh_layer_material_status.html"/>
+                        </section>
+                        <section title="Design Database" ref="OptiLayer_Menu_Commands/Data_Menu/idh_design.html">
+                            <section title="Layer Material Abbreviations" ref="OptiLayer_Menu_Commands/Data_Menu/Design_Database/idh_material_abbreviations.html"/>
+                            <section title="Design Editor" ref="OptiLayer_Menu_Commands/Data_Menu/Design_Database/idh_design_editor.html">
+                                <section title="Design Formula Editing" ref="OptiLayer_Menu_Commands/Data_Menu/Design_Database/Design_Editor/idh_design_formula.html"/>
+                                <section title="Layer Optimization Status" ref="OptiLayer_Menu_Commands/Data_Menu/Design_Database/Design_Editor/idh_layer_status.html"/>
+                                <section title="Design Inhomogeneities/Interlayers" ref="OptiLayer_Menu_Commands/Data_Menu/Design_Database/Design_Editor/design_inhom_inter.html"/>
+                            </section>
+                        </section>
+                        <section title="Stack Database" ref="OptiLayer_Menu_Commands/Data_Menu/stack_database.html">
+                            <section title="Stack Editor" ref="OptiLayer_Menu_Commands/Data_Menu/Stack_database/stack_editor.html">
+                                <section title="Swap Coatings" ref="OptiLayer_Menu_Commands/Data_Menu/Stack_database/Stack_Editor/swap_coatings.html"/>
+                            </section>
+                        </section>
+                        <section title="Setting Back Side Options" ref="OptiLayer_Menu_Commands/Data_Menu/idh_back_side_options.html"/>
+                        <section title="Environment Manager" ref="OptiLayer_Menu_Commands/Data_Menu/envmanfrm.html">
+                            <section title="Taper Function" ref="OptiLayer_Menu_Commands/Data_Menu/Enviroment_manager/taper_function.html"/>
+                        </section>
+                        <section title="Multi-Coating Manager" ref="OptiLayer_Menu_Commands/Data_Menu/multi_coating_manager.html"/>
+                    </section>
+                    <section title="Analysis Menu" ref="OptiLayer_Menu_Commands/idh_menu_analysis.html">
+                        <section title="Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/idh_evaluation.html">
+                            <section title="Peak List" ref="OptiLayer_Menu_Commands/Analysis_Menu/Evaluation/peak_list.html"/>
+                        </section>
+                        <section title="Filter mode" ref="OptiLayer_Menu_Commands/Analysis_Menu/filter_mode.html"/>
+                        <section title="Group Delay and Group Delay Dispersion" ref="OptiLayer_Menu_Commands/Analysis_Menu/idh_gd_gdd.html"/>
+                        <section title="Ellipsometric Angles" ref="OptiLayer_Menu_Commands/Analysis_Menu/idh_ellipsometry_evaluation.html"/>
+                        <section title="Layer Absorptance" ref="OptiLayer_Menu_Commands/Analysis_Menu/layer_absorptance.html"/>
+                        <section title="Taper/Wavefront Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/taper_wavefront_evaluation.html"/>
+                        <section title="Additional Evaluation windows" ref="OptiLayer_Menu_Commands/Analysis_Menu/additionalevaluationwindows.html"/>
+                        <section title="Integral values and characteristics" ref="OptiLayer_Menu_Commands/Analysis_Menu/integral_values_and_characteri.html">
+                            <section title="Integral values" ref="OptiLayer_Menu_Commands/Analysis_Menu/integral_values_and_characteri.html#integral-values"/>
+                            <section title="Color characteristics" ref="OptiLayer_Menu_Commands/Analysis_Menu/integral_values_and_characteri.html#color-characteristics"/>
+                            <section title="Averaged values over a range of wavelengths" ref="OptiLayer_Menu_Commands/Analysis_Menu/integral_values_and_characteri.html#averaged-values-over-a-range-of-wavelengths"/>
+                            <section title="Averaged values over a range of incident angles" ref="OptiLayer_Menu_Commands/Analysis_Menu/integral_values_and_characteri.html#averaged-values-over-a-range-of-incident-angles"/>
+                            <section title="Averaged values over a 2D region" ref="OptiLayer_Menu_Commands/Analysis_Menu/integral_values_and_characteri.html#averaged-values-over-a-2d-region"/>
+                        </section>
+                        <section title="Digitize Plotted Data" ref="OptiLayer_Menu_Commands/Analysis_Menu/idh_digitize.html"/>
+                        <section title="Color Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/idh_color_evaluation.html">
+                            <section title="Color Evaluation Parameters" ref="OptiLayer_Menu_Commands/Analysis_Menu/Color_Evaluation/idh_color_evaluation_parameter.html"/>
+                        </section>
+                        <section title="Electric Field Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/idh_field_evaluation.html"/>
+                        <section title="Admittance Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/idh_admittance_evaluation.html"/>
+                        <section title="Refractive Index Profile Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/idh_refractive_index_evaluatio.html"/>
+                        <section title="Zeroes and Poles" ref="OptiLayer_Menu_Commands/Analysis_Menu/zeroes_and_poles.html">
+                            <section title="Zeroes and Poles Setup" ref="OptiLayer_Menu_Commands/Analysis_Menu/Zeroes_and_Poles/zeroes_and_poles_setup.html"/>
+                        </section>
+                        <section title="WDM Filter GD Performance" ref="OptiLayer_Menu_Commands/Analysis_Menu/wdm_filter_gd_performance.html">
+                            <section title="Export Target Setup" ref="OptiLayer_Menu_Commands/Analysis_Menu/WDM_Filter_GD_Perfomance/export_target_setup.html"/>
+                        </section>
+                        <section title="Rugates" ref="OptiLayer_Menu_Commands/Analysis_Menu/rugates.html">
+                            <section title="Create Material Assistant" ref="OptiLayer_Menu_Commands/Analysis_Menu/Rugates/creatematerialassistant.html"/>
+                        </section>
+                        <section title="Plot Engine" ref="OptiLayer_Menu_Commands/Analysis_Menu/idh_plot_engine.html">
+                            <section title="Plot Engine Window" ref="OptiLayer_Menu_Commands/Analysis_Menu/Plot_engine/idh_plot_engine_3.html"/>
+                            <section title="Plot Engine Contents" ref="OptiLayer_Menu_Commands/Analysis_Menu/Plot_engine/idh_plot_engine_1.html"/>
+                            <section title="Plot Engine Layout" ref="OptiLayer_Menu_Commands/Analysis_Menu/Plot_engine/idh_plot_engine_2.html"/>
+                        </section>
+                        <section title="Errors Analysis" ref="OptiLayer_Menu_Commands/Analysis_Menu/idh_error_analysis.html">
+                            <section title="Error Analysis Characteristics" ref="OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/idh_error_analysis_setup_chara.html"/>
+                            <section title="Thickness Error Analysis Setup" ref="OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/idh_error_analysis_setup_thick.html"/>
+                            <section title="Refractive Index Error Analysis Setup" ref="OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/idh_error_analysis_setup_refra.html"/>
+                            <section title="Error Analysis" ref="OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/idh_error_analysis_results.html"/>
+                            <section title="Color Error Analysis" ref="OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/color_error_analysis.html"/>
+                            <section title="Electric Field Error Analysis" ref="OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/electric_field_error_analysis.html"/>
+                            <section title="Integral Values Error Analysis" ref="OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/integral_values_error_analysis.html"/>
+                        </section>
+                        <section title="Error Yield Analysis" ref="OptiLayer_Menu_Commands/Analysis_Menu/error_yield_analysis.html">
+                            <section title="Error Yield Options" ref="OptiLayer_Menu_Commands/Analysis_Menu/Error_Yield_Analysis/error_yield_options.html"/>
+                            <section title="Error Yield Window" ref="OptiLayer_Menu_Commands/Analysis_Menu/Error_Yield_Analysis/error_yield_window.html"/>
+                        </section>
+                        <section title="Worst Case" ref="OptiLayer_Menu_Commands/Analysis_Menu/Worst_Case.html">
+                            <section title="Worst Case Errors Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/Worst_Case/idh_worstcase_analysis.html"/>
+                            <section title="Worst Case Analysis Characteristics" ref="OptiLayer_Menu_Commands/Analysis_Menu/Worst_Case/idh_worstcase_analysis_setup_c.html"/>
+                            <section title="Thickness Error Worst Case Analysis Setup" ref="OptiLayer_Menu_Commands/Analysis_Menu/Worst_Case/idh_worstcase_analysis_setup_t.html"/>
+                            <section title="Refractive Index Error Worst Case Analysis Setup" ref="OptiLayer_Menu_Commands/Analysis_Menu/Worst_Case/idh_worstcase_analysis_setup_r.html"/>
+                        </section>
+                        <section title="Layer Sensitivity" ref="OptiLayer_Menu_Commands/Analysis_Menu/Layer_Sensitivity.html">
+                            <section title="Layer Sensitivity Setup" ref="OptiLayer_Menu_Commands/Analysis_Menu/Layer_Sensitivity/layer_sensitivity_setup.html"/>
+                            <section title="Layer Sensitivity Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/Layer_Sensitivity/idh_layer_sensitivity_evaluati.html"/>
+                        </section>
+                        <section title="Systematic deviations" ref="OptiLayer_Menu_Commands/Analysis_Menu/Systematic_deviations.html">
+                            <section title="Systematic Deviations Characteristics" ref="OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/setting_systematic_deviations.html"/>
+                            <section title="Thickness Error Systematic Deviations Setup" ref="OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/thickness_systematic_deviation.html"/>
+                            <section title="Refractive Index Systematic Deviations Setup" ref="OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/refractive_index_systematic_de.html"/>
+                            <section title="Systematic Deviations Analysis" ref="OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/systematic_deviations_evaluati.html"/>
+                            <section title="Color Systematic Deviation Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/color_systematic_deviation_eva.html"/>
+                            <section title="EFI Systematic Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/efi_systematic_evaluation.html"/>
+                            <section title="Integrals, Values Systematic Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/integsystev.html"/>
+                        </section>
+                        <section title="Interface Roughness" ref="OptiLayer_Menu_Commands/Analysis_Menu/Interface_roughness.html">
+                            <section title="Color Roughness Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/Interface_Roughness/color_roughness_evaluation.html"/>
+                            <section title="Interface Roughness Characteristic" ref="OptiLayer_Menu_Commands/Analysis_Menu/Interface_Roughness/interfacescattering.html"/>
+                            <section title="Roughnesses Setup" ref="OptiLayer_Menu_Commands/Analysis_Menu/Interface_Roughness/roughnesses.html"/>
+                            <section title="Interface Roughness Analysis" ref="OptiLayer_Menu_Commands/Analysis_Menu/Interface_Roughness/scatteringevaliation.html"/>
+                        </section>
+                        <section title="Inhomogeneities/Interlayers" ref="OptiLayer_Menu_Commands/Analysis_Menu/inhomogeneities_interlayers.html">
+                            <section title="Inhomogeneity/Interlayers Characteristics" ref="OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/inhomogeneity_interlayers_char.html"/>
+                            <section title="Inhomogeneity/Interlayers" ref="OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/inhomogeneity_interlayers.html"/>
+                            <section title="Back Side Interlayers" ref="OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/back_side_interlayers.html"/>
+                            <section title="Inhomogeneities/Interlayers Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/inhomogeneities_interlayers_ev.html"/>
+                            <section title="Color Inhomogeneities/Interlayers Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/color_inhomogeneities_interlayers.html"/>
+                            <section title="Integrals, Values Inhomogeneities/Interlayers Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/integralsinhintereval.html"/>
+                        </section>
+                        <section title="Pulse Analysis" ref="OptiLayer_Menu_Commands/Analysis_Menu/pulse_analysis.html">
+                            <section title="Pulse Options" ref="OptiLayer_Menu_Commands/Analysis_Menu/Pulse_Analysis/pulse_options.html"/>
+                        </section>
+                        <section title="Material Dispersion Evaluation" ref="OptiLayer_Menu_Commands/Analysis_Menu/material_dispersion_evaluation.html"/>
+                    </section>
+                    <section title="Synthesis Menu" ref="OptiLayer_Menu_Commands/idh_menu_synthesis.html">
+                        <section title="Refinement" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_refinement.html"/>
+                        <section title="Refinement Window" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_refinement_window.html"/>
+                        <section title="Inhomogeneities/Interlayers Refinement" ref="OptiLayer_Menu_Commands/Synthesis_Menu/inhomogeneities_interlayers_re.html"/>
+                        <section title="Constrained Optimization" ref="OptiLayer_Menu_Commands/Synthesis_Menu/constrainedoptimization.html"/>
+                        <section title="Formula Constrained Optimization" ref="OptiLayer_Menu_Commands/Synthesis_Menu/formula_constrained_optimizati.html">
+                            <section title="Formula Constrained Optimization - Variables" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Formula_Constrained_Optimization/formula_constrained_vars.html"/>
+                            <section title="Formula Constrained Optimization - Formula" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Formula_Constrained_Optimization/formula_constrained_form.html"/>
+                        </section>
+                        <section title="Sensitivity-Directed Refinement" ref="OptiLayer_Menu_Commands/Synthesis_Menu/sensitivity_directed_refinemen.html"/>
+                        <section title="Needle optimization" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_needle_optimization.html"/>
+                        <section title="Needle Variation Window" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_needle_optimization_dialog.html"/>
+                        <section title="Gradual Evolution" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_gradual_evolution.html"/>
+                        <section title="Filter Design" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Filter%20Design.html">
+                            <section title="Filter Design - Material Selection" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___material_s.html"/>
+                            <section title="Filter Design - Filter Parameters" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___filter_par.html"/>
+                            <section title="Filter Design - Number of Cavities" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___number_of_.html"/>
+                            <section title="Filter Design - Prototype Specification" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___prototype_.html"/>
+                            <section title="Filter Design - Global Integer Search" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___global_int.html"/>
+                            <section title="Filter Design - Adjust to Incident Medium" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___adjust_to_.html"/>
+                        </section>
+                        <section title="Random Optimization" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_random_optimization.html">
+                            <section title="Setting Random Optimization Parameters" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Random_Optimization/idh_random_optimization_parame.html"/>
+                            <section title="Exhaustive Search option" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Random_Optimization/exhaustive_search_option.html"/>
+                            <section title="Limits Generator" ref="OptiLayer_Menu_Commands/Synthesis_Menu/Random_Optimization/limits_generator.html"/>
+                        </section>
+                        <section title="Rugate Synthesis" ref="OptiLayer_Menu_Commands/Synthesis_Menu/rugatesynthesis.html"/>
+                        <section title="Design Cleaning" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_design_cleaner.html"/>
+                        <section title="Removing thin layers" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_remove_thin_layers.html"/>
+                        <section title="Modify Design" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_modify_design.html"/>
+                        <section title="Modify Stack" ref="OptiLayer_Menu_Commands/Synthesis_Menu/modify_stack.html"/>
+                        <section title="Modify Target" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_modify_target.html"/>
+                        <section title="Analysis and Synthesis Options" ref="OptiLayer_Menu_Commands/Synthesis_Menu/idh_synthesis_options.html">
+                            <section title="Optimization methods and Needle options" ref="OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_method.html">
+                                <section title="Symmetric Design mode" ref="OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_method.html#symmetric-design-mode"/>
+                            </section>
+                            <section title="Adjusting Scales" ref="OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_axes.html"/>
+                            <section title="Selecting Characteristics To Be Plotted" ref="OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_plot.html"/>
+                            <section title="Design Bar Colors" ref="OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_design_b.html"/>
+                            <section title="Arrange Materials" ref="OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_material.html"/>
+                        </section>
+                    </section>
+                    <section title="Monitoring" ref="OptiLayer_Menu_Commands/Monitoring.html">
+                        <section title="Pre-production Estimation of Errors" ref="OptiLayer_Menu_Commands/Monitoring/Pre-production%20estimations%20of%20errors.html">
+                            <section title="Pre-production Estimation of Errors - Broadband Monitoring" ref="OptiLayer_Menu_Commands/Monitoring/Pre-production_estimation_of_errors/pre_production_broadband.html"/>
+                            <section title="Pre-production Estimation of Errors - Monochromatic Monitoring" ref="OptiLayer_Menu_Commands/Monitoring/Pre-production_estimation_of_errors/pre_production_monochromatic.html"/>
+                        </section>
+                        <section title="Broadband Monitoring Simulation" ref="OptiLayer_Menu_Commands/Monitoring/broadbandmonitoringsimulatio.html">
+                            <section title="Broadband Monitoring Simulation - Deposition Rates" ref="OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadmonsim_deprates.html"/>
+                            <section title="Broadband Monitoring Simulation - Parameters Deviations" ref="OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadband_pars_devs.html"/>
+                            <section title="Broadband Monitoring Simulation - Monitoring System" ref="OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadmonsimul_monitsystem.html"/>
+                            <section title="Broadband Monitoring Simulation - Signal Errors" ref="OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadmonsim_sigerrors.html"/>
+                            <section title="Broadband Monitoring Simulation - Simulation of Deposition" ref="OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadmonsim_simul.html"/>
+                            <section title="Broadband Monitoring Simulation - Resulting Performance" ref="OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadmonsim_res.html"/>
+                        </section>
+                        <section title="Monochromatic Monitoring Simulation" ref="OptiLayer_Menu_Commands/Monitoring/monochromatic_monitoring.html">
+                            <section title="Monochromatic Monitoring Simulation - Deposition Rates" ref="OptiLayer_Menu_Commands/Monitoring/Monochromatic_monitoring_simulator/single_dep_rates.html"/>
+                            <section title="Monochromatic Monitoring Simulation - Parameters Deviations" ref="OptiLayer_Menu_Commands/Monitoring/Monochromatic_monitoring_simulator/single_par_deviations.html"/>
+                            <section title="Monochromatic Monitoring Simulation - Singal Errors" ref="OptiLayer_Menu_Commands/Monitoring/Monochromatic_monitoring_simulator/single_wavelength_signal_errors.html"/>
+                            <section title="Monochromatic Monitoring Simulation - Simulation of Deposition" ref="OptiLayer_Menu_Commands/Monitoring/Monochromatic_monitoring_simulator/single_wavelength_simulation.html"/>
+                            <section title="Monochromatic Monitoring Simulation - Resulting Performance" ref="OptiLayer_Menu_Commands/Monitoring/Monochromatic_monitoring_simulator/single_wavelength_result.html"/>
+                        </section>
+                        <section title="WDM Monitoring Simulation" ref="OptiLayer_Menu_Commands/Monitoring/wdmerroranalysis.html">
+                            <section title="WDM Monitoring Simulation - Deposition Rates" ref="OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/wdm_error_analysis_st1.html"/>
+                            <section title="WDM Monitoring Simulation - Parameters Deviations" ref="OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/wdm_monitoring_simulation_pars.html"/>
+                            <section title="WDM Monitoring Simulation - Signal Errors" ref="OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/wdm_error_analysis___signal_er.html"/>
+                            <section title="WDM Monitoring Simulation - Simulation of Deposition" ref="OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/wdm_error_analysis___simulatio.html"/>
+                            <section title="WDM Monitoring Simulation - Resulting Performance" ref="OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/wdm_error_analysis___resulting.html"/>
+                            <section title="WDM Filter Production Yield" ref="OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/filter_production_yield.html"/>
+                        </section>
+                    </section>
+                    <section title="Results Menu" ref="OptiLayer_Menu_Commands/idh_menu_results.html">
+                        <section title="OptiLayer Monitor" ref="OptiLayer_Menu_Commands/Results_Menu/idh_monitor.html">
+                            <section title="Automatic Monitoring Strategies" ref="OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/automatic_monitoring_strategie.html"/>
+                            <section title="Fixing Wavelength of Some Layers" ref="OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/fixing_wavelength_of_some_laye.html"/>
+                            <section title="Wavelength Adjustment" ref="OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/wavelength_adjustment.html"/>
+                            <section title="Spectra display" ref="OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/spectra_display.html"/>
+                            <section title="Gain and Zero" ref="OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/gain_and_zero.html"/>
+                            <section title="Line Width" ref="OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/linewidth.html"/>
+                            <section title="Miscellaneous Monitoring Options" ref="OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/miscellaneousmonitoringoptio.html"/>
+                            <section title="Graphical representation" ref="OptiLayer_Menu_Commands/Results_Menu/idh_monitor.html#graphical-representation"/>
+                            <section title="The Witness spreadsheet - setting up the witness chip parameters" ref="OptiLayer_Menu_Commands/Results_Menu/idh_monitor.html#the-witness-spreadsheet-setting-up-the-witness-chip-parameters"/>
+                        </section>
+                        <section title="Output Window" ref="OptiLayer_Menu_Commands/Results_Menu/outputwindow.html"/>
+                        <section title="Evaluation Report Setup" ref="OptiLayer_Menu_Commands/Results_Menu/idh_evaluation_report_setup.html"/>
+                        <section title="GD and GDD Report" ref="OptiLayer_Menu_Commands/Results_Menu/gdandgddreport.html"/>
+                        <section title="Ellipsometry Report Setup" ref="OptiLayer_Menu_Commands/Results_Menu/idh_ellipsometry_report_setup.html"/>
+                        <section title="Layer Absorptance Report Setup" ref="OptiLayer_Menu_Commands/Results_Menu/layer_absorptance_report_setup.html"/>
+                        <section title="Material Dispersion Setup" ref="OptiLayer_Menu_Commands/Results_Menu/material_dispersion_setup.html"/>
+                        <section title="U- and g-values" ref="OptiLayer_Menu_Commands/Results_Menu/u_and_g_values.html"/>
+                        <section title="Tabulate Report Setup" ref="OptiLayer_Menu_Commands/Results_Menu/tabulatereportsetup.html"/>
+                    </section>
+                    <section title="Configuration Menu" ref="OptiLayer_Menu_Commands/idh_menu_configuration.html">
+                        <section title="General Configuration" ref="OptiLayer_Menu_Commands/Configuration_Menu/idh_configuration.html"/>
+                        <section title="Data Display Modes" ref="OptiLayer_Menu_Commands/Configuration_Menu/idh_data_display_modes.html"/>
+                        <section title="Units" ref="OptiLayer_Menu_Commands/Configuration_Menu/idh_config_units.html"/>
+                        <section title="Thickness Units" ref="OptiLayer_Menu_Commands/Configuration_Menu/idh_config_thickness_units.html"/>
+                        <section title="Source/Detector/Cone/Integral" ref="OptiLayer_Menu_Commands/Configuration_Menu/source_detector_cone_integral.html"/>
+                        <section title="Color options" ref="OptiLayer_Menu_Commands/Configuration_Menu/coloroptions.html">
+                            <section title="Color Rendering Index Options" ref="OptiLayer_Menu_Commands/Configuration_Menu/Color_Options/colorrenderingindexoptions.html"/>
+                        </section>
+                        <section title="GD &amp; GDD options" ref="OptiLayer_Menu_Commands/Configuration_Menu/gd___gdd_options.html"/>
+                        <section title="WDM options" ref="OptiLayer_Menu_Commands/Configuration_Menu/filter_specifications_options.html"/>
+                        <section title="Sorting Order, User Name, and Database view options" ref="OptiLayer_Menu_Commands/Configuration_Menu/idh_config_sorting.html">
+                            <section title="User name" ref="OptiLayer_Menu_Commands/Configuration_Menu/Sorting_order/idh_user_name.html"/>
+                        </section>
+                        <section title="Date/Time/Logo Options" ref="OptiLayer_Menu_Commands/Configuration_Menu/idh_config_time.html"/>
+                    </section>
+                    <section title="Window Menu" ref="OptiLayer_Menu_Commands/idh_window_menu.html"/>
+                    <section title="OptiLayer On-Line Help" ref="OptiLayer_Menu_Commands/idh_optilayer.html"/>
+                </section>
+                <section title="Tutorial Exercises" ref="Tutorial%20Exercises.html">
+                    <section title="Foreword" ref="Tutorial_Exercises/foreword.html"/>
+                    <section title="Exercise 1. Evaluation of quarter-wave mirror" ref="Tutorial_Exercises/exercise1_evaluationofqwm.html"/>
+                    <section title="Exercise 2. Dispersive and absorbing materials" ref="Tutorial_Exercises/exercise2_dispersiveandabs.html"/>
+                    <section title="Exercise 3. Two layer antireflection coating: basics of OptiLayer design description" ref="Tutorial_Exercises/exercise3_twolayerantirefl.html"/>
+                    <section title="Exercise 4. Four layer antireflection coating: normal and oblique incidence" ref="Tutorial_Exercises/exercise4_fourlayerantiref.html"/>
+                    <section title="Exercise 5. Refinement of Dr. A.Thelen&#8217;s AR coating" ref="Tutorial_Exercises/exercise5_simplearcoating.html"/>
+                    <section title="Exercise 6. Design of an edge filter" ref="Tutorial_Exercises/exercise6_edgefilter.html"/>
+                    <section title="Exercise 7. Design of an edge filter (continued)" ref="Tutorial_Exercises/exercise7_edgefilter_cont.html"/>
+                    <section title="Exercise 8. Constrained optimization" ref="Tutorial_Exercises/exercise8_constrainedoptimi.html"/>
+                    <section title="Exercise 9. Design of a cold mirror" ref="Tutorial_Exercises/exercise9_coldmirror.html"/>
+                    <section title="Exercise 10. Random optimization" ref="Tutorial_Exercises/exercise10_randomoptimizati.html"/>
+                    <section title="Exercise 11. Needle Optimization - design of AR Coating" ref="Tutorial_Exercises/exercise11_needleoptimizati.html"/>
+                    <section title="Exercise 12. Needle Optimization - design of neutral beamsplitter" ref="Tutorial_Exercises/exercise12_needleoptimizati.html"/>
+                    <section title="Exercise 13. Needle Optimization - further experience" ref="Tutorial_Exercises/exercise13_needle_further.html"/>
+                    <section title="Exercise 14. Gradual Evolution" ref="Tutorial_Exercises/exercise14_gradual_evolution.html"/>
+                    <section title="Exercise 15. Metal-dielectric coating" ref="Tutorial_Exercises/exercise15_metal_dielectric.html"/>
+                </section>
+                <section title="Automation Examples and Documentation" ref="automation_examples.html"/>
+                <section title="Advanced Examples" ref="Advanced%20Examples.html">
+                    <section title="Foreword" ref="Advanced_Examples/page_4.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_5.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_6.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_7.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_8.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_9.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_10.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_11.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_12.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_13.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_14.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_15.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_16.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_17.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_18.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_19.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_20.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_21.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_22.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_23.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_24.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_25.html"/>
+                    <section title="Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)" ref="Advanced_Examples/page_26.html"/>
+                </section>
+            </section>
+        </toc>
+        <keywords>
+
+        </keywords>
+        <files>
+            <file>Advanced Examples.html</file>
+            <file>General Information on OptiLayer.html</file>
+            <file>OptiLayer Menu Commands.html</file>
+            <file>Tutorial Exercises.html</file>
+            <file>automation_examples.html</file>
+            <file>genindex.html</file>
+            <file>index.html</file>
+            <file>Advanced_Examples/page_10.html</file>
+            <file>Advanced_Examples/page_11.html</file>
+            <file>Advanced_Examples/page_12.html</file>
+            <file>Advanced_Examples/page_13.html</file>
+            <file>Advanced_Examples/page_14.html</file>
+            <file>Advanced_Examples/page_15.html</file>
+            <file>Advanced_Examples/page_16.html</file>
+            <file>Advanced_Examples/page_17.html</file>
+            <file>Advanced_Examples/page_18.html</file>
+            <file>Advanced_Examples/page_19.html</file>
+            <file>Advanced_Examples/page_20.html</file>
+            <file>Advanced_Examples/page_21.html</file>
+            <file>Advanced_Examples/page_22.html</file>
+            <file>Advanced_Examples/page_23.html</file>
+            <file>Advanced_Examples/page_24.html</file>
+            <file>Advanced_Examples/page_25.html</file>
+            <file>Advanced_Examples/page_26.html</file>
+            <file>Advanced_Examples/page_4.html</file>
+            <file>Advanced_Examples/page_5.html</file>
+            <file>Advanced_Examples/page_6.html</file>
+            <file>Advanced_Examples/page_7.html</file>
+            <file>Advanced_Examples/page_8.html</file>
+            <file>Advanced_Examples/page_9.html</file>
+            <file>General_Information_on_OptiLayer/OptiLayer Components.html</file>
+            <file>General_Information_on_OptiLayer/hardwarerequirements.html</file>
+            <file>General_Information_on_OptiLayer/idh_keys_assignment.html</file>
+            <file>General_Information_on_OptiLayer/idh_optilayer_general.html</file>
+            <file>General_Information_on_OptiLayer/idh_optilayer_main.html</file>
+            <file>General_Information_on_OptiLayer/idh_popup_menu.html</file>
+            <file>General_Information_on_OptiLayer/oc_installation.html</file>
+            <file>General_Information_on_OptiLayer/optilayer_development.html</file>
+            <file>General_Information_on_OptiLayer/quickstart.html</file>
+            <file>General_Information_on_OptiLayer/OptiLayer_Components/idh_analysis.html</file>
+            <file>General_Information_on_OptiLayer/OptiLayer_Components/idh_data.html</file>
+            <file>General_Information_on_OptiLayer/OptiLayer_Components/idh_output.html</file>
+            <file>General_Information_on_OptiLayer/OptiLayer_Components/idh_spreadsheet_editing.html</file>
+            <file>General_Information_on_OptiLayer/OptiLayer_Components/idh_synthesis.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring.html</file>
+            <file>OptiLayer_Menu_Commands/idh_menu_analysis.html</file>
+            <file>OptiLayer_Menu_Commands/idh_menu_configuration.html</file>
+            <file>OptiLayer_Menu_Commands/idh_menu_data.html</file>
+            <file>OptiLayer_Menu_Commands/idh_menu_edit.html</file>
+            <file>OptiLayer_Menu_Commands/idh_menu_file.html</file>
+            <file>OptiLayer_Menu_Commands/idh_menu_results.html</file>
+            <file>OptiLayer_Menu_Commands/idh_menu_synthesis.html</file>
+            <file>OptiLayer_Menu_Commands/idh_menu_view.html</file>
+            <file>OptiLayer_Menu_Commands/idh_optilayer.html</file>
+            <file>OptiLayer_Menu_Commands/idh_window_menu.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Interface_roughness.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Layer_Sensitivity.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Systematic_deviations.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Worst_Case.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/additionalevaluationwindows.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/error_yield_analysis.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/filter_mode.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/idh_admittance_evaluation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/idh_color_evaluation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/idh_digitize.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/idh_ellipsometry_evaluation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/idh_error_analysis.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/idh_evaluation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/idh_field_evaluation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/idh_gd_gdd.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/idh_plot_engine.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/idh_refractive_index_evaluatio.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/inhomogeneities_interlayers.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/integral_values_and_characteri.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/layer_absorptance.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/material_dispersion_evaluation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/pulse_analysis.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/rugates.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/taper_wavefront_evaluation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/wdm_filter_gd_performance.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/zeroes_and_poles.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Color_Evaluation/idh_color_evaluation_parameter.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/color_error_analysis.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/electric_field_error_analysis.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/idh_error_analysis_results.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/idh_error_analysis_setup_chara.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/idh_error_analysis_setup_refra.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/idh_error_analysis_setup_thick.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Errors_Analysis/integral_values_error_analysis.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Error_Yield_Analysis/error_yield_options.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Error_Yield_Analysis/error_yield_window.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Evaluation/peak_list.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/back_side_interlayers.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/color_inhomogeneities_interlayers.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/inhomogeneities_interlayers_ev.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/inhomogeneity_interlayers.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/inhomogeneity_interlayers_char.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Inhomogeneites_Interlayers/integralsinhintereval.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Interface_Roughness/color_roughness_evaluation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Interface_Roughness/interfacescattering.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Interface_Roughness/roughnesses.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Interface_Roughness/scatteringevaliation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Layer_Sensitivity/idh_layer_sensitivity_evaluati.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Layer_Sensitivity/layer_sensitivity_setup.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Plot_engine/idh_plot_engine_1.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Plot_engine/idh_plot_engine_2.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Plot_engine/idh_plot_engine_3.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Pulse_Analysis/pulse_options.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Rugates/creatematerialassistant.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/color_systematic_deviation_eva.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/efi_systematic_evaluation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/integsystev.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/refractive_index_systematic_de.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/setting_systematic_deviations.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/systematic_deviations_evaluati.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Systematic_Deviations/thickness_systematic_deviation.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/WDM_Filter_GD_Perfomance/export_target_setup.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Worst_Case/idh_worstcase_analysis.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Worst_Case/idh_worstcase_analysis_setup_c.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Worst_Case/idh_worstcase_analysis_setup_r.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Worst_Case/idh_worstcase_analysis_setup_t.html</file>
+            <file>OptiLayer_Menu_Commands/Analysis_Menu/Zeroes_and_Poles/zeroes_and_poles_setup.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/coloroptions.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/filter_specifications_options.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/gd___gdd_options.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/idh_config_sorting.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/idh_config_thickness_units.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/idh_config_time.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/idh_config_units.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/idh_configuration.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/idh_data_display_modes.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/source_detector_cone_integral.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/Color_Options/colorrenderingindexoptions.html</file>
+            <file>OptiLayer_Menu_Commands/Configuration_Menu/Sorting_order/idh_user_name.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/blackbodysourcesettings.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/color_specification.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/coneangledatabase.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/electric_field_target.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/envmanfrm.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/idh_back_side_options.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/idh_database.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/idh_design.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/idh_edit_color_target.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/idh_edit_layer_material.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/idh_edit_light_source.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/idh_modify_database.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/integral_specifications.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/integral_target.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/layer_absorptance_target.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/line_width_database.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/multi_coating_manager.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/spectral_angular_specification.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/stack_database.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/target_editor.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/target_weights.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/thickness_stress_target.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Color_Target/anchor_parameters.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Color_Target/color_range_targets.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Database_access_dialog/configure_database_columns.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Database_access_dialog/idh_database_new_file.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Database_access_dialog/idh_loading_data.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Database_access_dialog/idh_save_database_file.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Design_Database/idh_design_editor.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Design_Database/idh_material_abbreviations.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Design_Database/Design_Editor/design_inhom_inter.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Design_Database/Design_Editor/idh_design_formula.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Design_Database/Design_Editor/idh_layer_status.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Enviroment_manager/taper_function.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Layer_Absorptance_Target/layer_absorptance_target_selec.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Layer_material_database/idh_layer_material_status.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Spectral_Angular_specification/specification_qualifiers.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Spectral_Angular_specification/specifications_from_target.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Stack_database/stack_editor.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Stack_database/Stack_Editor/swap_coatings.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/compositionfromtable.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/formula_from_table.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_from_formula.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_from_rt.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_simplify.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Substrate_and_Layer_material/tablefromcomposition.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/extended_argument_definition.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/floating_constant_targets.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/idh_modify_angles.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/idh_modify_wavelengths.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/idh_spectral_abbreviations.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/idh_spectral_characteristics.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/idh_target_qualifier.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/numberofspectralpointsest.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/phasegdgdd_target_generator.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/target_generator.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/target_interpolation.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/target_peaks.html</file>
+            <file>OptiLayer_Menu_Commands/Data_Menu/Target_Editor/userdefinedtargeteditor.html</file>
+            <file>OptiLayer_Menu_Commands/Edit_Menu/copy_special.html</file>
+            <file>OptiLayer_Menu_Commands/Edit_Menu/idh_column_editor.html</file>
+            <file>OptiLayer_Menu_Commands/Edit_Menu/idh_grid_generator.html</file>
+            <file>OptiLayer_Menu_Commands/Edit_Menu/idh_import.html</file>
+            <file>OptiLayer_Menu_Commands/Edit_Menu/idh_paste_buffer.html</file>
+            <file>OptiLayer_Menu_Commands/Edit_Menu/importxydata.html</file>
+            <file>OptiLayer_Menu_Commands/Edit_Menu/Paste_Buffer/trasform_function.html</file>
+            <file>OptiLayer_Menu_Commands/Edit_Menu/Text_Data_Import/idh_import_options.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/catalog.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/export_code_v_sequence_file.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/export_optis_coating_file.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/export_zemax_coating.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/fred_format.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/idh_file_backup.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/idh_file_transfer.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/idh_ods_file.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/idh_problem_directory.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/import_tin_model.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/import_zemax_glass_data.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/optalix_multilayer_format.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/page_setup.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/recordanimation.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/refractiveindex_info_database.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/Export_ZEMAX_Coating/export_zemax_coating_descripti.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/Export_ZEMAX_Coating/export_zemax_performance_table.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/File_Transfer/filetransferdialog.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/File_Transfer/idh_select_directory.html</file>
+            <file>OptiLayer_Menu_Commands/File_Menu/Problem_Directory/new_problem_directory.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Pre-production estimations of errors.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/broadbandmonitoringsimulatio.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/monochromatic_monitoring.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/wdmerroranalysis.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadband_pars_devs.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadmonsim_deprates.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadmonsim_res.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadmonsim_sigerrors.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadmonsim_simul.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Broadband_Monitoring_Simulator/broadmonsimul_monitsystem.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Monochromatic_monitoring_simulator/single_dep_rates.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Monochromatic_monitoring_simulator/single_par_deviations.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Monochromatic_monitoring_simulator/single_wavelength_result.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Monochromatic_monitoring_simulator/single_wavelength_signal_errors.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Monochromatic_monitoring_simulator/single_wavelength_simulation.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Pre-production_estimation_of_errors/pre_production_broadband.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/Pre-production_estimation_of_errors/pre_production_monochromatic.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/filter_production_yield.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/wdm_error_analysis___resulting.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/wdm_error_analysis___signal_er.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/wdm_error_analysis___simulatio.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/wdm_error_analysis_st1.html</file>
+            <file>OptiLayer_Menu_Commands/Monitoring/WDM_monitoring_simulator/wdm_monitoring_simulation_pars.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/gdandgddreport.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/idh_ellipsometry_report_setup.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/idh_evaluation_report_setup.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/idh_monitor.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/layer_absorptance_report_setup.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/material_dispersion_setup.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/outputwindow.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/tabulatereportsetup.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/u_and_g_values.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/automatic_monitoring_strategie.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/fixing_wavelength_of_some_laye.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/gain_and_zero.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/linewidth.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/miscellaneousmonitoringoptio.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/spectra_display.html</file>
+            <file>OptiLayer_Menu_Commands/Results_Menu/OptiLayer_Monitor/wavelength_adjustment.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Filter Design.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/constrainedoptimization.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/formula_constrained_optimizati.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_design_cleaner.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_gradual_evolution.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_modify_design.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_modify_target.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_needle_optimization.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_needle_optimization_dialog.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_random_optimization.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_refinement.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_refinement_window.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_remove_thin_layers.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/idh_synthesis_options.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/inhomogeneities_interlayers_re.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/modify_stack.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/rugatesynthesis.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/sensitivity_directed_refinemen.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_axes.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_design_b.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_material.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_method.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/An_and_synt_Opt/idh_synt_options_plot.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___adjust_to_.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___filter_par.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___global_int.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___material_s.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___number_of_.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Filter_design/wdm_filter_design___prototype_.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Formula_Constrained_Optimization/formula_constrained_form.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Formula_Constrained_Optimization/formula_constrained_vars.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Random_Optimization/exhaustive_search_option.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Random_Optimization/idh_random_optimization_parame.html</file>
+            <file>OptiLayer_Menu_Commands/Synthesis_Menu/Random_Optimization/limits_generator.html</file>
+            <file>OptiLayer_Menu_Commands/View_Menu/idh_collection.html</file>
+            <file>OptiLayer_Menu_Commands/View_Menu/idh_general_information_window.html</file>
+            <file>OptiLayer_Menu_Commands/View_Menu/idh_history.html</file>
+            <file>OptiLayer_Menu_Commands/View_Menu/idh_window_list.html</file>
+            <file>OptiLayer_Menu_Commands/View_Menu/memorizeplots.html</file>
+            <file>OptiLayer_Menu_Commands/View_Menu/variator.html</file>
+            <file>Tutorial_Exercises/exercise10_randomoptimizati.html</file>
+            <file>Tutorial_Exercises/exercise11_needleoptimizati.html</file>
+            <file>Tutorial_Exercises/exercise12_needleoptimizati.html</file>
+            <file>Tutorial_Exercises/exercise13_needle_further.html</file>
+            <file>Tutorial_Exercises/exercise14_gradual_evolution.html</file>
+            <file>Tutorial_Exercises/exercise15_metal_dielectric.html</file>
+            <file>Tutorial_Exercises/exercise1_evaluationofqwm.html</file>
+            <file>Tutorial_Exercises/exercise2_dispersiveandabs.html</file>
+            <file>Tutorial_Exercises/exercise3_twolayerantirefl.html</file>
+            <file>Tutorial_Exercises/exercise4_fourlayerantiref.html</file>
+            <file>Tutorial_Exercises/exercise5_simplearcoating.html</file>
+            <file>Tutorial_Exercises/exercise6_edgefilter.html</file>
+            <file>Tutorial_Exercises/exercise7_edgefilter_cont.html</file>
+            <file>Tutorial_Exercises/exercise8_constrainedoptimi.html</file>
+            <file>Tutorial_Exercises/exercise9_coldmirror.html</file>
+            <file>Tutorial_Exercises/foreword.html</file>
+            <file>_images/Admittance_11.png</file>
+            <file>_images/Analysis_menu_11.png</file>
+            <file>_images/Analysis_menu_31.png</file>
+            <file>_images/Analysis_menu_41.png</file>
+            <file>_images/Anchor_11.png</file>
+            <file>_images/Angles_new_1.png</file>
+            <file>_images/Angular_mode_target_new.png</file>
+            <file>_images/BS_1.png</file>
+            <file>_images/Backup_new.png</file>
+            <file>_images/Broadband_1.png</file>
+            <file>_images/Broadband_2.png</file>
+            <file>_images/Broadband_monitor1.png</file>
+            <file>_images/Broadband_monitor2.png</file>
+            <file>_images/Broadband_monitor3.png</file>
+            <file>_images/Broadband_monitor4.png</file>
+            <file>_images/Broadband_monitor5.png</file>
+            <file>_images/Broadband_monitor6-1.png</file>
+            <file>_images/Broadband_monitor6-2.png</file>
+            <file>_images/Broadband_monitor6-3.png</file>
+            <file>_images/Broadband_monitor6.png</file>
+            <file>_images/Catalog_new.png</file>
+            <file>_images/Column_ed_1_new.png</file>
+            <file>_images/Column_ed_2_new.png</file>
+            <file>_images/Column_ed_3_new.png</file>
+            <file>_images/Cone_angle_11.png</file>
+            <file>_images/Cone_angle_21.png</file>
+            <file>_images/Cone_angle_31.png</file>
+            <file>_images/DB_layerMaterial_11.png</file>
+            <file>_images/DB_layerMaterial_12.png</file>
+            <file>_images/DB_layerMaterial_13.png</file>
+            <file>_images/DB_layerMaterial_21.png</file>
+            <file>_images/DB_layerMaterial_31.png</file>
+            <file>_images/DB_layerMaterial_41.png</file>
+            <file>_images/DB_source_11.png</file>
+            <file>_images/DB_source_21.png</file>
+            <file>_images/DB_stack_11.png</file>
+            <file>_images/DB_stack_21.png</file>
+            <file>_images/DB_stack_31.png</file>
+            <file>_images/Data_display_models.png</file>
+            <file>_images/Data_menu_new.png</file>
+            <file>_images/Data_menu_new1.png</file>
+            <file>_images/Data_menu_new2.png</file>
+            <file>_images/Database_new1.png</file>
+            <file>_images/Database_new2.png</file>
+            <file>_images/Design_editor.png</file>
+            <file>_images/Design_formula_11.png</file>
+            <file>_images/E-field_11.png</file>
+            <file>_images/E-field_21.png</file>
+            <file>_images/ErrorAnalysis_1.png</file>
+            <file>_images/ErrorAnalysis_2.png</file>
+            <file>_images/ErrorAnalysis_4.png</file>
+            <file>_images/Ex1_1.png</file>
+            <file>_images/Ex1_2.png</file>
+            <file>_images/Ex1_3.png</file>
+            <file>_images/Ex1_4.png</file>
+            <file>_images/Ex1_5.png</file>
+            <file>_images/Ex1_6.png</file>
+            <file>_images/Ex1_7.png</file>
+            <file>_images/Ex1_8.png</file>
+            <file>_images/Ex1_9.png</file>
+            <file>_images/Export_output.png</file>
+            <file>_images/Export_output2.png</file>
+            <file>_images/Export_output3.png</file>
+            <file>_images/File_menu_export_new2.png</file>
+            <file>_images/File_menu_import_new2.png</file>
+            <file>_images/File_menu_new.png</file>
+            <file>_images/Filter_desig_11.png</file>
+            <file>_images/Filter_desig_2.png</file>
+            <file>_images/Filter_desig_3.png</file>
+            <file>_images/Floating_constants_1.png</file>
+            <file>_images/Floating_constants_2.png</file>
+            <file>_images/GDD_1.png</file>
+            <file>_images/General_Inform_new.png</file>
+            <file>_images/General_Inform_new2.png</file>
+            <file>_images/Gradual_Ev2.png</file>
+            <file>_images/Help_menu_1.png</file>
+            <file>_images/History_2_New.png</file>
+            <file>_images/Inhomogeneites_1.png</file>
+            <file>_images/Inhomogeneites_12.png</file>
+            <file>_images/Inhomogeneites_13.png</file>
+            <file>_images/Inhomogeneites_3.png</file>
+            <file>_images/Inhomogeneites_4.png</file>
+            <file>_images/Integral_Target_22.png</file>
+            <file>_images/Integral_Target_32.png</file>
+            <file>_images/Integral_Target_42.png</file>
+            <file>_images/Integral_Target_52.png</file>
+            <file>_images/Layer_Sensitivity_1.png</file>
+            <file>_images/Layer_Sensitivity_2.png</file>
+            <file>_images/Layer_Sensitivity_3.png</file>
+            <file>_images/Layer_absorptance_12.png</file>
+            <file>_images/Layer_absorptance_21.png</file>
+            <file>_images/Layer_absorptance_31.png</file>
+            <file>_images/Layer_absorptance_41.png</file>
+            <file>_images/Line_Width_11.png</file>
+            <file>_images/Line_Width_21.png</file>
+            <file>_images/Modify_Target_2.png</file>
+            <file>_images/Mono_monitor1.png</file>
+            <file>_images/Mono_monitor2.png</file>
+            <file>_images/Mono_monitor3.png</file>
+            <file>_images/Needle_1.png</file>
+            <file>_images/Needle_2.png</file>
+            <file>_images/New_window_2.png</file>
+            <file>_images/OL_General_new_2.png</file>
+            <file>_images/Plot_engine_1.png</file>
+            <file>_images/Plot_engine_2.png</file>
+            <file>_images/Plot_engine_3.png</file>
+            <file>_images/Points_Estimation.png</file>
+            <file>_images/Points_Estimation_2.png</file>
+            <file>_images/Project_new1.png</file>
+            <file>_images/Refinement_2.png</file>
+            <file>_images/Refractive_index_profile.png</file>
+            <file>_images/Refractive_index_profile2.png</file>
+            <file>_images/Refractive_indices11.png</file>
+            <file>_images/Results_menu_1.png</file>
+            <file>_images/Roughnesses_1.png</file>
+            <file>_images/Roughnesses_2.png</file>
+            <file>_images/Roughnesses_3.png</file>
+            <file>_images/Sensitivity_directed_Refinement1.png</file>
+            <file>_images/Substrate_Database_new2.png</file>
+            <file>_images/Synthesis_new1.png</file>
+            <file>_images/Synthesis_new2.png</file>
+            <file>_images/Syst_Dev_1.png</file>
+            <file>_images/Syst_Dev_2.png</file>
+            <file>_images/Syst_Dev_3.png</file>
+            <file>_images/Syst_Dev_4.png</file>
+            <file>_images/Syst_Dev_5.png</file>
+            <file>_images/TRPhase_21.png</file>
+            <file>_images/Table_from_composition.png</file>
+            <file>_images/Target_Editor_new_1.png</file>
+            <file>_images/Target_selection_new_1.png</file>
+            <file>_images/Temp_UG.png</file>
+            <file>_images/Wavelength_new_2.png</file>
+            <file>_images/Window_menu.png</file>
+            <file>_images/about_ol.png</file>
+            <file>_images/addev1.png</file>
+            <file>_images/addev2.png</file>
+            <file>_images/addplotoptions.png</file>
+            <file>_images/admitt_lastlayer.png</file>
+            <file>_images/arrow_r.png</file>
+            <file>_images/badmonitoring.png</file>
+            <file>_images/blackbodysettings.png</file>
+            <file>_images/c_colevalrange.png</file>
+            <file>_images/c_eval_discr.png</file>
+            <file>_images/c_eval_p.png</file>
+            <file>_images/cfg_sort.png</file>
+            <file>_images/codev_exp.png</file>
+            <file>_images/col_ed.png</file>
+            <file>_images/col_patch.png</file>
+            <file>_images/col_targ_p.png</file>
+            <file>_images/colerr_1.png</file>
+            <file>_images/colerr_2.png</file>
+            <file>_images/colerr_3.png</file>
+            <file>_images/colev_diff1.png</file>
+            <file>_images/colev_diff2.png</file>
+            <file>_images/coll_ol_popup.png</file>
+            <file>_images/collect_ol.png</file>
+            <file>_images/collection_ol_chart.png</file>
+            <file>_images/collhust_popup.png</file>
+            <file>_images/color_Target_12.png</file>
+            <file>_images/color_diff_selection.png</file>
+            <file>_images/color_opt.png</file>
+            <file>_images/color_tgt_btn.png</file>
+            <file>_images/colorinh_diff.png</file>
+            <file>_images/colorroughdiff.png</file>
+            <file>_images/colsystdfevev_diff.png</file>
+            <file>_images/com_auto_1.png</file>
+            <file>_images/cone_angle_btn.png</file>
+            <file>_images/config_menu.png</file>
+            <file>_images/configdbcols_ol.png</file>
+            <file>_images/constropt1.png</file>
+            <file>_images/constropt2.png</file>
+            <file>_images/copy_btn.png</file>
+            <file>_images/copy_spec_dlg.png</file>
+            <file>_images/copy_spec_excel.png</file>
+            <file>_images/copy_spec_menu.png</file>
+            <file>_images/cri.png</file>
+            <file>_images/cri_options.png</file>
+            <file>_images/crmatassistant1.png</file>
+            <file>_images/crmatassistant2.png</file>
+            <file>_images/crmatassistant3.png</file>
+            <file>_images/cspec1.png</file>
+            <file>_images/cspec2.png</file>
+            <file>_images/cspec3.png</file>
+            <file>_images/cspec_form.png</file>
+            <file>_images/cut_btn.png</file>
+            <file>_images/dbcolumnsreim.png</file>
+            <file>_images/delete_project_1.png</file>
+            <file>_images/des_cln.png</file>
+            <file>_images/des_form1.gif</file>
+            <file>_images/des_modify.png</file>
+            <file>_images/des_summ.png</file>
+            <file>_images/design_btn.png</file>
+            <file>_images/detector_btn.png</file>
+            <file>_images/digitize.png</file>
+            <file>_images/e_filed_popup.png</file>
+            <file>_images/edchangecomposition.png</file>
+            <file>_images/edit_menu_grid.png</file>
+            <file>_images/edit_menu_ol_1.png</file>
+            <file>_images/edmat_changeable.png</file>
+            <file>_images/edmat_tab.png</file>
+            <file>_images/efi_err1.png</file>
+            <file>_images/efi_systev.png</file>
+            <file>_images/ell_setup_report.png</file>
+            <file>_images/ellipsangles_1.png</file>
+            <file>_images/embim1.png</file>
+            <file>_images/embim2.gif</file>
+            <file>_images/env_taper_1.png</file>
+            <file>_images/envman1.png</file>
+            <file>_images/envman2.png</file>
+            <file>_images/eqn002.gif</file>
+            <file>_images/eqn003.gif</file>
+            <file>_images/eqn004.gif</file>
+            <file>_images/eqn005.gif</file>
+            <file>_images/eqn006.gif</file>
+            <file>_images/eqn007.gif</file>
+            <file>_images/eqn008.gif</file>
+            <file>_images/err_refr.png</file>
+            <file>_images/err_th_coat_stack.png</file>
+            <file>_images/err_th_mat_stack.png</file>
+            <file>_images/err_thck.png</file>
+            <file>_images/err_yield_eval.png</file>
+            <file>_images/err_yield_finish.png</file>
+            <file>_images/err_yield_opt.png</file>
+            <file>_images/err_yield_running.png</file>
+            <file>_images/ev_filter1.png</file>
+            <file>_images/ev_filter2.png</file>
+            <file>_images/eval_btn.png</file>
+            <file>_images/eval_right_menu.png</file>
+            <file>_images/eval_setup.png</file>
+            <file>_images/evtaperwavefront.png</file>
+            <file>_images/ex10_collection.png</file>
+            <file>_images/ex11_ev1.png</file>
+            <file>_images/ex11_ev2.png</file>
+            <file>_images/ex11_ev3.png</file>
+            <file>_images/ex12_ev.png</file>
+            <file>_images/ex13_ev1.png</file>
+            <file>_images/ex14_ev_hist.png</file>
+            <file>_images/ex14_ev_hist_ch.png</file>
+            <file>_images/ex14_gradev.png</file>
+            <file>_images/ex14_gradevsetup.png</file>
+            <file>_images/ex15_ev1.png</file>
+            <file>_images/ex15_ev2.png</file>
+            <file>_images/ex15_randomsetup.png</file>
+            <file>_images/ex2_mat.png</file>
+            <file>_images/ex3_ar.png</file>
+            <file>_images/ex3_ar_ev.png</file>
+            <file>_images/ex4_des.png</file>
+            <file>_images/ex4_ev.png</file>
+            <file>_images/ex4_ev5plots.png</file>
+            <file>_images/ex4_plots.png</file>
+            <file>_images/ex5_ev.png</file>
+            <file>_images/ex6_ev1.png</file>
+            <file>_images/ex6_ev2.png</file>
+            <file>_images/ex7_ev.png</file>
+            <file>_images/ex8_ev.png</file>
+            <file>_images/ex9_ev1.png</file>
+            <file>_images/ex9_ev2.png</file>
+            <file>_images/f_from_t1.png</file>
+            <file>_images/f_from_t2.png</file>
+            <file>_images/f_transfer_menu.png</file>
+            <file>_images/file_tra_ol.png</file>
+            <file>_images/filemenu_ol_2.png</file>
+            <file>_images/filemenu_ol_4.png</file>
+            <file>_images/filter_spec_options.png</file>
+            <file>_images/fixedwave_1.png</file>
+            <file>_images/fixedwave_2.png</file>
+            <file>_images/fixedwavelength2menu.png</file>
+            <file>_images/form_constr_form.png</file>
+            <file>_images/form_constr_form_algo.png</file>
+            <file>_images/form_constr_vars.png</file>
+            <file>_images/fred_exp.png</file>
+            <file>_images/gainzero.png</file>
+            <file>_images/gconfig_gd_gdd.png</file>
+            <file>_images/gconfig_timedate_ol.png</file>
+            <file>_images/gconfig_units_ol.png</file>
+            <file>_images/gd_tgt_exp.png</file>
+            <file>_images/gdgdd_rep.png</file>
+            <file>_images/geninfoex1.png</file>
+            <file>_images/glass_new.png</file>
+            <file>_images/grid_gen.png</file>
+            <file>_images/historychart_new.png</file>
+            <file>_images/histspec_ol.png</file>
+            <file>_images/hw_attach.png</file>
+            <file>_images/imp_opt.png</file>
+            <file>_images/import.png</file>
+            <file>_images/import_agf_zemax.png</file>
+            <file>_images/import_xy.png</file>
+            <file>_images/inhint_back.png</file>
+            <file>_images/inhint_back2.png</file>
+            <file>_images/inhint_des1.png</file>
+            <file>_images/inhint_des2.png</file>
+            <file>_images/inhintcolor.png</file>
+            <file>_images/inhintcolor2.png</file>
+            <file>_images/inhinter_ref1.png</file>
+            <file>_images/inhinter_ref2.png</file>
+            <file>_images/int_vals_1.png</file>
+            <file>_images/integralinhinterev.png</file>
+            <file>_images/intr_2.png</file>
+            <file>_images/intspecs1.png</file>
+            <file>_images/inttarget_btn.png</file>
+            <file>_images/intval_menu.png</file>
+            <file>_images/intval_tab1.png</file>
+            <file>_images/intval_tab2.png</file>
+            <file>_images/intval_tab3.png</file>
+            <file>_images/intval_tab4.png</file>
+            <file>_images/intval_tab5.png</file>
+            <file>_images/intval_tab6.png</file>
+            <file>_images/intvalerr_1.png</file>
+            <file>_images/intvalsystev.png</file>
+            <file>_images/layabs_evaluation.png</file>
+            <file>_images/layabs_report.png</file>
+            <file>_images/layabs_setup.png</file>
+            <file>_images/layabslimits.png</file>
+            <file>_images/layer_mat_btn.png</file>
+            <file>_images/light_source_btn.png</file>
+            <file>_images/limits_gen.png</file>
+            <file>_images/matdispev1.png</file>
+            <file>_images/matdispev2.png</file>
+            <file>_images/matdisprepdlg.png</file>
+            <file>_images/mater_popup_menu.png</file>
+            <file>_images/matinh1.png</file>
+            <file>_images/matthickvar.png</file>
+            <file>_images/mon_line_width.png</file>
+            <file>_images/mon_strategiessetup1.png</file>
+            <file>_images/mon_strategiessetup2.png</file>
+            <file>_images/mon_strategiessetup3.png</file>
+            <file>_images/monbadpointsvis.png</file>
+            <file>_images/monitoptionsgr.png</file>
+            <file>_images/monitor.png</file>
+            <file>_images/monitor1.png</file>
+            <file>_images/monitor2.png</file>
+            <file>_images/monitor3.png</file>
+            <file>_images/monmisc3.png</file>
+            <file>_images/mono_1.png</file>
+            <file>_images/mono_2.png</file>
+            <file>_images/monstrategies.png</file>
+            <file>_images/monstrategiesmenu1.png</file>
+            <file>_images/multcoat_1.png</file>
+            <file>_images/multcoat_2.png</file>
+            <file>_images/multcoat_doubleang1.png</file>
+            <file>_images/multcoat_doubleang2.png</file>
+            <file>_images/multcoat_evgdd.png</file>
+            <file>_images/multcoat_evr.png</file>
+            <file>_images/need_auto_btn.png</file>
+            <file>_images/need_btn.png</file>
+            <file>_images/needle_deep_search_icon.png</file>
+            <file>_images/new_project_1.png</file>
+            <file>_images/ods_compile.png</file>
+            <file>_images/ods_open.png</file>
+            <file>_images/ol_evspec1.png</file>
+            <file>_images/ol_evspec2.png</file>
+            <file>_images/ol_icon.png</file>
+            <file>_images/ol_peaklist1.png</file>
+            <file>_images/ol_var1.png</file>
+            <file>_images/optalix_exp.png</file>
+            <file>_images/optic_exp.png</file>
+            <file>_images/pagesetup_!.png</file>
+            <file>_images/paste_btn.png</file>
+            <file>_images/paste_bu.png</file>
+            <file>_images/peaklist_ol.png</file>
+            <file>_images/peaklist_ol2.png</file>
+            <file>_images/pls_1.png</file>
+            <file>_images/pls_2.png</file>
+            <file>_images/pls_3.png</file>
+            <file>_images/pls_4.png</file>
+            <file>_images/pls_5.png</file>
+            <file>_images/pls_6.png</file>
+            <file>_images/pls_7.png</file>
+            <file>_images/pls_8.png</file>
+            <file>_images/plsopt_1.png</file>
+            <file>_images/plsopt_2.png</file>
+            <file>_images/pre_monoch_warning.png</file>
+            <file>_images/print_btn.png</file>
+            <file>_images/printpreview_btn.png</file>
+            <file>_images/prob_btn.png</file>
+            <file>_images/probbrowse_new.png</file>
+            <file>_images/rand_par.png</file>
+            <file>_images/rand_par2.png</file>
+            <file>_images/rand_par3.png</file>
+            <file>_images/rangeed.png</file>
+            <file>_images/rangetgt2.png</file>
+            <file>_images/rangetgtbase.png</file>
+            <file>_images/recanimation.png</file>
+            <file>_images/record_ani.gif</file>
+            <file>_images/redo_btn.png</file>
+            <file>_images/ref_btn.png</file>
+            <file>_images/refrindexinfo_1.png</file>
+            <file>_images/refrindexinfo_accept.png</file>
+            <file>_images/refrindexinfo_submenu.png</file>
+            <file>_images/removal_btn.png</file>
+            <file>_images/rename_project_1.png</file>
+            <file>_images/results_submenu_1.png</file>
+            <file>_images/roughevcolor1.png</file>
+            <file>_images/roughevcolor2.png</file>
+            <file>_images/rug1.png</file>
+            <file>_images/rug2.png</file>
+            <file>_images/rug3.png</file>
+            <file>_images/rug4.png</file>
+            <file>_images/rug5.png</file>
+            <file>_images/rugsynth1.png</file>
+            <file>_images/rugsynth2.png</file>
+            <file>_images/rugsynth3.png</file>
+            <file>_images/rugsynth4.png</file>
+            <file>_images/rugsynth5.png</file>
+            <file>_images/rugsynth6.png</file>
+            <file>_images/s_o_axes.png</file>
+            <file>_images/s_o_axes_ell.png</file>
+            <file>_images/s_o_axes_gd_gdd.png</file>
+            <file>_images/s_o_axes_lay_abs.png</file>
+            <file>_images/s_o_axes_phase.png</file>
+            <file>_images/s_o_axes_udt.png</file>
+            <file>_images/s_o_design_bar.png</file>
+            <file>_images/s_o_material.png</file>
+            <file>_images/s_o_method.png</file>
+            <file>_images/s_o_plot.png</file>
+            <file>_images/save_target_new11.png</file>
+            <file>_images/save_target_new12.png</file>
+            <file>_images/saveas_btn.png</file>
+            <file>_images/sel_dir.png</file>
+            <file>_images/singlemon_step4.png</file>
+            <file>_images/singlemon_step4_opt.png</file>
+            <file>_images/singlemon_step5.png</file>
+            <file>_images/singlemon_step5_b.png</file>
+            <file>_images/singlemon_step5_c.png</file>
+            <file>_images/singlemon_step5_d.png</file>
+            <file>_images/source_det_opt.png</file>
+            <file>_images/specfromtgt1.png</file>
+            <file>_images/specgen.png</file>
+            <file>_images/specs1.png</file>
+            <file>_images/stack_btn.png</file>
+            <file>_images/stack_edit_curr.png</file>
+            <file>_images/stack_scheme.png</file>
+            <file>_images/stackswap.png</file>
+            <file>_images/stackswap2.png</file>
+            <file>_images/substr_btn.png</file>
+            <file>_images/sysdevcolor1.png</file>
+            <file>_images/sysdevcolor2.png</file>
+            <file>_images/t_from_f.png</file>
+            <file>_images/tab_rep_setup.png</file>
+            <file>_images/tablesimplify1.png</file>
+            <file>_images/tabtocomp1.png</file>
+            <file>_images/tabtocomp2.png</file>
+            <file>_images/taperwavepars1.png</file>
+            <file>_images/taperwavepars2.png</file>
+            <file>_images/taperwavepars3.png</file>
+            <file>_images/taperwavepars4.png</file>
+            <file>_images/target_btn.png</file>
+            <file>_images/tgt_weight.png</file>
+            <file>_images/tgt_weight_preview.png</file>
+            <file>_images/tgtgdd1.png</file>
+            <file>_images/tgtgen1.png</file>
+            <file>_images/tgtgen2.png</file>
+            <file>_images/tgtgen3.png</file>
+            <file>_images/tgtinterpolation.png</file>
+            <file>_images/thin_lay.png</file>
+            <file>_images/thin_lay_confirm.png</file>
+            <file>_images/thin_lay_manual.png</file>
+            <file>_images/thstress_1.png</file>
+            <file>_images/thstress_2.png</file>
+            <file>_images/thstress_3.png</file>
+            <file>_images/transform_paste.png</file>
+            <file>_images/udt_ed.png</file>
+            <file>_images/udt_extarg1.png</file>
+            <file>_images/ug_1.png</file>
+            <file>_images/ug_2glazing_1.png</file>
+            <file>_images/ug_3glazing_1.png</file>
+            <file>_images/ug_preview_1.png</file>
+            <file>_images/undo_btn.png</file>
+            <file>_images/user.png</file>
+            <file>_images/view_menu_ol_2.png</file>
+            <file>_images/view_new.png</file>
+            <file>_images/wdm_dep_st1.png</file>
+            <file>_images/wdm_dep_st1_5.png</file>
+            <file>_images/wdm_dep_st2.png</file>
+            <file>_images/wdm_dep_st3.png</file>
+            <file>_images/wdm_dep_st4.png</file>
+            <file>_images/wdm_gd_perf.png</file>
+            <file>_images/wdm_st4.png</file>
+            <file>_images/wdm_st5.png</file>
+            <file>_images/wdm_st6.png</file>
+            <file>_images/wdm_yield1.png</file>
+            <file>_images/wdm_yield2.png</file>
+            <file>_images/windows.png</file>
+            <file>_images/wor_char.png</file>
+            <file>_images/wor_refr.png</file>
+            <file>_images/wor_thck.png</file>
+            <file>_images/worstcaseev.png</file>
+            <file>_images/zemax_exp1.png</file>
+            <file>_images/zemax_exp_perf.png</file>
+            <file>_images/zemax_exp_popup.png</file>
+            <file>_images/zemax_export_coat.png</file>
+            <file>_images/zer_setup.png</file>
+            <file>_images/zeroes_poles.png</file>
+            <file>_static/Admittance_11.png</file>
+            <file>_static/Analysis_menu_11.png</file>
+            <file>_static/Analysis_menu_21.png</file>
+            <file>_static/Analysis_menu_31.png</file>
+            <file>_static/Analysis_menu_41.png</file>
+            <file>_static/Anchor_11.png</file>
+            <file>_static/Angles_new.png</file>
+            <file>_static/Angles_new_1.png</file>
+            <file>_static/Angular_mode_target_new.png</file>
+            <file>_static/BS_1.png</file>
+            <file>_static/Backup_new.png</file>
+            <file>_static/Broadband_1.png</file>
+            <file>_static/Broadband_2.png</file>
+            <file>_static/Broadband_monitor1.png</file>
+            <file>_static/Broadband_monitor2.png</file>
+            <file>_static/Broadband_monitor3.png</file>
+            <file>_static/Broadband_monitor4.png</file>
+            <file>_static/Broadband_monitor5.png</file>
+            <file>_static/Broadband_monitor6-1.png</file>
+            <file>_static/Broadband_monitor6-2.png</file>
+            <file>_static/Broadband_monitor6-3.png</file>
+            <file>_static/Broadband_monitor6.png</file>
+            <file>_static/Catalog_new.png</file>
+            <file>_static/Catalog_new_compare1.png</file>
+            <file>_static/Catalog_new_compare_n.png</file>
+            <file>_static/Catalog_new_compare_window1.png</file>
+            <file>_static/Catalog_new_preview.png</file>
+            <file>_static/Catalog_new_preview2.png</file>
+            <file>_static/ClipboardImg.bmp</file>
+            <file>_static/Color_target_new.png</file>
+            <file>_static/Color_target_new_anchor.png</file>
+            <file>_static/Column_ed_1_new.png</file>
+            <file>_static/Column_ed_2_new.png</file>
+            <file>_static/Column_ed_3_new.png</file>
+            <file>_static/Cone_angle_11.png</file>
+            <file>_static/Cone_angle_21.png</file>
+            <file>_static/Cone_angle_31.png</file>
+            <file>_static/DB_layerMaterial_11.png</file>
+            <file>_static/DB_layerMaterial_12.png</file>
+            <file>_static/DB_layerMaterial_13.png</file>
+            <file>_static/DB_layerMaterial_21.png</file>
+            <file>_static/DB_layerMaterial_31.png</file>
+            <file>_static/DB_layerMaterial_41.png</file>
+            <file>_static/DB_source_11.png</file>
+            <file>_static/DB_source_21.png</file>
+            <file>_static/DB_stack_11.png</file>
+            <file>_static/DB_stack_21.png</file>
+            <file>_static/DB_stack_31.png</file>
+            <file>_static/Data_display_models.png</file>
+            <file>_static/Data_menu_new.png</file>
+            <file>_static/Data_menu_new1.png</file>
+            <file>_static/Data_menu_new2.png</file>
+            <file>_static/Database_new1.png</file>
+            <file>_static/Database_new2.png</file>
+            <file>_static/Design_editor.png</file>
+            <file>_static/Design_formula_11.png</file>
+            <file>_static/E-field_11.png</file>
+            <file>_static/E-field_21.png</file>
+            <file>_static/ErrorAnalysis_1.png</file>
+            <file>_static/ErrorAnalysis_2.png</file>
+            <file>_static/ErrorAnalysis_4.png</file>
+            <file>_static/Ex1-1.png</file>
+            <file>_static/Ex1-2.png</file>
+            <file>_static/Ex1_1.png</file>
+            <file>_static/Ex1_2.png</file>
+            <file>_static/Ex1_3.png</file>
+            <file>_static/Ex1_4.png</file>
+            <file>_static/Ex1_5.png</file>
+            <file>_static/Ex1_6.png</file>
+            <file>_static/Ex1_7.png</file>
+            <file>_static/Ex1_8.png</file>
+            <file>_static/Ex1_9.png</file>
+            <file>_static/Ex2_1.png</file>
+            <file>_static/Ex2_2a.png</file>
+            <file>_static/Ex2_2b.png</file>
+            <file>_static/Ex2_3.png</file>
+            <file>_static/Ex2_4.png</file>
+            <file>_static/Ex2_5.png</file>
+            <file>_static/Ex2_6.png</file>
+            <file>_static/Ex_2_2b.png</file>
+            <file>_static/Export_output.png</file>
+            <file>_static/Export_output2.png</file>
+            <file>_static/Export_output3.png</file>
+            <file>_static/File_Project Manager1.png</file>
+            <file>_static/File_menu_export_new2.png</file>
+            <file>_static/File_menu_import_new.png</file>
+            <file>_static/File_menu_import_new2.png</file>
+            <file>_static/File_menu_new.png</file>
+            <file>_static/Filter_desig_1.png</file>
+            <file>_static/Filter_desig_11.png</file>
+            <file>_static/Filter_desig_2.png</file>
+            <file>_static/Filter_desig_3.png</file>
+            <file>_static/Floating_constants_1.png</file>
+            <file>_static/Floating_constants_2.png</file>
+            <file>_static/Floating_constatnts_select.png</file>
+            <file>_static/Floating_constatnts_select_2.png</file>
+            <file>_static/Fonts.css</file>
+            <file>_static/GDD_1.png</file>
+            <file>_static/General Information_new.png</file>
+            <file>_static/General_Inform_new.png</file>
+            <file>_static/General_Inform_new2.png</file>
+            <file>_static/Gradual_Ev2.png</file>
+            <file>_static/Help_menu_1.png</file>
+            <file>_static/History_2_New.png</file>
+            <file>_static/Inhomogeneites_1.png</file>
+            <file>_static/Inhomogeneites_12.png</file>
+            <file>_static/Inhomogeneites_13.png</file>
+            <file>_static/Inhomogeneites_3.png</file>
+            <file>_static/Inhomogeneites_4.png</file>
+            <file>_static/Integral_Target_12.png</file>
+            <file>_static/Integral_Target_22.png</file>
+            <file>_static/Integral_Target_32.png</file>
+            <file>_static/Integral_Target_42.png</file>
+            <file>_static/Integral_Target_52.png</file>
+            <file>_static/Integral_target_new.png</file>
+            <file>_static/Integral_target_new_1.png</file>
+            <file>_static/Integral_target_new_2.png</file>
+            <file>_static/Integral_target_new_3.png</file>
+            <file>_static/Integral_target_new_4.png</file>
+            <file>_static/Layer_Sensitivity_1.png</file>
+            <file>_static/Layer_Sensitivity_2.png</file>
+            <file>_static/Layer_Sensitivity_3.png</file>
+            <file>_static/Layer_absorptance_11.png</file>
+            <file>_static/Layer_absorptance_12.png</file>
+            <file>_static/Layer_absorptance_21.png</file>
+            <file>_static/Layer_absorptance_31.png</file>
+            <file>_static/Layer_absorptance_41.png</file>
+            <file>_static/Layer_adsorptance_target_1.png</file>
+            <file>_static/Layer_adsorptance_target_2.png</file>
+            <file>_static/Layer_adsorptance_target_3.png</file>
+            <file>_static/Line_Width_11.png</file>
+            <file>_static/Line_Width_21.png</file>
+            <file>_static/Modify_Target.png</file>
+            <file>_static/Modify_Target_2.png</file>
+            <file>_static/Mono_monitor1.png</file>
+            <file>_static/Mono_monitor2.png</file>
+            <file>_static/Mono_monitor3.png</file>
+            <file>_static/Needle_1.png</file>
+            <file>_static/Needle_2.png</file>
+            <file>_static/New_ex_12_1.png</file>
+            <file>_static/New_ex_16_1.png</file>
+            <file>_static/New_ex_16_2.png</file>
+            <file>_static/New_ex_21_last.png</file>
+            <file>_static/New_window_2.png</file>
+            <file>_static/Number_of_spec_points_estimation.png</file>
+            <file>_static/Number_of_spec_points_estimation_1.png</file>
+            <file>_static/OL_General_new_2.png</file>
+            <file>_static/OL_menu_new2.png</file>
+            <file>_static/OL_start_new.png</file>
+            <file>_static/Plot_engine_1.png</file>
+            <file>_static/Plot_engine_2.png</file>
+            <file>_static/Plot_engine_3.png</file>
+            <file>_static/Points_Estimation.png</file>
+            <file>_static/Points_Estimation_2.png</file>
+            <file>_static/Project_new1.png</file>
+            <file>_static/Refinement_1.png</file>
+            <file>_static/Refinement_2.png</file>
+            <file>_static/Refractive_index_profile.png</file>
+            <file>_static/Refractive_index_profile2.png</file>
+            <file>_static/Refractive_indices.png</file>
+            <file>_static/Refractive_indices11.png</file>
+            <file>_static/Results_menu_1.png</file>
+            <file>_static/Roughnesses_1.png</file>
+            <file>_static/Roughnesses_2.png</file>
+            <file>_static/Roughnesses_3.png</file>
+            <file>_static/STACK_NEW_1.png</file>
+            <file>_static/STACK_NEW_2.png</file>
+            <file>_static/Save_Design_new.png</file>
+            <file>_static/Save_Target_new.png</file>
+            <file>_static/Sensitivity_directed_Refinement1.png</file>
+            <file>_static/Substrate_Database_new2.png</file>
+            <file>_static/Synthesis_new.png</file>
+            <file>_static/Synthesis_new1.png</file>
+            <file>_static/Synthesis_new2.png</file>
+            <file>_static/Syst_Dev_1.png</file>
+            <file>_static/Syst_Dev_2.png</file>
+            <file>_static/Syst_Dev_3.png</file>
+            <file>_static/Syst_Dev_4.png</file>
+            <file>_static/Syst_Dev_5.png</file>
+            <file>_static/TRPhase_11.png</file>
+            <file>_static/TRPhase_21.png</file>
+            <file>_static/Table_from_composition.png</file>
+            <file>_static/Target_Editor_new_1.png</file>
+            <file>_static/Target_editor_new.png</file>
+            <file>_static/Target_selection_new.png</file>
+            <file>_static/Target_selection_new_1.png</file>
+            <file>_static/Temp_UG.png</file>
+            <file>_static/Wavelength_new_1.png</file>
+            <file>_static/Wavelength_new_2.png</file>
+            <file>_static/Window_menu.png</file>
+            <file>_static/about_ol.png</file>
+            <file>_static/addev1.png</file>
+            <file>_static/addev2.png</file>
+            <file>_static/addplotoptions.png</file>
+            <file>_static/admitt.png</file>
+            <file>_static/admitt_lastlayer.png</file>
+            <file>_static/ae11_ev1.png</file>
+            <file>_static/ae11b_arran.png</file>
+            <file>_static/ae11b_inh.png</file>
+            <file>_static/ae11b_intr.png</file>
+            <file>_static/ae11b_sens.png</file>
+            <file>_static/ae1_err_analysis.png</file>
+            <file>_static/ae1_ev1.png</file>
+            <file>_static/ae1_inhev.png</file>
+            <file>_static/ae1_systev.png</file>
+            <file>_static/ae2_ev2.png</file>
+            <file>_static/ae3_ev_ar.png</file>
+            <file>_static/ae3_ev_bs.png</file>
+            <file>_static/ae3_ev_hr.png</file>
+            <file>_static/ae3_ev_ramp.png</file>
+            <file>_static/ae4_ev1.png</file>
+            <file>_static/ae4_hist.png</file>
+            <file>_static/ae4_hist_ch.png</file>
+            <file>_static/ae5_abbr.png</file>
+            <file>_static/ae5_abbr2.png</file>
+            <file>_static/ae5_ev1.png</file>
+            <file>_static/ae5_ev2.png</file>
+            <file>_static/ae5_ev3.png</file>
+            <file>_static/ae5_ev4.png</file>
+            <file>_static/ae5_ind1.png</file>
+            <file>_static/ae5_ind2.png</file>
+            <file>_static/ae5b_ev1.png</file>
+            <file>_static/ae5b_ev2.png</file>
+            <file>_static/ae5b_ev3.png</file>
+            <file>_static/ae5b_ev4.png</file>
+            <file>_static/ae5b_ind1.png</file>
+            <file>_static/ae6_ev1.png</file>
+            <file>_static/ae6_ev2.png</file>
+            <file>_static/ae7_ev.png</file>
+            <file>_static/ae_ev2.png</file>
+            <file>_static/aex10_coll.png</file>
+            <file>_static/aex10_ev.png</file>
+            <file>_static/aex11_result.png</file>
+            <file>_static/aex12_ge_1.png</file>
+            <file>_static/aex12_tgt.png</file>
+            <file>_static/aex18_strategy1_dlg.png</file>
+            <file>_static/aex_11_3designs.png</file>
+            <file>_static/aex_11_gradev.png</file>
+            <file>_static/aex_11_hist1.png</file>
+            <file>_static/aex_11_hist2.png</file>
+            <file>_static/aex_11_needle1.png</file>
+            <file>_static/aex_11_needle2.png</file>
+            <file>_static/aex_12_bp_evgdd.png</file>
+            <file>_static/aex_12_bp_evr.png</file>
+            <file>_static/aex_12_ge_evgdd.png</file>
+            <file>_static/aex_12_ge_evr.png</file>
+            <file>_static/aex_13_constrdlg.png</file>
+            <file>_static/aex_13_constrdlg2.png</file>
+            <file>_static/aex_13_ev1.png</file>
+            <file>_static/aex_13_ev2.png</file>
+            <file>_static/aex_13_ev3.png</file>
+            <file>_static/aex_13_profile.png</file>
+            <file>_static/aex_13_refrprofile.png</file>
+            <file>_static/aex_13_var1.png</file>
+            <file>_static/aex_14_st1.png</file>
+            <file>_static/aex_14_st2.png</file>
+            <file>_static/aex_14_st3.png</file>
+            <file>_static/aex_14_st4.png</file>
+            <file>_static/aex_14_st5.png</file>
+            <file>_static/aex_15_abbr.png</file>
+            <file>_static/aex_15_db1.png</file>
+            <file>_static/aex_15_des.png</file>
+            <file>_static/aex_15_designeditor.png</file>
+            <file>_static/aex_15_labs.png</file>
+            <file>_static/aex_15_plots.png</file>
+            <file>_static/aex_15_r_a.png</file>
+            <file>_static/aex_15_refprofile.png</file>
+            <file>_static/aex_16_evstackar.png</file>
+            <file>_static/aex_16_st1.png</file>
+            <file>_static/aex_16_st2.png</file>
+            <file>_static/aex_17_tgt1.png</file>
+            <file>_static/aex_17_tgt2.png</file>
+            <file>_static/aex_17_y1_y.png</file>
+            <file>_static/aex_17_y1r.png</file>
+            <file>_static/aex_17_y2_y.png</file>
+            <file>_static/aex_17_y2r.png</file>
+            <file>_static/aex_18_err1.png</file>
+            <file>_static/aex_18_err2.png</file>
+            <file>_static/aex_18_mon1.png</file>
+            <file>_static/aex_18_mon2.png</file>
+            <file>_static/aex_19_st1.png</file>
+            <file>_static/aex_19_st2.png</file>
+            <file>_static/aex_19_st3.png</file>
+            <file>_static/aex_19_st4.png</file>
+            <file>_static/aex_19_st5.png</file>
+            <file>_static/aex_19_st6_therrorsgood.png</file>
+            <file>_static/aex_19_st6badlayer.png</file>
+            <file>_static/aex_19_st6gooodt.png</file>
+            <file>_static/aex_20_bbm1.png</file>
+            <file>_static/aex_20_bbm2.png</file>
+            <file>_static/aex_20_bbm3.png</file>
+            <file>_static/aex_20_bbm4.png</file>
+            <file>_static/aex_20_bbm5.png</file>
+            <file>_static/aex_20_eval.png</file>
+            <file>_static/aex_20_yi1.png</file>
+            <file>_static/aex_20_yi2.png</file>
+            <file>_static/aex_20_yieldsetup.png</file>
+            <file>_static/analysis_menu_ol_1.png</file>
+            <file>_static/analysis_menu_ol_2.png</file>
+            <file>_static/analysis_menu_ol_3.png</file>
+            <file>_static/analysis_menu_ol_4.png</file>
+            <file>_static/angles.png</file>
+            <file>_static/angles_w.png</file>
+            <file>_static/arrmat_gi_vac.png</file>
+            <file>_static/arrmat_ol.png</file>
+            <file>_static/arrmatvacuum_ol.png</file>
+            <file>_static/arrow_r.png</file>
+            <file>_static/backside_new.png</file>
+            <file>_static/backup.png</file>
+            <file>_static/badmonitoring.png</file>
+            <file>_static/basic.css</file>
+            <file>_static/bgblue80.png</file>
+            <file>_static/blackbodysettings.png</file>
+            <file>_static/bms_deprates.png</file>
+            <file>_static/bms_monsystem.png</file>
+            <file>_static/bms_res_ss.png</file>
+            <file>_static/bms_res_ss_refr.png</file>
+            <file>_static/bms_resperf.png</file>
+            <file>_static/bms_resperfth.png</file>
+            <file>_static/bms_sigerrors.png</file>
+            <file>_static/bms_simul.png</file>
+            <file>_static/broad_pars_devs.png</file>
+            <file>_static/bs_optn.png</file>
+            <file>_static/btn_home_h.gif</file>
+            <file>_static/btn_home_n.gif</file>
+            <file>_static/btn_next_d.gif</file>
+            <file>_static/btn_next_h.gif</file>
+            <file>_static/btn_next_n.gif</file>
+            <file>_static/btn_prev_d.gif</file>
+            <file>_static/btn_prev_h.gif</file>
+            <file>_static/btn_prev_n.gif</file>
+            <file>_static/button_closedbook.gif</file>
+            <file>_static/button_openbook.gif</file>
+            <file>_static/button_topic.gif</file>
+            <file>_static/c_colevalrange.png</file>
+            <file>_static/c_evac.png</file>
+            <file>_static/c_eval.png</file>
+            <file>_static/c_eval_discr.png</file>
+            <file>_static/c_eval_lab.png</file>
+            <file>_static/c_eval_p.png</file>
+            <file>_static/c_eval_polar.png</file>
+            <file>_static/cat.png</file>
+            <file>_static/cat_new.png</file>
+            <file>_static/cfg_mode.png</file>
+            <file>_static/cfg_sort.png</file>
+            <file>_static/cfg_thck.png</file>
+            <file>_static/codev_exp.png</file>
+            <file>_static/col_ed.png</file>
+            <file>_static/col_ed2.png</file>
+            <file>_static/col_ed3.png</file>
+            <file>_static/col_patch.png</file>
+            <file>_static/col_targ.png</file>
+            <file>_static/col_targ_p.png</file>
+            <file>_static/colerr_1.png</file>
+            <file>_static/colerr_2.png</file>
+            <file>_static/colerr_3.png</file>
+            <file>_static/colev_diff1.png</file>
+            <file>_static/colev_diff2.png</file>
+            <file>_static/coll_ol_popup.png</file>
+            <file>_static/collect_ol.png</file>
+            <file>_static/collection_ol_chart.png</file>
+            <file>_static/collhust_popup.png</file>
+            <file>_static/color_Target_12.png</file>
+            <file>_static/color_diff_selection.png</file>
+            <file>_static/color_opt.png</file>
+            <file>_static/color_tgt_btn.png</file>
+            <file>_static/colorinh_diff.png</file>
+            <file>_static/colorroughdiff.png</file>
+            <file>_static/colorspecev.png</file>
+            <file>_static/colsystdfevev_diff.png</file>
+            <file>_static/coltgt_anchor.png</file>
+            <file>_static/com_auto_1.png</file>
+            <file>_static/cone_angle_btn.png</file>
+            <file>_static/cone_angle_new.png</file>
+            <file>_static/cone_angle_preview_new.png</file>
+            <file>_static/cone_angle_udef_new.png</file>
+            <file>_static/coneang1.png</file>
+            <file>_static/coneang2.png</file>
+            <file>_static/coneang3.png</file>
+            <file>_static/config_menu.png</file>
+            <file>_static/configdbcols_ol.png</file>
+            <file>_static/constropt1.png</file>
+            <file>_static/constropt2.png</file>
+            <file>_static/copy_btn.png</file>
+            <file>_static/copy_spec_dlg.png</file>
+            <file>_static/copy_spec_excel.png</file>
+            <file>_static/copy_spec_menu.png</file>
+            <file>_static/cri.png</file>
+            <file>_static/cri_options.png</file>
+            <file>_static/crmatassistant1.png</file>
+            <file>_static/crmatassistant2.png</file>
+            <file>_static/crmatassistant3.png</file>
+            <file>_static/cspec1.png</file>
+            <file>_static/cspec2.png</file>
+            <file>_static/cspec3.png</file>
+            <file>_static/cspec_form.png</file>
+            <file>_static/custom.css</file>
+            <file>_static/cut_btn.png</file>
+            <file>_static/data_menu_ol.png</file>
+            <file>_static/data_menu_ol_new.png</file>
+            <file>_static/data_menu_remove_ol.png</file>
+            <file>_static/data_menu_save_ol.png</file>
+            <file>_static/db_ol.png</file>
+            <file>_static/db_with_preview.png</file>
+            <file>_static/dbcolumnsreim.png</file>
+            <file>_static/de-sens.png</file>
+            <file>_static/delete_dir.png</file>
+            <file>_static/delete_dir_new.png</file>
+            <file>_static/delete_project_1.png</file>
+            <file>_static/des_cln.png</file>
+            <file>_static/des_form1.gif</file>
+            <file>_static/des_modify.png</file>
+            <file>_static/des_preview.png</file>
+            <file>_static/des_summ.png</file>
+            <file>_static/desed1_ol.png</file>
+            <file>_static/desed_refr.png</file>
+            <file>_static/desform_ol.png</file>
+            <file>_static/design_btn.png</file>
+            <file>_static/design_data_new.png</file>
+            <file>_static/design_db_new.png</file>
+            <file>_static/design_editor_new.png</file>
+            <file>_static/design_editor_new1.png</file>
+            <file>_static/design_editor_new2.png</file>
+            <file>_static/detector_btn.png</file>
+            <file>_static/digitize.png</file>
+            <file>_static/e-field_target_new.png</file>
+            <file>_static/e_field.png</file>
+            <file>_static/e_filed_popup.png</file>
+            <file>_static/edchangecomposition.png</file>
+            <file>_static/edit_menu_grid.png</file>
+            <file>_static/edit_menu_ol_1.png</file>
+            <file>_static/edmat_changeable.png</file>
+            <file>_static/edmat_composite.png</file>
+            <file>_static/edmat_formula.png</file>
+            <file>_static/edmat_imn1.png</file>
+            <file>_static/edmat_preview.png</file>
+            <file>_static/edmat_ren_delta1.png</file>
+            <file>_static/edmat_tab.png</file>
+            <file>_static/edmat_table.png</file>
+            <file>_static/efi_err1.png</file>
+            <file>_static/efi_systev.png</file>
+            <file>_static/efi_target.png</file>
+            <file>_static/ell_setup_report.png</file>
+            <file>_static/ellipsangles_1.png</file>
+            <file>_static/embim1.png</file>
+            <file>_static/embim2.gif</file>
+            <file>_static/env_taper_1.png</file>
+            <file>_static/envman1.png</file>
+            <file>_static/envman2.png</file>
+            <file>_static/eqn002.gif</file>
+            <file>_static/eqn003.gif</file>
+            <file>_static/eqn004.gif</file>
+            <file>_static/eqn005.gif</file>
+            <file>_static/eqn006.gif</file>
+            <file>_static/eqn007.gif</file>
+            <file>_static/eqn008.gif</file>
+            <file>_static/err_char.png</file>
+            <file>_static/err_refr.png</file>
+            <file>_static/err_th_coat.png</file>
+            <file>_static/err_th_coat_stack.png</file>
+            <file>_static/err_th_mat_stack.png</file>
+            <file>_static/err_thck.png</file>
+            <file>_static/err_yield_eval.png</file>
+            <file>_static/err_yield_finish.png</file>
+            <file>_static/err_yield_opt.png</file>
+            <file>_static/err_yield_running.png</file>
+            <file>_static/erroranalysis.png</file>
+            <file>_static/ev_filter1.png</file>
+            <file>_static/ev_filter2.png</file>
+            <file>_static/eval_btn.png</file>
+            <file>_static/eval_ell.png</file>
+            <file>_static/eval_ell_setup.png</file>
+            <file>_static/eval_gd.png</file>
+            <file>_static/eval_ol.png</file>
+            <file>_static/eval_rep.png</file>
+            <file>_static/eval_right_menu.png</file>
+            <file>_static/eval_setup.png</file>
+            <file>_static/evtaperwavefront.png</file>
+            <file>_static/ex10_collection.png</file>
+            <file>_static/ex11_ev1.png</file>
+            <file>_static/ex11_ev2.png</file>
+            <file>_static/ex11_ev3.png</file>
+            <file>_static/ex12_ev.png</file>
+            <file>_static/ex13_ev1.png</file>
+            <file>_static/ex14_ev_hist.png</file>
+            <file>_static/ex14_ev_hist_ch.png</file>
+            <file>_static/ex14_gradev.png</file>
+            <file>_static/ex14_gradevsetup.png</file>
+            <file>_static/ex15_ev1.png</file>
+            <file>_static/ex15_ev2.png</file>
+            <file>_static/ex15_randomsetup.png</file>
+            <file>_static/ex20_errors_1.png</file>
+            <file>_static/ex20_errsetup.png</file>
+            <file>_static/ex20_monitoringstrategy1.png</file>
+            <file>_static/ex20_preprodbbm1.png</file>
+            <file>_static/ex20_preprodbbm2.png</file>
+            <file>_static/ex20_preprodmono1.png</file>
+            <file>_static/ex20_preprodmonowindow1.png</file>
+            <file>_static/ex20_strategy1.png</file>
+            <file>_static/ex20_yield_1.png</file>
+            <file>_static/ex20_yield_2.png</file>
+            <file>_static/ex20_yield_setup.png</file>
+            <file>_static/ex21_refrindex.png</file>
+            <file>_static/ex21_st1.png</file>
+            <file>_static/ex21_st2.png</file>
+            <file>_static/ex21_st3.png</file>
+            <file>_static/ex21_st4.png</file>
+            <file>_static/ex21_st5.png</file>
+            <file>_static/ex21_st6.png</file>
+            <file>_static/ex22_macneille.png</file>
+            <file>_static/ex23_refrind.png</file>
+            <file>_static/ex23_st1.png</file>
+            <file>_static/ex23_st2.png</file>
+            <file>_static/ex23_st3.png</file>
+            <file>_static/ex23_st4.png</file>
+            <file>_static/ex23_st5.png</file>
+            <file>_static/ex23_st5_good.png</file>
+            <file>_static/ex24_st1.png</file>
+            <file>_static/ex24_st2.png</file>
+            <file>_static/ex24_st3.png</file>
+            <file>_static/ex24_st4.png</file>
+            <file>_static/ex24_st5.png</file>
+            <file>_static/ex24_st5_good.png</file>
+            <file>_static/ex25_mix_mat.png</file>
+            <file>_static/ex25_rndpars.png</file>
+            <file>_static/ex25_rndparsdesign.png</file>
+            <file>_static/ex25_rndsolve.png</file>
+            <file>_static/ex25_rndsolvecoll.png</file>
+            <file>_static/ex25_rugdesign.png</file>
+            <file>_static/ex25_rugev1.png</file>
+            <file>_static/ex25_rugev2.png</file>
+            <file>_static/ex25_rugev3.png</file>
+            <file>_static/ex25_rugev4.png</file>
+            <file>_static/ex25_rugsetup1.png</file>
+            <file>_static/ex25_rugslider1.png</file>
+            <file>_static/ex25_rugslider2.png</file>
+            <file>_static/ex25_rugslider3.png</file>
+            <file>_static/ex25_tgt.png</file>
+            <file>_static/ex26_eval1.png</file>
+            <file>_static/ex26_eval2.png</file>
+            <file>_static/ex26_eval3.png</file>
+            <file>_static/ex26_eval4.png</file>
+            <file>_static/ex26_inh1.png</file>
+            <file>_static/ex26_inhsolve1.png</file>
+            <file>_static/ex27_ev1.png</file>
+            <file>_static/ex27_evqwm.png</file>
+            <file>_static/ex27_step1.png</file>
+            <file>_static/ex27_step2.png</file>
+            <file>_static/ex28_eval1.png</file>
+            <file>_static/ex28_eval2.png</file>
+            <file>_static/ex28_eval3.png</file>
+            <file>_static/ex28_eval4.png</file>
+            <file>_static/ex28_ge.png</file>
+            <file>_static/ex29_eval1.png</file>
+            <file>_static/ex29_needle1.png</file>
+            <file>_static/ex29_trap1.png</file>
+            <file>_static/ex2_mat.png</file>
+            <file>_static/ex30_color1.png</file>
+            <file>_static/ex30_color2.png</file>
+            <file>_static/ex30_color3.png</file>
+            <file>_static/ex30_colortarget.png</file>
+            <file>_static/ex30_eval1.png</file>
+            <file>_static/ex30_integr_mf.png</file>
+            <file>_static/ex30_setcolor.png</file>
+            <file>_static/ex30_setcolor2.png</file>
+            <file>_static/ex30_weights.png</file>
+            <file>_static/ex31_bad_options.png</file>
+            <file>_static/ex31_mon1.png</file>
+            <file>_static/ex31_mon2.png</file>
+            <file>_static/ex31_mon4.png</file>
+            <file>_static/ex31_strat1.png</file>
+            <file>_static/ex31_strat4.png</file>
+            <file>_static/ex32_qwm_fxed16.png</file>
+            <file>_static/ex32st6.png</file>
+            <file>_static/ex335_st2.png</file>
+            <file>_static/ex33_ge_improved.png</file>
+            <file>_static/ex33_qwm_start.png</file>
+            <file>_static/ex33_refined.png</file>
+            <file>_static/ex34_qwm.png</file>
+            <file>_static/ex34_ref.png</file>
+            <file>_static/ex35_st1.png</file>
+            <file>_static/ex35_st3.png</file>
+            <file>_static/ex35_st4.png</file>
+            <file>_static/ex35st5.png</file>
+            <file>_static/ex35stadd1.png</file>
+            <file>_static/ex36_des1.png</file>
+            <file>_static/ex36_des2.png</file>
+            <file>_static/ex37_ph.png</file>
+            <file>_static/ex37_res1.png</file>
+            <file>_static/ex38_1.png</file>
+            <file>_static/ex38_2.png</file>
+            <file>_static/ex39_1.png</file>
+            <file>_static/ex39_2.png</file>
+            <file>_static/ex39_3.png</file>
+            <file>_static/ex39_abbr.png</file>
+            <file>_static/ex39_colortgt1.png</file>
+            <file>_static/ex39_colortgt2.png</file>
+            <file>_static/ex39_ev1.png</file>
+            <file>_static/ex39_ev2.png</file>
+            <file>_static/ex3_ar.png</file>
+            <file>_static/ex3_ar_ev.png</file>
+            <file>_static/ex40_1.png</file>
+            <file>_static/ex40_2.png</file>
+            <file>_static/ex40_3.png</file>
+            <file>_static/ex40_4.png</file>
+            <file>_static/ex40_5.png</file>
+            <file>_static/ex40_6.png</file>
+            <file>_static/ex41_1.png</file>
+            <file>_static/ex41_2.png</file>
+            <file>_static/ex41_3.png</file>
+            <file>_static/ex42_1.png</file>
+            <file>_static/ex42_2.png</file>
+            <file>_static/ex42_3.png</file>
+            <file>_static/ex42_4.png</file>
+            <file>_static/ex43_1.png</file>
+            <file>_static/ex43_10.png</file>
+            <file>_static/ex43_11.png</file>
+            <file>_static/ex43_12.png</file>
+            <file>_static/ex43_2.png</file>
+            <file>_static/ex43_3.png</file>
+            <file>_static/ex43_4.png</file>
+            <file>_static/ex43_5.png</file>
+            <file>_static/ex43_6.png</file>
+            <file>_static/ex43_7.png</file>
+            <file>_static/ex43_8.png</file>
+            <file>_static/ex43_9.png</file>
+            <file>_static/ex44_1.png</file>
+            <file>_static/ex44_2.png</file>
+            <file>_static/ex44_3.png</file>
+            <file>_static/ex44_4.png</file>
+            <file>_static/ex44_5.png</file>
+            <file>_static/ex44_6.png</file>
+            <file>_static/ex4_des.png</file>
+            <file>_static/ex4_ev.png</file>
+            <file>_static/ex4_ev5plots.png</file>
+            <file>_static/ex4_plots.png</file>
+            <file>_static/ex5_ev.png</file>
+            <file>_static/ex6_ev1.png</file>
+            <file>_static/ex6_ev2.png</file>
+            <file>_static/ex7_ev.png</file>
+            <file>_static/ex8_ev.png</file>
+            <file>_static/ex9_ev1.png</file>
+            <file>_static/ex9_ev2.png</file>
+            <file>_static/ex_10_random_setup.png</file>
+            <file>_static/excel0.png</file>
+            <file>_static/excel_export.png</file>
+            <file>_static/exsearch.png</file>
+            <file>_static/f_from_t1.png</file>
+            <file>_static/f_from_t2.png</file>
+            <file>_static/f_transfer_menu.png</file>
+            <file>_static/fc_dlg1.png</file>
+            <file>_static/file.png</file>
+            <file>_static/file_tra_ol.png</file>
+            <file>_static/filemenu_ol_1.png</file>
+            <file>_static/filemenu_ol_1_new.png</file>
+            <file>_static/filemenu_ol_2.png</file>
+            <file>_static/filemenu_ol_3.png</file>
+            <file>_static/filemenu_ol_3_new.png</file>
+            <file>_static/filemenu_ol_4.png</file>
+            <file>_static/filemenu_ol_5.png</file>
+            <file>_static/filemenu_ol_5_new.png</file>
+            <file>_static/filter_spec_options.png</file>
+            <file>_static/fixedwave_1.png</file>
+            <file>_static/fixedwave_2.png</file>
+            <file>_static/fixedwavelength2menu.png</file>
+            <file>_static/form_constr_form.png</file>
+            <file>_static/form_constr_form_algo.png</file>
+            <file>_static/form_constr_vars.png</file>
+            <file>_static/fred_exp.png</file>
+            <file>_static/gainzero.png</file>
+            <file>_static/gconfig_gd_gdd.png</file>
+            <file>_static/gconfig_timedate_ol.png</file>
+            <file>_static/gconfig_units_ol.png</file>
+            <file>_static/gd_tgt_exp.png</file>
+            <file>_static/gdgdd_rep.png</file>
+            <file>_static/ge_setup.png</file>
+            <file>_static/gen_info.png</file>
+            <file>_static/gen_info1.png</file>
+            <file>_static/geninfoex1.png</file>
+            <file>_static/geninfomat.png</file>
+            <file>_static/geninfomat1.png</file>
+            <file>_static/geninfomat_new.png</file>
+            <file>_static/geninfomat_new1.png</file>
+            <file>_static/glass_new.png</file>
+            <file>_static/grid_gen.png</file>
+            <file>_static/header_bg_shadow.gif</file>
+            <file>_static/help_menu_ol.png</file>
+            <file>_static/hist_ol.png</file>
+            <file>_static/hist_ol_chart.png</file>
+            <file>_static/history_new.png</file>
+            <file>_static/historychart_new.png</file>
+            <file>_static/histspec_ol.png</file>
+            <file>_static/hm-keyword-page-icon.png</file>
+            <file>_static/hm_webhelp_buttons_black.png</file>
+            <file>_static/hm_webhelp_buttons_blue.png</file>
+            <file>_static/hm_webhelp_buttons_grey.png</file>
+            <file>_static/hm_webhelp_buttons_orange.png</file>
+            <file>_static/hm_webhelp_buttons_white.png</file>
+            <file>_static/hm_webhelp_buttons_yellow.png</file>
+            <file>_static/hmlogo.png</file>
+            <file>_static/hw_attach.png</file>
+            <file>_static/icon-book.png</file>
+            <file>_static/icon-bookopen.png</file>
+            <file>_static/icon-page.png</file>
+            <file>_static/imp_opt.png</file>
+            <file>_static/import.png</file>
+            <file>_static/import_agf_zemax.png</file>
+            <file>_static/import_xy.png</file>
+            <file>_static/inhint_back.png</file>
+            <file>_static/inhint_back2.png</file>
+            <file>_static/inhint_ch.png</file>
+            <file>_static/inhint_des1.png</file>
+            <file>_static/inhint_des2.png</file>
+            <file>_static/inhint_pg2.png</file>
+            <file>_static/inhintcolor.png</file>
+            <file>_static/inhintcolor2.png</file>
+            <file>_static/inhinter_ref1.png</file>
+            <file>_static/inhinter_ref2.png</file>
+            <file>_static/inhom_ev.png</file>
+            <file>_static/inhom_ev_dev.png</file>
+            <file>_static/inhref.png</file>
+            <file>_static/inhrefsetup.png</file>
+            <file>_static/int_tgt_pg2_modify.png</file>
+            <file>_static/int_tgt_pg2_prev.png</file>
+            <file>_static/int_tgt_pg2_ss.png</file>
+            <file>_static/int_vals_1.png</file>
+            <file>_static/integralinhinterev.png</file>
+            <file>_static/intinh_geninfo.png</file>
+            <file>_static/intr_1.png</file>
+            <file>_static/intr_2.png</file>
+            <file>_static/intspecs1.png</file>
+            <file>_static/inttarget_btn.png</file>
+            <file>_static/inttgt_pg1.png</file>
+            <file>_static/intval_menu.png</file>
+            <file>_static/intval_tab1.png</file>
+            <file>_static/intval_tab2.png</file>
+            <file>_static/intval_tab3.png</file>
+            <file>_static/intval_tab4.png</file>
+            <file>_static/intval_tab5.png</file>
+            <file>_static/intval_tab6.png</file>
+            <file>_static/intvalerr_1.png</file>
+            <file>_static/intvalsystev.png</file>
+            <file>_static/jasco_options.png</file>
+            <file>_static/la_tgt_selection.png</file>
+            <file>_static/layabs_evaluation.png</file>
+            <file>_static/layabs_report.png</file>
+            <file>_static/layabs_setup.png</file>
+            <file>_static/layabslimits.png</file>
+            <file>_static/layabstgt_1.png</file>
+            <file>_static/layabstgt_2.png</file>
+            <file>_static/layabstgt_3.png</file>
+            <file>_static/layer_adsorptance_target_preview.png</file>
+            <file>_static/layer_mat_btn.png</file>
+            <file>_static/layoutsdlg.png</file>
+            <file>_static/light_source_btn.png</file>
+            <file>_static/light_sr.png</file>
+            <file>_static/light_sr_p.png</file>
+            <file>_static/lighttools_exp.png</file>
+            <file>_static/limits_gen.png</file>
+            <file>_static/line_width_1.png</file>
+            <file>_static/line_width_2.png</file>
+            <file>_static/lines.gif</file>
+            <file>_static/linew_ed1.png</file>
+            <file>_static/linew_ed2.png</file>
+            <file>_static/load_ol.png</file>
+            <file>_static/ls_setyp.png</file>
+            <file>_static/matdispev1.png</file>
+            <file>_static/matdispev2.png</file>
+            <file>_static/matdisprepdlg.png</file>
+            <file>_static/mater_popup_menu.png</file>
+            <file>_static/matinh1.png</file>
+            <file>_static/matthickvar.png</file>
+            <file>_static/mega-icons.png</file>
+            <file>_static/menu_toolbar1.png</file>
+            <file>_static/minus.png</file>
+            <file>_static/modi_taa.png</file>
+            <file>_static/modi_tar.png</file>
+            <file>_static/modifycolortgt.png</file>
+            <file>_static/mon_line_width.png</file>
+            <file>_static/mon_strategiessetup1.png</file>
+            <file>_static/mon_strategiessetup2.png</file>
+            <file>_static/mon_strategiessetup3.png</file>
+            <file>_static/monbadpointsvis.png</file>
+            <file>_static/monitoptionsgr.png</file>
+            <file>_static/monitor.png</file>
+            <file>_static/monitor1.png</file>
+            <file>_static/monitor2.png</file>
+            <file>_static/monitor3.png</file>
+            <file>_static/monmisc3.png</file>
+            <file>_static/mono_1.png</file>
+            <file>_static/mono_2.png</file>
+            <file>_static/monstrategies.png</file>
+            <file>_static/monstrategiesmenu1.png</file>
+            <file>_static/multcoat_1.png</file>
+            <file>_static/multcoat_2.png</file>
+            <file>_static/multcoat_doubleang1.png</file>
+            <file>_static/multcoat_doubleang2.png</file>
+            <file>_static/multcoat_evgdd.png</file>
+            <file>_static/multcoat_evr.png</file>
+            <file>_static/need_auto_btn.png</file>
+            <file>_static/need_btn.png</file>
+            <file>_static/needle.png</file>
+            <file>_static/needle_deep_search_icon.png</file>
+            <file>_static/needle_popup.png</file>
+            <file>_static/new_db_file.png</file>
+            <file>_static/new_project_1.png</file>
+            <file>_static/newprob_dir.png</file>
+            <file>_static/nonav.css</file>
+            <file>_static/numsppoints.png</file>
+            <file>_static/numsppointsrec.png</file>
+            <file>_static/ods_compile.png</file>
+            <file>_static/ods_open.png</file>
+            <file>_static/ol_evspec1.png</file>
+            <file>_static/ol_evspec2.png</file>
+            <file>_static/ol_file_sf_1.png</file>
+            <file>_static/ol_icon.png</file>
+            <file>_static/ol_peaklist1.png</file>
+            <file>_static/ol_spec1.png</file>
+            <file>_static/ol_start.png</file>
+            <file>_static/ol_toolbar.png</file>
+            <file>_static/ol_var1.png</file>
+            <file>_static/optalix_exp.png</file>
+            <file>_static/optic_exp.png</file>
+            <file>_static/out_block.png</file>
+            <file>_static/out_excel.png</file>
+            <file>_static/out_minus.png</file>
+            <file>_static/out_plus.png</file>
+            <file>_static/out_print.png</file>
+            <file>_static/out_saveas.png</file>
+            <file>_static/output_ol.png</file>
+            <file>_static/pagesetup_!.png</file>
+            <file>_static/paste_btn.png</file>
+            <file>_static/paste_bu.png</file>
+            <file>_static/peaklist_ol.png</file>
+            <file>_static/peaklist_ol2.png</file>
+            <file>_static/plot1.png</file>
+            <file>_static/plot2.png</file>
+            <file>_static/plot3.png</file>
+            <file>_static/pls_1.png</file>
+            <file>_static/pls_2.png</file>
+            <file>_static/pls_3.png</file>
+            <file>_static/pls_4.png</file>
+            <file>_static/pls_5.png</file>
+            <file>_static/pls_6.png</file>
+            <file>_static/pls_7.png</file>
+            <file>_static/pls_8.png</file>
+            <file>_static/plsopt_1.png</file>
+            <file>_static/plsopt_2.png</file>
+            <file>_static/plus.png</file>
+            <file>_static/pre_monoch_warning.png</file>
+            <file>_static/pre_prod_broad_result.png</file>
+            <file>_static/pre_prod_monochr_result.png</file>
+            <file>_static/pre_prod_monochr_setup.png</file>
+            <file>_static/preprod_broad_setup.png</file>
+            <file>_static/print1.gif</file>
+            <file>_static/print2.gif</file>
+            <file>_static/print_btn.png</file>
+            <file>_static/printpreview_btn.png</file>
+            <file>_static/prob_btn.png</file>
+            <file>_static/prob_dir.png</file>
+            <file>_static/probbrowse.png</file>
+            <file>_static/probbrowse_new.png</file>
+            <file>_static/probdirrename.png</file>
+            <file>_static/probdirrename_new.png</file>
+            <file>_static/probnewdir_new.png</file>
+            <file>_static/pygments.css</file>
+            <file>_static/rand_par.png</file>
+            <file>_static/rand_par2.png</file>
+            <file>_static/rand_par3.png</file>
+            <file>_static/rangeed.png</file>
+            <file>_static/rangetgt2.png</file>
+            <file>_static/rangetgtbase.png</file>
+            <file>_static/recanimation.png</file>
+            <file>_static/record_ani.gif</file>
+            <file>_static/redo_btn.png</file>
+            <file>_static/ref_btn.png</file>
+            <file>_static/refine.png</file>
+            <file>_static/refrind_bars.png</file>
+            <file>_static/refrindexinfo_1.png</file>
+            <file>_static/refrindexinfo_accept.png</file>
+            <file>_static/refrindexinfo_submenu.png</file>
+            <file>_static/refrindprofile.png</file>
+            <file>_static/removal_btn.png</file>
+            <file>_static/rename_project_1.png</file>
+            <file>_static/result_menu_ol.png</file>
+            <file>_static/results_submenu_1.png</file>
+            <file>_static/rightclickgeninfo.png</file>
+            <file>_static/rightclicktext.png</file>
+            <file>_static/roughev.png</file>
+            <file>_static/roughev_dev.png</file>
+            <file>_static/roughevcolor1.png</file>
+            <file>_static/roughevcolor2.png</file>
+            <file>_static/rug1.png</file>
+            <file>_static/rug2.png</file>
+            <file>_static/rug3.png</file>
+            <file>_static/rug4.png</file>
+            <file>_static/rug5.png</file>
+            <file>_static/rugsynth1.png</file>
+            <file>_static/rugsynth2.png</file>
+            <file>_static/rugsynth3.png</file>
+            <file>_static/rugsynth4.png</file>
+            <file>_static/rugsynth5.png</file>
+            <file>_static/rugsynth6.png</file>
+            <file>_static/s_o_axes.png</file>
+            <file>_static/s_o_axes_ell.png</file>
+            <file>_static/s_o_axes_gd_gdd.png</file>
+            <file>_static/s_o_axes_lay_abs.png</file>
+            <file>_static/s_o_axes_phase.png</file>
+            <file>_static/s_o_axes_udt.png</file>
+            <file>_static/s_o_bar.png</file>
+            <file>_static/s_o_design_bar.png</file>
+            <file>_static/s_o_hdr.png</file>
+            <file>_static/s_o_material.png</file>
+            <file>_static/s_o_meth.png</file>
+            <file>_static/s_o_method.png</file>
+            <file>_static/s_o_plot.png</file>
+            <file>_static/s_o_robust_1.png</file>
+            <file>_static/s_o_trapping.png</file>
+            <file>_static/save_des_ol.png</file>
+            <file>_static/save_target_new11.png</file>
+            <file>_static/save_target_new12.png</file>
+            <file>_static/save_target_ol.png</file>
+            <file>_static/saveas_btn.png</file>
+            <file>_static/sel_dir.png</file>
+            <file>_static/send_chart.png</file>
+            <file>_static/send_table.png</file>
+            <file>_static/sensdirsetup.png</file>
+            <file>_static/singlemon_step1.png</file>
+            <file>_static/singlemon_step2.png</file>
+            <file>_static/singlemon_step3.png</file>
+            <file>_static/singlemon_step4.png</file>
+            <file>_static/singlemon_step4_opt.png</file>
+            <file>_static/singlemon_step5.png</file>
+            <file>_static/singlemon_step5_b.png</file>
+            <file>_static/singlemon_step5_c.png</file>
+            <file>_static/singlemon_step5_d.png</file>
+            <file>_static/source_det_opt.png</file>
+            <file>_static/source_detector_db_new.png</file>
+            <file>_static/source_detector_db_preview_new.png</file>
+            <file>_static/spacer.gif</file>
+            <file>_static/specfromtgt1.png</file>
+            <file>_static/specgen.png</file>
+            <file>_static/specs1.png</file>
+            <file>_static/specs_angular_specs_new.png</file>
+            <file>_static/stack_btn.png</file>
+            <file>_static/stack_ed1.png</file>
+            <file>_static/stack_ed2.png</file>
+            <file>_static/stack_ed3.png</file>
+            <file>_static/stack_ed3_light.png</file>
+            <file>_static/stack_edit_curr.png</file>
+            <file>_static/stack_scheme.png</file>
+            <file>_static/stackswap.png</file>
+            <file>_static/stackswap2.png</file>
+            <file>_static/substr_btn.png</file>
+            <file>_static/substr_db_new.png</file>
+            <file>_static/substr_db_new1.png</file>
+            <file>_static/substr_db_new2.png</file>
+            <file>_static/substr_db_new_composite.png</file>
+            <file>_static/substr_db_new_formula.png</file>
+            <file>_static/substr_db_new_preview.png</file>
+            <file>_static/substrate_create_new.png</file>
+            <file>_static/substrate_db_new.png</file>
+            <file>_static/synthesis_menu.png</file>
+            <file>_static/synthesis_modify_menu.png</file>
+            <file>_static/sysdev2.png</file>
+            <file>_static/sysdev3.png</file>
+            <file>_static/sysdevcolor1.png</file>
+            <file>_static/sysdevcolor2.png</file>
+            <file>_static/sysdevev.png</file>
+            <file>_static/sysdevev_dev.png</file>
+            <file>_static/sysdevsetup1.png</file>
+            <file>_static/t_from_f.png</file>
+            <file>_static/tab_rep_setup.png</file>
+            <file>_static/tabfromcomp.png</file>
+            <file>_static/tablesimplify1.png</file>
+            <file>_static/tabtocomp1.png</file>
+            <file>_static/tabtocomp2.png</file>
+            <file>_static/taperwavepars1.png</file>
+            <file>_static/taperwavepars2.png</file>
+            <file>_static/taperwavepars3.png</file>
+            <file>_static/taperwavepars4.png</file>
+            <file>_static/tar_ed.png</file>
+            <file>_static/target_btn.png</file>
+            <file>_static/target_db_new1.png</file>
+            <file>_static/target_selection_ol.png</file>
+            <file>_static/tgt_fc_open.png</file>
+            <file>_static/tgt_weight.png</file>
+            <file>_static/tgt_weight_preview.png</file>
+            <file>_static/tgtgdd1.png</file>
+            <file>_static/tgtgen1.png</file>
+            <file>_static/tgtgen2.png</file>
+            <file>_static/tgtgen3.png</file>
+            <file>_static/tgtinterpolation.png</file>
+            <file>_static/thin_lay.png</file>
+            <file>_static/thin_lay_confirm.png</file>
+            <file>_static/thin_lay_manual.png</file>
+            <file>_static/thstress_1.png</file>
+            <file>_static/thstress_2.png</file>
+            <file>_static/thstress_3.png</file>
+            <file>_static/toolbar.png</file>
+            <file>_static/transform_paste.png</file>
+            <file>_static/udt_ed.png</file>
+            <file>_static/udt_extarg1.png</file>
+            <file>_static/ug_1.png</file>
+            <file>_static/ug_2glazing_1.png</file>
+            <file>_static/ug_3glazing_1.png</file>
+            <file>_static/ug_preview_1.png</file>
+            <file>_static/undo_btn.png</file>
+            <file>_static/up.gif</file>
+            <file>_static/user.png</file>
+            <file>_static/uv_singleglazing.png</file>
+            <file>_static/view_menu_ol.png</file>
+            <file>_static/view_menu_ol_2.png</file>
+            <file>_static/view_menu_ol_new.png</file>
+            <file>_static/view_menu_ol_new_1.png</file>
+            <file>_static/view_new.png</file>
+            <file>_static/vpi_export.png</file>
+            <file>_static/wavelength_new.png</file>
+            <file>_static/wdm_dep_st1.png</file>
+            <file>_static/wdm_dep_st1_5.png</file>
+            <file>_static/wdm_dep_st2.png</file>
+            <file>_static/wdm_dep_st3.png</file>
+            <file>_static/wdm_dep_st4.png</file>
+            <file>_static/wdm_gd_perf.png</file>
+            <file>_static/wdm_spec.png</file>
+            <file>_static/wdm_st1.png</file>
+            <file>_static/wdm_st2.png</file>
+            <file>_static/wdm_st3.png</file>
+            <file>_static/wdm_st4.png</file>
+            <file>_static/wdm_st5.png</file>
+            <file>_static/wdm_st6.png</file>
+            <file>_static/wdm_yield1.png</file>
+            <file>_static/wdm_yield2.png</file>
+            <file>_static/window_menu_ol.png</file>
+            <file>_static/windows.png</file>
+            <file>_static/wor_char.png</file>
+            <file>_static/wor_refr.png</file>
+            <file>_static/wor_thck.png</file>
+            <file>_static/worstcaseev.png</file>
+            <file>_static/zemax_exp1.png</file>
+            <file>_static/zemax_exp_perf.png</file>
+            <file>_static/zemax_exp_popup.png</file>
+            <file>_static/zemax_export_coat.png</file>
+            <file>_static/zer_setup.png</file>
+            <file>_static/zeroes_poles.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="foreword">Foreword</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  Advanced
+Examples &gt;</p>
+<p class="rubric">Example 18. Effect of
+bulk inhomogeneity in coating
+layers: 19-layer QWM is used
+as an example.
+:n</p>
+<p>ame: example-18.-effect-of-bulk-i
+nhomogeneity-in-coating-layers-19
+-layer-qwm-is-used-as-an-example.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">class<span class="colon">:</span></dt>
+<dd class="field-odd"><p>p_Heading1</p>
+</dd>
+</dl>
+</div></blockquote>
+</td>
+<td><p>` &lt;ex
+ercise15_metal_dielectric.htm&gt;`__
+` &lt;idh_optilayer.htm&gt;`__
+` &lt;example1.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>In amorphous states of thin film materials, variations in their
+refractive indices depend on variations in the densities of these
+states. The latter depend on various parameters of the deposition
+process, such as the energy and flux density of the deposited
+atoms,  the flux of oxygen atoms, if reactive deposition is used,
+the flux of assisting atoms, if there is additional ion
+assistance. All these parameters fluctuate and this causes
+fluctuations in the film packing density and in the refractive
+index of the growing layer. This is called the bulk inhomogeneity
+of coating layers. In layers deposited by modern deposition
+processes, the bulk inhomogeneity is small and there are only rare
+situations where it should be taken into account.  Nevertheless,
+it is useful to become familiar with the effects caused by bulk
+inhomogeneity, and such an acquaintance is the main purpose of
+this example.</p>
+<p>In the File -&gt; Project menu of OptiLayer, open the directory
+LEC24D18. The datafiles needed to run this exercise are already
+loaded into RAM. These are the substrate Glass n=1.52, the layer
+materials n=2.35 and n=1.46, and the design QWM-19, c.w. 600 nm.
+Open the T&amp;R&amp;Phase option in the Analysis menu. Use the Axis
+option to display the transmittance of the 19-layer QWM in the
+spectral range from 150 nm to 800 nm.</p>
+<p>The measure of the bulk inhomogeneity is the degree of
+inhomogeneity, the absolute value of which is defined as the
+difference in the layer refractive indices at its right and left
+boundaries, divided by the mean refractive index of the layer.
+Most often, the degree of inhomogeneity is expressed as a
+percentage, i.e. as its absolute value multiplied by 100%. Both
+negative and positive values of the degree of inhomogeneity in the
+range of several percent are possible. Positive values up to 2-3%,
+and sometimes higher, are observed in the case of high-energy
+deposition processes. Negative values are typical for low-energy
+deposition processes.</p>
+<p>In the Analysis menu, select the Inhomogeneity option. At the
+Characteristic tab of the Inhomogeneity Setup window, select the
+transmittance (T) at zero incidence angle (normal incidence) to be
+displayed.</p>
+<p>Use the Inhomogeneities tab to enter the degrees of inhomogeneity
+for the high and low index layers. Let us start with -3% degrees
+of inhomogeneity for all mirror layers.</p>
+<p>Click OK to start the analysis procedure. The upper part of the
+Inhomogeneity Analysis window displays the transmittance of an
+ideal mirror without inhomogeneity (black curve) and the
+transmittance of a mirror with inhomogeneous layers (red curve).
+The difference between the black and red curves is barely
+noticeable at all wavelength, except for a small vicinity of 300
+nm. The refractive index profiles of the ideal mirror and the
+mirror with inhomogeneous layers are shown in the lower part of
+the window.</p>
+<p>Use the Parameters tab in the lower left corner of the window to
+specify other degrees of inhomogeneity (e.g. +3% for high index
+layers and 0% for low index layers). Note that you can easily set
+different values for odd and even layers using the Apply to: field
+in the Column editor window.</p>
+<p>Computational experiments with the degrees of inhomogeneity in the
+range of a few percent lead to the same conclusion: the effect of
+bulk inhomogeneity is noticeable only near 300 nm.</p>
+<p> Note that the wavelength of 300 nm is half the mirror central
+wavelength. It corresponds to a frequency twice the frequency
+corresponding to the mirror central wavelength and is important
+for coatings used in some laser systems. Here it may be necessary
+to take into account bulk inhomogeneity in coating layers.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

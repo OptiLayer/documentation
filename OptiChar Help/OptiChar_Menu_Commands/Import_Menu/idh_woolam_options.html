@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Woollam options</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="woollam-options">
+<h1>Woollam options</h1>
+<div class="docutils container" id="printheader">
+<p>Woollam options</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Navigation:</strong>  OptiChar Menu
+Commands &gt; <a class="reference external" href="import_menu.htm">Import
+Menu</a> &gt;</p>
+<p>Woollam options</p>
+</td>
+<td><p>` &lt;jasco_options.htm&gt;`__
+` &lt;import_menu.htm&gt;`__
+` &lt;horiba_ellipsometers.htm&gt;`__</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Woollam ellipsometer files are ASCII files organized in 6 columns:</p>
+<ul>
+<li><div class="p-normal docutils container">
+<p>Wavelength</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Angle of Incidence</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Psi</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Delta</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Tolerance for Psi</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Tolerance for Delta</p>
+</div>
+</li>
+</ul>
+<div class="line-block">
+<div class="line">Modern Woollam ellipsometers measure both depolarization and
+transmittance. Depolarization measurements are recorded for each
+incidence angle after the Psi and Delta measurements in the
+Woollam files. The transmittance measurement files contain
+spectral units, the angle of incidence, transmittance values,
+and tolerances.</div>
+</div>
+<div class="line-block">
+<div class="line">Woollam files do not contain information concerning wavelength
+units. For this reason, after opening a file in Woollam’s
+format, it is necessary to make a proper selection in the “Units
+in Woollam file” box, specifying the actual units for the
+wavelength in the Woollam file.</div>
+</div>
+<div class="line-block">
+<div class="line">In the Destination field, the name of the data file being edited
+and the destination page are indicated.</div>
+<div class="line">It is possible to:</div>
+</div>
+<ul>
+<li><div class="p-normal docutils container">
+<p>append data</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>overwrite data in the existing file</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>overwrite the current page only.</p>
+</div>
+</li>
+</ul>
+<div class="line-block">
+<div class="line">After pressing the OK button, the data from the selected
+Woollam’s file will be automatically transformed to the OptiChar
+format and imported to the current page of the selected OptiChar
+<a class="reference external" href="target_editor.htm">Measurement file</a>.</div>
+</div>
+<p>Note: In the case of XY-Scan Woollam files, when the file
+includes multiple measurements at different XY sample positions,
+OptiChar splits the data into several measurement files, one file
+for each measurement position. File names in this case include
+positioning information.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

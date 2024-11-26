@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Selecting Characteristics To Be Plotted</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="selecting-characteristics-to-be-plotted">
+<h1>Selecting Characteristics To Be Plotted</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Selecting Characteristics To Be Plotted</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a> &gt; <a class="reference external" href="idh_synthesis_options.html">Analysis and Synthesis
+Options</a> &gt;</p>
+<p class="p-heading1 rubric" id="selecting-characteristics-to-be-plotted-1">Selecting Characteristics To Be Plotted</p>
+</div>
+</div>
+<p>` &lt;idh_synthesis_options_axes.html&gt;`__ ` &lt;idh_synthesis_options.html&gt;`__
+` &lt;idh_synthesis_options_design_b.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>The <a class="reference external" href="idh_synthesis_options.html">Analysis/Synthesis Plots
+Option</a>  allows the user to specify
+characteristics to be displayed on the screen. It is available in
+all evaluation and optimization modes.</p>
+<p>In the T &amp; R &amp; Phase page, options for characteristics to be
+plotted include transmittance, reflectance, and absorptance at
+various angles of incidence and S, P, or average (A) polarization
+states, along with various phase characteristics. Up to ten plots
+can be displayed in a single evaluation window.</p>
+<p><img alt="image1" src="../../../_images/s_o_plot.png" /></p>
+<p>A characteristic to be plotted is selected by setting values in
+the Angle, Char, and Pol fields of the list box. In the <a class="reference external" href="idh_data_display_modes.html">Angular
+Mode</a>, different plots are
+characterized by wavelength values rather than incidence angle
+values, and the dialog is modified to reflect this.</p>
+<p>To specify the required data, simply click the mouse on the
+desired cell. You can use popup boxes listing available options,
+or manually enter the required settings.</p>
+<p>The Angle column is used to set the angle of incidence. In
+<a class="reference external" href="idh_data_display_modes.html">Angular mode,</a> the Angle header is
+replaced with Wavelength.</p>
+<div class="docutils container">
+<p><img alt="image2" src="../../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: The angle of incidence is always specified in the Incident Medium.
+For back reflectance and similar characteristics, the angle of the back
+reflectance should be computed using Snell’s Law if the Exit Medium is
+different from the Incident one.</p>
+<p>The Pol column selects a state of polarization - P, S, or A, where P and
+S stand for the p- and s-polarized light, and A stands for non-polarized
+light.
+The Char column defines the characteristic type, which can be T, R, BR,
+A, ϕr, ϕt, dϕr, dϕt (see
+<a class="reference external" href="idh_spectral_abbreviations.html">Abbreviations</a> for spectral
+characteristics). The picture above shows only one of several possible
+pages related to transmittance, reflectance, and phase characteristics
+plotting. To plot group delay and group delay dispersion, choose the
+GD / GDD Plot page. In this case, in the Char column, you can select one
+of the following characteristics: GD(r), GD(t), GDD(r), GDD(t). For
+ellipsometric angles, switch to the Ellipsometry Plot page and set Psi
+and/or Delta angles in the Char column.
+For each characteristic, you can specify its own line style (solid,
+dotted, etc.) and line color using the Line and Color columns.
+The Add button creates one more line in the list box. The Delete button
+removes the selected entry from the list box. The Column button starts
+the <a class="reference external" href="idh_column_editor.html">Column Editor</a> for easy setting data in
+columns.
+Two checkboxes are used to modify plotting:</p>
+<ol class="arabic">
+<li></li>
+<li><div class="p-normal docutils container">
+<p>If the Grid checkbox is selected, a grid is superimposed on the
+plots.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The HiRes Plots checkbox defines the quality of displayed plots.
+When enabled, OptiLayer uses more than 600 wavelength points to
+display plots on the screen. Otherwise, only about 60 wavelength
+points (plus target points if any) are used to save redrawing time
+and speed up calculations.</p>
+</div>
+</li>
+</ol>
+<p>See also:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options.html">Analysis and Synthesis Options</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_method.html">Selecting Optimization Method and Needle
+Options</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_axes.html">Adjusting Scales</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_design_b.html">Selecting Design Bar
+Presentation</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_material.html">Selecting Material Abbreviations and
+States</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="trapping.html">Trapping Options</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="robust_synthesis.html">Robust Synthesis</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_synthesis_options_header.html">Editing Header and Legend</a></p>
+</div>
+</li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

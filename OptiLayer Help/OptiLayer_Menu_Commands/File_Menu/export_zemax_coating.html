@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Export ZEMAX Coating</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="export-zemax-coating">
+<h1>Export ZEMAX Coating</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Export_ZEMAX_Coating/export_zemax_coating_descripti.html">Export ZEMAX Coating description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Export_ZEMAX_Coating/export_zemax_performance_table.html">Export ZEMAX Performance Table</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Export ZEMAX Coating</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+</div>
+</div>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>In OptiLayer, users have the option to export the current design
+description or the spectral performance of the current design to
+ZEMAX software for optical system design. ZEMAX, developed by
+Zemax Development Corporation, is a widely-used software tool for
+optical design and analysis.
+ZEMAX stores multilayer coatings and associated information in
+files with the .dat extension, with the default file name as
+COATING.DAT. It is advised not to modify or alter the COATING.DAT
+file according to the ZEMAX manual.
+For compatibility and best practices, OptiLayer suggests saving
+designs in a file with a similar name, maintaining the convention
+used by ZEMAX. This helps ensure seamless communication and
+accurate data transfer between OptiLayer and ZEMAX software
+applications.</p>
+<p><img alt="image1" src="../../_images/zemax_exp1.png" /></p>
+<p>In OptiLayer, the process of exporting design information to ZEMAX
+software for optical system design involves the following steps:</p>
+<ol class="arabic">
+<li><div class="p-normal docutils container">
+<p>Specify ZEMAX File: Users can designate the ZEMAX file
+containing the description of multilayer coatings by
+entering the path and filename in the edit fields or by
+utilizing the Browse button to navigate to the desired file
+location.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Load ZEMAX File: Once the file is located, users can click
+on the Load button to import the contents of the file into
+the Export dialog within OptiLayer. This step enables
+OptiLayer to export designs to the specified ZEMAX file.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>ZEMAX File Components: ZEMAX files contain essential
+information about layer materials, their dispersive
+properties (Material tab), design descriptions (Coating
+tab), and optionally, performance properties of multilayers
+(Ideal, Ideal2, Table tabs). Users can refer to the ZEMAX
+documentation for detailed insights into these components.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Editing Options: Within the Export dialog, users can view
+the contents of the ZEMAX Coating file and have the option
+to delete materials if needed. This capability is
+particularly useful as ZEMAX imposes limitations on the
+total number of materials that can be included in the file.</p>
+</div>
+</li>
+</ol>
+<p>By following these steps and leveraging the functionalities
+provided in the Export dialog, users can seamlessly export optical
+design data from OptiLayer to ZEMAX software, ensuring accuracy
+and consistency in the design transfer process.</p>
+<p><img alt="image2" src="../../_images/zemax_exp_popup.png" /></p>
+<p>When the Export Design button is pressed in OptiLayer to transfer
+optical design information to ZEMAX software, a popup menu will
+appear to allow the user to select the desired export mode. The
+menu typically includes four different <a class="reference external" href="export_zemax_coating_descripti.html">export options for the
+design specification</a>,as
+well as an additional option for <a class="reference external" href="export_zemax_performance_table.html">exporting the data as a
+performance table.</a></p>
+<p>The available export options are typically listed as follows:</p>
+<ul>
+<li><div class="p-indentlist2 docutils container">
+<p><a class="reference external" href="export_zemax_coating_descripti.html">Export ZEMAX Coating
+description</a>: This
+export option allows users to transfer the detailed
+description of the multilayer coatings and design parameters
+from OptiLayer to ZEMAX. By selecting this option, users can
+seamlessly export the coating specifications, material
+properties, dispersive properties, and design characteristics
+for further analysis and simulation in ZEMAX software.</p>
+</div>
+</li>
+<li><div class="p-indentlist2 docutils container">
+<p><a class="reference external" href="export_zemax_performance_table.html">Export ZEMAX Performance
+Table</a>: In addition to
+exporting the coating description, users can choose this
+option to export the optical performance data in the form of
+a performance table. This option enables the transfer of
+spectral performance information, including transmittance,
+reflectance, phase and group delay, and other performance
+metrics, which can be utilized for optimizing optical system
+designs in ZEMAX.</p>
+</div>
+</li>
+</ul>
+<p>By providing these distinct export options, OptiLayer empowers
+users to tailor the transfer of optical design data to meet their
+specific requirements in ZEMAX software. This flexibility enables
+seamless integration between the two software tools and
+streamlines the design workflow for enhanced efficiency and
+accuracy in optical system design and analysis.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

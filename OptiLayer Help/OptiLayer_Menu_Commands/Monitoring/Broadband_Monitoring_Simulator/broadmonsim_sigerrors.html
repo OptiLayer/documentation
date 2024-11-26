@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Broadband Monitoring Simulation - Signal Errors</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="broadband-monitoring-simulation-signal-errors">
+<h1>Broadband Monitoring Simulation - Signal Errors</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Broadband Monitoring Simulation - Signal Errors</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt; <a class="reference external" href="broadbandmonitoringsimulatio.html">Broadband Monitoring
+Simulation</a> &gt;</p>
+<p class="p-heading1 rubric" id="broadband-monitoring-simulation-signal-errors-1">Broadband Monitoring Simulation - Signal Errors</p>
+</div>
+</div>
+<p>` &lt;broadmonsimul_monitsystem.html&gt;`__
+` &lt;broadbandmonitoringsimulatio.html&gt;`__ ` &lt;broadmonsim_simul.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p><img alt="image1" src="../../../_images/Broadband_monitor4.png" /></p>
+<p>At the fourth step of the dialog, errors in measured online data
+are specified.</p>
+<p>The Random Errors entry field specifies the level of random noise
+in online data.</p>
+<p>The Fluctuations group of entry fields allows the user to specify
+piece-wise-linear fluctuations of measurement data over time. The
+Drift entry field specifies the level of an additive measurement
+data drift in a random time interval specified by the next two
+fields. A value in the Mean time entry field is the mean value of
+this interval, and a value in the RMS field is the standard
+deviation of this interval.</p>
+<p>The Calibration Drifts group of entry fields is used to simulate
+shifts and calibration drifts of online spectrophotometric
+measurements over time. The rate of shift or calibration drift is
+specified in the Rate,
+%<a class="reference external" href="tg://bot_command/?command=1000s">/1000s</a> entry field. Let
+a value in this field be equal to “a”. If the Shift radio button
+is checked, then measurement data is shifted by “a%” in 1000
+seconds. If the Scale radio button is checked, then a measurement
+data calibration drift is simulated. This means that the baseline
+transmittance of an open optical path is measured as equal to
+100%+a% in 1000 seconds after its calibration as equal to 100%.
+The Recalibr.time entry field allows the user to specify a time
+interval in which a recalibration of the online monitoring device
+is done.</p>
+<p>The Preview Layer entry field allows the user to select a layer
+number for previewing the monitoring signal. The Update button
+simulates a new set of monitoring data.</p>
+<p>The Y Axis Scale radio button allows selecting the type of scaling
+for the preview screen.</p>
+<p>See also:</p>
+<div class="p-normal docutils container">
+<p><a class="reference external" href="broadmonsim_deprates.html">Broadband Monitoring Simulation - Deposition
+Rates</a></p>
+</div>
+<div class="p-normal docutils container">
+<p><a class="reference external" href="broadband_pars_devs.html">Broadband Monitoring Simulation - Parameters
+Deviations</a></p>
+</div>
+<div class="p-normal docutils container">
+<p><a class="reference external" href="broadmonsimul_monitsystem.html">Broadband Monitoring Simulation - Monitoring
+System</a></p>
+</div>
+<div class="p-normal docutils container">
+<p><a class="reference external" href="broadmonsim_simul.html">Broadband Monitoring Simulation - Simulation of
+Deposition</a></p>
+</div>
+<div class="p-normal docutils container">
+<p><a class="reference external" href="broadmonsim_res.html">Broadband Monitoring Simulation - Resulting
+Performance</a></p>
+</div>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="example-1-main-concepts-of-optilayer-software-demonstration-using-quarter-wave-mirrors-qwm">
+<h1>Example 1. Main concepts of OptiLayer software. Demonstration using quarter-wave mirrors (QWM)</h1>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p>One of the main concepts of OptiLayer software is the concept of
+decentralized data storage. This means that data related to
+different projects of the user is not stored in one directory, but
+in separate directories, each of which is intended to solve
+specific problems. The corresponding project directories have sets
+of databases for storing data related to this project: substrate
+and layer refractive indices, target spectral characteristics,
+designs, etc. All such databases are stored on the computer’s hard
+disk, and to begin working on a project, the user must load the
+necessary datafiles from the databases into the computer’s RAM.
+The main purpose of this example is to demonstrate how it works.
+Another important concept relates to the way how designs of
+optical coatings are specified. In OptiLayer, optical thickness
+and not physical thickness play a primary role in design
+specification. Of course, both types of thicknesses are
+interrelated and this example will show how this relation is
+established. But any design can be initially specified using a
+formula representation. For example, the formula (HL)^9 H
+describes a quarter wave mirror having 19 layers with odd high
+index layers and even low index layers. The considered example
+shows how the physical thicknesses of this mirror are specified in
+calculations.</p>
+<p>In the File -&gt; Project menu of OptiLayer, find the directory
+LEC24D1 and open it. The datafiles needed to evaluate the spectral
+properties of the 19-layer QWM are already stored on the hard
+disk. In Data -&gt;Substrate, look at the contents of the substrate
+database. It has an item with the name Glass n=1.52.</p>
+<p><img alt="image1" src="../_images/Ex1_1.png" /></p>
+<p>Using the Edit tab, check the refractive index of this file.</p>
+<p><img alt="image2" src="../_images/Ex1_2.png" /></p>
+<p><img alt="image3" src="../_images/arrow_r.png" /> Note that there is nothing in the wavelength field because the non-dispersive substrate index is specified.</p>
+<p>In the same way check the contents of the layer material database.</p>
+<p>Go to the design database and check the file QWM-19, c.w. 600 nm.</p>
+<p><img alt="image4" src="../_images/Ex1_3.png" /></p>
+<p>The number of layers of this design is 19 – see the The number of layers filed. The spreadsheet below has exactly 19 rows corresponding to the layers of this design and numbered according
+to the layer number, starting from the substrate. The Material
+column of this spreadsheet has the default designations for the refractive indices of design layers with abbreviations H and L. These abbreviations are specified in the Odd material and Even
+material fields at the upper part of the spreadsheet. Note that
+the specific layer materials will be set later. The Physical th
+column has zeros in all rows because these thicknesses are not yet
+specified. The column QWOT (quarter wave optical thicknesses) has
+the default values of 1. In fact, the values in the QWOT column
+and the letters in the Material column correspond to the formula
+(HL)^9 H for a 19-layer quarter wave mirror. The value 600 in the
+Control wavelength field at the upper part of the window specifies
+the control wavelength of the QWM in nanometers. In accordance
+with this wavelength, the values of the layer optical thicknesses
+in the Optical th column are determined. The FWOT column specifies
+the layer optical thicknesses as full wave optical thicknesses
+that are four times the quarter wave optical thicknesses.</p>
+<p><img alt="image5" src="../_images/Ex1_4.png" /></p>
+<p>To evaluate spectral characteristics of a 19-layer QWM, load the
+substrate datafile, layer material datafiles, and design into RAM
+(Load tabs in the respective databases). Check the General
+information window (first option in the View menu).</p>
+<p><img alt="image6" src="../_images/Ex1_5.png" /></p>
+<p><img alt="image7" src="../_images/Ex1_6.png" /></p>
+<p><img alt="image3" src="../_images/arrow_r.png" /> Note that the names of the downloaded datafiles have arrived in
+the corresponding lines of the General information window. Also note that the abbreviations H and L have been automatically assigned to the low and high indices of the downloaded materials.</p>
+<p>In the design database, open the file QWM-19, c.w. 600 nm.</p>
+<p><img alt="image8" src="../_images/Ex1_7.png" /></p>
+<p><img alt="image3" src="../_images/arrow_r.png" /> Note that the Physical th column now has non-zeros values in all
+rows. The layer physical thicknesses were determined from the
+corresponding optical thickness values using the refractive
+indices of the loaded materials.</p>
+<p>It is now possible to evaluate the spectral characteristics of the
+quarter wave mirror. To do this, go to the T&amp;R&amp;Phase option in the
+Analysis menu. The mirror transmittance is plotted in the default
+spectral range of 400 to 800 nm.</p>
+<p><img alt="image9" src="../_images/Ex1_8.png" /></p>
+<p>It is possible to change the evaluation spectral range and the
+characteristics plotted. To do this, use the right mouse click in
+the evaluation window. To add additional characteristics for
+plotting, use the Add button in the Plot options window.</p>
+<p><img alt="image10" src="../_images/Ex1_9.png" /></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Integral Target</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="integral-target">
+<h1>Integral Target</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Integral Target</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="integral-target-1">Integral Target</p>
+</div>
+</div>
+<p>` &lt;target_peaks.html&gt;`__ ` &lt;idh_menu_data.html&gt;`__
+` &lt;idh_edit_color_target.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>In the OptiLayer software, an integral target is defined as an
+expression of the form:</p>
+<p><img alt="image1" src="../../_images/eqn003.gif" /></p>
+<p>where λ1 and λ2 are the boundaries of the wavelength interval of
+interest, W(λ) is a specified weight function, and C(λ) is a
+spectral characteristic of a coating. For example, C(λ) could
+represent Rs for reflectance for s-polarization, Ap for
+absorptance for p-polarization, or other relevant characteristics.
+Integral targets in OptiLayer are represented as finite sums and
+can be viewed as approximations of the integral expression using
+the rectangle rule formula. This approach allows for the efficient
+calculation and evaluation of integral targets within the software
+platform.</p>
+<p><img alt="image2" src="../../_images/Integral_Target_22.png" /></p>
+<p>On the 2nd page of the Integral Target Editor in OptiLayer, it is
+essential to specify the spectral weight function W(λ) at a
+defined wavelength grid. Up to 128 distinct spectral weight
+functions can be defined and utilized within the current version
+of OptiLayer. The number of spectral weight functions can be
+customized using the “The number of integrals” entry field. To
+access and edit a specific spectral weight function, use the tabs
+located on the right side of the editor. Alternatively, you can
+select a spectral weight function by clicking the down-arrow
+button to reveal a drop-down list of available options.
+The “Normalized” checkbox allows you to control whether the weight
+function should be normalized, as outlined in the formula above.
+If normalization is not required or is undesirable, you can
+uncheck the “Normalize” option. In such cases, a simplified
+formula will be used instead.</p>
+<p><img alt="image3" src="../../_images/eqn008.gif" /></p>
+<p>You can manage spectral weight functions in the Integral Target
+Editor as follows:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>To delete a spectral weight function, use the x button.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>To add a new spectral weight function, either increase “The
+number of integrals” value or click the + button.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Each spectral weight function can be given a customized name
+for better organization. You can change the default names
+(F1, F2, etc.) using the “Name” entry field.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>The “Source/Detector” checkbox allows you to specify whether
+the loaded Source and Detector should be considered. In this
+case, C(λ) in the formula is multiplied by spectral powers of
+the <a class="reference external" href="idh_edit_light_source.html">Source and Detector</a> that
+are loaded into memory.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Commonly used spectral weight functions are available in
+the Load Common Integral for quick access. You can utilize
+predefined spectral weight functions by opening a
+supplementary dialog with the down-arrow button next to the
+“Name” entry field.</p>
+</div>
+</li>
+</ul>
+<p><img alt="image4" src="../../_images/Integral_Target_32.png" /></p>
+<div class="docutils container">
+<p><img alt="image5" src="../../_images/arrow_r.png" /></p>
+</div>
+</div>
+</div>
+<p>Note: predefined spectral weight functions can be customized or expanded
+according to your needs. The corresponding files are stored in
+Comma-Separated Values (CSV) format with the extension *.IQSP. These
+files can be accessed in the Catalog location, with the default
+directory being: “C:\Users\Public\Documents\OptiLayer\Catalog” You
+can locate and work with these files to modify or extend the predefined
+spectral weight functions as required for your specific applications
+within OptiLayer.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The “Preview” tab in the Integral Target Editor enables you to examine
+the specified weight function visually through graphical representation.
+This tab provides a graphical view of the weight function, allowing you
+to inspect its characteristics and make any necessary adjustments or
+validations before utilizing it in calculations.</p>
+<p><img alt="image6" src="../../_images/Integral_Target_42.png" /></p>
+<p>In OptiLayer, you can specify up to 128 different weight functions at
+various wavelength grids, allowing for the use of a wide range of
+integral target expressions simultaneously.
+Once the weight function and the grid are specified on the 2nd page of
+the Integral Target Editor dialog, you can calculate the corresponding
+approximate value of the integral target F. This calculated value will
+be utilized in further computations within OptiLayer, enabling you to
+analyze and optimize your designs effectively.</p>
+<p><img alt="image7" src="../../_images/eqn004.gif" /></p>
+<p>where λj represents spectral points in the grid and L denotes the total
+number of spectral points, the expressions can vary for different weight
+functions. To differentiate between these expressions, we introduce an
+index j to enumerate them, where F = F(j) represents the specific
+integral target expression corresponding to each weight function.</p>
+<p><img alt="image8" src="../../_images/Integral_Target_52.png" /></p>
+<p>On the 1st page of the Integral Target Editor dialog in OptiLayer, you
+can specify detailed requirements for each integral target expression.
+Here is an overview of the columns available on this page:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>Angle column: Specifies the incidence angle to be used for the
+computations of a particular spectral characteristic C(λ).</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Integral column: Specifies the weight function and wavelength grid
+to be used for a specific integral target expression.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Char column: Specifies the <a class="reference external" href="idh_spectral_abbreviations.html">spectral
+characteristic</a> C(λ) to be
+utilized, such as As (absorptance for s-polarization) in the
+example mentioned.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Target column: Specifies the target values for the integral
+expressions.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Tol column: Specifies the tolerances for the target values.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>Q column: Specifies <a class="reference external" href="idh_target_qualifier.html">qualifiers</a>for the target values.</p>
+</div>
+</li>
+</ul>
+<p>The final expression for the corresponding term in the merit function is
+constructed based on the specified requirements in these columns,
+reflecting the comprehensive criteria set for the integral target
+expressions within the OptiLayer software:</p>
+<p><img alt="image9" src="../../_images/eqn005.gif" /></p>
+<p>where M represents the number of different integrals in the resulting
+target, <img alt="image10" src="../../_images/eqn006.gif" />are target values, <img alt="image11" src="../../_images/eqn007.gif" /> are corresponding
+tolerances.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Refractive Index Error Analysis Setup</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="refractive-index-error-analysis-setup">
+<h1>Refractive Index Error Analysis Setup</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="refractive-index-errors-analysis-setup-procedure">Refractive Index Errors Analysis Setup Procedure</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_analysis.html">Analysis
+Menu</a> &gt; <a class="reference external" href="idh_error_analysis.html">Errors
+Analysis</a> &gt;</p>
+<p class="p-heading1 rubric" id="refractive-index-errors-analysis-setup-procedure-1">Refractive Index Errors Analysis Setup Procedure</p>
+</div>
+</div>
+<p>` &lt;idh_error_analysis_setup_thick.html&gt;`__ ` &lt;idh_error_analysis.html&gt;`__
+` &lt;idh_error_analysis_results.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>This dialog allows for setting refractive index errors and
+launching <a class="reference external" href="idh_error_analysis.html">Error Analysis.</a></p>
+<p>Errors in refractive indices, Re(n), can be entered as either
+absolute or relative values. Errors in extinction coefficients,
+Im(n), are entered as absolute values only. The default values are
+set to zero.</p>
+<p><img alt="image1" src="../../../_images/err_refr.png" /></p>
+<p>To change a root-mean-square error value (RMS) for any layer,
+select a cell in the corresponding row of the column labeled “RMS”
+next to either the Re(n) or Im(n) columns.
+The “Per Material Errors” option sets a specific method for
+refractive index and extinction coefficient errors:</p>
+<ul>
+<li><div class="p-normal docutils container">
+<p>When it is off (the default), errors in refractive indices
+and extinction coefficients for each layer are different and
+independent. In other words, errors are generated on a “per
+layer” basis.</p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>When it is on, errors in refractive indices and extinction
+coefficients in all layers of the same material (H, L, …)
+are the same. In other words, errors are generated on a “per
+material” basis. The first randomly generated deviation is
+assigned to all refractive indices of the H layers, the
+second randomly generated deviation is assigned to all
+refractive indices of the L layers, and so on. A similar
+procedure is applied to extinction coefficients if necessary.</p>
+</div>
+</li>
+</ul>
+<p>If “Keep Optical Thickness” is active, then the deviations of
+refractive indices and thicknesses are connected so that the
+optical thickness of a layer with random variations in thickness
+and refractive indices is equal to the initial optical thickness
+of the same layer. In this case, only the refractive index error
+is provided by a random value. The corresponding variation of
+thickness is computed using the just-mentioned relation.
+The “Column…” button allows easy access to the <a class="reference external" href="idh_column_editor.html">Column
+Editor</a>.</p>
+<p>The “OK” button accepts the changed values and starts the Error
+Analysis procedure. Its results are displayed in the <a class="reference external" href="idh_error_analysis_results.html">Error
+Analysis Results</a> window.</p>
+<div class="docutils container">
+</div>
+<p>See also</p>
+<ul>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_error_analysis_setup_chara.html">Setting Error Analysis
+Characteristics</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p><a class="reference external" href="idh_error_analysis_setup_thick.html">Thickness Error Analysis
+Setup</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

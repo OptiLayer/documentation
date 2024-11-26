@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Design Formula Editing</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="design-formula-editing">
+<h1>Design Formula Editing</h1>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Design Formula Editing</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_data.html">Data
+Menu</a> &gt; <a class="reference external" href="idh_design.html">Design Database</a>
+&gt; <a class="reference external" href="idh_design_editor.html">Design Editor</a> &gt;</p>
+<p class="p-heading1 rubric" id="design-formula-editing-1">Design Formula Editing</p>
+</div>
+</div>
+<p>` &lt;idh_design_editor.html&gt;`__ ` &lt;idh_design_editor.html&gt;`__
+` &lt;idh_layer_status.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>Describing design structures using formulas is commonly convenient
+and recognized, especially when specifying layer optical
+thicknesses in quarter-wave units. In these formulas, the
+materials of the layers are represented by their
+<a class="reference external" href="idh_material_abbreviations.html">abbreviations.</a> An example
+of such a formula would include:</p>
+<p>H 0.5L 2H L</p>
+<p>corresponds to a 4-layer design where the optical thicknesses of
+the layers are equal to 1, 0.5, 2, and 1 in Quarter-Wave Optical
+Thickness (QWOT) units, respectively. In such depictions, the
+factor 1 can be omitted for simplification.
+When a specific sequence of layers is repeated within the design,
+this repetition is typically indicated by using a power index. The
+OptiLayer Formula Editor, a tool designed for editing and creating
+layer structure formulas, supports this notation. It recognizes a
+power index, written as ^n, following a group of layers enclosed
+in brackets to denote repetition. For example, the formula</p>
+<p>(H L)^4 H</p>
+<p>corresponds to a 9-layer design in which the sequence of layers
+represented as (H L)—where “H” might stand for a high refractive
+index material and “L” for a low refractive index material—is
+repeated 4 times, followed by an additional layer. This notation
+simplifies the depiction of repetitive layer structures in optical
+design formulas.</p>
+<p><img alt="image1" src="../../../../_images/Design_formula_11.png" /></p>
+<p>You can utilize the Formula Editor located in the second tab of
+the Design editor window both to create a new design formula and
+to alter an existing one.
+If the “Start from the substrate” box is checked, the layer
+sequence is configured to begin from the substrate side.
+Conversely, if your layer ordering convention begins from the
+ambient medium, you should uncheck this box.
+The “Allow two-character abbreviations” checkbox enables a more
+complex mode that accepts two-character abbreviations for material
+identifiers. To ensure accurate formula parsing in this mode,
+different material abbreviations must be separated by spaces.
+The “Spreadsheet to Formula” button transforms the current design
+displayed in the Spreadsheet tab into a formulaic representation.
+The “Formula to Design” button applies updates to the actual
+design thicknesses if the formula is correctly input.
+OptiLayer retains a record of all edited designs throughout a
+session. If you wish to review or modify previous design formulas,
+you can do so by selecting them from the list box located at the
+bottom of the window.
+To confirm and implement changes to the design, press the OK
+button. If the formula entered cannot be recognized as a valid
+design, you will be prompted either to adjust the formula or to
+cancel and discard the changes by selecting the Cancel button.</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

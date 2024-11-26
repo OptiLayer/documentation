@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Random Optimization</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=70763e5a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=fc1e648b" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="random-optimization">
+<h1>Random Optimization</h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Random_Optimization/idh_random_optimization_parame.html">Setting Random Optimization Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Random_Optimization/exhaustive_search_option.html">Exhaustive Search option</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Random_Optimization/limits_generator.html">Limits Generator</a></li>
+</ul>
+</div>
+<div class="docutils container" id="printheader">
+<p class="p-heading1 rubric" id="id1">Random Optimization</p>
+</div>
+<div class="docutils container" id="idheader">
+<div class="docutils container" id="idheaderbg">
+<p><strong>Navigation:</strong>  OptiLayer Menu Commands &gt; <a class="reference external" href="idh_menu_synthesis.html">Synthesis
+Menu</a> &gt;</p>
+<p class="p-heading1 rubric" id="random-optimization-1">Random Optimization</p>
+</div>
+</div>
+<p>` &lt;inhomogeneous_refinement_setup.html&gt;`__ ` &lt;idh_menu_synthesis.html&gt;`__
+` &lt;idh_random_optimization_parame.html&gt;`__</p>
+<div class="docutils container" id="idcontent">
+<div class="docutils container" id="innerdiv">
+<p>This procedure can be useful for solving complex design problems
+when good starting designs are unknown.
+Another application is to use this option to generate a set of
+different designs for finding a design with better
+manufacturability, for example:</p>
+<ul>
+<li></li>
+<li><div class="p-normal docutils container">
+<p>A. V. Tikhonravov and M. K. Trubetskov, “Design Opportunities
+for Better Manufacturability,” in Optical Interference
+Coatings, OSA Technical Digest (CD) (Optical Society of
+America, 2007), paper WA2.
+<a class="reference external" href="http://www.opticsinfobase.org/abstract.cfm?URI=OIC-2007-WA2">http://www.opticsinfobase.org/abstract.cfm?URI=OIC-2007-WA2</a></p>
+</div>
+</li>
+<li><div class="p-normal docutils container">
+<p>A. V. Tikhonravov and M. K. Trubetskov, “Modern status and
+prospects of the development of methods of designing
+multilayer optical coatings,” J. Opt. Technol. 74, 845-850
+(2007)
+<a class="reference external" href="http://www.opticsinfobase.org/abstract.cfm?URI=JOT-74-12-845">http://www.opticsinfobase.org/abstract.cfm?URI=JOT-74-12-845</a></p>
+</div>
+</li>
+</ul>
+<p>The program will prompt you to specify <a class="reference external" href="idh_random_optimization_parame.html">Random Optimization
+Parameters</a> (the number of
+layers in a random starting design, the average value of physical
+layer thicknesses, and abbreviations specifying the materials for
+odd and even layers). Alternatively, Random Optimization can
+search in the vicinity of the currently loaded design, providing a
+more detailed search.
+The program generates a sequence of starting designs with the
+specified number of layers and average layer thickness. Each
+design is optimized using the method selected in the <a class="reference external" href="idh_synthesis_options_method.html">Synthesis
+Options.</a> The process
+continues until it is interrupted by the user, the best results
+being stored in the Collection storage. This process continues
+until interrupted by the user, with the best results stored in the
+Collection storage. These results can later be used as starting
+designs for further optimization. They can be retrieved from the
+<a class="reference external" href="idh_collection.html">Collection</a> storage and loaded into memory
+using the Extract command.
+If a target function, substrate material, and/or layer materials
+have not been loaded, you will be prompted to do so. If fewer than
+two layer materials have been loaded, the random optimization
+procedure cannot be run.
+You can monitor the progress of the Random Optimization procedure
+in the <a class="reference external" href="idh_refinement_window.html">Refinement Window.</a></p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>
