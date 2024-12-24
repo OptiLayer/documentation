@@ -9,7 +9,7 @@
     <title>Database Access Dialog</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
     <link rel="stylesheet" type="text/css" href="../../_static/nonav.css?v=7ee55c3a" />
-    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css" /> 
+    <link rel="stylesheet" type="text/css" href="../../_static/Fonts.css?v=7822efae" /> 
   </head><body>
 
     <div class="document">
@@ -26,178 +26,122 @@
 <li class="toctree-l1"><a class="reference internal" href="Database_Access_Dialog/configure_database_columns.html">Configure Database Columns</a></li>
 </ul>
 </div>
-<div class="docutils container" id="printheader">
-<p>Database Access Window</p>
-</div>
-<div class="docutils container" id="idheader">
-<div class="docutils container" id="idheaderbg">
-<table class="docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><strong>Navigation:</strong>  OptiChar Menu
-Commands &gt; <a class="reference external" href="idh_menu_data.htm">Data
-Menu</a> &gt;</p>
-<p>Database Access Window</p>
-</td>
-<td><p>` &lt;idh_menu_data.htm&gt;`__
-` &lt;idh_menu_data.htm&gt;`__
-` &lt;idh_loading_data.htm&gt;`__</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="docutils container" id="idcontent">
-<div class="docutils container" id="innerdiv">
-<div class="line-block">
-<div class="line">OptiChar provides a unified database access window for accessing
+<p>OptiChar provides a unified database access window for accessing
 all data files in a similar manner. This window allows you to
-select from four types of data: Measurements, Substrate, Layer
-Material, and Layer Models. Regardless of the type of data you
+select from four types of data: <strong>Measurements</strong>, <strong>Substrate</strong>, <strong>Layer
+Material</strong>, and <strong>Layer Models</strong>. Regardless of the type of data you
 initially open the window with, you can easily switch to other
 types by selecting the appropriate tab at the bottom of the
-window.</div>
-<div class="line">Additionally, you can perform an incremental search for a file
+window.</p>
+<p>Additionally, you can perform an incremental search for a file
 in the database by simply typing the first few letters of the
-file name.</div>
-</div>
-<div class="line-block">
-<div class="line"><img alt="image1" src="data:image/png;base64,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" /></div>
-</div>
+file name.</p>
+<p><img alt="image1" src="../../_images/db_oc.png" /></p>
 <p>In version 14.57, we introduced the instant preview function,
 which allows any database file to be visualized in a small Preview
 window. This feature significantly simplifies the process of
 working with large databases.</p>
-<div class="line-block">
-<div class="line">The Preview sub-window can be detached from the main database
+<p>The <strong>Preview</strong> sub-window can be detached from the main database
 window and positioned anywhere on the screen, providing
 flexibility in your workspace. It can also be docked to any side
 of the database window. To do this, simply use a drag-and-drop
-operation on the caption of the Preview window.</div>
-<div class="line">Actions on database files are accessible through the menu bar at
+operation on the caption of the Preview window.</p>
+<p>Actions on database files are accessible through the menu bar at
 the top of the window. The menu items allow you to perform
 various operations, including loading a file, editing an
 existing file, creating a new file, making a copy of a file,
 renaming a file, deleting a file, generating a text output of
 file contents, and sorting the files in the database in multiple
-ways.</div>
-<div class="line">The commands for Load, Edit, Copy, Rename, Delete, and Output
+ways.</p>
+<p>The commands for <strong>Load</strong>, <strong>Edit</strong>, <strong>Copy</strong>, <strong>Rename</strong>, <strong>Delete</strong>, and <strong>Output</strong>
 can be applied to a selected file. You can select a file by
 clicking on it or by navigating through the list using the arrow
-keys.</div>
-</div>
+keys.</p>
 <ul>
-<li><div class="p-normal docutils container">
-<p>Load - This command loads a selected file from the disk into
-the computer’s memory. See / / / <a class="reference external" href="idh_loading_data.htm">Loading Data
-Files</a>/ / / . In some situations
+<li><p><strong>Load:</strong> This command loads a selected file from the disk into
+the computer’s memory. See <a class="reference external" href="idh_loading_data.html">Loading Data
+Files</a>. In some situations
 (for example, Measurement data), the same file can be used in
-different ways.
-Note the small arrow to the right of the Load button; it
+different ways.</p>
+<p>Note the <strong>small arrow</strong> to the right of the <strong>Load</strong> button; it
 invokes a special popup menu providing access to additional
 options. These options are also accessible through the
 right-click menu of the Database window.</p>
-</div>
 </li>
-<li><div class="p-normal docutils container">
-<p>Edit - This command can be used to modify a selected file.
+<li><p><strong>Edit:</strong> This command can be used to modify a selected file.
 For more details, refer to:</p>
-</div>
-<ul>
-<li><div class="p-normal docutils container">
-<p><a class="reference external" href="target_editor.htm">Editing Measurements</a></p>
-</div>
-</li>
-<li><div class="p-normal docutils container">
-<p><a class="reference external" href="idh_edit_layer_material.htm">Editing Substrate and Layer
-Material</a></p>
-</div>
-</li>
-<li><div class="p-normal docutils container">
-<p><a class="reference external" href="layer_model_editor.htm">Editing Layer Model</a>/ / /
-Important Notes:
-Editing a file in a database does not affect the contents
+<ol class="arabic simple">
+<li><p><a class="reference external" href="target_editor.html">Editing Measurements</a></p></li>
+<li><p><a class="reference external" href="idh_edit_layer_material.html">Editing Substrate and Layer Material</a></p></li>
+<li><p><a class="reference external" href="layer_model_editor.html">Editing Layer Model</a></p></li>
+</ol>
+<p><strong>Important Notes:</strong></p>
+<blockquote>
+<div><p><img alt="image2" src="../../_images/arrow_r.png" /> Editing a file in a database does not affect the contents
 of the file currently residing in memory; it only affects
 the contents of the file stored on the disk. To change the
-memory contents, use the Load command.
-/ Measurement data and Layer Models can be edited in memory
-using the Modify Measurements and Modify Model commands in
-the / / / / / / / / / <a class="reference external" href="idh_characterization_menu.htm">Characterization
-menu</a>/ / / / / / / / / .</p>
-</div>
+memory contents, use the <strong>Load</strong> command.</p>
+<p><img alt="image2" src="../../_images/arrow_r.png" /> Measurement data and Layer Models can be edited in memory
+using the <strong>Modify Measurements</strong> and <strong>Modify Model</strong> commands in
+the <a class="reference external" href="idh_characterization_menu.html">Characterization
+menu</a> .</p>
+</div></blockquote>
 </li>
-</ul>
-</li>
-<li><div class="p-normal docutils container">
-<p>New - This menu item allows you to create a new file. When
+<li><p><strong>New:</strong> This menu item allows you to create a new file. When
 selected, you will be prompted for a new filename and an
-optional comment (see / / / <a class="reference external" href="idh_database_new_file.htm">Creating a New Database
-File</a>/ / / ). You will then
-automatically enter Edit mode to modify the contents of the
+optional comment (see <a class="reference external" href="idh_database_new_file.html">Creating a New Database
+**File**</a>). You will then
+automatically enter <strong>Edit</strong> mode to modify the contents of the
 new file. Some data fields are already filled with default
-values, which should be changed to suit your needs.
-/ Warning: The maximum number of files in each database is
-799.</p>
-</div>
+values, which should be changed to suit your needs.</p>
+<blockquote>
+<div><p><img alt="image2" src="../../_images/arrow_r.png" /> <strong>Warning:</strong> The maximum number of files in each database is 799.</p>
+</div></blockquote>
 </li>
-<li><div class="p-normal docutils container">
-<p>Copy - This command allows you to copy a file. This is useful
+<li><p><strong>Copy:</strong> This command allows you to copy a file. This is useful
 if it is appropriate to modify an existing file for a new
 purpose. After selecting this command, you will be asked to
 confirm the copy process or cancel it. Upon confirmation, you
 will be prompted to enter a new filename and comments, in the
-same way as for the New command.
-/ Warning: The maximum number of files in each database is
-799.</p>
-</div>
+same way as for the <strong>New</strong> command.</p>
+<blockquote>
+<div><p><img alt="image2" src="../../_images/arrow_r.png" /> <strong>Warning:</strong> The maximum number of files in each database is 799.</p>
+</div></blockquote>
 </li>
-<li><div class="p-normal docutils container">
-<p>Rename - This command allows you to rename a selected file.
+<li><p><strong>Rename:</strong> This command allows you to rename a selected file.
 When selected, a dialog box titled “Rename To” will open,
 with the name of the selected file highlighted. A second
 field for the comment associated with the file is also
 displayed. After changing either of these fields and clicking
-the OK button, the database will be updated to reflect the
-new name and/or comment.</p>
-</div>
-</li>
-<li><div class="p-normal docutils container">
-<p>Delete - This command allows you to delete any file in a
+the <strong>OK</strong> button, the database will be updated to reflect the
+new name and/or comment.</p></li>
+<li><p><strong>Delete:</strong> This command allows you to delete any file in a
 database. You will be prompted to confirm whether you really
 want to delete the selected file. Upon confirming the
-deletion, the file will be removed from the database.
-/ Warning: Deleting a file destroys its contents; once
+deletion, the file will be removed from the database.</p>
+<blockquote>
+<div><p><img alt="image2" src="../../_images/arrow_r.png" /> <strong>Warning:</strong> Deleting a file destroys its contents; once
 deleted, it cannot be recovered.</p>
-</div>
+</div></blockquote>
 </li>
-<li><p>Output - The output option allows the creation of a text report
-on the contents of a selected file (see / / / / / / <a class="reference external" href="idh_output.htm">Creating
-Text Output</a>/ / / / / / ). You can save this
-report as an ASCII file (using the Save Output As command) or
-send it directly to the printer (using the Print command) from
-the / / / / / / <a class="reference external" href="idh_menu_file.htm">File Menu</a>/ / / / / / .</p></li>
-<li><div class="p-normal docutils container">
-<p>Sort - This command allows you to sort the filenames in a
+<li><p><strong>Output:</strong> The output option allows the creation of a text report
+on the contents of a selected file (see <a class="reference external" href="idh_output.html">Creating
+Text Output</a>). You can save this
+report as an ASCII file (using the <strong>Save Output As</strong> command) or
+send it directly to the printer (using the <strong>Print</strong> command) from
+the <a class="reference external" href="idh_menu_file.html">File Menu</a>.</p></li>
+<li><p><strong>Sort:</strong> This command allows you to sort the filenames in a
 database in different ways. Files can be sorted by the
 alphabetical order of their names, the names of their
 creators, or by creation or revision dates. Any sorted
 category can also be arranged in reverse order. For details,
-see / / / / / / <a class="reference external" href="idh_config_sorting.htm">Setting Sorting
-Options</a>/ / / / / / .</p>
-</div>
-</li>
-<li><div class="p-normal docutils container">
-<p>Find - This opens an additional search tool. You can specify
+see <a class="reference external" href="idh_config_sorting.html">Setting Sorting
+Options</a>.</p></li>
+<li><p><strong>Find:</strong> This opens an additional search tool. You can specify
 a name pattern in order to search for the required file in
-large databases.</p>
-</div>
-</li>
-<li><div class="p-normal docutils container">
-<p>Quit - This command closes the database window.</p>
-</div>
-</li>
+large databases.</p></li>
+<li><p><strong>Quit:</strong> This command closes the database window.</p></li>
 </ul>
-</div>
-</div>
 </section>
 
 
