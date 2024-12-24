@@ -15,15 +15,12 @@
                     <section title="OptiChar Main Features" ref="General_Information_on_OptiChar/idh_optilayer_general.html"/>
                     <section title="OptiLayer Development" ref="General_Information_on_OptiChar/optilayer_development.html"/>
                     <section title="Hardware Requirements" ref="General_Information_on_OptiChar/hardwarerequirements.html"/>
-                    <section title="Installation" ref="General_Information_on_OptiChar/oc_installation.html">
-                        <section title="Important:" ref="General_Information_on_OptiChar/oc_installation.html#important"/>
-                    </section>
+                    <section title="Installation" ref="General_Information_on_OptiChar/oc_installation.html"/>
                     <section title="OptiChar Components" ref="General_Information_on_OptiChar/OptiChar%20Components.html">
                         <section title="OptiChar Data Files" ref="General_Information_on_OptiChar/OptiChar_Components/idh_data.html"/>
                         <section title="Spreadsheet Editing" ref="General_Information_on_OptiChar/OptiChar_Components/idh_spreadsheet_editing.html"/>
-                        <section title="Output Options" ref="General_Information_on_OptiChar/OptiChar_Components/idh_output.html">
-                            <section title="Characterization" ref="General_Information_on_OptiChar/OptiChar_Components/Output_Options/characterization.html"/>
-                        </section>
+                        <section title="Output Options" ref="General_Information_on_OptiChar/OptiChar_Components/idh_output.html"/>
+                        <section title="Characterization" ref="General_Information_on_OptiChar/OptiChar_Components/characterization.html"/>
                     </section>
                     <section title="Keyboard Keys Assignment" ref="General_Information_on_OptiChar/idh_keys_assignment_oc.html"/>
                     <section title="OptiChar Menu and Toolbar" ref="General_Information_on_OptiChar/idh_optilayer_main.html"/>
@@ -109,7 +106,7 @@
                             <section title="Measurement Peak List" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/target_peaks.html"/>
                         </section>
                         <section title="Combine Measurements" ref="OptiChar_Menu_Commands/Data_Menu/combine_measurements.html"/>
-                        <section title="Color Target" ref="OptiChar_Menu_Commands/Data_Menu/idh_edit_color_target.html">
+                        <section title="Setting Up the Color Target" ref="OptiChar_Menu_Commands/Data_Menu/idh_edit_color_target.html">
                             <section title="Anchor Parameters" ref="OptiChar_Menu_Commands/Data_Menu/Color_Target/anchor_parameters.html"/>
                             <section title="Color Range Targets" ref="OptiChar_Menu_Commands/Data_Menu/Color_Target/color_range_targets.html"/>
                         </section>
@@ -120,7 +117,6 @@
                         <section title="Substrate and Layer Material" ref="OptiChar_Menu_Commands/Data_Menu/idh_edit_layer_material.html">
                             <section title="Table from Formula" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_from_formula.html"/>
                             <section title="Table from Composition" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/tablefromcomposition.html"/>
-                            <section title="Table from R/T Measurements" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_from_rt.html"/>
                             <section title="Formula from Table" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/formula_from_table.html"/>
                             <section title="Composition from Table" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/compositionfromtable.html"/>
                             <section title="Table Simplify" ref="OptiChar_Menu_Commands/Data_Menu/Substrate_and_Layer_material/table_simplify.html"/>
@@ -148,7 +144,9 @@
                         <section title="Characterization Options" ref="OptiChar_Menu_Commands/Characterization_Menu/idh_characterization_options.html"/>
                     </section>
                     <section title="Results Menu" ref="OptiChar_Menu_Commands/idh_menu_results.html">
-                        <section title="Output Window" ref="OptiChar_Menu_Commands/Results_Menu/outputwindow.html"/>
+                        <section title="Output Window" ref="OptiChar_Menu_Commands/Results_Menu/outputwindow.html">
+                            <section title="Export to MS Excel Options" ref="OptiChar_Menu_Commands/Results_Menu/Output_Window/exporttomsexceloptions.html"/>
+                        </section>
                         <section title="Plot Menu" ref="OptiChar_Menu_Commands/Results_Menu/idh_plot_menu.html"/>
                     </section>
                     <section title="Configuration Menu" ref="OptiChar_Menu_Commands/idh_menu_configuration.html">
@@ -175,7 +173,6 @@
 
         </keywords>
         <files>
-            <file>Advanced Examples.html</file>
             <file>General Information on OptiChar.html</file>
             <file>OptiChar Menu Commands.html</file>
             <file>genindex.html</file>
@@ -189,16 +186,15 @@
             <file>General_Information_on_OptiChar/oc_installation.html</file>
             <file>General_Information_on_OptiChar/optilayer_development.html</file>
             <file>General_Information_on_OptiChar/quickstart.html</file>
+            <file>General_Information_on_OptiChar/OptiChar_Components/characterization.html</file>
             <file>General_Information_on_OptiChar/OptiChar_Components/idh_data.html</file>
             <file>General_Information_on_OptiChar/OptiChar_Components/idh_output.html</file>
             <file>General_Information_on_OptiChar/OptiChar_Components/idh_spreadsheet_editing.html</file>
-            <file>General_Information_on_OptiChar/OptiChar_Components/Output_Options/characterization.html</file>
             <file>OptiChar_Menu_Commands/idh_characterization_menu.html</file>
             <file>OptiChar_Menu_Commands/idh_menu_configuration.html</file>
             <file>OptiChar_Menu_Commands/idh_menu_data.html</file>
             <file>OptiChar_Menu_Commands/idh_menu_edit.html</file>
             <file>OptiChar_Menu_Commands/idh_menu_file.html</file>
-            <file>OptiChar_Menu_Commands/idh_menu_help.html</file>
             <file>OptiChar_Menu_Commands/idh_menu_results.html</file>
             <file>OptiChar_Menu_Commands/idh_menu_view.html</file>
             <file>OptiChar_Menu_Commands/idh_optilayer.html</file>
@@ -311,55 +307,195 @@
             <file>OptiChar_Menu_Commands/View_Menu/Color_Evaluation/idh_color_evaluation_parameter_oc.html</file>
             <file>OptiChar_Menu_Commands/View_Menu/Data_Fitting/model_peaks.html</file>
             <file>_images/about_oc.png</file>
+            <file>_images/angles.png</file>
+            <file>_images/angles_w.png</file>
             <file>_images/arrow_r.png</file>
+            <file>_images/backup.png</file>
+            <file>_images/blackbodysettings.png</file>
+            <file>_images/bulkinhom.png</file>
             <file>_images/c_clear.png</file>
+            <file>_images/c_collect.png</file>
+            <file>_images/c_ed_meas.png</file>
+            <file>_images/c_evac.png</file>
+            <file>_images/c_eval.png</file>
+            <file>_images/c_eval_discr.png</file>
+            <file>_images/c_eval_lab.png</file>
+            <file>_images/c_eval_p.png</file>
+            <file>_images/c_eval_polar.png</file>
             <file>_images/c_layer_btn.png</file>
+            <file>_images/c_laymod1.png</file>
+            <file>_images/c_laymod2.png</file>
+            <file>_images/c_laymod_modify.png</file>
             <file>_images/c_lchar.png</file>
             <file>_images/c_lref.png</file>
             <file>_images/c_measur.png</file>
+            <file>_images/c_mix.png</file>
+            <file>_images/c_mod_mes.png</file>
             <file>_images/c_model_btn.png</file>
             <file>_images/c_subchar.png</file>
             <file>_images/c_substr.png</file>
+            <file>_images/c_windows.png</file>
+            <file>_images/cat.png</file>
+            <file>_images/cex9_laychar1.png</file>
+            <file>_images/char_menu.png</file>
+            <file>_images/char_nk_options.png</file>
+            <file>_images/charopt_general.png</file>
+            <file>_images/charopt_hwqwip.png</file>
+            <file>_images/charopt_plotranges.png</file>
             <file>_images/col_ed.png</file>
+            <file>_images/col_ed2.png</file>
+            <file>_images/col_ed3.png</file>
+            <file>_images/col_patch.png</file>
+            <file>_images/col_targ.png</file>
+            <file>_images/col_targ_p.png</file>
+            <file>_images/colev_diff1.png</file>
+            <file>_images/colev_diff2.png</file>
+            <file>_images/color_opt_oc.png</file>
+            <file>_images/coltgt_anchor.png</file>
+            <file>_images/combine2.png</file>
+            <file>_images/compareindexplots.png</file>
+            <file>_images/coneang1.png</file>
+            <file>_images/coneang2.png</file>
+            <file>_images/coneang3.png</file>
+            <file>_images/config_menu.png</file>
+            <file>_images/configdbcols_re.png</file>
             <file>_images/copy_btn.png</file>
+            <file>_images/copy_spec_dlg.png</file>
+            <file>_images/copy_spec_excel.png</file>
+            <file>_images/copy_spec_menu.png</file>
+            <file>_images/crefinement.png</file>
+            <file>_images/cri.png</file>
             <file>_images/cri_options.png</file>
             <file>_images/csubstr_char.png</file>
             <file>_images/csurfinh.png</file>
+            <file>_images/ctoolbar.png</file>
             <file>_images/cut_btn.png</file>
             <file>_images/data_menu_oc.png</file>
+            <file>_images/db_combine1.png</file>
+            <file>_images/db_oc.png</file>
+            <file>_images/dbcolumnsreim.png</file>
+            <file>_images/delete_dir.png</file>
+            <file>_images/edit_menu_oc_1.png</file>
+            <file>_images/edmat_composite.png</file>
+            <file>_images/edmat_formula.png</file>
+            <file>_images/edmat_imn1.png</file>
+            <file>_images/edmat_preview.png</file>
+            <file>_images/edmat_ren_delta1.png</file>
+            <file>_images/edmat_tab.png</file>
+            <file>_images/edmat_table.png</file>
+            <file>_images/ell_depol.png</file>
+            <file>_images/excel_export.png</file>
+            <file>_images/f_from_t1.png</file>
+            <file>_images/f_from_t2.png</file>
+            <file>_images/file_tra_oc.png</file>
             <file>_images/filemenu_oc_1.png</file>
             <file>_images/filemenu_oc_2.png</file>
             <file>_images/filemenu_oc_3.png</file>
             <file>_images/filemenu_oc_4.png</file>
             <file>_images/filemenu_oc_5.png</file>
+            <file>_images/filetransfer_oc.png</file>
+            <file>_images/fitting_plot_oc.png</file>
             <file>_images/fitting_popup_menu.png</file>
+            <file>_images/gconfig_data_oc.png</file>
             <file>_images/gconfig_gd_gdd_oc.png</file>
+            <file>_images/gconfig_thick_oc.png</file>
+            <file>_images/gconfig_timedate_oc.png</file>
+            <file>_images/gconfig_units_oc.png</file>
             <file>_images/gencfg_sourcedet_2.png</file>
+            <file>_images/geninfo_oc.png</file>
+            <file>_images/geninfo_oc_popup.png</file>
+            <file>_images/gmode.png</file>
+            <file>_images/grid_gen.png</file>
+            <file>_images/help_menu_oc.png</file>
+            <file>_images/hitachiimp1.png</file>
             <file>_images/hw_attach.png</file>
+            <file>_images/imp_excel_1.png</file>
+            <file>_images/imp_excel_options.png</file>
+            <file>_images/imp_opt.png</file>
+            <file>_images/import.png</file>
             <file>_images/import_agf_zemax.png</file>
             <file>_images/import_meas_menu.png</file>
+            <file>_images/import_xy.png</file>
+            <file>_images/impthinproc1.png</file>
             <file>_images/impthinproclogin1.png</file>
+            <file>_images/indshift.png</file>
+            <file>_images/intext.png</file>
+            <file>_images/jasco_options.png</file>
+            <file>_images/jcamp_dx.png</file>
+            <file>_images/layer_plot.png</file>
+            <file>_images/layer_ss.png</file>
+            <file>_images/layerrefinementnk.png</file>
+            <file>_images/light_sr.png</file>
+            <file>_images/light_sr_p.png</file>
+            <file>_images/linew_ed1.png</file>
+            <file>_images/linew_ed2.png</file>
+            <file>_images/load_oc.png</file>
+            <file>_images/mater_popup_menu.png</file>
+            <file>_images/matinh1.png</file>
+            <file>_images/meas_ang.png</file>
+            <file>_images/meas_selection_oc.png</file>
+            <file>_images/modelpeaks.png</file>
+            <file>_images/modifycolortgt.png</file>
+            <file>_images/multi_files_1.png</file>
+            <file>_images/multi_files_2.png</file>
+            <file>_images/new_db_file.png</file>
             <file>_images/newprob_dir.png</file>
             <file>_images/oc_removedata.png</file>
             <file>_images/oc_savedata.png</file>
+            <file>_images/oc_start.png</file>
+            <file>_images/or_savemat.png</file>
+            <file>_images/output_ol.png</file>
             <file>_images/pagesetup_!.png</file>
+            <file>_images/partdis_pc.png</file>
             <file>_images/paste_btn.png</file>
+            <file>_images/paste_bu.png</file>
             <file>_images/pastespecial.png</file>
+            <file>_images/pe_options.png</file>
+            <file>_images/peaklist1.png</file>
             <file>_images/plot_menu.png</file>
             <file>_images/plot_menu_submenu.png</file>
+            <file>_images/porosity.png</file>
+            <file>_images/preproc_measur_oc.png</file>
             <file>_images/print_btn.png</file>
             <file>_images/printpreview_btn.png</file>
             <file>_images/prob_btn.png</file>
+            <file>_images/prob_dir.png</file>
+            <file>_images/probbrowse.png</file>
+            <file>_images/probdirrename.png</file>
+            <file>_images/rangeed.png</file>
+            <file>_images/rangetgt2.png</file>
+            <file>_images/rangetgtbase.png</file>
             <file>_images/redo_btn.png</file>
+            <file>_images/refrindexinfo_1.png</file>
+            <file>_images/refrindexinfo_submenu.png</file>
+            <file>_images/resampl.png</file>
             <file>_images/result_menu_oc.png</file>
             <file>_images/rightclickgeninfo.png</file>
             <file>_images/rightclicktext.png</file>
             <file>_images/saveas_btn.png</file>
+            <file>_images/savemeas.png</file>
+            <file>_images/sel_dir.png</file>
+            <file>_images/simplifymodel.png</file>
+            <file>_images/substr_plot.png</file>
+            <file>_images/substr_ss.png</file>
+            <file>_images/t_from_f.png</file>
+            <file>_images/tabfromcomp.png</file>
             <file>_images/tablesimplify1.png</file>
+            <file>_images/tabtocomp1.png</file>
+            <file>_images/tabtocomp2.png</file>
+            <file>_images/tot_losses.png</file>
+            <file>_images/transform_paste.png</file>
             <file>_images/undo_btn.png</file>
+            <file>_images/user.png</file>
+            <file>_images/varian1.png</file>
+            <file>_images/varian2.png</file>
+            <file>_images/varian3.png</file>
             <file>_images/view_menu_oc_1.png</file>
-            <file>_images/view_menu_oc_2.png</file>
+            <file>_images/window_menu_oc.png</file>
             <file>_images/winrearrange.png</file>
+            <file>_images/woolam.png</file>
+            <file>_images/zeissop_imp1.png</file>
+            <file>_static/Fonts.css</file>
             <file>_static/about_oc.png</file>
             <file>_static/aex12_ge_1.png</file>
             <file>_static/aex12_tgt.png</file>
