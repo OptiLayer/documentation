@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>LEC24C2 – Verification of characterization results – Ta2O5 film is used as an example</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=7822efae" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="lec24c2-verification-of-characterization-results-ta2o5-film-is-used-as-an-example">
+<h1><strong>LEC24C2 – Verification of characterization results – Ta2O5 film is used as an example</strong></h1>
+<blockquote>
+<div><p><img alt="image9" src="../_images/arrow_r.png" /> <strong>Note:</strong> For introduction to the basics of
+characterization theory, we recommend the book by A. Tikhonravov,
+Optical coatings: design, characterization, monitoring, SPIE Press,
+2024</p>
+</div></blockquote>
+<p>The main purpose of this example is to demonstrate an approach to verify
+the wavelength dependence of the refractive index determined during thin
+film characterization. Ta2O5 film deposited on a Suprasil substrate
+using the IBS process is used as an example.</p>
+<p>In the <strong>File</strong> -&gt; <strong>Project</strong> menu of OptiChar, open the directory
+<strong>LEC24C2</strong>. The datafiles needed to run this exercise are already
+loaded into RAM. These are the <strong>SUPRACIL</strong> substrate and the
+measurement datafile <strong>Ta2O5 – T data</strong>. Open the <strong>Data Fitting</strong>
+option in the <strong>View</strong> menu. The dense set of dots in this window shows
+measured transmittance data, and the solid curve represents the
+reflectance from the uncoated <strong>SUPRACIL</strong> substrate. Substrate
+thickness is specified in the line <strong>Substrate thickness</strong> of the
+<strong>General Information</strong> window.</p>
+<p><img alt="image1" src="../_images/ex_2-1.png" /></p>
+<p>As with the LEC24C1 example, there are useful theoretical facts that are
+important for choosing a layer model for characterization using spectral
+transmittance data.</p>
+<ol class="arabic simple">
+<li><p>If the film is non-absorbing, has no bulk inhomogeneity across the
+film thickness, and its refractive index is higher than the
+refractive index of the substrate, then the measured transmittance
+maxima should coincide with the transmittance of the uncoated
+substrate.</p></li>
+<li><p>If the film has bulk inhomogeneity, then the transmittance maxima
+will be shifted relative to the transmittance of the uncoated
+substrate.</p></li>
+</ol>
+<p>In the <strong>Data Fitting</strong> window we see that the transmittance maxima are
+shifted downwards relative to the transmittance of the uncoated
+substrate. In principle, the downward shift of T spectral data can be
+related to absorption in the film. However, it is well known that Ta2O5
+films do not absorb in the spectral range under consideration. Thus, the
+observed shift should be attributed to the film inhomogeneity.</p>
+<p>As usual, we start our investigation using the <strong>Layer
+Characterization</strong> menu option and choosing a model of a homogeneous
+thin film. Let’s choose the <strong>Normal Dispersion</strong> (three-parameter
+Cauchy model) for the refractive index and <strong>Non-absorbing</strong> model in
+the <strong>Extinction</strong> field.</p>
+<p><img alt="image2" src="../_images/ex_2-2.png" /></p>
+<p>Click <strong>OK</strong> to start the characterization procedure. The results are
+displayed in the <strong>Data Fitting</strong> and <strong>Layer Plots</strong> windows. The
+<strong>Data Fitting</strong> window shows the deviations in the model transmittance
+(solid curve) from the measured data which were expected. The refractive
+index of the Ta2O5 film found in the frame of the homogeneous model is
+stored in the <strong>Layer material</strong> database under the name <strong>Ta2O5 –
+homogeneous model</strong>.</p>
+<p><img alt="image3" src="../_images/ex_2-3.png" /> <img alt="image4" src="../_images/ex_2-4.png" /></p>
+<p>Let us move on to the <strong>Layer Refinement</strong> option of the
+<strong>Characterization</strong> menu and check the <strong>Bulk</strong> checkbox in the lower
+left part of the window. The bulk inhomogeneity will be searched for
+within the framework of the Schroeder’s model assuming a liner change in
+the refractive index of the film from its back boundary to the front
+boundary.</p>
+<p><img alt="image5" src="../_images/ex_2-5.png" /></p>
+<p>Click <strong>OK</strong> to start the refinement procedure. The results displayed in
+the <strong>Data Fitting</strong> window show a better match to the measured data
+than before. The refractive index of the Ta2O5 film found in the frame
+of the inhomogeneous model is stored in the <strong>Layer material</strong> database
+under the name <strong>Ta2O5 – inhomogeneous model</strong>. The degree of
+inhomogeneity is positive, which means that the refractive index
+increases from the back boundary of the film to the front boundary.</p>
+<p><img alt="image6" src="../_images/ex_2-6.png" /></p>
+<p>First of all, let us compare the refractive indices found within the
+homogeneous and inhomogeneous film models. To do this, go to the
+<strong>Compare Index Plots</strong> option in the <strong>View</strong> menu. Select the <strong>Ta2O5
+– homogeneous model</strong> and <strong>Ta2O5 – inhomogeneous model</strong> files and
+click the <strong>Compare</strong> tab.</p>
+<p><img alt="image6a" src="../_images/ex_2-6a.png" /></p>
+<p>The difference in the found refractive index
+values is not very significant, it is about 0.2-0.3 %. However, the
+refractive index wavelength dependence found within the inhomogeneous
+model should be considered more reliable. Next, we will compare it with
+other reliable results for the refractive index of Ta2O5 films.</p>
+<p><img alt="image7" src="../_images/ex_2-7.png" /></p>
+<p>The <strong>Layer material</strong> database contains the <strong>Ta2O5 from T at 300-2000
+(IBS)</strong> and <strong>Ta2O5 from T at 400-820 (Magnetron sputtering)</strong> files.
+These are well-trusted results from the paper by <strong>A. Tikhonravov et
+al., Optical parameters of oxide films typically used in optical coating
+production. Appl. Opt., 2011, vol. 50, no. 9, pp. C75-C85</strong><em>.</em> Using
+the <strong>Compare Index Plots</strong> option, compare these results with the
+<strong>Ta2O5 – inhomogeneous model</strong> file. The difference between our result
+and the result obtained for the magnetron sputtered film is almost
+indistinguishable. The refractive index of the IBS film from the cited
+paper is shifted downwards relative to our result by about 1%. Note that
+such difference in the results for the films of the same material
+produced using the same deposition processes is quite possible. The
+refractive index value is directly related to the density of the
+amorphous dielectric film, and the film density can vary depending on
+the parameters of the deposition process.</p>
+<p><img alt="image8" src="../_images/ex_2-8.png" /></p>
+<p>Based on physical considerations, one would only expect an upward or
+downward shift of the refractive index wavelength dependencies, as
+observed in the <strong>Data Fitting</strong> window. In the case of dielectric films
+and spectral ranges where these films have negligible absorption, there
+is no physical reasons for a tilt of one refractive index wavelength
+dependence relative to another dependence found for the same material
+under different deposition conditions. This fact is important for
+comparative verification of characterization results. If such a tilt is
+observed relative to well-established results, then the accuracy of the
+measured data and the consistency of the film model used should be
+checked.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>LEC24C4 – Using various characterization models</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=7822efae" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="lec24c4-using-various-characterization-models">
+<h1><strong>LEC24C4 – Using various characterization models</strong></h1>
+<blockquote>
+<div><p><img alt="image9" src="../_images/arrow_r.png" /> <strong>Note:</strong> For introduction to the basics of
+characterization theory, we recommend the book by A. Tikhonravov,
+Optical coatings: design, characterization, monitoring, SPIE Press,
+2024**</p>
+</div></blockquote>
+<p>The main purpose of this example is to demonstrate that is can be useful
+to use different models for characterization and compare the results
+obtained within these models. The HfO2 film on the fused silica
+substrate is used as an example.</p>
+<p>In the <strong>File</strong> -&gt; <strong>Project</strong> menu of OptiChar, open the directory
+<strong>LEC24C4</strong>. The <strong>Fused silica</strong> substrate datafile needed to run this
+exercise and <strong>R &amp; T at 200-1600 nm</strong> measurement datafile are already
+loaded into RAM. The <strong>R &amp; T at 200-1600 nm</strong> datafile will be replaced
+by other files later after analyzing its accuracy and selecting two
+models for optical characterization.</p>
+<p>Let us start with the analysis of the <strong>Data Fitting</strong> window. In the
+<strong>R</strong> tab of this window, we see a good match between the measured
+reflectance minima and the substrate reflectance. This allows us to
+assume that the film is homogeneous. Let us also check the match in the
+<strong>T</strong> tab of the <strong>Data Fitting</strong> window. All transmittance maxima are
+shifted downwards relative to the transmittance of the uncoated
+substrate. The observed shifts are typical for shifts associated with
+absorption in the film. Thus, in the further models used for
+characterization, we will assume that the film under study is
+homogeneous.</p>
+<p><img alt="image1" src="../_images/ex_4-1.png" /> <img alt="image2" src="../_images/ex_4-2.png" /></p>
+<p>To analyze the accuracy of the <strong>R &amp; T at 200-1600 nm</strong> measurement
+datafile, select the <strong>Total Losses</strong> option from the <strong>View</strong> menu. It
+is clear that our film has very strong absorption in the
+short-wavelength part of the measurement spectrum. Since the spectral
+region near 200 nm is not of primary interest for HfO2 applications, we
+will truncate our measurement data to the spectral region starting at
+250 nm. This will also allow us to study the total losses in this region
+in more detail.</p>
+<p><img alt="image3" src="../_images/ex_4-3.png" /></p>
+<p>To exclude some of the measurement data, go the
+<strong>Preprocess Measurement Data</strong> option from the <strong>Data</strong> menu. In the
+<strong>Below</strong> line of the <strong>Measurement Preprocessing</strong> window set 250 and
+click <strong>OK</strong>. The measurement data will be truncated to the desired
+region.</p>
+<p><img alt="image4" src="../_images/ex_4-4.png" /></p>
+<p>An analysis of the graph in the <strong>Total Losses</strong> window gives us the
+following. The increase in total losses near the left boundary of the
+spectral region is obviously due to the absorption of HfO2 in this
+region. The peak in the graph of total losses near 1380 nm should be
+attributed to the water absorption peak, associated with the residual
+presence of water in the fused silica substrate. But the rather smooth
+absorption plateau to the right of 800 nm has no physical explanation.
+At 800 nm, the spectrophotometer detectors switch, and it can be assumed
+that the measurement accuracy deteriorates. A careful analysis of the
+transmittance data near 800 nm shows that there is a sharp jump in the
+transmittance at this wavelength. Thus, we come to the following
+conclusion: the losses to the right of 800 nm are due to a false
+absorption associated with a systematic inaccuracy of the transmittance
+data in this spectral region.</p>
+<p>Based on the above conclusion about the accuracy of transmittance data,
+we can use a model including a search for the extinction coefficient
+only using the measurement data in the 250-800 nm spectral region. At
+the same time, if we want to find only refractive index of the HfO2
+film, we can do this in a wider range of 250-1600 nm using only the
+reflectance data. This is due to the fact that in the case of dielectric
+films, the reflectance is not sensitive to small absorption losses, and
+also to its better accuracy in this region.</p>
+<p>To summarize, we will perform two characterization attempts using two
+different models and different subsets of the available measurement
+data. These subsets are stored in the measurement databases under the
+names <strong>R and T at 250-800 nm, 8 and 0 degrees</strong> and <strong>R at 250-1600 nm,
+8 degrees</strong>.</p>
+<p>Let us load the first of the stored subsets and run <strong>Layer
+Characterization</strong> with the <strong>Normal Dispersion</strong> model for the
+refractive index and <strong>UV-VIS</strong> model for the extinction coefficient. An
+excellent agreement between the model and measured data is achieved.</p>
+<p><img alt="image5" src="../_images/ex_4-5.png" /> <img alt="image5a" src="../_images/ex_4-5a.png" /></p>
+<p>The found complex refractive index, i.e. the refractive index and extinction
+coefficient, is stored in the <strong>Layer Material</strong> database under the name
+<strong>n&amp;k from R,T at 250-800 nm</strong>.</p>
+<p><img alt="image6" src="../_images/ex_4-6.png" /> <img alt="image6a" src="../_images/ex_4-6a.png" /></p>
+<p>Then let us load the second of the stored subsets of the measurement
+data and run <strong>Layer Characterization</strong> with the <strong>Normal Dispersion</strong>
+model for the refractive index and <strong>Non-absorbing</strong> option for the
+extinction coefficient. Again, an excellent agreement between the model
+and measured data is achieved.</p>
+<p><img alt="image7" src="../_images/ex_4-7.png" /></p>
+<p>The found refractive index is stored in
+the <strong>Layer Material</strong> database under the name <strong>n from R at 250-1600
+nm</strong>.</p>
+<p><img alt="image8" src="../_images/ex_4-8.png" /></p>
+<p>It is worth comparing the refractive indices of the HfO2 film found by
+the two characterization attempts using different models and subsets of
+measurement data. To do this, select the <strong>Compare Index Plots</strong> option
+in the <strong>View</strong> menu. The results obtained are in excellent agreement.
+The difference between the refractive indices found by these attempts
+does not exceed 0.3%.</p>
+<p><img alt="image10" src="../_images/ex_4-10.png" /></p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

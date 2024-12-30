@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>LEC24C1 – Refractive index of SiO2 on BK7 substrate</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=7822efae" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="lec24c1-refractive-index-of-sio2-on-bk7-substrate">
+<h1><strong>LEC24C1 – Refractive index of SiO2 on BK7 substrate</strong></h1>
+<blockquote>
+<div><p><img alt="image9" src="../_images/arrow_r.png" /> <strong>Note:</strong> The main theoretical facts needed to solve this
+characterization problem are presented in the text below. For a more
+detailed introduction to the basics of characterization theory, we
+recommend the book by A. Tikhonravov, Optical coatings: design,
+characterization, monitoring, SPIE Press, 2024</p>
+</div></blockquote>
+<p>The main purpose of this example is to demonstrate the determination of
+the refractive index of a thin film with noticeable bulk inhomogeneity.
+The example presents the methodology of optical characterization using
+spectral photometric data. We consider SiO2 film deposited on the BK7
+substrate.</p>
+<p>In the <strong>File</strong> -&gt; <strong>Project</strong> menu of OptiChar, open the directory
+<strong>LEC24C1</strong>. The datafiles needed to run this exercise are already
+loaded into RAM. These are the substrate <strong>BK7</strong> and the layer measured
+reflectance datafile <strong>R data at 350-840 nm</strong>.</p>
+<p>Open the <strong>Data Fitting</strong>
+option in the <strong>View</strong> menu. Dots in the <strong>Data Fitting</strong> window show
+measured reflectance data, and the solid curve represents the
+reflectance from the uncoated BK7 substrate. Substrate thickness is set
+in the line <strong>Substrate Thickness</strong> of the General Information window.</p>
+<p><img alt="image2" src="../_images/ex_1-2.png" /></p>
+<p>There are some very simple but extremely useful theoretical facts that
+should be taken into consideration when defining a layer model for
+characterization using spectral reflectance data.</p>
+<ol class="arabic simple">
+<li><p>If the considered film is non-absorbing, has no bulk inhomogeneity
+across the film thickness, and its refractive index is lower than the
+refractive index of the substrate (this is our case), then the
+measured reflectance maxima should coincide with the reflectance of
+the uncoated substrate.</p></li>
+<li><p>If the film has bulk inhomogeneity, then the reflectance maxima will
+be shifted relative to the reflectance of the uncoated substrate.</p></li>
+<li><p>In the case of dielectric materials, a small extinction coefficient
+(the imaginary part of the complex refractive index) has little
+effect on the reflectance of the film.</p></li>
+</ol>
+<p>In the <strong>Data Fitting</strong> window we see that the reflectance maxima are
+shifted downwards relative to the reflectance of the uncoated substrate.
+In principle, a downward shift of the R and T spectral data can be
+related to absorption in a film. We are now investigating a SiO2 film,
+which is known to have only a small extinction coefficient. Thus,
+according to fact 3, we cannot attribute the observed shift to
+absorption. Therefore, according to fact 2, we should expect that our
+film has bulk inhomogeneity.</p>
+<p>However, we will start our investigation with a model of a homogeneous
+thin film. This will allow us to see what happens if we choose
+inappropriate film model. Go to the <strong>Characterization -&gt; Layer
+Characterization</strong> menu item. The layer model is specified by choosing
+models for the refractive index and extinction coefficient.</p>
+<p>Let us choose the <strong>Normal Dispersion</strong> model. This is a three-parameter Cauchy
+model for the refractive index, which usually works well for dielectric
+films in the Near UV-Visible-Near IR spectral regions. The fourth
+unknown parameter of our model will be the thickness of the investigated
+film. It will be searched for in accordance with the <strong>Lower and Upper
+Limits</strong> set at the top of the window. Based on the above discussion, we
+set <strong>Non-absorbing</strong> model in the <strong>Extinction</strong> field.</p>
+<p><img alt="image3" src="../_images/ex_1-3.png" /></p>
+<p>Click <strong>OK</strong> to start the characterization procedure. Its results are
+displayed in the <strong>Data Fitting</strong> and <strong>Layer Plots</strong> windows. The
+latter shows the refractive index found during the procedure. The found
+refractive index is stored in the <strong>Layer Material</strong> database under the
+name <strong>SiO2 – homogeneous model</strong>. Pay attention to the <strong>Data Fitting</strong>
+window. There are significant deviations in the reflectance of our model
+(solid curve) from the measured data. This is due to the fact that we
+use an inappropriate layer model. Within the selected model, the
+reflectance maxima coincide with the reflectance of the uncoated
+substrate and they simply cannot fit the measured data around their
+maxima.</p>
+<p><img alt="image4" src="../_images/ex_1-4.png" /> <img alt="image4a" src="../_images/ex_1-4a.png" /></p>
+<blockquote>
+<div><p><img alt="image9" src="../_images/arrow_r.png" /> <strong>Important note:</strong> Systematic deviations of the model’s spectral
+characteristics from the measured data usually indicate deficiencies in
+the thin film model.</p>
+</div></blockquote>
+<p>Let us move on to the <strong>Layer Refinement</strong> option of the
+<strong>Characterization</strong> menu. It will allow us to specify a model
+accounting for bulk inhomogeneity of our film. Note that this option has
+default models for the refractive index and extinction coefficient taken
+from the <strong>Layer Characterization</strong> option. To take into account the
+bulk inhomogeneity, simply check the <strong>Bulk</strong> checkbox in the lower left
+part of the window. The bulk inhomogeneity will be searched for within
+the so-called Schroeder’s model, which assumes a liner change (increase
+or decrease) in the refractive index of the film from its rear boundary
+to the front boundary.</p>
+<p><img alt="image5" src="../_images/ex_1-5.png" /></p>
+<p>Click <strong>OK</strong> to start the refinement procedure. The results are also
+displayed in the <strong>Data Fitting</strong> and <strong>Layer Plots</strong> windows. The
+<strong>Data Fitting</strong> window shows a much better fit of the measured data
+than before. The refractive index wavelength dependence has decreased
+compared to the result obtained using the homogeneous film model. This
+is in better agreement with the known SiO2 refractive index wavelength
+dependencies.</p>
+<p><img alt="image6" src="../_images/ex_1-6.png" /> <img alt="image7" src="../_images/ex_1-7.png" /></p>
+<p>The degree of inhomogeneity is found to be positive (see
+<strong>General Information</strong> window -&gt;<strong>Layer</strong>), meaning that the
+refractive index increases from the back boundary of the film to the
+front boundary. Such an increase is quite common for films produced
+using high energetic deposition processes. The degree of inhomogeneity
+is expressed as a percentage of its relative change compared to its mean
+value.</p>
+<p><img alt="image8" src="../_images/ex_1-8.png" /></p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

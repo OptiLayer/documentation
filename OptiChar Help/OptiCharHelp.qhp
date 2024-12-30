@@ -101,7 +101,6 @@
                             <section title="Spectral Characteristics Abbreviations" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_spectral_abbreviations.html"/>
                             <section title="Measurement Selection" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_spectral_characteristics.html"/>
                             <section title="Angles of Incidence" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_modify_angles.html"/>
-                            <section title="Measurement Wavelengths" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/idh_modify_wavelengths.html"/>
                             <section title="Measurement Preprocessing" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/measurement_preprocessing.html"/>
                             <section title="Measurement Peak List" ref="OptiChar_Menu_Commands/Data_Menu/Measurement_Editor/target_peaks.html"/>
                         </section>
@@ -145,7 +144,7 @@
                     </section>
                     <section title="Results Menu" ref="OptiChar_Menu_Commands/idh_menu_results.html">
                         <section title="Output Window" ref="OptiChar_Menu_Commands/Results_Menu/outputwindow.html">
-                            <section title="Export to MS Excel Options" ref="OptiChar_Menu_Commands/Results_Menu/Output_Window/exporttomsexceloptions.html"/>
+                            <section title="Export" ref="OptiChar_Menu_Commands/Results_Menu/Output_Window/exporttomsexceloptions.html"/>
                         </section>
                         <section title="Plot Menu" ref="OptiChar_Menu_Commands/Results_Menu/idh_plot_menu.html"/>
                     </section>
@@ -167,6 +166,14 @@
                     <section title="Window Menu" ref="OptiChar_Menu_Commands/idh_window_menu.html"/>
                     <section title="OptiChar On-Line Help" ref="OptiChar_Menu_Commands/idh_optilayer.html"/>
                 </section>
+                <section title="OptiChar Examples" ref="OptiChar%20Examples.html">
+                    <section title="LEC24C1 &#8211; Refractive index of SiO2 on BK7 substrate" ref="OptiChar_Examples/Ex_1.html"/>
+                    <section title="LEC24C2 &#8211; Verification of characterization results &#8211; Ta2O5 film is used as an example" ref="OptiChar_Examples/Ex_2.html"/>
+                    <section title="LEC24C3 &#8211; Characterization of a dielectric film with small absorption losses" ref="OptiChar_Examples/Ex_3.html"/>
+                    <section title="LEC24C4 &#8211; Using various characterization models" ref="OptiChar_Examples/Ex_4.html"/>
+                    <section title="LEC24C5 &#8211; Characterization using spectral ellipsometric data" ref="OptiChar_Examples/Ex_5.html"/>
+                    <section title="LEC24C6 &#8211; Substrate characterization (ZnSe substrate)" ref="OptiChar_Examples/Ex_6.html"/>
+                </section>
             </section>
         </toc>
         <keywords>
@@ -174,6 +181,7 @@
         </keywords>
         <files>
             <file>General Information on OptiChar.html</file>
+            <file>OptiChar Examples.html</file>
             <file>OptiChar Menu Commands.html</file>
             <file>genindex.html</file>
             <file>index.html</file>
@@ -190,6 +198,12 @@
             <file>General_Information_on_OptiChar/OptiChar_Components/idh_data.html</file>
             <file>General_Information_on_OptiChar/OptiChar_Components/idh_output.html</file>
             <file>General_Information_on_OptiChar/OptiChar_Components/idh_spreadsheet_editing.html</file>
+            <file>OptiChar_Examples/Ex_1.html</file>
+            <file>OptiChar_Examples/Ex_2.html</file>
+            <file>OptiChar_Examples/Ex_3.html</file>
+            <file>OptiChar_Examples/Ex_4.html</file>
+            <file>OptiChar_Examples/Ex_5.html</file>
+            <file>OptiChar_Examples/Ex_6.html</file>
             <file>OptiChar_Menu_Commands/idh_characterization_menu.html</file>
             <file>OptiChar_Menu_Commands/idh_menu_configuration.html</file>
             <file>OptiChar_Menu_Commands/idh_menu_data.html</file>
@@ -373,6 +387,7 @@
             <file>_images/data_menu_oc.png</file>
             <file>_images/db_combine1.png</file>
             <file>_images/db_oc.png</file>
+            <file>_images/db_oc1.png</file>
             <file>_images/dbcolumnsreim.png</file>
             <file>_images/delete_dir.png</file>
             <file>_images/edit_menu_oc_1.png</file>
@@ -384,6 +399,70 @@
             <file>_images/edmat_tab.png</file>
             <file>_images/edmat_table.png</file>
             <file>_images/ell_depol.png</file>
+            <file>_images/ex_1-2.png</file>
+            <file>_images/ex_1-3.png</file>
+            <file>_images/ex_1-4.png</file>
+            <file>_images/ex_1-4a.png</file>
+            <file>_images/ex_1-5.png</file>
+            <file>_images/ex_1-6.png</file>
+            <file>_images/ex_1-7.png</file>
+            <file>_images/ex_1-8.png</file>
+            <file>_images/ex_2-1.png</file>
+            <file>_images/ex_2-2.png</file>
+            <file>_images/ex_2-3.png</file>
+            <file>_images/ex_2-4.png</file>
+            <file>_images/ex_2-5.png</file>
+            <file>_images/ex_2-6.png</file>
+            <file>_images/ex_2-6a.png</file>
+            <file>_images/ex_2-7.png</file>
+            <file>_images/ex_2-8.png</file>
+            <file>_images/ex_3-1.png</file>
+            <file>_images/ex_3-2.png</file>
+            <file>_images/ex_3-4.png</file>
+            <file>_images/ex_3-5.png</file>
+            <file>_images/ex_3-6.png</file>
+            <file>_images/ex_3-7.png</file>
+            <file>_images/ex_3-8.png</file>
+            <file>_images/ex_3-8a.png</file>
+            <file>_images/ex_4-1.png</file>
+            <file>_images/ex_4-10.png</file>
+            <file>_images/ex_4-2.png</file>
+            <file>_images/ex_4-3.png</file>
+            <file>_images/ex_4-4.png</file>
+            <file>_images/ex_4-5.png</file>
+            <file>_images/ex_4-5a.png</file>
+            <file>_images/ex_4-6.png</file>
+            <file>_images/ex_4-6a.png</file>
+            <file>_images/ex_4-7.png</file>
+            <file>_images/ex_4-8.png</file>
+            <file>_images/ex_5-1.png</file>
+            <file>_images/ex_5-10.png</file>
+            <file>_images/ex_5-11.png</file>
+            <file>_images/ex_5-1a.png</file>
+            <file>_images/ex_5-2.png</file>
+            <file>_images/ex_5-3.png</file>
+            <file>_images/ex_5-4.png</file>
+            <file>_images/ex_5-5.png</file>
+            <file>_images/ex_5-6.png</file>
+            <file>_images/ex_5-7.png</file>
+            <file>_images/ex_5-7a.png</file>
+            <file>_images/ex_5-8.png</file>
+            <file>_images/ex_5-8a.png</file>
+            <file>_images/ex_6-1.png</file>
+            <file>_images/ex_6-10.png</file>
+            <file>_images/ex_6-11.png</file>
+            <file>_images/ex_6-12.png</file>
+            <file>_images/ex_6-12a.png</file>
+            <file>_images/ex_6-2.png</file>
+            <file>_images/ex_6-3.png</file>
+            <file>_images/ex_6-3a.png</file>
+            <file>_images/ex_6-4.png</file>
+            <file>_images/ex_6-5.png</file>
+            <file>_images/ex_6-5a.png</file>
+            <file>_images/ex_6-6.png</file>
+            <file>_images/ex_6-6a.png</file>
+            <file>_images/ex_6-7.png</file>
+            <file>_images/ex_6-8.png</file>
             <file>_images/excel_export.png</file>
             <file>_images/f_from_t1.png</file>
             <file>_images/f_from_t2.png</file>
@@ -445,6 +524,7 @@
             <file>_images/oc_start.png</file>
             <file>_images/or_savemat.png</file>
             <file>_images/output_ol.png</file>
+            <file>_images/output_ol1.png</file>
             <file>_images/pagesetup_!.png</file>
             <file>_images/partdis_pc.png</file>
             <file>_images/paste_btn.png</file>
@@ -653,6 +733,7 @@
             <file>_static/data_menu_oc.png</file>
             <file>_static/db_combine1.png</file>
             <file>_static/db_oc.png</file>
+            <file>_static/db_oc1.png</file>
             <file>_static/db_with_preview.png</file>
             <file>_static/dbcolumnsreim.png</file>
             <file>_static/delete_dir.png</file>
@@ -667,6 +748,75 @@
             <file>_static/edmat_table.png</file>
             <file>_static/ell_depol.png</file>
             <file>_static/embim1.png</file>
+            <file>_static/ex2-5.png</file>
+            <file>_static/ex2-6.png</file>
+            <file>_static/ex2-6a.png</file>
+            <file>_static/ex2-7.png</file>
+            <file>_static/ex2-8.png</file>
+            <file>_static/ex_1-2.png</file>
+            <file>_static/ex_1-3.png</file>
+            <file>_static/ex_1-4.png</file>
+            <file>_static/ex_1-4a.png</file>
+            <file>_static/ex_1-5.png</file>
+            <file>_static/ex_1-6.png</file>
+            <file>_static/ex_1-7.png</file>
+            <file>_static/ex_1-8.png</file>
+            <file>_static/ex_2-1.png</file>
+            <file>_static/ex_2-2.png</file>
+            <file>_static/ex_2-3.png</file>
+            <file>_static/ex_2-4.png</file>
+            <file>_static/ex_2-5.png</file>
+            <file>_static/ex_2-6.png</file>
+            <file>_static/ex_2-6a.png</file>
+            <file>_static/ex_2-7.png</file>
+            <file>_static/ex_2-8.png</file>
+            <file>_static/ex_3-1.png</file>
+            <file>_static/ex_3-2.png</file>
+            <file>_static/ex_3-4.png</file>
+            <file>_static/ex_3-5.png</file>
+            <file>_static/ex_3-6.png</file>
+            <file>_static/ex_3-7.png</file>
+            <file>_static/ex_3-8.png</file>
+            <file>_static/ex_3-8a.png</file>
+            <file>_static/ex_4-1.png</file>
+            <file>_static/ex_4-10.png</file>
+            <file>_static/ex_4-2.png</file>
+            <file>_static/ex_4-3.png</file>
+            <file>_static/ex_4-4.png</file>
+            <file>_static/ex_4-5.png</file>
+            <file>_static/ex_4-5a.png</file>
+            <file>_static/ex_4-6.png</file>
+            <file>_static/ex_4-6a.png</file>
+            <file>_static/ex_4-7.png</file>
+            <file>_static/ex_4-8.png</file>
+            <file>_static/ex_5-1.png</file>
+            <file>_static/ex_5-10.png</file>
+            <file>_static/ex_5-11.png</file>
+            <file>_static/ex_5-1a.png</file>
+            <file>_static/ex_5-2.png</file>
+            <file>_static/ex_5-3.png</file>
+            <file>_static/ex_5-4.png</file>
+            <file>_static/ex_5-5.png</file>
+            <file>_static/ex_5-6.png</file>
+            <file>_static/ex_5-7.png</file>
+            <file>_static/ex_5-7a.png</file>
+            <file>_static/ex_5-8.png</file>
+            <file>_static/ex_5-8a.png</file>
+            <file>_static/ex_6-1.png</file>
+            <file>_static/ex_6-10.png</file>
+            <file>_static/ex_6-11.png</file>
+            <file>_static/ex_6-12.png</file>
+            <file>_static/ex_6-12a.png</file>
+            <file>_static/ex_6-2.png</file>
+            <file>_static/ex_6-3.png</file>
+            <file>_static/ex_6-3a.png</file>
+            <file>_static/ex_6-4.png</file>
+            <file>_static/ex_6-5.png</file>
+            <file>_static/ex_6-5a.png</file>
+            <file>_static/ex_6-6.png</file>
+            <file>_static/ex_6-6a.png</file>
+            <file>_static/ex_6-7.png</file>
+            <file>_static/ex_6-8.png</file>
             <file>_static/excel0.png</file>
             <file>_static/excel_export.png</file>
             <file>_static/f_from_t1.png</file>
@@ -755,6 +905,7 @@
             <file>_static/out_print.png</file>
             <file>_static/out_saveas.png</file>
             <file>_static/output_ol.png</file>
+            <file>_static/output_ol1.png</file>
             <file>_static/pagesetup_!.png</file>
             <file>_static/partdis_pc.png</file>
             <file>_static/paste_btn.png</file>
