@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>LEC24C3 – Characterization of a dielectric film with small absorption losses</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=7822efae" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="lec24c3-characterization-of-a-dielectric-film-with-small-absorption-losses">
+<h1><strong>LEC24C3 – Characterization of a dielectric film with small absorption losses</strong></h1>
+<blockquote>
+<div><p><img alt="image9" src="../_images/arrow_r.png" /> <strong>Note</strong> For introduction to the basics of
+characterization theory, we recommend the book by A. Tikhonravov,
+Optical coatings: design, characterization, monitoring, SPIE Press,
+2024</p>
+</div></blockquote>
+<p>The main purpose of this example is to demonstrate the determination of
+the refractive index and extinction coefficient of a thin film with
+small absorption losses. TiO2 film on the Supracil substrate is used as
+an example.</p>
+<p>In the <strong>File</strong> -&gt; <strong>Project</strong> menu of OptiChar, open the directory
+<strong>LEC24C3</strong>. The datafiles needed to run this exercise are already
+loaded into RAM. These are the <strong>Supracil</strong> substrate and the
+measurement datafile <strong>TiO2 R and T data at 400-800 nm</strong>. Open the
+<strong>Data Fitting</strong> option in the <strong>View</strong> menu. The dots in the T and R
+tabs of this window show the measured transmittance and reflectance
+data, respectively. The solid curves in these tabs represent the
+transmittance and reflectance from the uncoated BK7 substrate. The
+substrate thickness is specified in the <strong>Substrate thickness</strong> line of
+the <strong>General Information</strong> window.</p>
+<p><img alt="image1" src="../_images/ex_3-1.png" /> <img alt="image2" src="../_images/ex_3-2.png" /></p>
+<p>As in the previous examples, we start by analyzing the correspondence
+between the measured data and the R and T of the uncoated substrate. In
+the case of a homogeneous film with a refractive index higher than that
+of the uncoated substrate, the measured reflectance minima should match
+the reflectance of the uncoated substrate. In the <strong>R</strong> tab of the
+<strong>Data Fitting</strong> window, we see a perfect match between these minima and
+the substrate reflectance. This fact indicates that the film is
+homogeneous.</p>
+<p>Let us now check the fit in the <strong>T</strong> tab of the <strong>Data Fitting</strong>
+window. We see that all transmittance maxima are shifted downwards
+relative to the transmittance of the uncoated substrate. But the
+wavelength dependence of these shifts is not typical for shifts caused
+by film inhomogeneity, which are almost the same for all wavelength
+positions of the transmittance maxima. On the contrary, the observed
+shifts are typical for shifts associated with absorption in the film.
+The latter usually increase at shorter wavelengths, where absorption
+increases. Thus, the observed downward shift of the transmittance maxima
+from the substrate transmittance should be attributed to the absorption
+of the film.</p>
+<p>Based on the above considerations, we must conclude that it is necessary
+to use a model of a homogenous film that has some absorption. But before
+finally choosing a thin film model, let us perform one more useful
+experiment. Let us go to the Total losses option in the View menu. This
+option displays the wavelength dependence of the difference 100% - R%
+-T%, where R and T are the measured reflectance and transmittance data.
+In principle, to calculate the total losses in the studied film, it is
+necessary to have R and T data measured at the same angle of incidence.
+However, it is typical for spectrophotometers in use today to measure
+these data at slightly different angles, which are usually zero for T
+and a few degrees for R. Since the difference between R (or T) values
+measured at incidence angles differing by a few degrees is not very
+significant, the Total losses option allows using T and R data measured
+at slightly different angles.</p>
+<p><img alt="image4" src="../_images/ex_3-4.png" /></p>
+<p>In our case, the R data was measured at 8 degrees of incidence, and the
+T data was measured at normal incidence. This difference in incidence
+angles causes small fluctuations in the total losses plot displayed,
+which is not significant for the main conclusion that follows from
+analyzing this plot. This conclusion is that the film is absorbing, with
+the typical exponential decrease in absorption from the UV to Visible
+spectral range for dielectric films.</p>
+<p>Now we are ready to use the <strong>Layer Characterization</strong> option in the
+<strong>Characterization</strong> menu. Let us select the <strong>Normal Dispersion</strong>
+(three-parameter Cauchy model) for the refractive index and <strong>UV-VIS</strong>
+model for the extinction coefficient. Click <strong>OK</strong> to start the
+characterization procedure. The results displayed in the <strong>Data
+Fitting</strong> window show an excellent agreement between the model and
+measured data.</p>
+<p><img alt="image5" src="../_images/ex_3-5.png" /> <img alt="image6" src="../_images/ex_3-6.png" /></p>
+<p>The found wavelength dependencies of the refractive index
+and extinction coefficient can be seen in the corresponding tabs of the
+<strong>Layer Plots</strong> window. They are saved in the <strong>Layer material</strong>
+database under the name <strong>TiO2 from R and T data at 400-800 nm</strong>.</p>
+<p><img alt="image8" src="../_images/ex_3-8.png" /> <img alt="image8a" src="../_images/ex_3-8a.png" /></p>
+<blockquote>
+<div><p><img alt="image9" src="../_images/arrow_r.png" /> <strong>Important note:</strong> For dielectric thin films, there is a little point
+in searching for the extinction coefficient if only R data is available,
+since this data is not sensitive to the small absorption in the
+dielectric films. In principle, it is possible to search for the
+extinction coefficient if only T data is available, but for the most
+reliable results it is always better to have both transmittance and
+reflectance measurement data.</p>
+</div></blockquote>
+<p>At the end of this exercise, let us verify the found TiO2 refractive
+index wavelength dependence versus well-established TiO2 refractive
+index dependencies. In the <strong>Layer material</strong> database, there are two
+such dependencies from the paper by <strong>A. Tikhonravov et al., Optical
+parameters of oxide films typically used in optical coating production.
+Appl. Opt., 2011, vol. 50, no. 9, pp. C75-C85</strong><em>.</em> These are datafiles
+<strong>TiO2 (IBS)</strong> and <strong>TiO2 (e-beam)</strong> that were obtained for the films
+produced using IBS and e-beam evaporation processes.</p>
+<p>Select the <strong>Compare Index Plots</strong> option from the <strong>View</strong> menu. From
+physical considerations, one would only expect an upward or downward
+shift in the refractive index wavelength dependencies due to the
+difference in density of thin films of the same material obtained under
+different deposition conditions. That is what we see in the comparison
+window. This gives us confidence in the correctness of the results
+obtained.</p>
+<p><img alt="image7" src="../_images/ex_3-7.png" /></p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

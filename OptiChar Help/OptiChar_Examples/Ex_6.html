@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>LEC24C6 – Substrate characterization (ZnSe substrate)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nonav.css?v=7ee55c3a" />
+    <link rel="stylesheet" type="text/css" href="../_static/Fonts.css?v=7822efae" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="lec24c6-substrate-characterization-znse-substrate">
+<h1><strong>LEC24C6 – Substrate characterization (ZnSe substrate)</strong></h1>
+<blockquote>
+<div><p><img alt="image9" src="../_images/arrow_r.png" /> <strong>Note</strong> It is worth explaining to users that substrate
+characterization may only be required in very special and rare
+situations. Typically, characterization uses substrates from well-known
+suppliers, and substrate refractive indices and extinction coefficients
+are already known with very high accuracy. There is no point in finding
+substrate parameters from spectrophotometric measurements of their
+transmittance and reflectance, since it is virtually impossible to
+obtain substrate parameters with greater accuracy than those provided by
+the suppliers.</p>
+</div></blockquote>
+<p>The example considered here pertains to just such a special situation.
+It is necessary to find the refractive index and extinction coefficient of a ZnSe substrate for which only
+very limited information is available. The main reference for these data is the publication by Connolly et. al.,
+Specifications of Raytran material, Proc. SPIE, 181, 141-144, 1979.
+Unfortunately, it contains data on the refractive index of ZnSe starting only at 540 nm,
+and it does not contain any data related to the extinction coefficient of ZnSe.</p>
+<p>In the <strong>File</strong> -&gt; <strong>Project</strong> menu of OptiChar, open the directory
+<strong>LEC24C6</strong>. There are three measurement datafiles named <strong>400-800 nm,
+one side R data</strong>, <strong>400-800 nm, T data</strong>, <strong>and 800-2500 nm, one side R
+data</strong>. There is also another file named <strong>800-2500 nm, one side R data
+without 890-940 nm band</strong>, the contents of which will be explained
+later. The data files whose names contain “one side R data” contain
+reflectance data measured on a wedged ZnSe substrate to eliminate the
+influence of reflection from the substrate back side. Reflectance
+measurements were made at 8 degrees incidence. The second datafile
+contains normal incidence transmittance data. The measurement ranges are
+indicated in the datafile names.</p>
+<p>Load the measurement datafile <strong>400-800 nm, one side R data</strong> and check
+the checkbox <strong>Reflectance without back side</strong> in the <strong>General
+Information</strong> window. Go to the <strong>Substrate Characterization</strong> mode of
+the <strong>Characterization</strong> menu. The Data Fitting window show a
+non-monotonic dependence of the reflectance on the wavelength, which
+suggests a rather complex dependence of the refractive index on the
+wavelength.</p>
+<p><img alt="image1" src="../_images/ex_6-1.png" /></p>
+<p>For this reason, we will select the <strong>n(lambda)</strong> model in
+the <strong>Substrate Characterization Setup</strong> window. Let us first use the
+default <strong>Smooth</strong> setting of the <strong>Re(n)</strong> slider on the right side the
+Setup window.</p>
+<p><img alt="image2" src="../_images/ex_6-2.png" /></p>
+<p>Click the <strong>OK</strong> button. The agreement between the model and the
+measured data is poor. Apparently, too high requirements for the
+smoothness of the substrate refractive index were applied. Check the
+obtained substrate refractive index in the <strong>Substrate Plots</strong> window.</p>
+<p><img alt="image3" src="../_images/ex_6-3.png" /> <img alt="image3a" src="../_images/ex_6-3a.png" /></p>
+<p>Go back to the Substrate characterization and reduce the requirement for
+the refractive index smoothness by moving the Smooth slider down two
+steps. Click <strong>OK</strong>. The agreement between the model and the measured
+data is better, but still poor at shorter wavelengths.</p>
+<p><img alt="image4" src="../_images/ex_6-4.png" /></p>
+<p>Go back to the
+Substrate characterization and further reduce the requirement for the
+refractive index smoothness by moving the Smooth slider down three
+steps. Click <strong>OK</strong>. Now a fairly good agreement is achieved between the
+model and the measured data.</p>
+<p><img alt="image5" src="../_images/ex_6-5.png" /></p>
+<p>The found non-monotonic dependence of the
+substrate refractive index on wavelength is presented in the <strong>Substrate
+Plots</strong> window. It is stored in the <strong>Substrate</strong> database under the
+name <strong>ZnSe at 400-800 nm - n(lambda) model</strong>.</p>
+<p><img alt="image5a" src="../_images/ex_6-5a.png" /></p>
+<p>Load the <strong>800-2500 nm, one side R data</strong> measurement datafile. Go to
+the <strong>Data Fitting</strong> window in the <strong>View</strong> menu and notice that the
+data in the spectral region around 900 nm was clearly measured with
+errors.</p>
+<p><img alt="image6" src="../_images/ex_6-6.png" /></p>
+<p>Use the <strong>Modify Measurement</strong> option and remove the measurement
+data in the spectral region from 890 to 940 nm. The corrected datafile
+is stored under the name <strong>800-2500 nm, one side R data without 890-940
+nm band</strong>. Go to the Substrate characterization and use <strong>n(lambda)</strong>
+model with the default setting for the <strong>Smooth</strong> slider. Check the
+substrate refractive index in the Substrate Plots window. It has too
+many small variations, which means it is worth increasing the
+requirements for the refractive index smoothness.</p>
+<p><img alt="image6a" src="../_images/ex_6-6a.png" /></p>
+<p>Move the slider in the
+<strong>Substrate Characterization Setup</strong> window three steps higher and run
+the substrate characterization again. The obtained refractive index is
+smoother. It is stored in the <strong>Substrate</strong> database under the name
+<strong>ZnSe at 800-2500 nm - n(lambda) model</strong>.</p>
+<p><img alt="image7" src="../_images/ex_6-7.png" /></p>
+<p>Check the agreement between the ZnSe refractive indices found from the
+400-800 nm range data and the 800-2500 nm range data at 800nm. The index
+values at this wavelength are almost identical: they differ by less than
+0.1%.</p>
+<p><img alt="image8" src="../_images/ex_6-8.png" /></p>
+<p>The results can be combined in a single ZnSe index file for the
+400-2500 nm spectral region. This combined index file is stored under
+the name <strong>ZnSe at 400-2500 nm - combined data</strong>.</p>
+<p>Let us look at the absorption in the substrate. We have a datafile
+<strong>400-800 nm, T data</strong> with the transmittance data measured in the
+spectral region of 400-800 nm. So, we can try to find the extinction
+coefficient of the ZnSe substrate. Let us load the datafile <strong>400-800
+nm, T data</strong> into RAM.</p>
+<p><img alt="image10" src="../_images/ex_6-10.png" /></p>
+<p>We see that the substrate completely absorbs
+below 480 nm. So, we can search for the extinction coefficient only in
+the spectral region starting from 480 nm. To do this, load the substrate
+refractive index <strong>ZnSe at 400-800 nm: n(lambda) model</strong> and append the
+reflectance datafile <strong>400-800 nm, one side R data</strong> to the already
+loaded transmittance data. Go to the <strong>Preprocess Measurement Data</strong>
+option in the <strong>Data</strong> menu and truncate all measurement data below 480
+nm.</p>
+<p>In the <strong>Substrate Characterization Setup</strong> window, select the
+<strong>Loaded</strong> model for the refractive index and the <strong>UV-VIS</strong> model for
+the extinction coefficient. Check that the <strong>Upper Limit</strong> for the
+extinction coefficient is not less than 0.1.</p>
+<p><img alt="image11" src="../_images/ex_6-11.png" /></p>
+<p>Click <strong>OK</strong> to run
+Substrate characterization. The discrepancy value decreases to 0.87. The
+obtained refractive index and extinction coefficient are stored in the
+datafile <strong>ZnSe with absorption at 480-800 nm</strong>.</p>
+<p><img alt="image12" src="../_images/ex_6-12.png" /> <img alt="image12a" src="../_images/ex_6-12a.png" /></p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>
